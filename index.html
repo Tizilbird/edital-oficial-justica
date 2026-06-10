@@ -21,19 +21,8 @@
   --accent-dimmer: rgba(200,245,90,0.06);
   --danger: #ff5e5e;
 }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'DM Mono', monospace;
-  font-size: 13px;
-  line-height: 1.6;
-  min-height: 100vh;
-}
-
-/* SCROLLBAR */
+body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monospace; font-size: 13px; line-height: 1.6; min-height: 100vh; }
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 2px; }
@@ -42,384 +31,223 @@ body {
 .app { display: grid; grid-template-columns: 300px 1fr; min-height: 100vh; }
 
 /* SIDEBAR */
-.sidebar {
-  background: var(--bg2);
-  border-right: 1px solid var(--border);
-  padding: 2rem 1.5rem;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.logo-tag {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-family: 'Syne', sans-serif;
-}
-.logo-title {
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--text);
-  font-family: 'Syne', sans-serif;
-  line-height: 1.2;
-}
-
-/* GLOBAL PROGRESS */
-.global-progress {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.gp-numbers {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.gp-big {
-  font-size: 40px;
-  font-weight: 800;
-  font-family: 'Syne', sans-serif;
-  color: var(--accent);
-  line-height: 1;
-}
-.gp-label {
-  font-size: 11px;
-  color: var(--text-muted);
-}
-.gp-track {
-  height: 3px;
-  background: var(--bg3);
-  border-radius: 99px;
-  overflow: hidden;
-}
-.gp-fill {
-  height: 100%;
-  background: var(--accent);
-  border-radius: 99px;
-  transition: width 0.5s cubic-bezier(.22,1,.36,1);
-}
-.gp-sub {
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
-/* MATÉRIA NAV */
-.nav-label {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  font-family: 'Syne', sans-serif;
-  margin-bottom: -8px;
-}
+.sidebar { background: var(--bg2); border-right: 1px solid var(--border); padding: 2rem 1.5rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; display: flex; flex-direction: column; gap: 2rem; }
+.logo { display: flex; flex-direction: column; gap: 4px; }
+.logo-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); font-family: 'Syne', sans-serif; }
+.logo-title { font-size: 22px; font-weight: 800; color: var(--text); font-family: 'Syne', sans-serif; line-height: 1.2; }
+.global-progress { display: flex; flex-direction: column; gap: 10px; }
+.gp-numbers { display: flex; align-items: baseline; justify-content: space-between; }
+.gp-big { font-size: 40px; font-weight: 800; font-family: 'Syne', sans-serif; color: var(--accent); line-height: 1; }
+.gp-label { font-size: 11px; color: var(--text-muted); }
+.gp-track { height: 3px; background: var(--bg3); border-radius: 99px; overflow: hidden; }
+.gp-fill { height: 100%; background: var(--accent); border-radius: 99px; transition: width 0.5s cubic-bezier(.22,1,.36,1); }
+.gp-sub { font-size: 11px; color: var(--text-muted); }
+.nav-label { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); font-family: 'Syne', sans-serif; margin-bottom: -8px; }
 .nav-list { display: flex; flex-direction: column; gap: 2px; }
-.nav-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.15s;
-  border: none;
-  background: transparent;
-  width: 100%;
-  text-align: left;
-  color: var(--text-muted);
-  font-family: 'DM Mono', monospace;
-  font-size: 12px;
-}
+.nav-item { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 6px; cursor: pointer; transition: background 0.15s; border: none; background: transparent; width: 100%; text-align: left; color: var(--text-muted); font-family: 'DM Mono', monospace; font-size: 12px; }
 .nav-item:hover { background: var(--bg3); color: var(--text); }
 .nav-item.active { background: var(--accent-dim); color: var(--accent); }
-.nav-item-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: currentColor;
-  opacity: 0.5;
-  flex-shrink: 0;
-}
+.nav-item-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.5; flex-shrink: 0; }
 .nav-item.active .nav-item-dot { opacity: 1; }
 .nav-item-name { flex: 1; }
 .nav-item-count { font-size: 11px; opacity: 0.6; }
-
-/* FOOTER SIDEBAR */
 .sidebar-footer { margin-top: auto; }
-.btn-clear {
-  width: 100%;
-  padding: 8px 12px;
-  border: 1px solid rgba(255,94,94,0.25);
-  background: transparent;
-  color: var(--danger);
-  border-radius: 6px;
-  font-family: 'DM Mono', monospace;
-  font-size: 11px;
-  cursor: pointer;
-  transition: all 0.15s;
-  letter-spacing: 0.05em;
-}
+.btn-clear { width: 100%; padding: 8px 12px; border: 1px solid rgba(255,94,94,0.25); background: transparent; color: var(--danger); border-radius: 6px; font-family: 'DM Mono', monospace; font-size: 11px; cursor: pointer; transition: all 0.15s; letter-spacing: 0.05em; }
 .btn-clear:hover { background: rgba(255,94,94,0.1); border-color: var(--danger); }
 
 /* MAIN */
-.main {
-  padding: 2.5rem 3rem;
-  max-width: 860px;
-}
-
-.main-header {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border);
-}
-.main-header h1 {
-  font-family: 'Syne', sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 4px;
-}
-.main-header .sub {
-  color: var(--text-muted);
-  font-size: 12px;
-}
-
-/* STATS STRIP */
-.stats-strip {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 2rem;
-}
-.stat-box {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 14px 16px;
-}
-.stat-box-num {
-  font-family: 'Syne', sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1;
-  margin-bottom: 4px;
-}
+.main { padding: 2.5rem 3rem; max-width: 860px; }
+.main-header { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+.main-header h1 { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.main-header .sub { color: var(--text-muted); font-size: 12px; }
+.stats-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 2rem; }
+.stat-box { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.stat-box-num { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 700; color: var(--text); line-height: 1; margin-bottom: 4px; }
 .stat-box-num.green { color: var(--accent); }
 .stat-box-label { font-size: 11px; color: var(--text-muted); }
-
-/* MATÉRIA SECTION */
-.materia-section { display: none; }
-.materia-section.active { display: block; }
-
-.mat-prog {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 1.5rem;
-  padding: 14px 18px;
-  background: var(--accent-dimmer);
-  border: 1px solid rgba(200,245,90,0.15);
-  border-radius: 10px;
-}
-.mat-prog-pct {
-  font-family: 'Syne', sans-serif;
-  font-size: 32px;
-  font-weight: 800;
-  color: var(--accent);
-  line-height: 1;
-  min-width: 72px;
-}
+.mat-prog { display: flex; align-items: center; gap: 14px; margin-bottom: 1.5rem; padding: 14px 18px; background: var(--accent-dimmer); border: 1px solid rgba(200,245,90,0.15); border-radius: 10px; }
+.mat-prog-pct { font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 800; color: var(--accent); line-height: 1; min-width: 72px; }
 .mat-prog-info { flex: 1; }
-.mat-prog-track {
-  height: 3px;
-  background: rgba(200,245,90,0.15);
-  border-radius: 99px;
-  overflow: hidden;
-  margin-bottom: 4px;
-}
-.mat-prog-fill {
-  height: 100%;
-  background: var(--accent);
-  border-radius: 99px;
-  transition: width 0.5s cubic-bezier(.22,1,.36,1);
-}
+.mat-prog-track { height: 3px; background: rgba(200,245,90,0.15); border-radius: 99px; overflow: hidden; margin-bottom: 4px; }
+.mat-prog-fill { height: 100%; background: var(--accent); border-radius: 99px; transition: width 0.5s cubic-bezier(.22,1,.36,1); }
 .mat-prog-label { font-size: 11px; color: var(--text-muted); }
-
-/* ACTIONS */
-.mat-actions {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 1.5rem;
-}
-.btn-action {
-  padding: 6px 14px;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text-muted);
-  border-radius: 6px;
-  font-family: 'DM Mono', monospace;
-  font-size: 11px;
-  cursor: pointer;
-  transition: all 0.15s;
-  letter-spacing: 0.04em;
-}
+.mat-actions { display: flex; gap: 8px; margin-bottom: 1.5rem; }
+.btn-action { padding: 6px 14px; border: 1px solid var(--border); background: transparent; color: var(--text-muted); border-radius: 6px; font-family: 'DM Mono', monospace; font-size: 11px; cursor: pointer; transition: all 0.15s; letter-spacing: 0.04em; }
 .btn-action:hover { border-color: var(--border-hover); color: var(--text); }
-
-/* TOPICOS */
-.topicos-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.topico {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 12px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.12s;
-  border: 1px solid transparent;
-}
+.topicos-grid { display: flex; flex-direction: column; gap: 2px; }
+.topico { display: flex; align-items: flex-start; gap: 14px; padding: 12px 14px; border-radius: 8px; cursor: pointer; transition: background 0.12s; border: 1px solid transparent; }
 .topico:hover { background: var(--bg2); border-color: var(--border); }
 .topico.done { background: var(--accent-dimmer); }
+.check { width: 20px; height: 20px; border: 1.5px solid var(--text-dim); border-radius: 5px; flex-shrink: 0; margin-top: 1px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.topico:hover .check { border-color: var(--text-muted); }
+.topico.done .check { background: var(--accent); border-color: var(--accent); }
+.check-icon { opacity: 0; transition: opacity 0.15s; color: #0e0f11; }
+.topico.done .check-icon { opacity: 1; }
+.topico-num { font-size: 10px; color: var(--text-dim); min-width: 20px; margin-top: 3px; font-family: 'DM Mono', monospace; }
+.topico-txt { flex: 1; font-size: 13px; color: var(--text); transition: color 0.15s; }
+.topico.done .topico-txt { color: var(--text-muted); text-decoration: line-through; text-decoration-color: rgba(200,245,90,0.4); }
 
-.check {
-  width: 20px; height: 20px;
-  border: 1.5px solid var(--text-dim);
-  border-radius: 5px;
+/* BOTÃO AULA */
+.topico-aula-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(200,245,90,0.1);
+  border: 1px solid rgba(200,245,90,0.25);
+  color: var(--accent);
+  cursor: pointer;
   flex-shrink: 0;
-  margin-top: 1px;
+  margin-top: 2px;
+  transition: all 0.15s;
+  font-family: 'DM Mono', monospace;
+}
+.topico-aula-btn:hover { background: rgba(200,245,90,0.2); }
+
+/* MODAL AULA */
+.aula-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 200;
+  display: flex; align-items: flex-start; justify-content: flex-end;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s;
+}
+.aula-overlay.show { opacity: 1; pointer-events: all; }
+.aula-panel {
+  background: #ffffff;
+  width: min(680px, 100vw);
+  height: 100vh;
+  overflow-y: auto;
+  transform: translateX(40px);
+  transition: transform 0.3s cubic-bezier(.22,1,.36,1);
+  display: flex;
+  flex-direction: column;
+}
+.aula-overlay.show .aula-panel { transform: translateX(0); }
+.aula-panel-header {
+  position: sticky; top: 0;
+  background: #fff;
+  border-bottom: 0.5px solid #e5e5e5;
+  padding: 14px 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-  position: relative;
+  justify-content: space-between;
+  z-index: 10;
 }
-.topico:hover .check { border-color: var(--text-muted); }
-.topico.done .check {
-  background: var(--accent);
-  border-color: var(--accent);
-}
-.check-icon {
-  opacity: 0;
-  transition: opacity 0.15s;
-  color: #0e0f11;
-}
-.topico.done .check-icon { opacity: 1; }
-
-.topico-num {
-  font-size: 10px;
-  color: var(--text-dim);
-  min-width: 20px;
-  margin-top: 3px;
-  font-family: 'DM Mono', monospace;
-}
-
-.topico-txt {
-  flex: 1;
+.aula-panel-header-title {
   font-size: 13px;
-  color: var(--text);
-  transition: color 0.15s;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-family: 'Syne', sans-serif;
 }
-.topico.done .topico-txt {
-  color: var(--text-muted);
-  text-decoration: line-through;
-  text-decoration-color: rgba(200,245,90,0.4);
+.aula-panel-header-sub {
+  font-size: 11px;
+  color: #888;
+  margin-top: 2px;
 }
+.aula-close-btn {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  background: transparent;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: #666;
+  font-size: 16px;
+  transition: all 0.15s;
+}
+.aula-close-btn:hover { background: #f5f5f5; color: #111; }
+.aula-panel-body { flex: 1; }
+
+/* AULA STYLES (light mode inside panel) */
+.aula-panel-body * { box-sizing: border-box; }
+.aula-panel-body { font-family: -apple-system, 'Segoe UI', sans-serif; }
+.aula-container { padding: 1.5rem 1.5rem 3rem; max-width: 640px; margin: 0 auto; }
+.aula-titulo-aula { font-size: 12px; font-weight: 500; color: #888; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4px; }
+.aula-h1 { font-size: 22px; font-weight: 600; color: #111; margin-bottom: 4px; font-family: 'Syne', sans-serif; }
+.aula-subtitulo { font-size: 14px; color: #888; margin-bottom: 1.5rem; }
+.aula-progress-bar { display: flex; gap: 4px; margin-bottom: 1.5rem; }
+.aula-prog-seg { height: 4px; border-radius: 2px; flex: 1; background: #e5e5e5; transition: background 0.3s; }
+.aula-prog-seg.ativo { background: #534AB7; }
+.aula-nav-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.aula-tab-btn { font-size: 13px; padding: 6px 14px; border-radius: 20px; border: 1px solid #e0e0e0; background: transparent; color: #666; cursor: pointer; transition: all 0.2s; }
+.aula-tab-btn:hover { background: #f5f5f5; }
+.aula-tab-btn.ativo { background: #EEEDFE; color: #3C3489; border-color: #AFA9EC; font-weight: 500; }
+.aula-secao { display: none; }
+.aula-secao.ativo { display: block; }
+.aula-card { background: #fff; border: 1px solid #ececec; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1rem; }
+.aula-card-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.aula-icone-sigla { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; }
+.aula-tag { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 4px; margin-bottom: 6px; }
+.aula-tag-lei { background: #E6F1FB; color: #0C447C; }
+.aula-tag-fcc { background: #FAEEDA; color: #633806; }
+.aula-tag-dica { background: #EAF3DE; color: #27500A; }
+.aula-tag-atencao { background: #FAECE7; color: #712B13; }
+.aula-card h3 { font-size: 15px; font-weight: 600; color: #111; margin-bottom: 6px; }
+.aula-card p { font-size: 14px; color: #555; line-height: 1.65; }
+.aula-card ul { padding-left: 1.2rem; }
+.aula-card li { font-size: 14px; color: #555; line-height: 1.7; }
+.aula-card li strong, .aula-card p strong { color: #222; font-weight: 600; }
+.aula-destaque-box { border-left: 3px solid #534AB7; background: #EEEDFE; padding: 10px 14px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+.aula-destaque-box p { font-size: 13px; color: #3C3489; line-height: 1.6; }
+.aula-atencao-box { border-left: 3px solid #D85A30; background: #FAECE7; padding: 10px 14px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+.aula-atencao-box p { font-size: 13px; color: #712B13; line-height: 1.6; }
+.aula-verde-box { border-left: 3px solid #3B6D11; background: #EAF3DE; padding: 10px 14px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+.aula-verde-box p { font-size: 13px; color: #27500A; line-height: 1.6; }
+.aula-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1rem; }
+.aula-mini-card { background: #f8f8f8; border-radius: 8px; padding: 12px; }
+.aula-mini-card h4 { font-size: 13px; font-weight: 600; color: #222; margin-bottom: 4px; }
+.aula-mini-card p { font-size: 12px; color: #666; line-height: 1.5; }
+.aula-questao-card { background: #fff; border: 1px solid #ececec; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; }
+.aula-questao-enunciado { font-size: 14px; color: #222; line-height: 1.7; margin-bottom: 1rem; }
+.aula-questao-enunciado strong { font-weight: 600; }
+.aula-opcao { display: flex; align-items: flex-start; gap: 10px; padding: 8px 12px; border-radius: 8px; cursor: pointer; margin-bottom: 4px; border: 1px solid transparent; transition: all 0.2s; font-size: 13px; color: #666; line-height: 1.5; }
+.aula-opcao:hover { background: #f5f5f5; }
+.aula-opcao.correta { background: #EAF3DE; color: #27500A; border-color: #639922; }
+.aula-opcao.errada { background: #FCEBEB; color: #791F1F; border-color: #E24B4A; }
+.aula-opcao .letra { font-weight: 600; flex-shrink: 0; min-width: 18px; }
+.aula-gabarito-reveal { display: none; margin-top: 10px; padding: 10px 14px; background: #EAF3DE; border-radius: 8px; font-size: 13px; color: #27500A; line-height: 1.6; }
+.aula-btn-gabarito { font-size: 13px; padding: 6px 16px; border-radius: 8px; border: 1px solid #e0e0e0; background: transparent; color: #666; cursor: pointer; margin-top: 8px; }
+.aula-btn-gabarito:hover { background: #f5f5f5; }
+.aula-fonte-tag { font-size: 11px; color: #aaa; margin-top: 8px; display: block; }
+.aula-macete-box { background: #f5f5f5; border-radius: 8px; padding: 12px 16px; margin: 8px 0; }
+.aula-macete-box h4 { font-size: 13px; font-weight: 600; color: #222; margin-bottom: 4px; }
+.aula-macete-box p { font-size: 13px; color: #555; line-height: 1.6; }
+.aula-acro { font-size: 22px; font-weight: 700; color: #534AB7; letter-spacing: 4px; }
+.aula-separador { height: 1px; background: #eee; margin: 1rem 0; }
+@media (max-width: 460px) { .aula-grid2 { grid-template-columns: 1fr; } }
+
+/* mapa mental bars */
+.aula-nivel-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.aula-nivel-label { width: 80px; height: 22px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; flex-shrink: 0; }
 
 /* TOAST */
-.toast {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  background: var(--bg2);
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-size: 12px;
-  font-family: 'DM Mono', monospace;
-  opacity: 0;
-  transform: translateY(8px);
-  transition: all 0.25s;
-  pointer-events: none;
-  z-index: 999;
-}
+.toast { position: fixed; bottom: 24px; right: 24px; background: var(--bg2); border: 1px solid var(--accent); color: var(--accent); padding: 10px 18px; border-radius: 8px; font-size: 12px; font-family: 'DM Mono', monospace; opacity: 0; transform: translateY(8px); transition: all 0.25s; pointer-events: none; z-index: 999; }
 .toast.show { opacity: 1; transform: translateY(0); }
 
-/* MODAL */
-.modal-overlay {
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,0.7);
-  display: flex; align-items: center; justify-content: center;
-  z-index: 100;
-  opacity: 0; pointer-events: none;
-  transition: opacity 0.2s;
-}
+/* MODAL RESET */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 100; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
 .modal-overlay.show { opacity: 1; pointer-events: all; }
-.modal {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 360px;
-  width: 90%;
-}
-.modal h3 {
-  font-family: 'Syne', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
+.modal { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; max-width: 360px; width: 90%; }
+.modal h3 { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 8px; }
 .modal p { color: var(--text-muted); font-size: 12px; margin-bottom: 1.5rem; }
 .modal-btns { display: flex; gap: 10px; justify-content: flex-end; }
-.btn-cancel {
-  padding: 8px 18px;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text-muted);
-  border-radius: 6px;
-  font-family: 'DM Mono', monospace;
-  font-size: 12px;
-  cursor: pointer;
-}
-.btn-confirm {
-  padding: 8px 18px;
-  border: 1px solid var(--danger);
-  background: transparent;
-  color: var(--danger);
-  border-radius: 6px;
-  font-family: 'DM Mono', monospace;
-  font-size: 12px;
-  cursor: pointer;
-}
+.btn-cancel { padding: 8px 18px; border: 1px solid var(--border); background: transparent; color: var(--text-muted); border-radius: 6px; font-family: 'DM Mono', monospace; font-size: 12px; cursor: pointer; }
+.btn-confirm { padding: 8px 18px; border: 1px solid var(--danger); background: transparent; color: var(--danger); border-radius: 6px; font-family: 'DM Mono', monospace; font-size: 12px; cursor: pointer; }
 .btn-confirm:hover { background: rgba(255,94,94,0.12); }
 </style>
 </head>
 <body>
 
 <div class="app">
-  <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="logo">
       <span class="logo-tag">Concurso Público</span>
       <span class="logo-title">Painel de Estudos</span>
     </div>
-
     <div class="global-progress">
       <div class="gp-numbers">
         <span class="gp-big" id="gp-pct">0%</span>
@@ -428,24 +256,20 @@ body {
       <div class="gp-track"><div class="gp-fill" id="gp-fill" style="width:0%"></div></div>
       <span class="gp-sub" id="gp-sub">0 de 0 tópicos</span>
     </div>
-
     <div>
       <p class="nav-label">Matérias</p>
       <nav class="nav-list" id="nav-list"></nav>
     </div>
-
     <div class="sidebar-footer">
       <button class="btn-clear" onclick="openModal()">↺ Reiniciar progresso</button>
     </div>
   </aside>
 
-  <!-- MAIN -->
   <main class="main" id="main">
     <div class="main-header">
       <h1 id="main-title">Direito Constitucional</h1>
       <p class="sub" id="main-sub">H08 – Oficial de Justiça · TJAL</p>
     </div>
-
     <div class="stats-strip">
       <div class="stat-box">
         <div class="stat-box-num" id="st-total">0</div>
@@ -460,7 +284,6 @@ body {
         <div class="stat-box-label">Pendentes</div>
       </div>
     </div>
-
     <div id="sections"></div>
   </main>
 </div>
@@ -478,348 +301,398 @@ body {
   </div>
 </div>
 
+<!-- PAINEL DA AULA -->
+<div class="aula-overlay" id="aula-overlay" onclick="fecharAula(event)">
+  <div class="aula-panel" id="aula-panel">
+    <div class="aula-panel-header">
+      <div>
+        <div class="aula-panel-header-title">Aula — Administração Pública e Princípios</div>
+        <div class="aula-panel-header-sub">Direito Administrativo · Banca FCC</div>
+      </div>
+      <button class="aula-close-btn" onclick="fecharAula(null, true)">✕</button>
+    </div>
+    <div class="aula-panel-body">
+      <div class="aula-container">
+        <div class="aula-titulo-aula">Direito Administrativo — Banca FCC</div>
+        <h1 class="aula-h1">Administração pública e princípios</h1>
+        <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+        <div class="aula-progress-bar" id="aula-progresso">
+          <div class="aula-prog-seg ativo"></div>
+          <div class="aula-prog-seg"></div>
+          <div class="aula-prog-seg"></div>
+          <div class="aula-prog-seg"></div>
+          <div class="aula-prog-seg"></div>
+          <div class="aula-prog-seg"></div>
+        </div>
+
+        <div class="aula-nav-tabs" id="aula-tabs">
+          <button class="aula-tab-btn ativo" data-sec="0">Conceito</button>
+          <button class="aula-tab-btn" data-sec="1">LIMPE</button>
+          <button class="aula-tab-btn" data-sec="2">Outros princípios</button>
+          <button class="aula-tab-btn" data-sec="3">Pegadinhas FCC</button>
+          <button class="aula-tab-btn" data-sec="4">Questões</button>
+          <button class="aula-tab-btn" data-sec="5">Mapa mental</button>
+        </div>
+
+        <!-- SEÇÃO 0 - CONCEITO -->
+        <div class="aula-secao ativo" id="aula-sec0">
+          <div class="aula-card">
+            <div class="aula-card-header">
+              <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7;font-size:20px">⚖</div>
+              <div>
+                <span class="aula-tag aula-tag-lei">CF/88 — art. 37</span>
+                <h3>O que é Administração Pública?</h3>
+              </div>
+            </div>
+            <p>Pode ser entendida em dois sentidos:</p>
+            <br>
+            <div class="aula-grid2">
+              <div class="aula-mini-card">
+                <h4>Sentido orgânico / formal / subjetivo</h4>
+                <p>Quem pratica a atividade. Os órgãos, agentes e entidades que exercem a função administrativa.</p>
+              </div>
+              <div class="aula-mini-card">
+                <h4>Sentido material / objetivo / funcional</h4>
+                <p>O que é feito. A própria atividade administrativa exercida pelo Estado.</p>
+              </div>
+            </div>
+            <div class="aula-destaque-box" style="margin-top:10px">
+              <p><strong>FCC adora:</strong> cobrar a diferença entre os sentidos. "No sentido subjetivo, Administração Pública é o conjunto de órgãos e entidades..." — isso é literal de prova.</p>
+            </div>
+          </div>
+
+          <div class="aula-card">
+            <h3>Administração direta × indireta</h3>
+            <br>
+            <div class="aula-grid2">
+              <div class="aula-mini-card">
+                <h4>Administração direta</h4>
+                <p>União, Estados, DF e Municípios — e seus órgãos internos (ministérios, secretarias etc.). Sem personalidade jurídica própria.</p>
+              </div>
+              <div class="aula-mini-card">
+                <h4>Administração indireta</h4>
+                <p>Autarquias, fundações públicas, empresas públicas e sociedades de economia mista. Possuem personalidade jurídica própria.</p>
+              </div>
+            </div>
+            <div class="aula-atencao-box" style="margin-top:10px">
+              <p><strong>Atenção:</strong> Os conselhos de fiscalização profissional (CRM, CRC, OAB) são autarquias de regime especial — integrantes da Administração indireta, segundo o STF (exceto a OAB, que é sui generis).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEÇÃO 1 - LIMPE -->
+        <div class="aula-secao" id="aula-sec1">
+          <div class="aula-card">
+            <div class="aula-card-header">
+              <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7;font-size:20px">☑</div>
+              <div>
+                <span class="aula-tag aula-tag-lei">CF/88 — art. 37, caput</span>
+                <h3>Os 5 princípios expressos — LIMPE</h3>
+              </div>
+            </div>
+            <div class="aula-macete-box">
+              <h4>Macete clássico</h4>
+              <p class="aula-acro">L I M P E</p>
+              <p style="margin-top:6px;font-size:13px;color:#555">Legalidade · Impessoalidade · Moralidade · Publicidade · Eficiência</p>
+            </div>
+          </div>
+          <div class="aula-card">
+            <span class="aula-tag aula-tag-lei">L</span>
+            <h3 style="margin-top:4px">Legalidade</h3>
+            <p>O administrador só pode fazer o que a lei autoriza — ao contrário do particular, que pode fazer tudo que a lei não proíbe.</p>
+            <div class="aula-destaque-box">
+              <p><strong>FCC:</strong> "A Administração Pública está sujeita ao princípio da legalidade, que lhe impõe agir apenas nos limites permitidos pela lei." — gabarito: certo.</p>
+            </div>
+          </div>
+          <div class="aula-card">
+            <span class="aula-tag aula-tag-lei">I</span>
+            <h3 style="margin-top:4px">Impessoalidade</h3>
+            <p>Tem dois ângulos:</p><br>
+            <ul>
+              <li><strong>Finalidade:</strong> o ato deve visar ao interesse público, não a interesses pessoais.</li>
+              <li><strong>Imputação:</strong> os atos praticados pelo agente são imputados ao Estado, não à pessoa do agente.</li>
+            </ul>
+            <div class="aula-atencao-box" style="margin-top:10px">
+              <p><strong>Atenção:</strong> A vedação à promoção pessoal em publicidade oficial (art. 37, §1º, CF) é desdobramento da impessoalidade — não da moralidade.</p>
+            </div>
+          </div>
+          <div class="aula-card">
+            <span class="aula-tag aula-tag-lei">M</span>
+            <h3 style="margin-top:4px">Moralidade</h3>
+            <p>A Administração deve agir com ética, boa-fé e lealdade. O ato imoral pode ser anulado mesmo sendo legal. Relacionado ao desvio de finalidade e ao abuso de poder.</p>
+            <div class="aula-destaque-box">
+              <p><strong>Súmula Vinculante 13 (STF):</strong> proíbe nepotismo na Administração direta e indireta — fundamento: princípio da moralidade (e impessoalidade).</p>
+            </div>
+          </div>
+          <div class="aula-card">
+            <span class="aula-tag aula-tag-lei">P</span>
+            <h3 style="margin-top:4px">Publicidade</h3>
+            <p>Os atos administrativos devem ser divulgados para conhecimento geral e início de efeitos externos. Regra: transparência. Exceção: sigilo quando a segurança nacional ou a intimidade o exigir.</p><br>
+            <ul>
+              <li>Publicação no Diário Oficial = condição de eficácia (não de validade) do ato.</li>
+              <li>Garante o direito de certidão (art. 5º, XXXIV, CF).</li>
+            </ul>
+          </div>
+          <div class="aula-card">
+            <span class="aula-tag aula-tag-lei">E</span>
+            <h3 style="margin-top:4px">Eficiência</h3>
+            <p>Incluído pela EC 19/1998. Exige presteza, economicidade e qualidade dos serviços públicos.</p>
+            <div class="aula-atencao-box">
+              <p><strong>Atenção FCC:</strong> Eficiência é o único do LIMPE que foi inserido por emenda constitucional — não estava na redação original de 1988. Essa informação já caiu em prova!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEÇÃO 2 - OUTROS PRINCÍPIOS -->
+        <div class="aula-secao" id="aula-sec2">
+          <div class="aula-card">
+            <div class="aula-card-header">
+              <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56;font-size:20px">⚡</div>
+              <div>
+                <span class="aula-tag aula-tag-dica">Implícitos e infraconstitucionais</span>
+                <h3>Outros princípios cobrados pela FCC</h3>
+              </div>
+            </div>
+          </div>
+          <div class="aula-card">
+            <h3>Supremacia do interesse público</h3>
+            <p>O interesse coletivo prevalece sobre o individual. Fundamenta prerrogativas como desapropriação, intervenção na propriedade e cláusulas exorbitantes nos contratos.</p>
+            <div class="aula-destaque-box"><p>Princípio implícito — não está expresso no art. 37 CF, mas é considerado basilar pela doutrina e pela banca.</p></div>
+          </div>
+          <div class="aula-card">
+            <h3>Indisponibilidade do interesse público</h3>
+            <p>A Administração não pode abrir mão dos interesses que lhe foram confiados. O agente não é dono do interesse público — apenas seu gestor.</p>
+          </div>
+          <div class="aula-card">
+            <h3>Razoabilidade e proporcionalidade</h3>
+            <p>Os meios utilizados devem ser adequados e proporcionais ao fim pretendido. Proíbem sanções excessivas e atos arbitrários.</p>
+            <div class="aula-atencao-box"><p><strong>FCC:</strong> considera razoabilidade e proporcionalidade como princípios distintos. Proporcionalidade tem três subprincípios: adequação, necessidade e proporcionalidade em sentido estrito.</p></div>
+          </div>
+          <div class="aula-card">
+            <h3>Autotutela</h3>
+            <p>A Administração pode rever seus próprios atos, independentemente de provocação judicial: anular os ilegais e revogar os inconvenientes ou inoportunos.</p>
+            <div class="aula-destaque-box"><p><strong>Súmula 346 STF:</strong> "A Administração Pública pode declarar a nulidade dos seus próprios atos."<br><strong>Súmula 473 STF:</strong> pode anulá-los quando eivados de vícios ou revogá-los por motivo de conveniência e oportunidade.</p></div>
+          </div>
+          <div class="aula-card">
+            <h3>Continuidade dos serviços públicos</h3>
+            <p>Os serviços públicos não podem ser interrompidos, salvo emergência ou, após prévio aviso, inadimplência do usuário (Lei 8.987/95).</p>
+          </div>
+          <div class="aula-card">
+            <h3>Motivação</h3>
+            <p>Os atos administrativos devem ser fundamentados — indicando os fundamentos de fato e de direito.</p>
+            <div class="aula-atencao-box"><p>Teoria dos motivos determinantes: se o agente motivou o ato (mesmo que não fosse obrigado), fica vinculado à veracidade dos motivos alegados.</p></div>
+          </div>
+          <div class="aula-card">
+            <h3>Segurança jurídica</h3>
+            <p>Protege situações consolidadas no tempo. Relaciona-se à irretroatividade das normas e à proteção à boa-fé e à confiança legítima.</p>
+            <div class="aula-destaque-box"><p>Prazo decadencial do art. 54 da Lei 9.784/99: a Administração tem 5 anos para anular atos que geraram efeitos favoráveis ao administrado de boa-fé.</p></div>
+          </div>
+        </div>
+
+        <!-- SEÇÃO 3 - PEGADINHAS -->
+        <div class="aula-secao" id="aula-sec3">
+          <div class="aula-card">
+            <div class="aula-card-header">
+              <div class="aula-icone-sigla" style="background:#FAEEDA;color:#854F0B;font-size:20px">⚠</div>
+              <div>
+                <span class="aula-tag aula-tag-fcc">Foco FCC</span>
+                <h3>Pegadinhas clássicas da FCC</h3>
+              </div>
+            </div>
+          </div>
+          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 1</span><h3 style="margin-top:6px">Eficiência não era original</h3><p>A FCC afirma que os princípios do art. 37 são "legalidade, impessoalidade, moralidade e publicidade" — e pergunta se está incompleto. Está! Falta a eficiência (EC 19/98).</p></div>
+          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 2</span><h3 style="margin-top:6px">Publicidade é eficácia, não validade</h3><p>A falta de publicação não torna o ato inválido — torna-o ineficaz. O ato pode ser válido, mas não eficaz enquanto não publicado.</p></div>
+          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 3</span><h3 style="margin-top:6px">Promoção pessoal em publicidade → impessoalidade</h3><p>A vedação à publicidade oficial que gere promoção pessoal do governante (§1º do art. 37) decorre da impessoalidade, não da moralidade.</p></div>
+          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 4</span><h3 style="margin-top:6px">Legalidade ≠ reserva legal absoluta</h3><p>A doutrina moderna (juridicidade) admite que a Administração se vincule não só à lei formal, mas ao ordenamento jurídico como um todo (princípios, CF, tratados).</p></div>
+          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 5</span><h3 style="margin-top:6px">Autotutela não afasta controle judicial</h3><p>A possibilidade de a Administração rever seus atos não exclui a apreciação pelo Poder Judiciário (art. 5º, XXXV, CF — inafastabilidade da jurisdição).</p></div>
+          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 6</span><h3 style="margin-top:6px">Supremacia e indisponibilidade são implícitos</h3><p>Não estão no art. 37, caput, CF — são princípios implícitos identificados pela doutrina. A FCC gosta de perguntar quais são os princípios expressos do art. 37.</p></div>
+        </div>
+
+        <!-- SEÇÃO 4 - QUESTÕES -->
+        <div class="aula-secao" id="aula-sec4">
+          <div class="aula-card" style="margin-bottom:0.5rem">
+            <div class="aula-card-header">
+              <div class="aula-icone-sigla" style="background:#FAEEDA;color:#854F0B;font-size:20px">📋</div>
+              <div>
+                <span class="aula-tag aula-tag-fcc">Questões estilo FCC</span>
+                <h3>Treine o raciocínio de prova</h3>
+              </div>
+            </div>
+            <p style="font-size:13px;color:#888">Clique em "Ver gabarito" após resolver cada questão.</p>
+          </div>
+
+          <div class="aula-questao-card">
+            <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> O princípio da publicidade, previsto no art. 37 da Constituição Federal, implica que a ausência de publicação oficial de um ato administrativo acarreta sua:</p>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> nulidade absoluta.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> inexistência jurídica.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> ineficácia, sem afetar sua validade.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> revogabilidade imediata.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> nulidade relativa, sujeita a convalidação.</div>
+            <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+            <div class="aula-gabarito-reveal">Gabarito: C. A publicação é condição de eficácia do ato, não de validade. O ato existe e é válido, mas não produz efeitos a terceiros enquanto não publicado.</div>
+            <span class="aula-fonte-tag">Fundamento: princípio da publicidade + doutrina majoritária.</span>
+          </div>
+
+          <div class="aula-questao-card">
+            <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> A vedação constitucional de que a publicidade dos atos governamentais tenha caráter de promoção pessoal de autoridades ou servidores públicos é manifestação do princípio da:</p>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> moralidade.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> legalidade.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> impessoalidade.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> eficiência.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> razoabilidade.</div>
+            <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+            <div class="aula-gabarito-reveal">Gabarito: C. O §1º do art. 37 CF veda a promoção pessoal na publicidade oficial — trata-se de desdobramento da impessoalidade, não da moralidade.</div>
+            <span class="aula-fonte-tag">Fundamento: CF/88, art. 37, §1º.</span>
+          </div>
+
+          <div class="aula-questao-card">
+            <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> O princípio da eficiência foi introduzido expressamente no caput do art. 37 da Constituição Federal pela:</p>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Constituição Federal de 1988, em sua redação original.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Emenda Constitucional nº 45/2004.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Emenda Constitucional nº 19/1998.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Lei nº 9.784/1999.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Emenda Constitucional nº 32/2001.</div>
+            <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+            <div class="aula-gabarito-reveal">Gabarito: C. A EC 19/1998 (Reforma Administrativa) inseriu a eficiência no rol do art. 37, caput. Na CF de 1988 originalmente havia apenas LIMP, sem o E.</div>
+            <span class="aula-fonte-tag">Fundamento: EC 19/1998 — Reforma Administrativa.</span>
+          </div>
+
+          <div class="aula-questao-card">
+            <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Segundo a teoria dos motivos determinantes, quando o administrador expõe os motivos de um ato administrativo, mesmo que tal motivação não fosse obrigatória, fica:</p>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> dispensado de observar outros requisitos de validade do ato.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> vinculado à veracidade e existência dos motivos declarados.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> autorizado a revogar o ato sem qualquer fundamentação posterior.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> sujeito à responsabilidade penal pessoal pelos efeitos do ato.</div>
+            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> obrigado a reeditar o ato após nova motivação.</div>
+            <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+            <div class="aula-gabarito-reveal">Gabarito: B. Pela teoria dos motivos determinantes, uma vez motivado o ato, a validade fica condicionada à veracidade e à existência dos motivos expostos. Se o motivo for falso ou inexistente, o ato é inválido.</div>
+            <span class="aula-fonte-tag">Fundamento: princípio da motivação + doutrina Hely Lopes Meirelles / Celso Antônio.</span>
+          </div>
+        </div>
+
+        <!-- SEÇÃO 5 - MAPA MENTAL -->
+        <div class="aula-secao" id="aula-sec5">
+          <div class="aula-card">
+            <div class="aula-card-header">
+              <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56;font-size:20px">🗺</div>
+              <div>
+                <span class="aula-tag aula-tag-dica">Revisão rápida</span>
+                <h3>Mapa mental — o que a FCC mais cobra</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="aula-card" style="padding:1rem 1.25rem">
+            <h3 style="margin-bottom:12px">Hierarquia de cobranças FCC — princípios</h3>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div class="aula-nivel-bar">
+                <div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div>
+                <p style="font-size:13px;color:#555">LIMPE — legalidade, impessoalidade, moralidade, publicidade, eficiência (art. 37 CF)</p>
+              </div>
+              <div class="aula-nivel-bar">
+                <div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div>
+                <p style="font-size:13px;color:#555">Autotutela (Súm. 346 e 473 STF), supremacia × indisponibilidade, teoria dos motivos determinantes</p>
+              </div>
+              <div class="aula-nivel-bar">
+                <div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div>
+                <p style="font-size:13px;color:#555">Razoabilidade/proporcionalidade, segurança jurídica, continuidade dos serviços, motivação</p>
+              </div>
+              <div class="aula-nivel-bar">
+                <div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div>
+                <p style="font-size:13px;color:#555">Juridicidade, confiança legítima, tutela/curatela administrativa</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="aula-card">
+            <h3 style="margin-bottom:12px">Vínculos importantes para a prova</h3>
+            <ul style="display:flex;flex-direction:column;gap:8px">
+              <li><strong>Nepotismo</strong> → moralidade + impessoalidade (SV 13 STF)</li>
+              <li><strong>Promoção pessoal em publicidade</strong> → impessoalidade (art. 37, §1º CF)</li>
+              <li><strong>Eficiência</strong> → EC 19/1998 (não estava na CF original)</li>
+              <li><strong>Anulação</strong> → ilegalidade → pode ser decretada de ofício (autotutela)</li>
+              <li><strong>Revogação</strong> → inconveniência/inoportunidade → apenas atos discricionários</li>
+              <li><strong>Prazo para anular ato favorável de boa-fé</strong> → 5 anos (art. 54, Lei 9.784/99)</li>
+              <li><strong>Impessoalidade como imputação</strong> → ato é do Estado, não do agente</li>
+            </ul>
+          </div>
+
+          <div class="aula-verde-box">
+            <p><strong>Dica final:</strong> A FCC costuma usar a técnica de afirmar um princípio e atribuí-lo a outro. Grave os vínculos do bloco acima — eles são as pegadinhas mais recorrentes na banca.</p>
+          </div>
+        </div>
+
+      </div><!-- /aula-container -->
+    </div><!-- /aula-panel-body -->
+  </div><!-- /aula-panel -->
+</div><!-- /aula-overlay -->
+
 <script>
 const DATA = [
-  {
-    id: "dc",
-    title: "Direito Constitucional",
-    topicos: [
-      "Constituição: conceito, objeto e classificações",
-      "Supremacia da Constituição",
-      "Aplicabilidade e interpretação das normas constitucionais",
-      "Vigência e eficácia das normas constitucionais",
-      "Princípios fundamentais",
-      "Habeas corpus",
-      "Habeas data",
-      "Mandado de segurança",
-      "Mandado de injunção",
-      "Ação popular",
-      "Ação civil pública",
-      "Controle de constitucionalidade: sistemas difuso e concentrado",
-      "Ação direta de inconstitucionalidade (ADI)",
-      "Ação declaratória de constitucionalidade (ADC)",
-      "Arguição de descumprimento de preceito fundamental (ADPF)",
-      "Súmula vinculante",
-      "Repercussão geral",
-      "Direitos e deveres individuais e coletivos",
-      "Direitos sociais",
-      "Direitos de nacionalidade",
-      "Direitos políticos",
-      "Partidos políticos",
-      "Organização político-administrativa: da União",
-      "Bens e competências da União, Estados, DF e Municípios",
-      "Intervenção federal",
-      "Administração Pública: disposições gerais",
-      "Servidores públicos na CF/88",
-      "Poder Executivo: Presidente e Vice-Presidente da República",
-      "Atribuições e responsabilidades do Presidente",
-      "Poder Legislativo: órgãos e atribuições",
-      "Processo legislativo",
-      "Fiscalização contábil, financeira e orçamentária",
-      "Poder Judiciário: disposições gerais",
-      "Supremo Tribunal Federal (STF)",
-      "Conselho Nacional de Justiça (CNJ)",
-      "Superior Tribunal de Justiça (STJ)",
-      "Tribunais Regionais Federais e Juízes Federais",
-      "Tribunais e Juízes dos Estados",
-      "Justiça do Trabalho: TST, TRTs, Juízes do Trabalho",
-      "Ministério Público",
-      "Advocacia Pública",
-      "Advocacia e Defensoria Pública",
-      "Princípios gerais da atividade econômica",
-      "Finanças Públicas: normas gerais e orçamentos",
-      "Seguridade Social: Saúde, Previdência e Assistência",
-      "Meio ambiente",
-      "Família, Criança, Adolescente, Jovem e Idoso"
-    ]
-  },
-  {
-    id: "da",
-    title: "Direito Administrativo",
-    topicos: [
-      "Administração Pública e princípios",
-      "Regime jurídico administrativo",
-      "Poder hierárquico e poder disciplinar",
-      "Poder normativo e poder de polícia",
-      "Uso e abuso de poder",
-      "Lei de abuso de autoridade (Lei nº 13.869/2019)",
-      "Ato administrativo: conceito, características e atributos",
-      "Elementos e requisitos de validade do ato administrativo",
-      "Classificação, formação e efeitos dos atos administrativos",
-      "Extinção, revogação, invalidação e convalidação",
-      "Cassação, caducidade, discricionariedade e vinculação",
-      "Administração direta e indireta; autarquias e fundações",
-      "Empresas públicas e sociedades de economia mista",
-      "Órgãos públicos: conceito, natureza e classificação",
-      "Agentes públicos: cargo, emprego e função pública",
-      "Provimento, investidura, exercício e afastamentos",
-      "Lei nº 11.416/2006 (carreiras dos servidores do Judiciário)",
-      "Direito de greve dos servidores públicos",
-      "Regime dos servidores na CF/88",
-      "Lei nº 8.112/1990 (Regime Jurídico dos Servidores Federais)",
-      "Regime de emprego público e CLT aplicável",
-      "Responsabilidade civil, administrativa e penal dos agentes",
-      "Processo administrativo – Lei nº 9.784/1999",
-      "Regime e processo administrativo disciplinar",
-      "Controle interno e externo da Administração Pública",
-      "Controles pelo Judiciário, Legislativo e Tribunais de Contas",
-      "Lei de Improbidade Administrativa (Lei nº 8.429/1992 / 14.230/2021)",
-      "Responsabilidade extracontratual do Estado",
-      "Licitação: conceito, natureza jurídica e princípios (Lei nº 14.133/2021)",
-      "Obrigatoriedade, dispensa e inexigibilidade de licitação",
-      "Procedimentos, fases, modalidades e critérios de julgamento",
-      "Pregão Eletrônico (Decreto nº 10.024/2019)",
-      "Sistema de Registro de Preços (Decreto nº 11.462/2023)",
-      "Crimes em licitações e contratos administrativos",
-      "Contrato administrativo: conceito, características e espécies",
-      "Formalização, execução, fiscalização e inexecução do contrato",
-      "Duração, prorrogação, alteração e rescisão contratual",
-      "Parcerias com o terceiro setor (Lei nº 13.019/2014)",
-      "Parcerias Público-Privadas (Lei nº 11.079/2004)",
-      "Serviço público: conceito, classificação e princípios",
-      "Concessão e permissão de serviço público (Lei nº 8.987/1995)",
-      "Bens públicos: regime jurídico e classificação",
-      "Desapropriação e intervenção do Estado na propriedade",
-      "LINDB na Administração Pública",
-      "Lei de Acesso à Informação (Lei nº 12.527/2011)",
-      "Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018)"
-    ]
-  },
-  {
-    id: "dciv",
-    title: "Direito Civil",
-    topicos: [
-      "Lei de Introdução às Normas do Direito Brasileiro",
-      "Eficácia da lei no tempo e no espaço; conflito de leis",
-      "Pessoas naturais: personalidade e capacidade",
-      "Direitos da personalidade",
-      "Ausência",
-      "Pessoas jurídicas: conceito, classificação e princípios",
-      "Desconsideração da personalidade jurídica",
-      "Associações e fundações",
-      "Domicílio",
-      "Bens em si mesmos e reciprocamente considerados",
-      "Bens públicos",
-      "Fatos e negócios jurídicos",
-      "Representação; condição, termo e encargo",
-      "Defeitos e invalidade do negócio jurídico",
-      "Atos jurídicos lícitos e ilícitos",
-      "Prescrição e decadência",
-      "Modalidades das obrigações (dar, fazer, não fazer, solidárias, etc.)",
-      "Transmissão das obrigações: cessão de crédito e assunção de dívida",
-      "Pagamento e suas formas especiais",
-      "Novação, compensação, confusão e remissão",
-      "Mora, perdas e danos, cláusula penal e arras",
-      "Contratos: conceito, classificação e princípios",
-      "Formação, extinção e vícios dos contratos",
-      "Compra e venda; troca; doação",
-      "Locação de coisas; comodato e mútuo",
-      "Prestação de serviço; empreitada; depósito; mandato",
-      "Corretagem; transporte; seguro; fiança",
-      "Alienação fiduciária; leasing; administração fiduciária",
-      "Atos unilaterais; gestão de negócios; enriquecimento sem causa",
-      "Títulos de crédito",
-      "Responsabilidade civil",
-      "Posse: conceito, classificação, aquisição e perda",
-      "Propriedade: aquisição, perda e direito de vizinhança",
-      "Condomínio geral e edilício; multipropriedade",
-      "Superfície; servidões; usufruto; uso; habitação",
-      "Penhor, hipoteca e anticrese; laje",
-      "Casamento: princípios, capacidade, impedimentos e dissolução",
-      "Relações de parentesco e proteção dos filhos",
-      "Regimes de bens; pacto antenupcial",
-      "Alimentos; bem de família; união estável",
-      "Tutela, curatela e tomada de decisão apoiada",
-      "Sucessão em geral: herança, vocação hereditária e aceitação",
-      "Sucessão legítima: ordem de vocação e herdeiros necessários",
-      "Sucessão testamentária: formas e disposições",
-      "Inventário e partilha",
-      "Legislação especial em matéria civil (Leis 8.009, 6.015, 8.245, 8.078, etc.)",
-      "Súmulas vinculantes e temas repetitivos do STJ em matéria civil"
-    ]
-  },
-  {
-    id: "dpc",
-    title: "Direito Processual Civil",
-    topicos: [
-      "Normas fundamentais, aplicação e interpretação do CPC",
-      "Princípios gerais do processo civil",
-      "Direito processual intertemporal",
-      "Jurisdição: conceito, características e espécies",
-      "Arbitragem",
-      "Ação: conceito, classificação, condições e elementos",
-      "Processo: conceito e pressupostos processuais",
-      "Competência: conceito, classificação e critérios",
-      "Competência absoluta e relativa; prorrogação e conflito",
-      "Conexão, continência e prevenção",
-      "Partes: capacidade processual e deveres",
-      "Honorários advocatícios, multas e gratuidade da justiça",
-      "Litisconsórcio",
-      "Intervenção de terceiros (assistência, denunciação, chamamento)",
-      "Incidente de desconsideração da personalidade jurídica",
-      "Amicus Curiae",
-      "Poderes, deveres e responsabilidade do juiz",
-      "Impedimento e suspeição",
-      "Escrivão, Chefe de Secretaria e Oficial de Justiça",
-      "Perito, depositário, intérprete, conciliadores e mediadores",
-      "Ministério Público, Advocacia Pública e Defensoria Pública no processo",
-      "Prerrogativas da Fazenda Pública em juízo",
-      "Atos processuais: prática eletrônica, prazos e preclusão",
-      "Citação e seus efeitos; cartas; intimações",
-      "Nulidades processuais",
-      "Tutela provisória: conceito, requisitos e regime jurídico",
-      "Tutelas de urgência e de evidência",
-      "Formação, suspensão e extinção do processo",
-      "Petição inicial: requisitos, pedido e indeferimento",
-      "Conciliação e mediação",
-      "Contestação, reconvenção e revelia",
-      "Saneamento e julgamento conforme o estado do processo",
-      "Audiência de instrução e julgamento",
-      "Provas: conceito, ônus, modalidades e valoração",
-      "Sentença: conceito, classificação e efeitos",
-      "Coisa julgada formal e material",
-      "Liquidação de sentença",
-      "Cumprimento de sentença (quantia certa, obrigações de fazer/não fazer)",
-      "Cumprimento de sentença contra a Fazenda Pública",
-      "Procedimentos especiais (consignação, possessórias, inventário, família, etc.)",
-      "Ações coletivas, usucapião, mandado de segurança, ACP, improbidade",
-      "Processo de execução: princípios, partes e competência",
-      "Penhora, avaliação e expropriação",
-      "Execução por quantia certa; execução fiscal; execução de alimentos",
-      "Execução contra a Fazenda Pública; precatórios e RPV",
-      "Embargos à execução e exceção de pré-executividade",
-      "Ação rescisória",
-      "Incidente de resolução de demandas repetitivas (IRDR)",
-      "Recursos: apelação, agravo, embargos de declaração",
-      "Recursos para o STF e STJ; repercussão geral; recursos repetitivos",
-      "Leis especiais (Lei 9.099, 6.830, 7.347, 4.717, 12.016, 9.507, etc.)",
-      "Súmulas vinculantes e temas repetitivos do STJ em matéria processual"
-    ]
-  },
-  {
-    id: "dp",
-    title: "Direito Penal",
-    topicos: [
-      "Princípios aplicáveis ao Direito Penal",
-      "Aplicação da lei penal no tempo e no espaço",
-      "Tempo e lugar do crime",
-      "Interpretação e analogia da lei penal; irretroatividade",
-      "Conflito aparente de normas penais",
-      "Ilicitude e culpabilidade",
-      "Concurso de pessoas",
-      "Espécies e cominação de penas",
-      "Ação penal; punibilidade e extinção",
-      "Prescrição penal",
-      "Crimes contra a pessoa",
-      "Crimes contra o patrimônio",
-      "Crimes contra a fé pública",
-      "Crimes contra a dignidade sexual",
-      "Crimes contra a Administração Pública",
-      "Crimes de abuso de autoridade (Lei nº 13.869/2019)",
-      "Lavagem de bens e ocultação de valores (Lei nº 9.613/1998)",
-      "Disposições constitucionais aplicáveis ao Direito Penal",
-      "Crimes e sanções penais em licitações (Lei nº 14.133/2021)",
-      "Crimes de responsabilidade (Lei nº 1.079/1950)",
-      "Crimes contra as finanças públicas (Lei nº 10.028/2000)",
-      "Lei de Responsabilidade Fiscal (LC nº 101/2000)",
-      "Súmulas do STF e STJ em matéria penal"
-    ]
-  },
-  {
-    id: "dpp",
-    title: "Direito Processual Penal",
-    topicos: [
-      "Sistemas e princípios fundamentais do processo penal",
-      "Aplicação da lei processual no tempo, espaço e pessoas",
-      "Inquérito policial",
-      "Ação penal e ação civil ex delicto",
-      "Jurisdição e competência no processo penal",
-      "Questões e processos incidentes",
-      "Prova no processo penal",
-      "Sujeitos do processo: juiz, acusador, defensor, ofendido, auxiliares",
-      "Prisão, medidas cautelares e liberdade provisória",
-      "Prisão temporária (Lei nº 7.960/1989)",
-      "Citações e intimações no processo penal",
-      "Procedimento comum: instrução criminal",
-      "Tribunal do Júri: composição, pronúncia e julgamento",
-      "Sessões do júri; debates; questionário e votação; sentença",
-      "Processos especiais: crimes de responsabilidade de funcionários",
-      "Processos de calúnia, injúria e crimes contra propriedade imaterial",
-      "Juizados Especiais Criminais (Lei nº 9.099/1995)",
-      "Lei nº 10.259/2001 (Juizados Especiais no âmbito federal)",
-      "Prazos processuais: características e contagem",
-      "Nulidades no processo penal",
-      "Recursos em geral no processo penal",
-      "Habeas corpus",
-      "Lei de Execução Penal (Lei nº 7.210/1984)",
-      "Súmulas do STF e STJ em matéria processual penal"
-    ]
-  }
+  { id:"dc", title:"Direito Constitucional", topicos:["Constituição: conceito, objeto e classificações","Supremacia da Constituição","Aplicabilidade e interpretação das normas constitucionais","Vigência e eficácia das normas constitucionais","Princípios fundamentais","Habeas corpus","Habeas data","Mandado de segurança","Mandado de injunção","Ação popular","Ação civil pública","Controle de constitucionalidade: sistemas difuso e concentrado","Ação direta de inconstitucionalidade (ADI)","Ação declaratória de constitucionalidade (ADC)","Arguição de descumprimento de preceito fundamental (ADPF)","Súmula vinculante","Repercussão geral","Direitos e deveres individuais e coletivos","Direitos sociais","Direitos de nacionalidade","Direitos políticos","Partidos políticos","Organização político-administrativa: da União","Bens e competências da União, Estados, DF e Municípios","Intervenção federal","Administração Pública: disposições gerais","Servidores públicos na CF/88","Poder Executivo: Presidente e Vice-Presidente da República","Atribuições e responsabilidades do Presidente","Poder Legislativo: órgãos e atribuições","Processo legislativo","Fiscalização contábil, financeira e orçamentária","Poder Judiciário: disposições gerais","Supremo Tribunal Federal (STF)","Conselho Nacional de Justiça (CNJ)","Superior Tribunal de Justiça (STJ)","Tribunais Regionais Federais e Juízes Federais","Tribunais e Juízes dos Estados","Justiça do Trabalho: TST, TRTs, Juízes do Trabalho","Ministério Público","Advocacia Pública","Advocacia e Defensoria Pública","Princípios gerais da atividade econômica","Finanças Públicas: normas gerais e orçamentos","Seguridade Social: Saúde, Previdência e Assistência","Meio ambiente","Família, Criança, Adolescente, Jovem e Idoso"] },
+  { id:"da", title:"Direito Administrativo", topicos:["Administração Pública e princípios","Regime jurídico administrativo","Poder hierárquico e poder disciplinar","Poder normativo e poder de polícia","Uso e abuso de poder","Lei de abuso de autoridade (Lei nº 13.869/2019)","Ato administrativo: conceito, características e atributos","Elementos e requisitos de validade do ato administrativo","Classificação, formação e efeitos dos atos administrativos","Extinção, revogação, invalidação e convalidação","Cassação, caducidade, discricionariedade e vinculação","Administração direta e indireta; autarquias e fundações","Empresas públicas e sociedades de economia mista","Órgãos públicos: conceito, natureza e classificação","Agentes públicos: cargo, emprego e função pública","Provimento, investidura, exercício e afastamentos","Lei nº 11.416/2006 (carreiras dos servidores do Judiciário)","Direito de greve dos servidores públicos","Regime dos servidores na CF/88","Lei nº 8.112/1990 (Regime Jurídico dos Servidores Federais)","Regime de emprego público e CLT aplicável","Responsabilidade civil, administrativa e penal dos agentes","Processo administrativo – Lei nº 9.784/1999","Regime e processo administrativo disciplinar","Controle interno e externo da Administração Pública","Controles pelo Judiciário, Legislativo e Tribunais de Contas","Lei de Improbidade Administrativa (Lei nº 8.429/1992 / 14.230/2021)","Responsabilidade extracontratual do Estado","Licitação: conceito, natureza jurídica e princípios (Lei nº 14.133/2021)","Obrigatoriedade, dispensa e inexigibilidade de licitação","Procedimentos, fases, modalidades e critérios de julgamento","Pregão Eletrônico (Decreto nº 10.024/2019)","Sistema de Registro de Preços (Decreto nº 11.462/2023)","Crimes em licitações e contratos administrativos","Contrato administrativo: conceito, características e espécies","Formalização, execução, fiscalização e inexecução do contrato","Duração, prorrogação, alteração e rescisão contratual","Parcerias com o terceiro setor (Lei nº 13.019/2014)","Parcerias Público-Privadas (Lei nº 11.079/2004)","Serviço público: conceito, classificação e princípios","Concessão e permissão de serviço público (Lei nº 8.987/1995)","Bens públicos: regime jurídico e classificação","Desapropriação e intervenção do Estado na propriedade","LINDB na Administração Pública","Lei de Acesso à Informação (Lei nº 12.527/2011)","Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018)"] },
+  { id:"dciv", title:"Direito Civil", topicos:["Lei de Introdução às Normas do Direito Brasileiro","Eficácia da lei no tempo e no espaço; conflito de leis","Pessoas naturais: personalidade e capacidade","Direitos da personalidade","Ausência","Pessoas jurídicas: conceito, classificação e princípios","Desconsideração da personalidade jurídica","Associações e fundações","Domicílio","Bens em si mesmos e reciprocamente considerados","Bens públicos","Fatos e negócios jurídicos","Representação; condição, termo e encargo","Defeitos e invalidade do negócio jurídico","Atos jurídicos lícitos e ilícitos","Prescrição e decadência","Modalidades das obrigações (dar, fazer, não fazer, solidárias, etc.)","Transmissão das obrigações: cessão de crédito e assunção de dívida","Pagamento e suas formas especiais","Novação, compensação, confusão e remissão","Mora, perdas e danos, cláusula penal e arras","Contratos: conceito, classificação e princípios","Formação, extinção e vícios dos contratos","Compra e venda; troca; doação","Locação de coisas; comodato e mútuo","Prestação de serviço; empreitada; depósito; mandato","Corretagem; transporte; seguro; fiança","Alienação fiduciária; leasing; administração fiduciária","Atos unilaterais; gestão de negócios; enriquecimento sem causa","Títulos de crédito","Responsabilidade civil","Posse: conceito, classificação, aquisição e perda","Propriedade: aquisição, perda e direito de vizinhança","Condomínio geral e edilício; multipropriedade","Superfície; servidões; usufruto; uso; habitação","Penhor, hipoteca e anticrese; laje","Casamento: princípios, capacidade, impedimentos e dissolução","Relações de parentesco e proteção dos filhos","Regimes de bens; pacto antenupcial","Alimentos; bem de família; união estável","Tutela, curatela e tomada de decisão apoiada","Sucessão em geral: herança, vocação hereditária e aceitação","Sucessão legítima: ordem de vocação e herdeiros necessários","Sucessão testamentária: formas e disposições","Inventário e partilha","Legislação especial em matéria civil (Leis 8.009, 6.015, 8.245, 8.078, etc.)","Súmulas vinculantes e temas repetitivos do STJ em matéria civil"] },
+  { id:"dpc", title:"Direito Processual Civil", topicos:["Normas fundamentais, aplicação e interpretação do CPC","Princípios gerais do processo civil","Direito processual intertemporal","Jurisdição: conceito, características e espécies","Arbitragem","Ação: conceito, classificação, condições e elementos","Processo: conceito e pressupostos processuais","Competência: conceito, classificação e critérios","Competência absoluta e relativa; prorrogação e conflito","Conexão, continência e prevenção","Partes: capacidade processual e deveres","Honorários advocatícios, multas e gratuidade da justiça","Litisconsórcio","Intervenção de terceiros (assistência, denunciação, chamamento)","Incidente de desconsideração da personalidade jurídica","Amicus Curiae","Poderes, deveres e responsabilidade do juiz","Impedimento e suspeição","Escrivão, Chefe de Secretaria e Oficial de Justiça","Perito, depositário, intérprete, conciliadores e mediadores","Ministério Público, Advocacia Pública e Defensoria Pública no processo","Prerrogativas da Fazenda Pública em juízo","Atos processuais: prática eletrônica, prazos e preclusão","Citação e seus efeitos; cartas; intimações","Nulidades processuais","Tutela provisória: conceito, requisitos e regime jurídico","Tutelas de urgência e de evidência","Formação, suspensão e extinção do processo","Petição inicial: requisitos, pedido e indeferimento","Conciliação e mediação","Contestação, reconvenção e revelia","Saneamento e julgamento conforme o estado do processo","Audiência de instrução e julgamento","Provas: conceito, ônus, modalidades e valoração","Sentença: conceito, classificação e efeitos","Coisa julgada formal e material","Liquidação de sentença","Cumprimento de sentença (quantia certa, obrigações de fazer/não fazer)","Cumprimento de sentença contra a Fazenda Pública","Procedimentos especiais (consignação, possessórias, inventário, família, etc.)","Ações coletivas, usucapião, mandado de segurança, ACP, improbidade","Processo de execução: princípios, partes e competência","Penhora, avaliação e expropriação","Execução por quantia certa; execução fiscal; execução de alimentos","Execução contra a Fazenda Pública; precatórios e RPV","Embargos à execução e exceção de pré-executividade","Ação rescisória","Incidente de resolução de demandas repetitivas (IRDR)","Recursos: apelação, agravo, embargos de declaração","Recursos para o STF e STJ; repercussão geral; recursos repetitivos","Leis especiais (Lei 9.099, 6.830, 7.347, 4.717, 12.016, 9.507, etc.)","Súmulas vinculantes e temas repetitivos do STJ em matéria processual"] },
+  { id:"dp", title:"Direito Penal", topicos:["Princípios aplicáveis ao Direito Penal","Aplicação da lei penal no tempo e no espaço","Tempo e lugar do crime","Interpretação e analogia da lei penal; irretroatividade","Conflito aparente de normas penais","Ilicitude e culpabilidade","Concurso de pessoas","Espécies e cominação de penas","Ação penal; punibilidade e extinção","Prescrição penal","Crimes contra a pessoa","Crimes contra o patrimônio","Crimes contra a fé pública","Crimes contra a dignidade sexual","Crimes contra a Administração Pública","Crimes de abuso de autoridade (Lei nº 13.869/2019)","Lavagem de bens e ocultação de valores (Lei nº 9.613/1998)","Disposições constitucionais aplicáveis ao Direito Penal","Crimes e sanções penais em licitações (Lei nº 14.133/2021)","Crimes de responsabilidade (Lei nº 1.079/1950)","Crimes contra as finanças públicas (Lei nº 10.028/2000)","Lei de Responsabilidade Fiscal (LC nº 101/2000)","Súmulas do STF e STJ em matéria penal"] },
+  { id:"dpp", title:"Direito Processual Penal", topicos:["Sistemas e princípios fundamentais do processo penal","Aplicação da lei processual no tempo, espaço e pessoas","Inquérito policial","Ação penal e ação civil ex delicto","Jurisdição e competência no processo penal","Questões e processos incidentes","Prova no processo penal","Sujeitos do processo: juiz, acusador, defensor, ofendido, auxiliares","Prisão, medidas cautelares e liberdade provisória","Prisão temporária (Lei nº 7.960/1989)","Citações e intimações no processo penal","Procedimento comum: instrução criminal","Tribunal do Júri: composição, pronúncia e julgamento","Sessões do júri; debates; questionário e votação; sentença","Processos especiais: crimes de responsabilidade de funcionários","Processos de calúnia, injúria e crimes contra propriedade imaterial","Juizados Especiais Criminais (Lei nº 9.099/1995)","Lei nº 10.259/2001 (Juizados Especiais no âmbito federal)","Prazos processuais: características e contagem","Nulidades no processo penal","Recursos em geral no processo penal","Habeas corpus","Lei de Execução Penal (Lei nº 7.210/1984)","Súmulas do STF e STJ em matéria processual penal"] }
 ];
+
+// Tópicos com aula disponível: matéria id + índice do tópico
+const AULAS_DISPONIVEIS = { 'da_0': true }; // da = Direito Administrativo, índice 0 = "Administração Pública e princípios"
 
 const STORAGE_KEY = 'edital_oficial_justica_v1';
 let state = {};
 let currentMat = DATA[0].id;
 
-function load() {
-  try { state = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch(e) { state = {}; }
-}
-function save() {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
-}
+function load() { try { state = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch(e) { state = {}; } }
+function save() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {} }
 function key(mid, idx) { return mid + '_' + idx; }
 function isChecked(mid, idx) { return !!state[key(mid, idx)]; }
-
-function totalAll() { return DATA.reduce((s, m) => s + m.topicos.length, 0); }
-function doneAll() { return DATA.reduce((s, m) => s + m.topicos.filter((_,i) => isChecked(m.id, i)).length, 0); }
-function doneMat(mid) { const m = DATA.find(x => x.id === mid); return m.topicos.filter((_,i) => isChecked(mid, i)).length; }
+function totalAll() { return DATA.reduce((s,m) => s + m.topicos.length, 0); }
+function doneAll() { return DATA.reduce((s,m) => s + m.topicos.filter((_,i) => isChecked(m.id,i)).length, 0); }
+function doneMat(mid) { const m = DATA.find(x => x.id === mid); return m.topicos.filter((_,i) => isChecked(mid,i)).length; }
 
 function toggle(mid, idx) {
   const k = key(mid, idx);
   state[k] = !state[k];
   if (!state[k]) delete state[k];
-  save();
-  renderAll();
-  showToast(state[key(mid, idx)] ? '✓ Tópico concluído' : 'Tópico desmarcado');
+  save(); renderAll();
+  showToast(state[key(mid,idx)] ? '✓ Tópico concluído' : 'Tópico desmarcado');
 }
-
 function markAll(mid, value) {
   const m = DATA.find(x => x.id === mid);
-  m.topicos.forEach((_, i) => {
-    if (value) state[key(mid, i)] = true;
-    else delete state[key(mid, i)];
-  });
-  save();
-  renderAll();
+  m.topicos.forEach((_,i) => { if(value) state[key(mid,i)]=true; else delete state[key(mid,i)]; });
+  save(); renderAll();
 }
-
 function showToast(msg) {
   const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
+  t.textContent = msg; t.classList.add('show');
   clearTimeout(t._timer);
   t._timer = setTimeout(() => t.classList.remove('show'), 1800);
 }
-
 function openModal() { document.getElementById('modal').classList.add('show'); }
 function closeModal() { document.getElementById('modal').classList.remove('show'); }
-function confirmClear() {
-  state = {}; save(); closeModal(); renderAll();
-  showToast('Progresso reiniciado');
-}
+function confirmClear() { state={}; save(); closeModal(); renderAll(); showToast('Progresso reiniciado'); }
+function switchMat(mid) { currentMat = mid; renderAll(); window.scrollTo({top:0,behavior:'smooth'}); }
 
-function switchMat(mid) {
-  currentMat = mid;
-  renderAll();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+function abrirAula(e) {
+  e.stopPropagation();
+  document.getElementById('aula-overlay').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function fecharAula(e, force) {
+  if (force || (e && e.target === document.getElementById('aula-overlay'))) {
+    document.getElementById('aula-overlay').classList.remove('show');
+    document.body.style.overflow = '';
+  }
 }
 
 function renderNav() {
   const nav = document.getElementById('nav-list');
   nav.innerHTML = '';
   DATA.forEach(m => {
-    const d = doneMat(m.id);
-    const t = m.topicos.length;
+    const d = doneMat(m.id), t = m.topicos.length;
     const btn = document.createElement('button');
     btn.className = 'nav-item' + (m.id === currentMat ? ' active' : '');
     btn.innerHTML = `<span class="nav-item-dot"></span><span class="nav-item-name">${m.title}</span><span class="nav-item-count">${d}/${t}</span>`;
@@ -829,9 +702,8 @@ function renderNav() {
 }
 
 function renderGlobal() {
-  const done = doneAll();
-  const total = totalAll();
-  const pct = total ? Math.round(done / total * 100) : 0;
+  const done = doneAll(), total = totalAll();
+  const pct = total ? Math.round(done/total*100) : 0;
   document.getElementById('gp-pct').textContent = pct + '%';
   document.getElementById('gp-fill').style.width = pct + '%';
   document.getElementById('gp-sub').textContent = done + ' de ' + total + ' tópicos';
@@ -839,15 +711,12 @@ function renderGlobal() {
 
 function renderSection() {
   const mat = DATA.find(m => m.id === currentMat);
-  const done = doneMat(mat.id);
-  const total = mat.topicos.length;
-  const pct = total ? Math.round(done / total * 100) : 0;
-
+  const done = doneMat(mat.id), total = mat.topicos.length;
+  const pct = total ? Math.round(done/total*100) : 0;
   document.getElementById('main-title').textContent = mat.title;
   document.getElementById('st-total').textContent = total;
   document.getElementById('st-done').textContent = done;
   document.getElementById('st-remain').textContent = total - done;
-
   const sections = document.getElementById('sections');
   sections.innerHTML = `
     <div class="mat-prog">
@@ -858,15 +727,15 @@ function renderSection() {
       </div>
     </div>
     <div class="mat-actions">
-      <button class="btn-action" onclick="markAll('${mat.id}', true)">Marcar todos</button>
-      <button class="btn-action" onclick="markAll('${mat.id}', false)">Desmarcar todos</button>
+      <button class="btn-action" onclick="markAll('${mat.id}',true)">Marcar todos</button>
+      <button class="btn-action" onclick="markAll('${mat.id}',false)">Desmarcar todos</button>
     </div>
     <div class="topicos-grid" id="tg-${mat.id}"></div>
   `;
-
   const grid = document.getElementById('tg-' + mat.id);
   mat.topicos.forEach((topico, idx) => {
     const checked = isChecked(mat.id, idx);
+    const temAula = AULAS_DISPONIVEIS[mat.id + '_' + idx];
     const item = document.createElement('div');
     item.className = 'topico' + (checked ? ' done' : '');
     item.innerHTML = `
@@ -875,18 +744,44 @@ function renderSection() {
           <path d="M1 4L4 7L10 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <span class="topico-num">${String(idx + 1).padStart(2, '0')}</span>
+      <span class="topico-num">${String(idx+1).padStart(2,'0')}</span>
       <span class="topico-txt">${topico}</span>
+      ${temAula ? `<button class="topico-aula-btn" onclick="abrirAula(event)" title="Ver aula">▶ aula</button>` : ''}
     `;
     item.onclick = () => toggle(mat.id, idx);
     grid.appendChild(item);
   });
 }
 
-function renderAll() {
-  renderGlobal();
-  renderNav();
-  renderSection();
+function renderAll() { renderGlobal(); renderNav(); renderSection(); }
+
+// AULA: tabs e questões
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.aula-tab-btn');
+  const secoes = document.querySelectorAll('.aula-secao');
+  const segs = document.querySelectorAll('.aula-prog-seg');
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.dataset.sec);
+      tabs.forEach(t => t.classList.remove('ativo'));
+      secoes.forEach(s => s.classList.remove('ativo'));
+      segs.forEach((s,i) => s.classList.toggle('ativo', i <= idx));
+      btn.classList.add('ativo');
+      document.getElementById('aula-sec'+idx).classList.add('ativo');
+      document.getElementById('aula-panel').scrollTop = 0;
+    });
+  });
+});
+
+function aulaMarcar(el, tipo) {
+  const parent = el.closest('.aula-questao-card');
+  parent.querySelectorAll('.aula-opcao').forEach(o => o.classList.remove('correta','errada'));
+  el.classList.add(tipo);
+}
+function aulaRevelarGab(btn) {
+  const gab = btn.nextElementSibling;
+  gab.style.display = gab.style.display === 'block' ? 'none' : 'block';
+  btn.textContent = gab.style.display === 'block' ? 'Ocultar gabarito' : 'Ver gabarito';
 }
 
 load();
