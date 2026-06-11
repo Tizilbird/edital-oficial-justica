@@ -27,10 +27,8 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monosp
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 2px; }
 
-/* LAYOUT */
 .app { display: grid; grid-template-columns: 300px 1fr; min-height: 100vh; }
 
-/* SIDEBAR */
 .sidebar { background: var(--bg2); border-right: 1px solid var(--border); padding: 2rem 1.5rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; display: flex; flex-direction: column; gap: 2rem; }
 .logo { display: flex; flex-direction: column; gap: 4px; }
 .logo-tag { font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); font-family: 'Syne', sans-serif; }
@@ -55,7 +53,6 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monosp
 .btn-clear { width: 100%; padding: 8px 12px; border: 1px solid rgba(255,94,94,0.25); background: transparent; color: var(--danger); border-radius: 6px; font-family: 'DM Mono', monospace; font-size: 11px; cursor: pointer; transition: all 0.15s; letter-spacing: 0.05em; }
 .btn-clear:hover { background: rgba(255,94,94,0.1); border-color: var(--danger); }
 
-/* MAIN */
 .main { padding: 2.5rem 3rem; max-width: 860px; }
 .main-header { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
 .main-header h1 { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
@@ -87,82 +84,45 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monosp
 .topico-txt { flex: 1; font-size: 13px; color: var(--text); transition: color 0.15s; }
 .topico.done .topico-txt { color: var(--text-muted); text-decoration: line-through; text-decoration-color: rgba(200,245,90,0.4); }
 
-/* BOTÃO AULA */
 .topico-aula-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 10px;
-  padding: 2px 8px;
-  border-radius: 4px;
-  background: rgba(200,245,90,0.1);
-  border: 1px solid rgba(200,245,90,0.25);
-  color: var(--accent);
-  cursor: pointer;
-  flex-shrink: 0;
-  margin-top: 2px;
-  transition: all 0.15s;
-  font-family: 'DM Mono', monospace;
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 10px; padding: 2px 8px; border-radius: 4px;
+  background: rgba(200,245,90,0.1); border: 1px solid rgba(200,245,90,0.25);
+  color: var(--accent); cursor: pointer; flex-shrink: 0; margin-top: 2px;
+  transition: all 0.15s; font-family: 'DM Mono', monospace;
 }
 .topico-aula-btn:hover { background: rgba(200,245,90,0.2); }
 
 /* MODAL AULA */
 .aula-overlay {
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,0.8);
-  z-index: 200;
+  position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 200;
   display: flex; align-items: flex-start; justify-content: flex-end;
-  opacity: 0; pointer-events: none;
-  transition: opacity 0.25s;
+  opacity: 0; pointer-events: none; transition: opacity 0.25s;
 }
 .aula-overlay.show { opacity: 1; pointer-events: all; }
 .aula-panel {
-  background: #ffffff;
-  width: min(680px, 100vw);
-  height: 100vh;
-  overflow-y: auto;
-  transform: translateX(40px);
+  background: #ffffff; width: min(680px, 100vw); height: 100vh;
+  overflow-y: auto; transform: translateX(40px);
   transition: transform 0.3s cubic-bezier(.22,1,.36,1);
-  display: flex;
-  flex-direction: column;
+  display: flex; flex-direction: column;
 }
 .aula-overlay.show .aula-panel { transform: translateX(0); }
 .aula-panel-header {
-  position: sticky; top: 0;
-  background: #fff;
-  border-bottom: 0.5px solid #e5e5e5;
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 10;
+  position: sticky; top: 0; background: #fff;
+  border-bottom: 0.5px solid #e5e5e5; padding: 14px 20px;
+  display: flex; align-items: center; justify-content: space-between; z-index: 10;
 }
-.aula-panel-header-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: #1a1a1a;
-  font-family: 'Syne', sans-serif;
-}
-.aula-panel-header-sub {
-  font-size: 11px;
-  color: #888;
-  margin-top: 2px;
-}
+.aula-panel-header-title { font-size: 13px; font-weight: 600; color: #1a1a1a; font-family: 'Syne', sans-serif; }
+.aula-panel-header-sub { font-size: 11px; color: #888; margin-top: 2px; }
 .aula-close-btn {
-  width: 30px; height: 30px;
-  border-radius: 50%;
-  border: 1px solid #e5e5e5;
-  background: transparent;
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  color: #666;
-  font-size: 16px;
-  transition: all 0.15s;
+  width: 30px; height: 30px; border-radius: 50%; border: 1px solid #e5e5e5;
+  background: transparent; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; color: #666; font-size: 16px; transition: all 0.15s;
 }
 .aula-close-btn:hover { background: #f5f5f5; color: #111; }
 .aula-panel-body { flex: 1; }
 
-/* AULA STYLES (light mode inside panel) */
+/* AULA LIGHT STYLES */
 .aula-panel-body * { box-sizing: border-box; }
 .aula-panel-body { font-family: -apple-system, 'Segoe UI', sans-serif; }
 .aula-container { padding: 1.5rem 1.5rem 3rem; max-width: 640px; margin: 0 auto; }
@@ -180,15 +140,17 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monosp
 .aula-secao.ativo { display: block; }
 .aula-card { background: #fff; border: 1px solid #ececec; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1rem; }
 .aula-card-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
-.aula-icone-sigla { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; }
+.aula-icone-sigla { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 500; flex-shrink: 0; }
 .aula-tag { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: 4px; margin-bottom: 6px; }
 .aula-tag-lei { background: #E6F1FB; color: #0C447C; }
 .aula-tag-fcc { background: #FAEEDA; color: #633806; }
 .aula-tag-dica { background: #EAF3DE; color: #27500A; }
 .aula-tag-atencao { background: #FAECE7; color: #712B13; }
 .aula-card h3 { font-size: 15px; font-weight: 600; color: #111; margin-bottom: 6px; }
+.aula-card h4 { font-size: 14px; font-weight: 500; color: #222; margin: 10px 0 4px; }
 .aula-card p { font-size: 14px; color: #555; line-height: 1.65; }
 .aula-card ul { padding-left: 1.2rem; }
+.aula-card ol { padding-left: 1.2rem; }
 .aula-card li { font-size: 14px; color: #555; line-height: 1.7; }
 .aula-card li strong, .aula-card p strong { color: #222; font-weight: 600; }
 .aula-destaque-box { border-left: 3px solid #534AB7; background: #EEEDFE; padding: 10px 14px; margin: 10px 0; border-radius: 0 8px 8px 0; }
@@ -198,6 +160,7 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monosp
 .aula-verde-box { border-left: 3px solid #3B6D11; background: #EAF3DE; padding: 10px 14px; margin: 10px 0; border-radius: 0 8px 8px 0; }
 .aula-verde-box p { font-size: 13px; color: #27500A; line-height: 1.6; }
 .aula-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1rem; }
+.aula-grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 1rem; }
 .aula-mini-card { background: #f8f8f8; border-radius: 8px; padding: 12px; }
 .aula-mini-card h4 { font-size: 13px; font-weight: 600; color: #222; margin-bottom: 4px; }
 .aula-mini-card p { font-size: 12px; color: #666; line-height: 1.5; }
@@ -218,11 +181,19 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monosp
 .aula-macete-box p { font-size: 13px; color: #555; line-height: 1.6; }
 .aula-acro { font-size: 22px; font-weight: 700; color: #534AB7; letter-spacing: 4px; }
 .aula-separador { height: 1px; background: #eee; margin: 1rem 0; }
-@media (max-width: 460px) { .aula-grid2 { grid-template-columns: 1fr; } }
-
-/* mapa mental bars */
+.aula-tabela-comp { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+.aula-tabela-comp th { background: #EEEDFE; color: #3C3489; padding: 8px 10px; text-align: left; font-weight: 600; border-bottom: 1px solid #AFA9EC; }
+.aula-tabela-comp td { padding: 8px 10px; color: #555; border-bottom: 0.5px solid #ececec; line-height: 1.5; }
+.aula-tabela-comp tr:last-child td { border-bottom: none; }
+.aula-badge { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 10px; margin-left: 4px; }
+.aula-badge-sim { background: #EAF3DE; color: #27500A; }
+.aula-badge-nao { background: #FCEBEB; color: #791F1F; }
+.aula-num-item { display: flex; gap: 10px; margin-bottom: 10px; align-items: flex-start; }
+.aula-num-circle { width: 24px; height: 24px; border-radius: 50%; background: #EEEDFE; color: #3C3489; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.aula-num-item p { font-size: 14px; color: #555; line-height: 1.65; }
 .aula-nivel-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .aula-nivel-label { width: 80px; height: 22px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; flex-shrink: 0; }
+@media (max-width: 460px) { .aula-grid2 { grid-template-columns: 1fr; } .aula-grid3 { grid-template-columns: 1fr; } }
 
 /* TOAST */
 .toast { position: fixed; bottom: 24px; right: 24px; background: var(--bg2); border: 1px solid var(--accent); color: var(--accent); padding: 10px 18px; border-radius: 8px; font-size: 12px; font-family: 'DM Mono', monospace; opacity: 0; transform: translateY(8px); transition: all 0.25s; pointer-events: none; z-index: 999; }
@@ -271,18 +242,9 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monosp
       <p class="sub" id="main-sub">H08 – Oficial de Justiça · TJAL</p>
     </div>
     <div class="stats-strip">
-      <div class="stat-box">
-        <div class="stat-box-num" id="st-total">0</div>
-        <div class="stat-box-label">Total de tópicos</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-box-num green" id="st-done">0</div>
-        <div class="stat-box-label">Concluídos</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-box-num" id="st-remain">0</div>
-        <div class="stat-box-label">Pendentes</div>
-      </div>
+      <div class="stat-box"><div class="stat-box-num" id="st-total">0</div><div class="stat-box-label">Total de tópicos</div></div>
+      <div class="stat-box"><div class="stat-box-num green" id="st-done">0</div><div class="stat-box-label">Concluídos</div></div>
+      <div class="stat-box"><div class="stat-box-num" id="st-remain">0</div><div class="stat-box-label">Pendentes</div></div>
     </div>
     <div id="sections"></div>
   </main>
@@ -301,334 +263,512 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monosp
   </div>
 </div>
 
-<!-- PAINEL DA AULA -->
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- PAINEL DE AULA (genérico — conteúdo injetado via JS) -->
+<!-- ═══════════════════════════════════════════════════ -->
 <div class="aula-overlay" id="aula-overlay" onclick="fecharAula(event)">
   <div class="aula-panel" id="aula-panel">
     <div class="aula-panel-header">
       <div>
-        <div class="aula-panel-header-title">Aula — Administração Pública e Princípios</div>
-        <div class="aula-panel-header-sub">Direito Administrativo · Banca FCC</div>
+        <div class="aula-panel-header-title" id="aula-header-title">Aula</div>
+        <div class="aula-panel-header-sub" id="aula-header-sub">Direito Administrativo · Banca FCC</div>
       </div>
       <button class="aula-close-btn" onclick="fecharAula(null, true)">✕</button>
     </div>
-    <div class="aula-panel-body">
-      <div class="aula-container">
-        <div class="aula-titulo-aula">Direito Administrativo — Banca FCC</div>
-        <h1 class="aula-h1">Administração pública e princípios</h1>
-        <p class="aula-subtitulo">Clique nas seções para navegar</p>
-
-        <div class="aula-progress-bar" id="aula-progresso">
-          <div class="aula-prog-seg ativo"></div>
-          <div class="aula-prog-seg"></div>
-          <div class="aula-prog-seg"></div>
-          <div class="aula-prog-seg"></div>
-          <div class="aula-prog-seg"></div>
-          <div class="aula-prog-seg"></div>
-        </div>
-
-        <div class="aula-nav-tabs" id="aula-tabs">
-          <button class="aula-tab-btn ativo" data-sec="0">Conceito</button>
-          <button class="aula-tab-btn" data-sec="1">LIMPE</button>
-          <button class="aula-tab-btn" data-sec="2">Outros princípios</button>
-          <button class="aula-tab-btn" data-sec="3">Pegadinhas FCC</button>
-          <button class="aula-tab-btn" data-sec="4">Questões</button>
-          <button class="aula-tab-btn" data-sec="5">Mapa mental</button>
-        </div>
-
-        <!-- SEÇÃO 0 - CONCEITO -->
-        <div class="aula-secao ativo" id="aula-sec0">
-          <div class="aula-card">
-            <div class="aula-card-header">
-              <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7;font-size:20px">⚖</div>
-              <div>
-                <span class="aula-tag aula-tag-lei">CF/88 — art. 37</span>
-                <h3>O que é Administração Pública?</h3>
-              </div>
-            </div>
-            <p>Pode ser entendida em dois sentidos:</p>
-            <br>
-            <div class="aula-grid2">
-              <div class="aula-mini-card">
-                <h4>Sentido orgânico / formal / subjetivo</h4>
-                <p>Quem pratica a atividade. Os órgãos, agentes e entidades que exercem a função administrativa.</p>
-              </div>
-              <div class="aula-mini-card">
-                <h4>Sentido material / objetivo / funcional</h4>
-                <p>O que é feito. A própria atividade administrativa exercida pelo Estado.</p>
-              </div>
-            </div>
-            <div class="aula-destaque-box" style="margin-top:10px">
-              <p><strong>FCC adora:</strong> cobrar a diferença entre os sentidos. "No sentido subjetivo, Administração Pública é o conjunto de órgãos e entidades..." — isso é literal de prova.</p>
-            </div>
-          </div>
-
-          <div class="aula-card">
-            <h3>Administração direta × indireta</h3>
-            <br>
-            <div class="aula-grid2">
-              <div class="aula-mini-card">
-                <h4>Administração direta</h4>
-                <p>União, Estados, DF e Municípios — e seus órgãos internos (ministérios, secretarias etc.). Sem personalidade jurídica própria.</p>
-              </div>
-              <div class="aula-mini-card">
-                <h4>Administração indireta</h4>
-                <p>Autarquias, fundações públicas, empresas públicas e sociedades de economia mista. Possuem personalidade jurídica própria.</p>
-              </div>
-            </div>
-            <div class="aula-atencao-box" style="margin-top:10px">
-              <p><strong>Atenção:</strong> Os conselhos de fiscalização profissional (CRM, CRC, OAB) são autarquias de regime especial — integrantes da Administração indireta, segundo o STF (exceto a OAB, que é sui generis).</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- SEÇÃO 1 - LIMPE -->
-        <div class="aula-secao" id="aula-sec1">
-          <div class="aula-card">
-            <div class="aula-card-header">
-              <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7;font-size:20px">☑</div>
-              <div>
-                <span class="aula-tag aula-tag-lei">CF/88 — art. 37, caput</span>
-                <h3>Os 5 princípios expressos — LIMPE</h3>
-              </div>
-            </div>
-            <div class="aula-macete-box">
-              <h4>Macete clássico</h4>
-              <p class="aula-acro">L I M P E</p>
-              <p style="margin-top:6px;font-size:13px;color:#555">Legalidade · Impessoalidade · Moralidade · Publicidade · Eficiência</p>
-            </div>
-          </div>
-          <div class="aula-card">
-            <span class="aula-tag aula-tag-lei">L</span>
-            <h3 style="margin-top:4px">Legalidade</h3>
-            <p>O administrador só pode fazer o que a lei autoriza — ao contrário do particular, que pode fazer tudo que a lei não proíbe.</p>
-            <div class="aula-destaque-box">
-              <p><strong>FCC:</strong> "A Administração Pública está sujeita ao princípio da legalidade, que lhe impõe agir apenas nos limites permitidos pela lei." — gabarito: certo.</p>
-            </div>
-          </div>
-          <div class="aula-card">
-            <span class="aula-tag aula-tag-lei">I</span>
-            <h3 style="margin-top:4px">Impessoalidade</h3>
-            <p>Tem dois ângulos:</p><br>
-            <ul>
-              <li><strong>Finalidade:</strong> o ato deve visar ao interesse público, não a interesses pessoais.</li>
-              <li><strong>Imputação:</strong> os atos praticados pelo agente são imputados ao Estado, não à pessoa do agente.</li>
-            </ul>
-            <div class="aula-atencao-box" style="margin-top:10px">
-              <p><strong>Atenção:</strong> A vedação à promoção pessoal em publicidade oficial (art. 37, §1º, CF) é desdobramento da impessoalidade — não da moralidade.</p>
-            </div>
-          </div>
-          <div class="aula-card">
-            <span class="aula-tag aula-tag-lei">M</span>
-            <h3 style="margin-top:4px">Moralidade</h3>
-            <p>A Administração deve agir com ética, boa-fé e lealdade. O ato imoral pode ser anulado mesmo sendo legal. Relacionado ao desvio de finalidade e ao abuso de poder.</p>
-            <div class="aula-destaque-box">
-              <p><strong>Súmula Vinculante 13 (STF):</strong> proíbe nepotismo na Administração direta e indireta — fundamento: princípio da moralidade (e impessoalidade).</p>
-            </div>
-          </div>
-          <div class="aula-card">
-            <span class="aula-tag aula-tag-lei">P</span>
-            <h3 style="margin-top:4px">Publicidade</h3>
-            <p>Os atos administrativos devem ser divulgados para conhecimento geral e início de efeitos externos. Regra: transparência. Exceção: sigilo quando a segurança nacional ou a intimidade o exigir.</p><br>
-            <ul>
-              <li>Publicação no Diário Oficial = condição de eficácia (não de validade) do ato.</li>
-              <li>Garante o direito de certidão (art. 5º, XXXIV, CF).</li>
-            </ul>
-          </div>
-          <div class="aula-card">
-            <span class="aula-tag aula-tag-lei">E</span>
-            <h3 style="margin-top:4px">Eficiência</h3>
-            <p>Incluído pela EC 19/1998. Exige presteza, economicidade e qualidade dos serviços públicos.</p>
-            <div class="aula-atencao-box">
-              <p><strong>Atenção FCC:</strong> Eficiência é o único do LIMPE que foi inserido por emenda constitucional — não estava na redação original de 1988. Essa informação já caiu em prova!</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- SEÇÃO 2 - OUTROS PRINCÍPIOS -->
-        <div class="aula-secao" id="aula-sec2">
-          <div class="aula-card">
-            <div class="aula-card-header">
-              <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56;font-size:20px">⚡</div>
-              <div>
-                <span class="aula-tag aula-tag-dica">Implícitos e infraconstitucionais</span>
-                <h3>Outros princípios cobrados pela FCC</h3>
-              </div>
-            </div>
-          </div>
-          <div class="aula-card">
-            <h3>Supremacia do interesse público</h3>
-            <p>O interesse coletivo prevalece sobre o individual. Fundamenta prerrogativas como desapropriação, intervenção na propriedade e cláusulas exorbitantes nos contratos.</p>
-            <div class="aula-destaque-box"><p>Princípio implícito — não está expresso no art. 37 CF, mas é considerado basilar pela doutrina e pela banca.</p></div>
-          </div>
-          <div class="aula-card">
-            <h3>Indisponibilidade do interesse público</h3>
-            <p>A Administração não pode abrir mão dos interesses que lhe foram confiados. O agente não é dono do interesse público — apenas seu gestor.</p>
-          </div>
-          <div class="aula-card">
-            <h3>Razoabilidade e proporcionalidade</h3>
-            <p>Os meios utilizados devem ser adequados e proporcionais ao fim pretendido. Proíbem sanções excessivas e atos arbitrários.</p>
-            <div class="aula-atencao-box"><p><strong>FCC:</strong> considera razoabilidade e proporcionalidade como princípios distintos. Proporcionalidade tem três subprincípios: adequação, necessidade e proporcionalidade em sentido estrito.</p></div>
-          </div>
-          <div class="aula-card">
-            <h3>Autotutela</h3>
-            <p>A Administração pode rever seus próprios atos, independentemente de provocação judicial: anular os ilegais e revogar os inconvenientes ou inoportunos.</p>
-            <div class="aula-destaque-box"><p><strong>Súmula 346 STF:</strong> "A Administração Pública pode declarar a nulidade dos seus próprios atos."<br><strong>Súmula 473 STF:</strong> pode anulá-los quando eivados de vícios ou revogá-los por motivo de conveniência e oportunidade.</p></div>
-          </div>
-          <div class="aula-card">
-            <h3>Continuidade dos serviços públicos</h3>
-            <p>Os serviços públicos não podem ser interrompidos, salvo emergência ou, após prévio aviso, inadimplência do usuário (Lei 8.987/95).</p>
-          </div>
-          <div class="aula-card">
-            <h3>Motivação</h3>
-            <p>Os atos administrativos devem ser fundamentados — indicando os fundamentos de fato e de direito.</p>
-            <div class="aula-atencao-box"><p>Teoria dos motivos determinantes: se o agente motivou o ato (mesmo que não fosse obrigado), fica vinculado à veracidade dos motivos alegados.</p></div>
-          </div>
-          <div class="aula-card">
-            <h3>Segurança jurídica</h3>
-            <p>Protege situações consolidadas no tempo. Relaciona-se à irretroatividade das normas e à proteção à boa-fé e à confiança legítima.</p>
-            <div class="aula-destaque-box"><p>Prazo decadencial do art. 54 da Lei 9.784/99: a Administração tem 5 anos para anular atos que geraram efeitos favoráveis ao administrado de boa-fé.</p></div>
-          </div>
-        </div>
-
-        <!-- SEÇÃO 3 - PEGADINHAS -->
-        <div class="aula-secao" id="aula-sec3">
-          <div class="aula-card">
-            <div class="aula-card-header">
-              <div class="aula-icone-sigla" style="background:#FAEEDA;color:#854F0B;font-size:20px">⚠</div>
-              <div>
-                <span class="aula-tag aula-tag-fcc">Foco FCC</span>
-                <h3>Pegadinhas clássicas da FCC</h3>
-              </div>
-            </div>
-          </div>
-          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 1</span><h3 style="margin-top:6px">Eficiência não era original</h3><p>A FCC afirma que os princípios do art. 37 são "legalidade, impessoalidade, moralidade e publicidade" — e pergunta se está incompleto. Está! Falta a eficiência (EC 19/98).</p></div>
-          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 2</span><h3 style="margin-top:6px">Publicidade é eficácia, não validade</h3><p>A falta de publicação não torna o ato inválido — torna-o ineficaz. O ato pode ser válido, mas não eficaz enquanto não publicado.</p></div>
-          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 3</span><h3 style="margin-top:6px">Promoção pessoal em publicidade → impessoalidade</h3><p>A vedação à publicidade oficial que gere promoção pessoal do governante (§1º do art. 37) decorre da impessoalidade, não da moralidade.</p></div>
-          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 4</span><h3 style="margin-top:6px">Legalidade ≠ reserva legal absoluta</h3><p>A doutrina moderna (juridicidade) admite que a Administração se vincule não só à lei formal, mas ao ordenamento jurídico como um todo (princípios, CF, tratados).</p></div>
-          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 5</span><h3 style="margin-top:6px">Autotutela não afasta controle judicial</h3><p>A possibilidade de a Administração rever seus atos não exclui a apreciação pelo Poder Judiciário (art. 5º, XXXV, CF — inafastabilidade da jurisdição).</p></div>
-          <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 6</span><h3 style="margin-top:6px">Supremacia e indisponibilidade são implícitos</h3><p>Não estão no art. 37, caput, CF — são princípios implícitos identificados pela doutrina. A FCC gosta de perguntar quais são os princípios expressos do art. 37.</p></div>
-        </div>
-
-        <!-- SEÇÃO 4 - QUESTÕES -->
-        <div class="aula-secao" id="aula-sec4">
-          <div class="aula-card" style="margin-bottom:0.5rem">
-            <div class="aula-card-header">
-              <div class="aula-icone-sigla" style="background:#FAEEDA;color:#854F0B;font-size:20px">📋</div>
-              <div>
-                <span class="aula-tag aula-tag-fcc">Questões estilo FCC</span>
-                <h3>Treine o raciocínio de prova</h3>
-              </div>
-            </div>
-            <p style="font-size:13px;color:#888">Clique em "Ver gabarito" após resolver cada questão.</p>
-          </div>
-
-          <div class="aula-questao-card">
-            <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> O princípio da publicidade, previsto no art. 37 da Constituição Federal, implica que a ausência de publicação oficial de um ato administrativo acarreta sua:</p>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> nulidade absoluta.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> inexistência jurídica.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> ineficácia, sem afetar sua validade.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> revogabilidade imediata.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> nulidade relativa, sujeita a convalidação.</div>
-            <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
-            <div class="aula-gabarito-reveal">Gabarito: C. A publicação é condição de eficácia do ato, não de validade. O ato existe e é válido, mas não produz efeitos a terceiros enquanto não publicado.</div>
-            <span class="aula-fonte-tag">Fundamento: princípio da publicidade + doutrina majoritária.</span>
-          </div>
-
-          <div class="aula-questao-card">
-            <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> A vedação constitucional de que a publicidade dos atos governamentais tenha caráter de promoção pessoal de autoridades ou servidores públicos é manifestação do princípio da:</p>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> moralidade.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> legalidade.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> impessoalidade.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> eficiência.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> razoabilidade.</div>
-            <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
-            <div class="aula-gabarito-reveal">Gabarito: C. O §1º do art. 37 CF veda a promoção pessoal na publicidade oficial — trata-se de desdobramento da impessoalidade, não da moralidade.</div>
-            <span class="aula-fonte-tag">Fundamento: CF/88, art. 37, §1º.</span>
-          </div>
-
-          <div class="aula-questao-card">
-            <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> O princípio da eficiência foi introduzido expressamente no caput do art. 37 da Constituição Federal pela:</p>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Constituição Federal de 1988, em sua redação original.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Emenda Constitucional nº 45/2004.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Emenda Constitucional nº 19/1998.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Lei nº 9.784/1999.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Emenda Constitucional nº 32/2001.</div>
-            <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
-            <div class="aula-gabarito-reveal">Gabarito: C. A EC 19/1998 (Reforma Administrativa) inseriu a eficiência no rol do art. 37, caput. Na CF de 1988 originalmente havia apenas LIMP, sem o E.</div>
-            <span class="aula-fonte-tag">Fundamento: EC 19/1998 — Reforma Administrativa.</span>
-          </div>
-
-          <div class="aula-questao-card">
-            <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Segundo a teoria dos motivos determinantes, quando o administrador expõe os motivos de um ato administrativo, mesmo que tal motivação não fosse obrigatória, fica:</p>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> dispensado de observar outros requisitos de validade do ato.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> vinculado à veracidade e existência dos motivos declarados.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> autorizado a revogar o ato sem qualquer fundamentação posterior.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> sujeito à responsabilidade penal pessoal pelos efeitos do ato.</div>
-            <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> obrigado a reeditar o ato após nova motivação.</div>
-            <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
-            <div class="aula-gabarito-reveal">Gabarito: B. Pela teoria dos motivos determinantes, uma vez motivado o ato, a validade fica condicionada à veracidade e à existência dos motivos expostos. Se o motivo for falso ou inexistente, o ato é inválido.</div>
-            <span class="aula-fonte-tag">Fundamento: princípio da motivação + doutrina Hely Lopes Meirelles / Celso Antônio.</span>
-          </div>
-        </div>
-
-        <!-- SEÇÃO 5 - MAPA MENTAL -->
-        <div class="aula-secao" id="aula-sec5">
-          <div class="aula-card">
-            <div class="aula-card-header">
-              <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56;font-size:20px">🗺</div>
-              <div>
-                <span class="aula-tag aula-tag-dica">Revisão rápida</span>
-                <h3>Mapa mental — o que a FCC mais cobra</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="aula-card" style="padding:1rem 1.25rem">
-            <h3 style="margin-bottom:12px">Hierarquia de cobranças FCC — princípios</h3>
-            <div style="display:flex;flex-direction:column;gap:8px">
-              <div class="aula-nivel-bar">
-                <div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div>
-                <p style="font-size:13px;color:#555">LIMPE — legalidade, impessoalidade, moralidade, publicidade, eficiência (art. 37 CF)</p>
-              </div>
-              <div class="aula-nivel-bar">
-                <div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div>
-                <p style="font-size:13px;color:#555">Autotutela (Súm. 346 e 473 STF), supremacia × indisponibilidade, teoria dos motivos determinantes</p>
-              </div>
-              <div class="aula-nivel-bar">
-                <div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div>
-                <p style="font-size:13px;color:#555">Razoabilidade/proporcionalidade, segurança jurídica, continuidade dos serviços, motivação</p>
-              </div>
-              <div class="aula-nivel-bar">
-                <div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div>
-                <p style="font-size:13px;color:#555">Juridicidade, confiança legítima, tutela/curatela administrativa</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="aula-card">
-            <h3 style="margin-bottom:12px">Vínculos importantes para a prova</h3>
-            <ul style="display:flex;flex-direction:column;gap:8px">
-              <li><strong>Nepotismo</strong> → moralidade + impessoalidade (SV 13 STF)</li>
-              <li><strong>Promoção pessoal em publicidade</strong> → impessoalidade (art. 37, §1º CF)</li>
-              <li><strong>Eficiência</strong> → EC 19/1998 (não estava na CF original)</li>
-              <li><strong>Anulação</strong> → ilegalidade → pode ser decretada de ofício (autotutela)</li>
-              <li><strong>Revogação</strong> → inconveniência/inoportunidade → apenas atos discricionários</li>
-              <li><strong>Prazo para anular ato favorável de boa-fé</strong> → 5 anos (art. 54, Lei 9.784/99)</li>
-              <li><strong>Impessoalidade como imputação</strong> → ato é do Estado, não do agente</li>
-            </ul>
-          </div>
-
-          <div class="aula-verde-box">
-            <p><strong>Dica final:</strong> A FCC costuma usar a técnica de afirmar um princípio e atribuí-lo a outro. Grave os vínculos do bloco acima — eles são as pegadinhas mais recorrentes na banca.</p>
-          </div>
-        </div>
-
-      </div><!-- /aula-container -->
-    </div><!-- /aula-panel-body -->
-  </div><!-- /aula-panel -->
-</div><!-- /aula-overlay -->
+    <div class="aula-panel-body" id="aula-panel-body">
+      <!-- conteúdo injetado dinamicamente -->
+    </div>
+  </div>
+</div>
 
 <script>
+// ═══════════════════════════════════════════════════════
+// CATÁLOGO DE AULAS
+// Para adicionar uma nova aula: crie uma entrada em AULAS
+// com a chave "materia_indice" e os campos title, sub, tabs, secs
+// ═══════════════════════════════════════════════════════
+const AULAS = {};
+
+// ───────────── AULA 1: Administração Pública e Princípios (da_0) ─────────────
+AULAS['da_0'] = {
+  title: 'Administração Pública e Princípios',
+  sub: 'Direito Administrativo · Banca FCC',
+  tabs: ['Conceito','LIMPE','Outros princípios','Pegadinhas FCC','Questões','Mapa mental'],
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">Direito Administrativo — Banca FCC</div>
+  <h1 class="aula-h1">Administração pública e princípios</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+  <div class="aula-progress-bar" id="ap-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+  <div class="aula-nav-tabs" id="ap-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito</button>
+    <button class="aula-tab-btn" data-sec="1">LIMPE</button>
+    <button class="aula-tab-btn" data-sec="2">Outros princípios</button>
+    <button class="aula-tab-btn" data-sec="3">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="4">Questões</button>
+    <button class="aula-tab-btn" data-sec="5">Mapa mental</button>
+  </div>
+  <!-- SEC 0 -->
+  <div class="aula-secao ativo" id="ap-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88 — art. 37</span><h3>O que é Administração Pública?</h3></div>
+      </div>
+      <p>Pode ser entendida em dois sentidos:</p><br>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Sentido orgânico / formal / subjetivo</h4><p>Quem pratica a atividade. Os órgãos, agentes e entidades que exercem a função administrativa.</p></div>
+        <div class="aula-mini-card"><h4>Sentido material / objetivo / funcional</h4><p>O que é feito. A própria atividade administrativa exercida pelo Estado.</p></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>FCC adora:</strong> cobrar a diferença entre os sentidos. "No sentido subjetivo, Administração Pública é o conjunto de órgãos e entidades..." — isso é literal de prova.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Administração direta × indireta</h3><br>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Administração direta</h4><p>União, Estados, DF e Municípios — e seus órgãos internos (ministérios, secretarias etc.). Sem personalidade jurídica própria.</p></div>
+        <div class="aula-mini-card"><h4>Administração indireta</h4><p>Autarquias, fundações públicas, empresas públicas e sociedades de economia mista. Possuem personalidade jurídica própria.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Atenção:</strong> Os conselhos de fiscalização profissional (CRM, CRC, OAB) são autarquias de regime especial — integrantes da Administração indireta, segundo o STF (exceto a OAB, que é sui generis).</p></div>
+    </div>
+  </div>
+  <!-- SEC 1 -->
+  <div class="aula-secao" id="ap-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">☑️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88 — art. 37, caput</span><h3>Os 5 princípios expressos — LIMPE</h3></div>
+      </div>
+      <div class="aula-macete-box"><h4>Macete clássico</h4><p class="aula-acro">L I M P E</p><p style="margin-top:6px;font-size:13px;color:#555">Legalidade · Impessoalidade · Moralidade · Publicidade · Eficiência</p></div>
+    </div>
+    <div class="aula-card"><span class="aula-tag aula-tag-lei">L</span><h3 style="margin-top:4px">Legalidade</h3><p>O administrador só pode fazer o que a lei autoriza — ao contrário do particular, que pode fazer tudo que a lei não proíbe.</p><div class="aula-destaque-box"><p><strong>FCC:</strong> "A Administração Pública está sujeita ao princípio da legalidade, que lhe impõe agir apenas nos limites permitidos pela lei." — gabarito: certo.</p></div></div>
+    <div class="aula-card"><span class="aula-tag aula-tag-lei">I</span><h3 style="margin-top:4px">Impessoalidade</h3><p>Tem dois ângulos:</p><br><ul><li><strong>Finalidade:</strong> o ato deve visar ao interesse público, não a interesses pessoais.</li><li><strong>Imputação:</strong> os atos praticados pelo agente são imputados ao Estado, não à pessoa do agente.</li></ul><div class="aula-atencao-box"><p><strong>Atenção:</strong> A vedação à promoção pessoal em publicidade oficial (art. 37, §1º, CF) é desdobramento da impessoalidade — não da moralidade.</p></div></div>
+    <div class="aula-card"><span class="aula-tag aula-tag-lei">M</span><h3 style="margin-top:4px">Moralidade</h3><p>A Administração deve agir com ética, boa-fé e lealdade. O ato imoral pode ser anulado mesmo sendo legal.<div class="aula-destaque-box"><p><strong>Súmula Vinculante 13 (STF):</strong> proíbe nepotismo na Administração direta e indireta — fundamento: princípio da moralidade (e impessoalidade).</p></div></p></div>
+    <div class="aula-card"><span class="aula-tag aula-tag-lei">P</span><h3 style="margin-top:4px">Publicidade</h3><p>Os atos administrativos devem ser divulgados para conhecimento geral e início de efeitos externos.</p><br><ul><li>Publicação no Diário Oficial = condição de eficácia (não de validade) do ato.</li><li>Garante o direito de certidão (art. 5º, XXXIV, CF).</li></ul></div>
+    <div class="aula-card"><span class="aula-tag aula-tag-lei">E</span><h3 style="margin-top:4px">Eficiência</h3><p>Incluído pela EC 19/1998. Exige presteza, economicidade e qualidade dos serviços públicos.</p><div class="aula-atencao-box"><p><strong>Atenção FCC:</strong> Eficiência é o único do LIMPE inserido por emenda constitucional — não estava na redação original de 1988.</p></div></div>
+  </div>
+  <!-- SEC 2 -->
+  <div class="aula-secao" id="ap-sec2">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">⚡</div><div><span class="aula-tag aula-tag-dica">Implícitos e infraconstitucionais</span><h3>Outros princípios cobrados pela FCC</h3></div></div></div>
+    <div class="aula-card"><h3>Supremacia do interesse público</h3><p>O interesse coletivo prevalece sobre o individual. Fundamenta prerrogativas como desapropriação, intervenção na propriedade e cláusulas exorbitantes nos contratos.</p><div class="aula-destaque-box"><p>Princípio implícito — não está expresso no art. 37 CF, mas é considerado basilar pela doutrina e pela banca.</p></div></div>
+    <div class="aula-card"><h3>Indisponibilidade do interesse público</h3><p>A Administração não pode abrir mão dos interesses que lhe foram confiados. O agente não é dono do interesse público — apenas seu gestor.</p></div>
+    <div class="aula-card"><h3>Autotutela</h3><p>A Administração pode rever seus próprios atos, independentemente de provocação judicial.</p><div class="aula-destaque-box"><p><strong>Súmula 346 STF:</strong> "A Administração Pública pode declarar a nulidade dos seus próprios atos."<br><strong>Súmula 473 STF:</strong> pode anulá-los quando eivados de vícios ou revogá-los por motivo de conveniência e oportunidade.</p></div></div>
+    <div class="aula-card"><h3>Motivação</h3><p>Os atos administrativos devem ser fundamentados.</p><div class="aula-atencao-box"><p>Teoria dos motivos determinantes: se o agente motivou o ato (mesmo que não fosse obrigado), fica vinculado à veracidade dos motivos alegados.</p></div></div>
+    <div class="aula-card"><h3>Segurança jurídica</h3><p>Protege situações consolidadas no tempo.</p><div class="aula-destaque-box"><p>Prazo decadencial do art. 54 da Lei 9.784/99: a Administração tem 5 anos para anular atos que geraram efeitos favoráveis ao administrado de boa-fé.</p></div></div>
+  </div>
+  <!-- SEC 3 -->
+  <div class="aula-secao" id="ap-sec3">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#854F0B">⚠️</div><div><span class="aula-tag aula-tag-fcc">Foco FCC</span><h3>Pegadinhas clássicas da FCC</h3></div></div></div>
+    <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 1</span><h3 style="margin-top:6px">Eficiência não era original</h3><p>A FCC afirma que os princípios do art. 37 são "legalidade, impessoalidade, moralidade e publicidade" — e pergunta se está incompleto. Está! Falta a eficiência (EC 19/98).</p></div>
+    <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 2</span><h3 style="margin-top:6px">Publicidade é eficácia, não validade</h3><p>A falta de publicação não torna o ato inválido — torna-o ineficaz.</p></div>
+    <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 3</span><h3 style="margin-top:6px">Promoção pessoal em publicidade → impessoalidade</h3><p>A vedação à publicidade oficial que gere promoção pessoal do governante (§1º do art. 37) decorre da impessoalidade, não da moralidade.</p></div>
+    <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 4</span><h3 style="margin-top:6px">Autotutela não afasta controle judicial</h3><p>A possibilidade de a Administração rever seus atos não exclui a apreciação pelo Poder Judiciário (art. 5º, XXXV, CF).</p></div>
+    <div class="aula-card"><span class="aula-tag aula-tag-atencao">Pegadinha 5</span><h3 style="margin-top:6px">Supremacia e indisponibilidade são implícitos</h3><p>Não estão no art. 37, caput, CF — são princípios implícitos identificados pela doutrina.</p></div>
+  </div>
+  <!-- SEC 4 -->
+  <div class="aula-secao" id="ap-sec4">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#854F0B">📋</div><div><span class="aula-tag aula-tag-fcc">Questões estilo FCC</span><h3>Treine o raciocínio de prova</h3></div></div></div>
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> O princípio da publicidade implica que a ausência de publicação de um ato acarreta sua:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> nulidade absoluta.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> inexistência jurídica.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> ineficácia, sem afetar sua validade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> revogabilidade imediata.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> nulidade relativa, sujeita a convalidação.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal">Gabarito: C. A publicação é condição de eficácia do ato, não de validade.</div>
+    </div>
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> A vedação de publicidade com caráter de promoção pessoal é manifestação do princípio da:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> moralidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> legalidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> impessoalidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> eficiência.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> razoabilidade.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal">Gabarito: C. O §1º do art. 37 CF veda a promoção pessoal — desdobramento da impessoalidade.</div>
+    </div>
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> O princípio da eficiência foi introduzido no art. 37 CF pela:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> CF de 1988, em sua redação original.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Emenda Constitucional nº 45/2004.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Emenda Constitucional nº 19/1998.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Lei nº 9.784/1999.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Emenda Constitucional nº 32/2001.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal">Gabarito: C. A EC 19/1998 inseriu a eficiência no art. 37, caput.</div>
+    </div>
+  </div>
+  <!-- SEC 5 -->
+  <div class="aula-secao" id="ap-sec5">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🗺️</div><div><span class="aula-tag aula-tag-dica">Revisão rápida</span><h3>Mapa mental — o que a FCC mais cobra</h3></div></div></div>
+    <div class="aula-card">
+      <h3 style="margin-bottom:12px">Hierarquia de cobranças FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">LIMPE — art. 37 CF</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Autotutela (Súm. 346 e 473 STF), supremacia × indisponibilidade, teoria dos motivos determinantes</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Razoabilidade/proporcionalidade, segurança jurídica, continuidade, motivação</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Juridicidade, confiança legítima</p></div>
+      </div>
+    </div>
+    <div class="aula-card">
+      <h3 style="margin-bottom:12px">Vínculos importantes para a prova</h3>
+      <ul style="display:flex;flex-direction:column;gap:8px">
+        <li><strong>Nepotismo</strong> → moralidade + impessoalidade (SV 13 STF)</li>
+        <li><strong>Promoção pessoal em publicidade</strong> → impessoalidade (art. 37, §1º CF)</li>
+        <li><strong>Eficiência</strong> → EC 19/1998 (não estava na CF original)</li>
+        <li><strong>Anulação</strong> → ilegalidade → pode ser decretada de ofício (autotutela)</li>
+        <li><strong>Revogação</strong> → inconveniência/inoportunidade → apenas atos discricionários</li>
+        <li><strong>Prazo para anular ato favorável de boa-fé</strong> → 5 anos (art. 54, Lei 9.784/99)</li>
+      </ul>
+    </div>
+    <div class="aula-verde-box"><p><strong>Dica final:</strong> A FCC atribui um princípio a outro. Grave os vínculos acima — são as pegadinhas mais recorrentes.</p></div>
+  </div>
+</div>`
+};
+
+// ───────────── AULA 2: Poder Hierárquico e Disciplinar (da_2) ─────────────
+AULAS['da_2'] = {
+  title: 'Poder Hierárquico e Poder Disciplinar',
+  sub: 'Direito Administrativo · Banca FCC',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">Direito Administrativo — Banca FCC</div>
+  <h1 class="aula-h1">Poder Hierárquico e Poder Disciplinar</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+  <div class="aula-progress-bar" id="ph-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+  <div class="aula-nav-tabs" id="ph-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Poderes Adm.</button>
+    <button class="aula-tab-btn" data-sec="1">P. Hierárquico</button>
+    <button class="aula-tab-btn" data-sec="2">P. Disciplinar</button>
+    <button class="aula-tab-btn" data-sec="3">Hier. × Disc.</button>
+    <button class="aula-tab-btn" data-sec="4">PAD</button>
+    <button class="aula-tab-btn" data-sec="5">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="6">Questões</button>
+    <button class="aula-tab-btn" data-sec="7">Mapa mental</button>
+  </div>
+
+  <!-- SEC 0 -->
+  <div class="aula-secao ativo" id="ph-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header"><div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">⚖️</div><div><span class="aula-tag aula-tag-lei">CF/88 + Lei 8.112/90 + Lei 9.784/99</span><h3>O que são os Poderes Administrativos?</h3></div></div>
+      <p>Os poderes administrativos são <strong>instrumentos jurídicos conferidos ao Estado</strong> para que possa exercer a função administrativa com eficiência e legalidade. São <strong>prerrogativas instrumentais</strong> — existem para servir ao interesse público, e não fins em si mesmos.</p>
+      <div class="aula-destaque-box"><p><strong>Conceito essencial para FCC:</strong> Poderes administrativos são instrumentos (meios), não fins. Usados fora da finalidade → <strong>abuso de poder</strong>.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Classificação dos Poderes Administrativos</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>⚙️ Poder Vinculado</h4><p>Margem zero de escolha. Ex.: aposentadoria compulsória aos 75 anos.</p></div>
+        <div class="aula-mini-card"><h4>🎯 Poder Discricionário</h4><p>Margem de conveniência e oportunidade (mérito). Ex.: concessão de licença para capacitação.</p></div>
+        <div class="aula-mini-card"><h4>🏛️ Poder Hierárquico</h4><p>Organiza internamente a Administração, estabelece relações de subordinação e coordenação.</p></div>
+        <div class="aula-mini-card"><h4>🔍 Poder Disciplinar</h4><p>Apura e pune infrações funcionais cometidas por servidores e demais sujeitos à disciplina interna.</p></div>
+        <div class="aula-mini-card"><h4>📜 Poder Regulamentar</h4><p>Edição de atos normativos gerais e abstratos para fiel execução das leis.</p></div>
+        <div class="aula-mini-card"><h4>👮 Poder de Polícia</h4><p>Limita direitos individuais em prol do interesse coletivo.</p></div>
+      </div>
+    </div>
+    <div class="aula-card">
+      <h3>Abuso de Poder</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Excesso de Poder</h4><p>Agente atua além da sua competência. Vício de <strong>competência</strong>.</p></div>
+        <div class="aula-mini-card"><h4>Desvio de Finalidade</h4><p>Agente tem competência, mas persegue fim diverso do previsto em lei. Vício de <strong>finalidade</strong>.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>FCC cobra muito:</strong> ambas as modalidades são espécies de abuso de poder, sujeitas a mandado de segurança e ação popular.</p></div>
+    </div>
+  </div>
+
+  <!-- SEC 1 -->
+  <div class="aula-secao" id="ph-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header"><div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🏛️</div><div><span class="aula-tag aula-tag-lei">Lei 8.112/90 + doutrina</span><h3>Conceito de Poder Hierárquico</h3></div></div>
+      <p>É o poder de que dispõe o Executivo para <strong>organizar e distribuir as funções dos seus órgãos</strong>, estabelecendo uma <strong>relação de coordenação e subordinação</strong> entre os agentes públicos.</p>
+      <div class="aula-destaque-box"><p><strong>Hely Lopes Meirelles:</strong> "O poder hierárquico tem por objetivo ordenar, coordenar, controlar e corrigir as atividades administrativas no âmbito interno da Administração."</p></div>
+      <div class="aula-atencao-box"><p><strong>Atenção:</strong> Poder hierárquico é exercido <strong>exclusivamente no âmbito interno</strong>. Não existe hierarquia entre a Administração e particulares, nem entre ministérios e entidades da administração indireta (neste caso há apenas <strong>tutela/supervisão ministerial</strong>).</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Faculdades decorrentes do Poder Hierárquico</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>📋 Dar ordens</h4><p>O superior emite comandos ao subordinado, que tem o dever de obedecê-los, salvo se manifestamente ilegais.</p></div>
+        <div class="aula-mini-card"><h4>🔍 Fiscalizar</h4><p>Controle permanente sobre as atividades dos subordinados.</p></div>
+        <div class="aula-mini-card"><h4>✏️ Avocar e Delegar</h4><p>Pode avocar atribuições do subordinado (chamar para si) e delegar parte das suas competências.</p></div>
+        <div class="aula-mini-card"><h4>📝 Dirimir conflitos</h4><p>Resolve dúvidas sobre quem tem competência quando dois órgãos subordinados disputam ou se recusam a atuar.</p></div>
+        <div class="aula-mini-card"><h4>🔄 Rever atos</h4><p>Pode anular atos ilegais ou revogar por inconveniência/inoportunidade.</p></div>
+        <div class="aula-mini-card"><h4>⚠️ Punir</h4><p>Em razão da hierarquia, o superior pode aplicar sanções disciplinares — dando origem ao <strong>poder disciplinar</strong>.</p></div>
+      </div>
+    </div>
+    <div class="aula-card">
+      <h3>Delegação e Avocação — pontos quentes FCC</h3>
+      <div class="aula-atencao-box"><p><strong>Base legal:</strong> Lei 9.784/99, arts. 12 a 15.</p></div>
+      <h4>Delegação (art. 12)</h4>
+      <p>O órgão pode delegar parte de sua competência a outros órgãos ou agentes, ainda que <strong>não haja relação hierárquica</strong> entre eles.</p>
+      <div class="aula-atencao-box"><p><strong>Não podem ser delegadas (art. 13):</strong><br>I — edição de atos normativos;<br>II — decisão de recursos administrativos;<br>III — matérias de competência exclusiva do órgão.<br><br><strong>Pegadinha FCC:</strong> "Delegação só é possível com hierarquia" — ERRADO.</p></div>
+      <h4>Avocação (art. 15)</h4>
+      <p>O superior <strong>chama para si</strong> a competência do subordinado, de forma <strong>temporária e excepcional</strong>, por motivos devidamente justificados.</p>
+      <div class="aula-atencao-box"><p><strong>Pegadinha FCC:</strong> "A avocação pode ser feita a qualquer tempo e sem justificativa" — ERRADO. É excepcional, temporária e motivada.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Dever de obediência e ordens ilegais</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Ordem legal</h4><p>Deve ser obedecida. Recusar sem justificativa = infração disciplinar.</p></div>
+        <div class="aula-mini-card"><h4>Ordem manifestamente ilegal</h4><p>Não deve ser obedecida. Se cumprida com conhecimento da ilegalidade, <strong>ambos respondem</strong>.</p></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>FCC cobra assim:</strong> "O servidor que cumpre ordem manifestamente ilegal fica isento" — <strong>FALSO</strong>. Responsabilidade solidária.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Tutela Ministerial × Hierarquia</h3>
+      <div class="aula-destaque-box"><p><strong>Tutela/Supervisão Ministerial:</strong> o Ministério competente controla as entidades da administração indireta, mas <strong>não pode dar ordens diretas</strong> nem avocar competências. É controle finalístico, não hierárquico.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha FCC:</strong> "Há relação hierárquica entre o Ministério da Saúde e a ANVISA" — ERRADO. Há supervisão/tutela, não hierarquia.</p></div>
+    </div>
+  </div>
+
+  <!-- SEC 2 -->
+  <div class="aula-secao" id="ph-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🔍</div><div><span class="aula-tag aula-tag-lei">Lei 8.112/90 + Lei 9.784/99</span><h3>Conceito de Poder Disciplinar</h3></div></div>
+      <p>É o poder conferido à Administração para <strong>apurar infrações funcionais</strong> e <strong>aplicar penalidades</strong> aos servidores e demais sujeitos à disciplina interna. É um <strong>poder-dever</strong>: a Administração não pode ignorar infrações.</p>
+      <div class="aula-destaque-box"><p><strong>FCC adora:</strong> cobrar que o poder disciplinar é poder-dever. A omissão pode configurar <strong>prevaricação</strong> (art. 319 CP) ou <strong>condescendência criminosa</strong> (art. 320 CP).</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Sanções disciplinares — Lei 8.112/90</h3>
+      <div class="aula-atencao-box"><p><strong>Macete A-S-D-C-D-D:</strong> Advertência / Suspensão / Demissão / Cassação de aposentadoria / Destituição de cargo em comissão / Destituição de função comissionada</p></div>
+      <br>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Penalidade</th><th>Prescrição</th><th>PAD obrigatório?</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Advertência</strong></td><td>180 dias</td><td>Não (sindicância basta)</td></tr>
+          <tr><td><strong>Suspensão até 30 dias</strong></td><td>2 anos</td><td>Não (sindicância punitiva)</td></tr>
+          <tr><td><strong>Suspensão 31–90 dias</strong></td><td>2 anos</td><td>Sim</td></tr>
+          <tr><td><strong>Demissão</strong></td><td>5 anos</td><td>Sim</td></tr>
+          <tr><td><strong>Cassação de aposentadoria</strong></td><td>5 anos</td><td>Sim</td></tr>
+          <tr><td><strong>Destituição de cargo/função</strong></td><td>5 anos / 2 anos</td><td>Sim</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha FCC:</strong> "Toda suspensão exige PAD" — ERRADO. Suspensão até 30 dias pode ser por sindicância punitiva.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Independência entre instâncias — regra e exceções</h3>
+      <p>As esferas civil, penal e administrativa são <strong>independentes</strong>.</p>
+      <div class="aula-atencao-box"><p><strong>Absolvição criminal afasta responsabilidade administrativa QUANDO:</strong><br>1. Negativa de autoria (prova de que o servidor não praticou o fato).<br>2. Negativa de materialidade (prova de que o fato não existiu).<br><br><strong>NÃO afasta quando:</strong> insuficiência de provas, atipicidade criminal, prescrição penal.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Discricionariedade no Poder Disciplinar</h3>
+      <div class="aula-destaque-box"><p><strong>Posição atual (STJ/STF):</strong> há discricionariedade na <em>dosimetria</em> da pena, mas ela deve ser proporcional e motivada. O Judiciário pode rever penalidade desproporcional ou imotivada. A <strong>obrigação de apurar</strong>, porém, é vinculada.</p></div>
+    </div>
+  </div>
+
+  <!-- SEC 3 -->
+  <div class="aula-secao" id="ph-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header"><div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">⚖️</div><div><span class="aula-tag aula-tag-dica">Comparativo essencial FCC</span><h3>Poder Hierárquico × Poder Disciplinar</h3></div></div>
+    </div>
+    <div class="aula-card">
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Hierárquico</th><th>Disciplinar</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Objetivo</strong></td><td>Organizar, coordenar, controlar</td><td>Apurar infrações e punir</td></tr>
+          <tr><td><strong>Natureza</strong></td><td>Instrumental (estrutural)</td><td>Punitiva (sancionatória)</td></tr>
+          <tr><td><strong>Sujeitos</strong></td><td>Só servidores internos</td><td>Servidores + particulares (vínculo especial)</td></tr>
+          <tr><td><strong>Abrange particulares?</strong></td><td>Não <span class="aula-badge aula-badge-nao">NÃO</span></td><td>Sim <span class="aula-badge aula-badge-sim">SIM</span></td></tr>
+          <tr><td><strong>Hierarquia necessária?</strong></td><td>Sim (essencial)</td><td>Não necessariamente</td></tr>
+          <tr><td><strong>Discricionariedade</strong></td><td>Ampla</td><td>Relativa (obrigado a apurar)</td></tr>
+          <tr><td><strong>Prescrição</strong></td><td>Não específica</td><td>180d / 2a / 5a</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="aula-card">
+      <h3>O Poder Disciplinar deriva do Hierárquico?</h3>
+      <div class="aula-atencao-box"><p><strong>Resposta:</strong> <em>Parcialmente.</em> O poder disciplinar é consequência do hierárquico <strong>somente em relação aos servidores subordinados</strong>. Mas é mais amplo: alcança <strong>particulares com vínculo especial</strong> (contratados, concessionários) sobre os quais não existe hierarquia. Portanto, não é simples decorrência.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Identificando o poder em situações práticas</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Situação</th><th>Poder</th></tr></thead>
+        <tbody>
+          <tr><td>Ministro avoca processo de subordinado</td><td>Hierárquico</td></tr>
+          <tr><td>Delegação de competência de Secretário a Diretor</td><td>Hierárquico</td></tr>
+          <tr><td>PAD contra servidor por abandono de cargo</td><td>Disciplinar</td></tr>
+          <tr><td>Rescisão de contrato com empresa por descumprimento</td><td>Disciplinar</td></tr>
+          <tr><td>Superior resolve conflito de competência</td><td>Hierárquico</td></tr>
+          <tr><td>Demissão de servidor por improbidade</td><td>Disciplinar</td></tr>
+          <tr><td>Revisão de ato do subordinado pelo superior</td><td>Hierárquico</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SEC 4 -->
+  <div class="aula-secao" id="ph-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header"><div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">📄</div><div><span class="aula-tag aula-tag-lei">Lei 8.112/90, arts. 148-182</span><h3>Processo Administrativo Disciplinar (PAD)</h3></div></div>
+      <p>Instrumento formal pelo qual a Administração <strong>apura irregularidades</strong> e <strong>aplica penalidades</strong> a servidores.</p>
+      <div class="aula-destaque-box"><p><strong>Garantias constitucionais (CF, art. 5º, LIV e LV):</strong> contraditório, ampla defesa e devido processo legal. Ausência → nulidade.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Fases do PAD</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Instauração:</strong> portaria da autoridade competente nomeando a comissão (mínimo 3 servidores estáveis, presidente bacharel em Direito se possível).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Inquérito administrativo:</strong> instrução (provas, oitivas), defesa escrita e relatório conclusivo da comissão.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Julgamento:</strong> autoridade competente decide motivadamente, acolhendo ou não o relatório.</p></div>
+      <div class="aula-atencao-box"><p><strong>Prazo:</strong> 60 dias (prorrogáveis por mais 60). Total: até <strong>120 dias</strong>.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Sindicância × PAD</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Sindicância</th><th>PAD</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Comissão</strong></td><td>Mínimo 2 servidores</td><td>Mínimo 3 servidores estáveis</td></tr>
+          <tr><td><strong>Prazo</strong></td><td>30 dias (+ 30)</td><td>60 dias (+ 60)</td></tr>
+          <tr><td><strong>Penas cabíveis</strong></td><td>Advertência e suspensão até 30 dias</td><td>Todas</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha FCC:</strong> "A sindicância sempre resulta em penalidade" — ERRADO. Pode resultar em arquivamento, punição leve ou instauração de PAD.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Afastamento preventivo (art. 147)</h3>
+      <p>Pode afastar o servidor preventivamente por até <strong>60 dias</strong> durante o PAD, se a permanência no cargo for prejudicial ao processo.</p>
+      <div class="aula-atencao-box"><p><strong>Atenção:</strong> Afastamento preventivo <strong>não é penalidade</strong> — é medida cautelar. Remuneração mantida normalmente.</p></div>
+    </div>
+    <div class="aula-card">
+      <h3>Súmula Vinculante nº 5 STF</h3>
+      <div class="aula-destaque-box"><p>"A falta de defesa técnica por advogado no processo administrativo disciplinar <strong>não ofende a Constituição</strong>." Presença de advogado é facultativa no PAD.</p></div>
+      <h3 style="margin-top:12px">Revisão do PAD (art. 174)</h3>
+      <div class="aula-destaque-box"><p>Pode ser revista a qualquer tempo, de ofício ou a pedido. <strong>A revisão não pode agravar a pena</strong> — vedação à reformatio in pejus.</p></div>
+    </div>
+  </div>
+
+  <!-- SEC 5 -->
+  <div class="aula-secao" id="ph-sec5">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div><div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div></div><p>Estude este bloco como uma lista de acertos/erros clássicos da banca.</p></div>
+
+    <div class="aula-card">
+      <h3>Sobre o Poder Hierárquico</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"Há hierarquia entre a Administração direta e as autarquias."</strong><br>✅ ERRADO. Existe tutela/supervisão ministerial, não hierarquia.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Delegação só é possível entre órgãos com vínculo hierárquico."</strong><br>✅ ERRADO. Art. 12 da Lei 9.784/99 permite sem hierarquia.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O subordinado que cumpre ordem ilegal fica isento de responsabilidade."</strong><br>✅ ERRADO. Ambos respondem solidariamente.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Avocação pode ser feita a qualquer tempo e sem justificativa."</strong><br>✅ ERRADO. É excepcional, temporária e motivada.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"Não é possível delegar competência para edição de atos normativos."</strong><br>CORRETO — art. 13, I, Lei 9.784/99.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Sobre o Poder Disciplinar</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"O poder disciplinar é mera decorrência do poder hierárquico."</strong><br>✅ ERRADO. É mais amplo: alcança particulares sem vínculo hierárquico.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O poder disciplinar é inteiramente discricionário e o Judiciário não pode revisá-lo."</strong><br>✅ ERRADO. Judiciário pode revisar desproporcionalidade ou ausência de motivação.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A absolvição penal sempre afasta a responsabilidade administrativa."</strong><br>✅ ERRADO. Só afasta por negativa de autoria ou inexistência do fato.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Toda suspensão disciplinar exige PAD."</strong><br>✅ ERRADO. Suspensão até 30 dias pode ser por sindicância punitiva.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O prazo prescricional para advertência é de 2 anos."</strong><br>✅ ERRADO. É de 180 dias (art. 142, III, Lei 8.112/90).</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"A revisão do PAD não pode agravar a penalidade aplicada."</strong><br>CORRETO — proibição de reformatio in pejus, art. 182, Lei 8.112/90.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Sobre o PAD</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"A ausência de advogado no PAD é causa de nulidade."</strong><br>✅ ERRADO. Súmula Vinculante nº 5 STF: não ofende a Constituição.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O afastamento preventivo é penalidade disciplinar."</strong><br>✅ ERRADO. É medida cautelar. Remuneração mantida.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A sindicância sempre precede o PAD."</strong><br>✅ ERRADO. Pode instaurar PAD diretamente quando a infração é conhecida e grave.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"A instauração do PAD interrompe o prazo prescricional."</strong><br>CORRETO — art. 142, §3º, Lei 8.112/90.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Penalidades da Lei 8.112/90</h4><p><strong>A-S-D-C-D-D</strong> → Advertência / Suspensão / Demissão / Cassação / Destituição de cargo / Destituição de função</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Prazos prescricionais</h4><p><strong>"180 — 2 — 5"</strong> → Advertência: 180 dias | Suspensão: 2 anos | Demissão/Cassação: 5 anos</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 O que NÃO pode ser delegado (art. 13)</h4><p><strong>"NR-E"</strong> → <strong>N</strong>ormativos | <strong>R</strong>ecursos administrativos | <strong>E</strong>xclusivos do órgão</p></div>
+    </div>
+  </div>
+
+  <!-- SEC 6 -->
+  <div class="aula-secao" id="ph-sec6">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC</h3></div></div><p style="font-size:13px;color:#888">Clique na opção que você considera correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Assinale a alternativa correta sobre o poder hierárquico na Administração Pública:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Há relação hierárquica entre o Ministério supervisor e as autarquias a ele vinculadas.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> A delegação de competências exige vínculo hierárquico entre delegante e delegado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> O servidor que cumpre ordem manifestamente ilegal fica isento de responsabilidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">d)</span> A avocação de atribuições pelo superior é medida excepcional e temporária, devendo ser justificada e não podendo recair sobre competências exclusivas do subordinado por força de lei.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O poder hierárquico alcança os particulares contratados pela Administração.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: D.</strong><br><br>a) ERRADO — há tutela/supervisão ministerial, não hierarquia.<br>b) ERRADO — art. 12, Lei 9.784/99: delegação não pressupõe hierarquia.<br>c) ERRADO — ambos respondem solidariamente.<br>d) CORRETO — art. 15, Lei 9.784/99.<br>e) ERRADO — particulares se sujeitam ao poder disciplinar (relação especial), não ao hierárquico.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.784/99, arts. 12 e 15.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o poder disciplinar, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Trata-se de poder plenamente discricionário, insuscetível de revisão judicial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> É simples decorrência do poder hierárquico, só podendo ser exercido sobre servidores subordinados.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> A responsabilidade administrativa não é excluída pela absolvição penal por insuficiência de provas, mas cessa quando a decisão criminal nega a autoria ou a própria materialidade do fato.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Toda penalidade disciplinar pressupõe instauração formal de PAD.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Não pode alcançar particulares em nenhuma hipótese.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br><br>a) ERRADO — Judiciário pode revisar desproporcionalidade e ausência de motivação.<br>b) ERRADO — alcança também particulares com vínculo especial, sem hierarquia.<br>c) CORRETO — regra da independência de instâncias com exceções específicas.<br>d) ERRADO — sindicância punitiva cabe para advertência e suspensão até 30 dias.<br>e) ERRADO — concessionários e contratados se sujeitam ao poder disciplinar.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 8.112/90, art. 125; independência das instâncias.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Quanto ao PAD na Lei nº 8.112/1990, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O afastamento preventivo do servidor é penalidade disciplinar cautelar, descontada da pena final.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> A ausência de defesa técnica por advogado no PAD é causa de nulidade absoluta.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A revisão do PAD pode ensejar agravamento da penalidade se novos elementos assim indicarem.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">d)</span> A instauração do PAD interrompe a prescrição, e o processo deve ser concluído em 60 dias, prorrogáveis por igual período.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A comissão do PAD pode ser composta por dois servidores bacharéis em Direito.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: D.</strong><br><br>a) ERRADO — afastamento preventivo é medida cautelar, não penalidade. Remuneração mantida.<br>b) ERRADO — Súmula Vinculante nº 5 STF: não ofende a Constituição.<br>c) ERRADO — revisão não pode agravar a pena (reformatio in pejus proibida — art. 182).<br>d) CORRETO — arts. 142, §3º e 152, Lei 8.112/90.<br>e) ERRADO — mínimo 3 servidores estáveis (art. 149).</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 8.112/90, arts. 147, 149, 152, 182; SV nº 5 STF.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Analise as afirmações sobre delegação e avocação (Lei nº 9.784/1999):<br><br>I. É vedada a delegação de competência para decisão de recursos administrativos.<br>II. A avocação pode ser realizada de forma permanente, desde que motivada.<br>III. A delegação pode ser feita a órgão sem relação hierárquica com o delegante.<br>IV. A edição de atos normativos pode ser delegada.<br><br>Estão corretas apenas:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> I e II.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> II e III.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> I e III.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> III e IV.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> I, III e IV.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br><br>I — CORRETO: art. 13, II, Lei 9.784/99.<br>II — ERRADO: avocação é <em>temporária e excepcional</em> (art. 15).<br>III — CORRETO: art. 12, Lei 9.784/99 — não pressupõe hierarquia.<br>IV — ERRADO: art. 13, I — atos normativos não podem ser delegados.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.784/99, arts. 12, 13 e 15.</span>
+    </div>
+  </div>
+
+  <!-- SEC 7 -->
+  <div class="aula-secao" id="ph-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🗺️</div><div><span class="aula-tag aula-tag-dica">Revisão rápida</span><h3>Mapa mental — o que a FCC mais cobra</h3></div></div></div>
+    <div class="aula-card">
+      <h3 style="margin-bottom:12px">Hierarquia de cobranças</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Tutela × hierarquia; delegação sem hierarquia; poder disciplinar ≠ decorrência do hierárquico</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Vedações à delegação (art. 13); avocação temporária; absolvição criminal × resp. admin.; SV 5 STF</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Prazos prescricionais (180d/2a/5a); fases do PAD; sindicância × PAD; afastamento preventivo</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Condescendência criminosa; revisão do PAD; competência para julgamento por grau de pena</p></div>
+      </div>
+    </div>
+    <div class="aula-card">
+      <h3 style="margin-bottom:12px">Vínculos-chave para a prova</h3>
+      <ul style="display:flex;flex-direction:column;gap:8px">
+        <li><strong>Avocação</strong> → excepcional + temporária + motivada (não pode ser permanente)</li>
+        <li><strong>Delegação</strong> → dispensa hierarquia; vedada para normativos, recursos e exclusivos</li>
+        <li><strong>Tutela ministerial</strong> → controle finalístico sobre a adm. indireta (≠ hierarquia)</li>
+        <li><strong>Poder disciplinar</strong> → poder-dever; abrange particulares com vínculo especial</li>
+        <li><strong>PAD</strong> → 3 servidores estáveis; 60+60 dias; SV 5 STF (advogado facultativo)</li>
+        <li><strong>Prescrição disciplinar</strong> → 180 dias / 2 anos / 5 anos</li>
+        <li><strong>Independência das instâncias</strong> → exceções: negativa de autoria e inexistência do fato</li>
+        <li><strong>Afastamento preventivo</strong> → cautelar (não é pena); até 60 dias; remuneração mantida</li>
+        <li><strong>Revisão do PAD</strong> → proibida reformatio in pejus</li>
+      </ul>
+    </div>
+    <div class="aula-verde-box"><p><strong>Dica final FCC:</strong> A banca adora afirmar que "o poder disciplinar é mera decorrência do hierárquico" (errado), que "toda suspensão exige PAD" (errado) e que "a absolvição penal afasta sempre a responsabilidade administrativa" (errado). Essas três são campo minado recorrente.</p></div>
+  </div>
+
+</div>`
+};
+
+// ═══════════════════════════════════════════════════════
+// DADOS DO EDITAL
+// ═══════════════════════════════════════════════════════
 const DATA = [
   { id:"dc", title:"Direito Constitucional", topicos:["Constituição: conceito, objeto e classificações","Supremacia da Constituição","Aplicabilidade e interpretação das normas constitucionais","Vigência e eficácia das normas constitucionais","Princípios fundamentais","Habeas corpus","Habeas data","Mandado de segurança","Mandado de injunção","Ação popular","Ação civil pública","Controle de constitucionalidade: sistemas difuso e concentrado","Ação direta de inconstitucionalidade (ADI)","Ação declaratória de constitucionalidade (ADC)","Arguição de descumprimento de preceito fundamental (ADPF)","Súmula vinculante","Repercussão geral","Direitos e deveres individuais e coletivos","Direitos sociais","Direitos de nacionalidade","Direitos políticos","Partidos políticos","Organização político-administrativa: da União","Bens e competências da União, Estados, DF e Municípios","Intervenção federal","Administração Pública: disposições gerais","Servidores públicos na CF/88","Poder Executivo: Presidente e Vice-Presidente da República","Atribuições e responsabilidades do Presidente","Poder Legislativo: órgãos e atribuições","Processo legislativo","Fiscalização contábil, financeira e orçamentária","Poder Judiciário: disposições gerais","Supremo Tribunal Federal (STF)","Conselho Nacional de Justiça (CNJ)","Superior Tribunal de Justiça (STJ)","Tribunais Regionais Federais e Juízes Federais","Tribunais e Juízes dos Estados","Justiça do Trabalho: TST, TRTs, Juízes do Trabalho","Ministério Público","Advocacia Pública","Advocacia e Defensoria Pública","Princípios gerais da atividade econômica","Finanças Públicas: normas gerais e orçamentos","Seguridade Social: Saúde, Previdência e Assistência","Meio ambiente","Família, Criança, Adolescente, Jovem e Idoso"] },
   { id:"da", title:"Direito Administrativo", topicos:["Administração Pública e princípios","Regime jurídico administrativo","Poder hierárquico e poder disciplinar","Poder normativo e poder de polícia","Uso e abuso de poder","Lei de abuso de autoridade (Lei nº 13.869/2019)","Ato administrativo: conceito, características e atributos","Elementos e requisitos de validade do ato administrativo","Classificação, formação e efeitos dos atos administrativos","Extinção, revogação, invalidação e convalidação","Cassação, caducidade, discricionariedade e vinculação","Administração direta e indireta; autarquias e fundações","Empresas públicas e sociedades de economia mista","Órgãos públicos: conceito, natureza e classificação","Agentes públicos: cargo, emprego e função pública","Provimento, investidura, exercício e afastamentos","Lei nº 11.416/2006 (carreiras dos servidores do Judiciário)","Direito de greve dos servidores públicos","Regime dos servidores na CF/88","Lei nº 8.112/1990 (Regime Jurídico dos Servidores Federais)","Regime de emprego público e CLT aplicável","Responsabilidade civil, administrativa e penal dos agentes","Processo administrativo – Lei nº 9.784/1999","Regime e processo administrativo disciplinar","Controle interno e externo da Administração Pública","Controles pelo Judiciário, Legislativo e Tribunais de Contas","Lei de Improbidade Administrativa (Lei nº 8.429/1992 / 14.230/2021)","Responsabilidade extracontratual do Estado","Licitação: conceito, natureza jurídica e princípios (Lei nº 14.133/2021)","Obrigatoriedade, dispensa e inexigibilidade de licitação","Procedimentos, fases, modalidades e critérios de julgamento","Pregão Eletrônico (Decreto nº 10.024/2019)","Sistema de Registro de Preços (Decreto nº 11.462/2023)","Crimes em licitações e contratos administrativos","Contrato administrativo: conceito, características e espécies","Formalização, execução, fiscalização e inexecução do contrato","Duração, prorrogação, alteração e rescisão contratual","Parcerias com o terceiro setor (Lei nº 13.019/2014)","Parcerias Público-Privadas (Lei nº 11.079/2004)","Serviço público: conceito, classificação e princípios","Concessão e permissão de serviço público (Lei nº 8.987/1995)","Bens públicos: regime jurídico e classificação","Desapropriação e intervenção do Estado na propriedade","LINDB na Administração Pública","Lei de Acesso à Informação (Lei nº 12.527/2011)","Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018)"] },
@@ -637,9 +777,6 @@ const DATA = [
   { id:"dp", title:"Direito Penal", topicos:["Princípios aplicáveis ao Direito Penal","Aplicação da lei penal no tempo e no espaço","Tempo e lugar do crime","Interpretação e analogia da lei penal; irretroatividade","Conflito aparente de normas penais","Ilicitude e culpabilidade","Concurso de pessoas","Espécies e cominação de penas","Ação penal; punibilidade e extinção","Prescrição penal","Crimes contra a pessoa","Crimes contra o patrimônio","Crimes contra a fé pública","Crimes contra a dignidade sexual","Crimes contra a Administração Pública","Crimes de abuso de autoridade (Lei nº 13.869/2019)","Lavagem de bens e ocultação de valores (Lei nº 9.613/1998)","Disposições constitucionais aplicáveis ao Direito Penal","Crimes e sanções penais em licitações (Lei nº 14.133/2021)","Crimes de responsabilidade (Lei nº 1.079/1950)","Crimes contra as finanças públicas (Lei nº 10.028/2000)","Lei de Responsabilidade Fiscal (LC nº 101/2000)","Súmulas do STF e STJ em matéria penal"] },
   { id:"dpp", title:"Direito Processual Penal", topicos:["Sistemas e princípios fundamentais do processo penal","Aplicação da lei processual no tempo, espaço e pessoas","Inquérito policial","Ação penal e ação civil ex delicto","Jurisdição e competência no processo penal","Questões e processos incidentes","Prova no processo penal","Sujeitos do processo: juiz, acusador, defensor, ofendido, auxiliares","Prisão, medidas cautelares e liberdade provisória","Prisão temporária (Lei nº 7.960/1989)","Citações e intimações no processo penal","Procedimento comum: instrução criminal","Tribunal do Júri: composição, pronúncia e julgamento","Sessões do júri; debates; questionário e votação; sentença","Processos especiais: crimes de responsabilidade de funcionários","Processos de calúnia, injúria e crimes contra propriedade imaterial","Juizados Especiais Criminais (Lei nº 9.099/1995)","Lei nº 10.259/2001 (Juizados Especiais no âmbito federal)","Prazos processuais: características e contagem","Nulidades no processo penal","Recursos em geral no processo penal","Habeas corpus","Lei de Execução Penal (Lei nº 7.210/1984)","Súmulas do STF e STJ em matéria processual penal"] }
 ];
-
-// Tópicos com aula disponível: matéria id + índice do tópico
-const AULAS_DISPONIVEIS = { 'da_0': true }; // da = Direito Administrativo, índice 0 = "Administração Pública e princípios"
 
 const STORAGE_KEY = 'edital_oficial_justica_v1';
 let state = {};
@@ -676,16 +813,71 @@ function closeModal() { document.getElementById('modal').classList.remove('show'
 function confirmClear() { state={}; save(); closeModal(); renderAll(); showToast('Progresso reiniciado'); }
 function switchMat(mid) { currentMat = mid; renderAll(); window.scrollTo({top:0,behavior:'smooth'}); }
 
-function abrirAula(e) {
+// ═══ SISTEMA DE AULAS GENÉRICO ═══
+function abrirAula(e, aulaKey) {
   e.stopPropagation();
+  const aula = AULAS[aulaKey];
+  if (!aula) return;
+
+  // Atualiza o cabeçalho
+  document.getElementById('aula-header-title').textContent = aula.title;
+  document.getElementById('aula-header-sub').textContent = aula.sub;
+
+  // Injeta o HTML no painel
+  document.getElementById('aula-panel-body').innerHTML = aula.html;
+
+  // Inicializa as tabs da aula injetada
+  initAulaTabs();
+
+  // Abre o painel
   document.getElementById('aula-overlay').classList.add('show');
   document.body.style.overflow = 'hidden';
+  document.getElementById('aula-panel').scrollTop = 0;
 }
+
 function fecharAula(e, force) {
   if (force || (e && e.target === document.getElementById('aula-overlay'))) {
     document.getElementById('aula-overlay').classList.remove('show');
     document.body.style.overflow = '';
   }
+}
+
+// Inicializa tabs de qualquer aula injetada dinamicamente
+function initAulaTabs() {
+  const tabs = document.querySelectorAll('#aula-panel-body .aula-tab-btn');
+  if (!tabs.length) return;
+
+  // Detecta o prefixo do id das seções (ap-sec ou ph-sec etc.)
+  const primeiraSecao = document.querySelector('#aula-panel-body .aula-secao');
+  if (!primeiraSecao) return;
+  const baseId = primeiraSecao.id.replace('0',''); // ex: "ap-sec" ou "ph-sec"
+
+  // Detecta barra de progresso
+  const segs = document.querySelectorAll('#aula-panel-body .aula-prog-seg');
+
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.dataset.sec);
+      tabs.forEach(t => t.classList.remove('ativo'));
+      document.querySelectorAll('#aula-panel-body .aula-secao').forEach(s => s.classList.remove('ativo'));
+      segs.forEach((s,i) => s.classList.toggle('ativo', i <= idx));
+      btn.classList.add('ativo');
+      const sec = document.getElementById(baseId + idx);
+      if (sec) sec.classList.add('ativo');
+      document.getElementById('aula-panel').scrollTop = 0;
+    });
+  });
+}
+
+function aulaMarcar(el, tipo) {
+  const parent = el.closest('.aula-questao-card');
+  parent.querySelectorAll('.aula-opcao').forEach(o => o.classList.remove('correta','errada'));
+  el.classList.add(tipo);
+}
+function aulaRevelarGab(btn) {
+  const gab = btn.nextElementSibling;
+  gab.style.display = gab.style.display === 'block' ? 'none' : 'block';
+  btn.textContent = gab.style.display === 'block' ? 'Ocultar gabarito' : 'Ver gabarito';
 }
 
 function renderNav() {
@@ -735,7 +927,8 @@ function renderSection() {
   const grid = document.getElementById('tg-' + mat.id);
   mat.topicos.forEach((topico, idx) => {
     const checked = isChecked(mat.id, idx);
-    const temAula = AULAS_DISPONIVEIS[mat.id + '_' + idx];
+    const aulaKey = mat.id + '_' + idx;
+    const temAula = !!AULAS[aulaKey];
     const item = document.createElement('div');
     item.className = 'topico' + (checked ? ' done' : '');
     item.innerHTML = `
@@ -746,7 +939,7 @@ function renderSection() {
       </div>
       <span class="topico-num">${String(idx+1).padStart(2,'0')}</span>
       <span class="topico-txt">${topico}</span>
-      ${temAula ? `<button class="topico-aula-btn" onclick="abrirAula(event)" title="Ver aula">▶ aula</button>` : ''}
+      ${temAula ? `<button class="topico-aula-btn" onclick="abrirAula(event,'${aulaKey}')" title="Ver aula">▶ aula</button>` : ''}
     `;
     item.onclick = () => toggle(mat.id, idx);
     grid.appendChild(item);
@@ -754,35 +947,6 @@ function renderSection() {
 }
 
 function renderAll() { renderGlobal(); renderNav(); renderSection(); }
-
-// AULA: tabs e questões
-document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('.aula-tab-btn');
-  const secoes = document.querySelectorAll('.aula-secao');
-  const segs = document.querySelectorAll('.aula-prog-seg');
-  tabs.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const idx = parseInt(btn.dataset.sec);
-      tabs.forEach(t => t.classList.remove('ativo'));
-      secoes.forEach(s => s.classList.remove('ativo'));
-      segs.forEach((s,i) => s.classList.toggle('ativo', i <= idx));
-      btn.classList.add('ativo');
-      document.getElementById('aula-sec'+idx).classList.add('ativo');
-      document.getElementById('aula-panel').scrollTop = 0;
-    });
-  });
-});
-
-function aulaMarcar(el, tipo) {
-  const parent = el.closest('.aula-questao-card');
-  parent.querySelectorAll('.aula-opcao').forEach(o => o.classList.remove('correta','errada'));
-  el.classList.add(tipo);
-}
-function aulaRevelarGab(btn) {
-  const gab = btn.nextElementSibling;
-  gab.style.display = gab.style.display === 'block' ? 'none' : 'block';
-  btn.textContent = gab.style.display === 'block' ? 'Ocultar gabarito' : 'Ver gabarito';
-}
 
 load();
 renderAll();
