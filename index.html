@@ -765,7 +765,508 @@ AULAS['da_2'] = {
 
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: LINDB — Lei de Introdução às Normas do Direito Brasileiro
+// Chaves: dciv_0 (Direito Civil, tópico 1) e da_44 (Direito Administrativo)
+// Cole este bloco inteiro dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
 
+AULAS['dciv_0'] = {
+  title: 'Lei de Introdução às Normas do Direito Brasileiro',
+  sub: 'Direito Civil + Direito Administrativo · Banca FCC',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">LINDB — Lei nº 12.376/2010 · Decreto-Lei nº 4.657/42</div>
+  <h1 class="aula-h1">Lei de Introdução às Normas do Direito Brasileiro</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="lb-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="lb-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Introdução</button>
+    <button class="aula-tab-btn" data-sec="1">Vigência da Lei</button>
+    <button class="aula-tab-btn" data-sec="2">Conflito no Tempo</button>
+    <button class="aula-tab-btn" data-sec="3">Conflito no Espaço</button>
+    <button class="aula-tab-btn" data-sec="4">LINDB na Adm. Pública</button>
+    <button class="aula-tab-btn" data-sec="5">Lacunas e Interpretação</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — INTRODUÇÃO ══ -->
+  <div class="aula-secao ativo" id="lb-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📖</div>
+        <div><span class="aula-tag aula-tag-lei">Decreto-Lei nº 4.657/1942 · Lei nº 12.376/2010 · Lei nº 13.655/2018</span>
+        <h3>O que é a LINDB?</h3></div>
+      </div>
+      <p>A LINDB — Lei de Introdução às Normas do Direito Brasileiro — é um <strong>conjunto de normas sobre normas</strong> (lex legum). Não disciplina relações jurídicas de direito material diretamente, mas determina <strong>como as leis nascem, vigem, conflitam e se extinguem</strong>. É aplicável a todos os ramos do direito, salvo disposição especial.</p>
+      <div class="aula-destaque-box"><p><strong>FCC cobra:</strong> a LINDB é chamada de "norma de sobredireito" ou "norma de introdução" porque regula as próprias leis, não os comportamentos das pessoas. Seu âmbito é <strong>geral e transversal</strong> a todo o ordenamento jurídico.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Histórico e denominações</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Antes de 2010</h4><p>Chamava-se "Lei de Introdução ao Código Civil" (LICC). Estava incorporada ao próprio CC como seu preâmbulo.</p></div>
+        <div class="aula-mini-card"><h4>A partir de 2010</h4><p>Renomeada pela <strong>Lei nº 12.376/2010</strong> para LINDB, reforçando que se aplica a todo o direito, não apenas ao Civil.</p></div>
+        <div class="aula-mini-card"><h4>Reforma de 2018</h4><p>A <strong>Lei nº 13.655/2018</strong> acrescentou os arts. 20 a 30, com regras específicas para o <strong>direito público</strong> (segurança jurídica na interpretação e aplicação do direito pelos agentes públicos).</p></div>
+        <div class="aula-mini-card"><h4>Natureza jurídica</h4><p>É uma <strong>lei ordinária federal</strong> com aplicação nacional. Tem hierarquia de lei ordinária, mas prevalece sobre regras gerais de outros diplomas pelo critério da especialidade.</p></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Estrutura geral da LINDB — o que ela regula</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Vigência das leis</strong> (arts. 1º e 2º): como a lei entra em vigor, prazo de vacatio legis, revogação.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Obrigatoriedade e irretroatividade</strong> (art. 3º): ninguém se escusa de cumprir a lei por desconhecê-la; a lei não retroage salvo exceções.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Integração e interpretação</strong> (art. 4º e 5º): lacunas preenchidas por analogia, costumes e princípios gerais; o juiz deve buscar os fins sociais e o bem comum.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">4</div><p><strong>Direito Internacional Privado</strong> (arts. 7º–19): solução de conflitos de leis no espaço (lei aplicável a pessoas, bens, obrigações, família, sucessões).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">5</div><p><strong>Segurança jurídica no direito público</strong> (arts. 20–30 — inseridos em 2018): regras de interpretação e responsabilização para agentes públicos e juízes.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — VIGÊNCIA DA LEI ══ -->
+  <div class="aula-secao" id="lb-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">📅</div>
+        <div><span class="aula-tag aula-tag-lei">LINDB, arts. 1º e 2º</span><h3>Vigência das Leis</h3></div>
+      </div>
+      <p>A lei entra em vigor após o período de <strong>vacatio legis</strong> — o intervalo entre a publicação e o início da vigência, que permite ao público tomar conhecimento do novo texto.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Vacatio Legis — regra geral (art. 1º)</h3>
+      <div class="aula-atencao-box"><p><strong>Regra geral:</strong> salvo disposição em contrário, a lei começa a vigorar em todo o território nacional <strong>45 dias</strong> após publicada.<br><br>No exterior: <strong>3 meses</strong> após a publicação (art. 1º, §1º).<br><br>As leis que estabelecem sua própria vacatio prevalecem sobre a regra geral.</p></div>
+      <br>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Âmbito</th><th>Prazo padrão</th></tr></thead>
+        <tbody>
+          <tr><td>Território nacional</td><td><strong>45 dias</strong> após publicação</td></tr>
+          <tr><td>Exterior (para brasileiros)</td><td><strong>3 meses</strong> após publicação</td></tr>
+          <tr><td>Lei que fixa prazo próprio</td><td>Prevalece (ex.: "entra em vigor na data de publicação")</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-destaque-box"><p><strong>FCC cobra:</strong> a lei pode entrar em vigor imediatamente na data de publicação, desde que assim disponha expressamente. Isso não viola a LINDB — é a própria lei fixando seu prazo de vacatio.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Correção de lei durante a vacatio (art. 1º, §4º)</h3>
+      <p>Se a lei ainda está em período de vacatio e é publicada nova versão corrigindo erros, o prazo começa a contar novamente a partir da nova publicação.</p>
+      <div class="aula-atencao-box"><p><strong>Mas se a lei já está em vigor:</strong> as correções têm natureza de <strong>lei nova</strong>, não de mera retificação. Isso significa que a correção só vale para fatos futuros.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Revogação das Leis (art. 2º)</h3>
+      <p>A lei só perde vigência por <strong>outra lei</strong>. Não existe "desuso" ou revogação pela simples falta de aplicação. Modalidades:</p>
+      <br>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Revogação expressa</h4><p>A lei nova menciona explicitamente quais leis anteriores estão sendo revogadas.</p></div>
+        <div class="aula-mini-card"><h4>Revogação tácita</h4><p>A lei nova é incompatível com a anterior, ou regula inteiramente a matéria tratada pela lei velha.</p></div>
+        <div class="aula-mini-card"><h4>Ab-rogação</h4><p>Revogação <strong>total</strong> da lei anterior.</p></div>
+        <div class="aula-mini-card"><h4>Derrogação</h4><p>Revogação <strong>parcial</strong> da lei anterior — só parte dela é suprimida.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Art. 2º, §3º — Pegadinha FCC:</strong> "A lei revogada não se restaura por ter a lei revogadora perdido a vigência, salvo disposição em contrário." Isso é o <strong>princípio da não repristinação automática</strong>. A lei A revoga B → lei C revoga A → B <strong>NÃO volta</strong> automaticamente a viger. Só volta se a lei C expressamente determinar a repristinação.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Obrigatoriedade e desconhecimento da lei (art. 3º)</h3>
+      <div class="aula-destaque-box"><p><strong>"Ninguém se escusa de cumprir a lei, alegando que não a conhece."</strong><br><br>Isso é uma ficção jurídica necessária para a segurança do ordenamento — não significa que toda pessoa realmente conhece toda a lei, mas que o desconhecimento não é causa de isenção de responsabilidade legal.</p></div>
+      <div class="aula-atencao-box"><p><strong>Exceção no Direito Penal:</strong> o erro de proibição (desconhecimento da ilicitude) pode excluir a culpabilidade (art. 21, CP) ou reduzi-la. O art. 3º da LINDB não se aplica no âmbito penal com a mesma força que no civil.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — CONFLITO DE LEIS NO TEMPO ══ -->
+  <div class="aula-secao" id="lb-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">⏳</div>
+        <div><span class="aula-tag aula-tag-lei">LINDB, art. 6º · CF/88, art. 5º, XXXVI</span><h3>Conflito de Leis no Tempo — Direito Intertemporal</h3></div>
+      </div>
+      <p>Quando uma lei nova entra em vigor, ela pode se chocar com situações criadas sob a lei anterior. O art. 6º da LINDB e o art. 5º, XXXVI, da CF/88 definem os limites desse conflito.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Princípio da Irretroatividade — regra geral</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 6º, LINDB:</strong> "A lei em vigor terá efeito imediato e geral, respeitados o ato jurídico perfeito, o direito adquirido e a coisa julgada."<br><br>A lei nova aplica-se a <strong>fatos futuros</strong>. Não pode retroagir para alcançar situações já consolidadas.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Os três institutos protetores — art. 6º, §§1º, 2º e 3º</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div>
+        <p><strong>Ato jurídico perfeito (§1º):</strong> é o ato já <strong>consumado</strong> segundo a lei vigente ao tempo em que se efetuou. Ex.: contrato celebrado validamente sob a lei A — a lei B não pode anulá-lo retroativamente.</p>
+      </div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div>
+        <p><strong>Direito adquirido (§2º):</strong> é o direito que o titular pode exercer a qualquer momento, por já ter preenchido os requisitos legais, mesmo que ainda não o tenha feito. Ex.: servidor que já preencheu todos os requisitos para aposentadoria tem direito adquirido, mesmo que ainda não tenha requerido.</p>
+      </div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div>
+        <p><strong>Coisa julgada (§3º):</strong> é a decisão judicial de que já não cabe mais recurso. A lei nova não pode desconstituir sentenças transitadas em julgado.</p>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Importante:</strong> a CF/88 (art. 5º, XXXVI) garante esses três institutos apenas contra a lei ordinária. O constituinte derivado pode, por emenda, atingir direitos adquiridos contra o texto constitucional — tema controverso no STF. Mas a lei ordinária nunca pode retroagir para violar os três institutos.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Expectativa de direito ≠ Direito adquirido</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Direito adquirido</h4><p>Todos os requisitos já foram preenchidos. O titular pode exercer o direito a qualquer momento. A lei nova não alcança. Ex.: tempo de serviço já completado para aposentadoria.</p></div>
+        <div class="aula-mini-card"><h4>Expectativa de direito</h4><p>Ainda não foram preenchidos todos os requisitos. A lei nova pode alcançar. Ex.: servidor com 28 dos 30 anos necessários — a lei nova que exige 35 anos pode ser aplicada.</p></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Pegadinha FCC clássica:</strong> "Servidor que ainda não completou os requisitos para aposentadoria tem direito adquirido ao regime anterior" — ERRADO. Tem apenas expectativa de direito, que não é protegida contra lei nova.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Retroatividade — quando é possível?</h3>
+      <p>A lei pode retroagir em <strong>situações excepcionais</strong>, desde que:</p>
+      <br>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p>A própria lei expressamente determinar a retroatividade; <strong>e</strong></p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p>Não violar ato jurídico perfeito, direito adquirido ou coisa julgada.</p></div>
+      <div class="aula-verde-box"><p><strong>Exceção penal expressa na CF:</strong> a lei penal mais benéfica retroage para beneficiar o réu (art. 5º, XL, CF/88). Isso prevalece mesmo sobre o art. 6º da LINDB, pois é norma constitucional especial.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — CONFLITO DE LEIS NO ESPAÇO ══ -->
+  <div class="aula-secao" id="lb-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🌍</div>
+        <div><span class="aula-tag aula-tag-lei">LINDB, arts. 7º–19</span><h3>Conflito de Leis no Espaço — Direito Internacional Privado</h3></div>
+      </div>
+      <p>Quando uma relação jurídica envolve pessoas ou situações de países diferentes, surge o conflito: qual lei se aplica? A LINDB estabelece as <strong>normas de conexão</strong> para resolver esses conflitos.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Lei aplicável às pessoas — estatuto pessoal (art. 7º)</h3>
+      <div class="aula-destaque-box"><p><strong>Regra geral:</strong> a lei do país em que a pessoa é <strong>domiciliada</strong> rege sua capacidade civil, nome, família e sucessões.<br><br>Brasil adota o critério do <strong>domicílio</strong> (e não da nacionalidade) para o estatuto pessoal — isso é pegadinha recorrente.</p></div>
+      <br>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Matéria</th><th>Lei aplicável (regra brasileira)</th></tr></thead>
+        <tbody>
+          <tr><td>Capacidade civil da pessoa</td><td>Lei do <strong>domicílio</strong></td></tr>
+          <tr><td>Início e fim da personalidade</td><td>Lei do <strong>domicílio</strong></td></tr>
+          <tr><td>Nome</td><td>Lei do <strong>domicílio</strong></td></tr>
+          <tr><td>Casamento (direitos e deveres)</td><td>Lei do <strong>domicílio dos cônjuges</strong></td></tr>
+          <tr><td>Regime de bens</td><td>Lei do <strong>domicílio dos cônjuges ao casar</strong></td></tr>
+          <tr><td>Dissolução do casamento</td><td>Lei do <strong>último domicílio comum</strong></td></tr>
+          <tr><td>Filiação</td><td>Lei do <strong>domicílio do pai</strong> (ao tempo do reconhecimento)</td></tr>
+          <tr><td>Tutela e curatela</td><td>Lei do <strong>domicílio da pessoa</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Lei aplicável aos bens (art. 8º)</h3>
+      <div class="aula-destaque-box"><p><strong>Bens:</strong> rege-se pela lei do país em que estiverem <strong>situados</strong> (lex rei sitae).<br><br>Exceção: penhor, quando o credor é transportável, segue a lei do domicílio do devedor.</p></div>
+      <div class="aula-atencao-box"><p><strong>Sucessão por morte:</strong> aplica-se a lei do país em que era domiciliado o defunto (art. 10), salvo se a lei brasileira for mais favorável ao cônjuge ou filhos brasileiros (art. 5º, XXXI, CF/88 — princípio protecionista).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Lei aplicável às obrigações (art. 9º)</h3>
+      <div class="aula-destaque-box"><p>Para qualificar e reger as obrigações, aplica-se a lei do país em que se <strong>constituíram</strong> (lex loci celebrationis).<br><br>A prova dos fatos ocorridos em país estrangeiro rege-se pela lei do lugar onde ocorreram, mas a admissibilidade prova-se conforme a lei brasileira (art. 13).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Ordem Pública e Aplicação do Direito Estrangeiro (art. 17)</h3>
+      <div class="aula-atencao-box"><p><strong>Art. 17:</strong> As leis, atos e sentenças de outro país, bem como quaisquer declarações de vontade, não terão eficácia no Brasil quando <strong>ofenderem a soberania nacional, a ordem pública e os bons costumes</strong>.<br><br>A ordem pública é o limite da aplicação do direito estrangeiro no Brasil. Mesmo que a regra de conexão indique a lei estrangeira, se ela violar a ordem pública brasileira, não será aplicada.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — LINDB NA ADM. PÚBLICA ══ -->
+  <div class="aula-secao" id="lb-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🏛️</div>
+        <div><span class="aula-tag aula-tag-lei">LINDB, arts. 20–30 (Lei nº 13.655/2018)</span><h3>LINDB no Direito Público — A Reforma de 2018</h3></div>
+      </div>
+      <p>A Lei nº 13.655/2018 incluiu os arts. 20 a 30 na LINDB, criando um conjunto de <strong>garantias de segurança jurídica</strong> para a atuação de agentes públicos, juízes e controladores. É um dos pontos mais cobrados pela FCC nos últimos anos em provas de Direito Administrativo.</p>
+      <div class="aula-destaque-box"><p><strong>Objetivo central:</strong> proteger decisores públicos de responsabilizações baseadas em interpretações retroativas ou em análises que desconsideram as consequências práticas e as circunstâncias do momento da decisão.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Art. 20 — Análise de consequências</h3>
+      <div class="aula-destaque-box"><p>"Nas esferas administrativa, controladora e judicial, não se decidirá com base em valores jurídicos abstratos sem que sejam consideradas as <strong>consequências práticas da decisão</strong>."</p></div>
+      <p>O decisor público não pode se limitar a invocar princípios abstratos (como moralidade, interesse público, legalidade). Deve demonstrar que considerou os <strong>efeitos concretos</strong> de sua decisão.</p>
+      <div class="aula-atencao-box"><p><strong>Parágrafo único (art. 20):</strong> A motivação demonstrará a necessidade e a adequação da medida, inclusive considerando possíveis alternativas.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Art. 21 — Responsabilidade pessoal do decisor</h3>
+      <div class="aula-destaque-box"><p>"A decisão que, nas esferas administrativa, controladora ou judicial, decretar a invalidação de ato, contrato, ajuste, processo ou norma administrativa deverá indicar de modo expresso suas consequências jurídicas e administrativas."</p></div>
+      <p>Quando um órgão de controle ou autoridade anula um ato administrativo, deve indicar <strong>expressamente</strong> o que acontece com as situações já consolidadas sob aquele ato.</p>
+      <div class="aula-atencao-box"><p><strong>Parágrafo único (art. 21):</strong> A decisão a que se refere o caput deste artigo deverá, quando for o caso, indicar as condições para que a regularização ocorra de modo proporcional e equânime.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Art. 22 — Contexto e circunstâncias do agente</h3>
+      <div class="aula-destaque-box"><p>"Na interpretação de normas sobre gestão pública, serão considerados os obstáculos e as dificuldades reais do gestor e as exigências das políticas públicas a seu cargo, sem prejuízo dos direitos dos administrados."</p></div>
+      <p>O julgamento de atos do gestor público deve levar em conta as <strong>circunstâncias reais</strong> em que agiu — não apenas o resultado da decisão avaliado de forma retrospectiva ("hindsight bias").</p>
+      <div class="aula-atencao-box"><p><strong>§1º (art. 22):</strong> Em decisão sobre regularidade de conduta ou validade de ato, contrato, ajuste, processo ou norma administrativa, serão consideradas as <strong>circunstâncias práticas que houverem imposto</strong>, limitado ou condicionado a ação do agente.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Art. 23 — Modulação de efeitos de mudança de interpretação</h3>
+      <div class="aula-destaque-box"><p>"A decisão administrativa, controladora ou judicial que estabelecer interpretação ou orientação nova sobre norma de conteúdo indeterminado, impondo novo dever ou novo condicionamento de direito, deverá prever <strong>regime de transição</strong> quando indispensável para que o novo entendimento seja implementado de forma proporcional, equânime e eficiente."</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha FCC:</strong> Mudança de entendimento administrativo não pode ser aplicada retroativamente de forma a punir quem agiu de acordo com a orientação anterior. O art. 23 protege a <strong>confiança legítima</strong>.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Art. 24 — Proteção de atos e negócios jurídicos consolidados</h3>
+      <div class="aula-destaque-box"><p>"A revisão, nas esferas administrativa, controladora ou judicial, quanto à validade de ato, contrato, ajuste, processo ou norma administrativa cuja produção já se houver completado levará em conta as <strong>orientações gerais da época</strong>, sendo vedado que, com base em mudança posterior de orientação geral, se declarem inválidos esses atos."</p></div>
+      <p>Atos praticados conforme a orientação vigente à época de sua produção <strong>não podem ser declarados inválidos</strong> apenas porque surgiu orientação nova posterior.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Arts. 26 e 27 — Compromisso e Termo de Ajustamento</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">26</div><p>Para eliminar irregularidade, incerteza jurídica ou situação contenciosa na aplicação do direito público, inclusive no caso de expedição de licença, a autoridade administrativa poderá celebrar <strong>compromisso com os interessados</strong>, observada a legislação aplicável.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">27</div><p>A decisão do processo administrativo que, nas esferas administrativa, controladora ou judicial, imponha novo dever ou condicionamento novo a ato lícito praticado no passado deverá <strong>reconhecer as situações já consolidadas</strong> sob o regime anterior.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Art. 28 — Responsabilidade pessoal do agente público</h3>
+      <div class="aula-destaque-box"><p>"O agente público responderá pessoalmente por suas decisões ou opiniões técnicas em caso de <strong>dolo ou erro grosseiro</strong>."</p></div>
+      <div class="aula-atencao-box"><p><strong>Ponto altíssimo de cobrança pela FCC:</strong> o agente público só responde pessoalmente por <strong>dolo</strong> (intenção de causar dano) ou <strong>erro grosseiro</strong> (negligência gravíssima, incompatível com o mínimo de diligência exigível). A mera discordância técnica ou erro escusável <strong>não gera responsabilidade pessoal</strong>.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Art. 30 — Consultas e orientações</h3>
+      <div class="aula-destaque-box"><p>"As autoridades públicas devem atuar para aumentar a <strong>segurança jurídica</strong> na aplicação das normas, inclusive por meio de regulamentos, súmulas administrativas e respostas a consultas."</p></div>
+      <p>A orientação administrativa tem papel vinculante para a conduta do particular que se norteou por ela de boa-fé.</p>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — LACUNAS E INTERPRETAÇÃO ══ -->
+  <div class="aula-secao" id="lb-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">LINDB, arts. 4º e 5º</span><h3>Integração e Interpretação das Leis</h3></div>
+      </div>
+      <p>Quando a lei for omissa (lacunosa), o juiz deve <strong>integrar</strong> o ordenamento. Quando a lei existir mas for obscura ou ambígua, o juiz deve <strong>interpretá-la</strong. Os arts. 4º e 5º da LINDB estabelecem as ferramentas para isso.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Colmatação de lacunas — art. 4º</h3>
+      <p>Quando a lei for omissa, o juiz decidirá o caso de acordo com a <strong>analogia, os costumes e os princípios gerais de direito</strong>, <strong>nessa ordem de preferência</strong>.</p>
+      <br>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div>
+        <p><strong>Analogia:</strong> aplica-se a norma criada para situação semelhante. Há dois tipos:<br>
+        • <em>Analogia legis</em>: utiliza norma de lei específica.<br>
+        • <em>Analogia iuris</em>: utiliza princípios extraídos do ordenamento jurídico como um todo.</p>
+      </div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div>
+        <p><strong>Costumes:</strong> prática reiterada e uniforme, com consciência de obrigatoriedade (<em>opinio juris</em>). Tipos: <em>secundum legem</em> (segundo a lei), <em>praeter legem</em> (supletivo) e <em>contra legem</em> (contra a lei — não admitido).</p>
+      </div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div>
+        <p><strong>Princípios gerais de direito:</strong> normas fundamentais implícitas do sistema, extraídas por indução a partir das normas positivadas.</p>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha FCC:</strong> A ordem é <strong>obrigatória e hierárquica</strong> — analogia primeiro, depois costumes, depois princípios. A banca afirma que "o juiz pode escolher livremente entre analogia, costumes e princípios" — ERRADO.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Interpretação da lei — art. 5º</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 5º:</strong> "Na aplicação da lei, o juiz atenderá aos fins sociais a que ela se dirige e às exigências do bem comum."</p></div>
+      <p>A interpretação da lei não deve ser apenas literal (gramatical). O juiz deve buscar a <strong>teleologia</strong> — a finalidade social da norma.</p>
+      <br>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Método interpretativo</th><th>O que analisa</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Gramatical / literal</strong></td><td>O texto, as palavras da norma</td></tr>
+          <tr><td><strong>Lógico / sistemático</strong></td><td>A coerência do texto com o sistema jurídico como um todo</td></tr>
+          <tr><td><strong>Histórico</strong></td><td>A intenção do legislador (mens legislatoris) ao elaborar a norma</td></tr>
+          <tr><td><strong>Teleológico</strong></td><td>A finalidade social da norma (mens legis) — o que o art. 5º privilegia</td></tr>
+          <tr><td><strong>Extensivo</strong></td><td>Amplia o sentido da norma além da letra</td></tr>
+          <tr><td><strong>Restritivo</strong></td><td>Reduz o sentido da norma abaixo da letra</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Equidade — quando pode ser usada?</h3>
+      <div class="aula-atencao-box"><p>A equidade <strong>não está prevista no art. 4º</strong> da LINDB como instrumento de colmatação de lacunas. Só pode ser utilizada quando a lei expressamente autorizar.<br><br>No CPC/2015 (art. 140, parágrafo único), o juiz só decide por equidade nos casos previstos em lei — isso é coerente com a LINDB.<br><br><strong>Pegadinha FCC:</strong> "O juiz pode usar a equidade como método de integração, ao lado da analogia" — ERRADO. A equidade não integra o rol do art. 4º da LINDB.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quadro-síntese: Colmatação × Interpretação</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Aspecto</th><th>Colmatação (art. 4º)</th><th>Interpretação (art. 5º)</th></tr></thead>
+        <tbody>
+          <tr><td>Quando se usa</td><td>Lei omissa (lacuna)</td><td>Lei obscura ou ambígua</td></tr>
+          <tr><td>Ferramentas</td><td>Analogia → costumes → princípios</td><td>Métodos: literal, lógico, histórico, teleológico</td></tr>
+          <tr><td>Diretriz central</td><td>Preencher o vazio normativo</td><td>Buscar fins sociais e bem comum</td></tr>
+          <tr><td>Equidade</td><td>Não está no rol</td><td>Só quando a lei autorizar</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="lb-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas — LINDB</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Vigência e revogação</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"A lei que não fixar data de início de vigência entrará em vigor 30 dias após a publicação."</strong><br>✅ ERRADO. O prazo padrão é <strong>45 dias</strong> no território nacional (art. 1º, LINDB).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Quando a lei revogadora perde a vigência, a lei revogada retorna automaticamente."</strong><br>✅ ERRADO. <strong>Não há repristinação automática</strong> (art. 2º, §3º). Só há repristinação se a nova lei expressamente determinar.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O costume pode revogar a lei (costume contra legem)."</strong><br>✅ ERRADO. A lei só é revogada por outra lei. Costume contra a lei não tem força revogadora no direito brasileiro.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"Publicada lei com erros durante a vacatio, o prazo recomeça a fluir da nova publicação."</strong><br>CORRETO — art. 1º, §4º, LINDB.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Direito intertemporal</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"Servidor que ainda não completou os requisitos de aposentadoria tem direito adquirido ao regime anterior."</strong><br>✅ ERRADO. Possui apenas <strong>expectativa de direito</strong>, não protegida contra lei nova.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A lei nova não pode retroagir em nenhuma hipótese."</strong><br>✅ ERRADO. A lei pode retroagir se a própria lei o determinar e não violar ato jurídico perfeito, direito adquirido e coisa julgada. A lei penal mais benéfica retroage por força constitucional.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A coisa julgada protege o direito mesmo em face de emenda constitucional."</strong><br>✅ ERRADO. A proteção do art. 5º, XXXVI, CF garante apenas contra lei ordinária. EC pode, em tese, atingir a coisa julgada (tema controverso, mas a vedação expressa é só para lei).</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"O ato jurídico perfeito é aquele já consumado segundo a lei vigente ao tempo em que se efetuou."</strong><br>CORRETO — art. 6º, §1º, LINDB.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Integração e interpretação</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"O juiz pode escolher livremente entre analogia, costumes e princípios gerais para integrar a lacuna."</strong><br>✅ ERRADO. A ordem é <strong>hierárquica e obrigatória</strong>: analogia → costumes → princípios gerais (art. 4º, LINDB).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A equidade é instrumento de integração de lacunas previsto no art. 4º da LINDB."</strong><br>✅ ERRADO. A equidade não consta do art. 4º. Só pode ser usada quando a lei expressamente autorizar.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O costume contra legem pode ser usado como fonte de integração."</strong><br>✅ ERRADO. Só se admite o costume praeter legem (supletivo) para integrar lacunas.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>LINDB no direito público (arts. 20–30)</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"O agente público responde pessoalmente por qualquer erro técnico em sua decisão."</strong><br>✅ ERRADO. Responde apenas por <strong>dolo ou erro grosseiro</strong> (art. 28). Erro técnico escusável não gera responsabilidade pessoal.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O juiz pode anular ato administrativo invocando apenas valores jurídicos abstratos como moralidade e interesse público."</strong><br>✅ ERRADO. O art. 20 exige que a decisão considere as <strong>consequências práticas</strong> — não basta invocar valores abstratos.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Mudança de orientação administrativa pode ser aplicada retroativamente a atos já praticados conforme a orientação anterior."</strong><br>✅ ERRADO. O art. 24 veda a invalidação retroativa com base em orientação nova.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"A decisão que invalida ato administrativo deve indicar expressamente suas consequências jurídicas e administrativas."</strong><br>CORRETO — art. 21, LINDB.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Direito internacional privado</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"O Brasil adota o critério da nacionalidade para reger a capacidade civil da pessoa."</strong><br>✅ ERRADO. O Brasil adota o critério do <strong>domicílio</strong> (art. 7º, LINDB).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Os bens imóveis situados no Brasil são regidos pela lei do domicílio do proprietário."</strong><br>✅ ERRADO. Os bens são regidos pela lei do lugar em que estão <strong>situados</strong> — lex rei sitae (art. 8º, LINDB).</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"Lei estrangeira que ofenda a ordem pública não terá eficácia no Brasil."</strong><br>CORRETO — art. 17, LINDB.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Vacatio legis</h4><p><strong>45 no Brasil — 3 meses no exterior</strong><br>Ou: "quarenta e cinco dias é a regra, salvo lei que diga outro prazo"</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Colmatação de lacunas (ordem)</h4><p><strong>A-C-P:</strong> Analogia → Costumes → Princípios gerais</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Os três institutos protetores do art. 6º</h4><p><strong>A-D-C:</strong> Ato jurídico perfeito → Direito adquirido → Coisa julgada</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Art. 28 — Responsabilidade do agente</h4><p><strong>"Dolo ou ERRO GROSSEIRO"</strong> — erro escusável NÃO gera responsabilidade pessoal</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Estatuto pessoal no Brasil</h4><p><strong>DOMICÍLIO</strong> (não nacionalidade) — diferente de vários países europeus</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="lb-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC</h3></div></div><p style="font-size:13px;color:#888">Clique na opção que considera correta e depois em "Ver gabarito".</p></div>
+
+    <!-- Q1 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> De acordo com a Lei de Introdução às Normas do Direito Brasileiro, salvo disposição contrária, a lei começa a vigorar em todo o país:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> na data de sua publicação no Diário Oficial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> 30 dias após a publicação no Diário Oficial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> 45 dias após a publicação no Diário Oficial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> 60 dias após a publicação no Diário Oficial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> 3 meses após a publicação no Diário Oficial.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 1º, LINDB: "Salvo disposição contrária, a lei começa a vigorar em todo o país quarenta e cinco dias depois de oficialmente publicada." O prazo de 3 meses é para as leis brasileiras aplicáveis no exterior.</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 1º, caput.</span>
+    </div>
+
+    <!-- Q2 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> A Lei X foi revogada pela Lei Y. Posteriormente, a Lei Y foi revogada pela Lei Z, sem qualquer disposição expressa sobre a Lei X. Com base no art. 2º, §3º, da LINDB, é correto afirmar que:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> a Lei X retoma sua vigência automaticamente, pois a lei que a revogou deixou de existir.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> a Lei X retoma sua vigência, pois a lei revogada volta sempre que a revogadora perder vigor.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> a Lei X não retoma sua vigência, pois a LINDB veda a repristinação automática.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> a Lei X retomaria a vigência apenas se a Lei Z fosse declarada inconstitucional.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> a Lei Z deve expressamente revogar a Lei X para que ela não retome a vigência.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 2º, §3º, LINDB: "A lei revogada não se restaura por ter a lei revogadora perdido a vigência, salvo disposição em contrário." Esse é o princípio da não repristinação automática. A Lei X só voltaria a viger se a Lei Z expressamente o determinasse.</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 2º, §3º — não repristinação.</span>
+    </div>
+
+    <!-- Q3 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Quando a lei for omissa, o juiz decidirá o caso de acordo com:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> a equidade, os costumes e a analogia, nessa ordem.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> os princípios gerais de direito, a analogia e os costumes, nessa ordem.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> a analogia, os costumes e os princípios gerais de direito, nessa ordem.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> os costumes, a analogia e a equidade, nessa ordem.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> a analogia, a equidade e os princípios gerais, nessa ordem.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 4º, LINDB: "Quando a lei for omissa, o juiz decidirá o caso de acordo com a analogia, os costumes e os princípios gerais de direito." A ordem é hierárquica e obrigatória. A equidade não consta do rol do art. 4º.</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 4º.</span>
+    </div>
+
+    <!-- Q4 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Com relação ao direito intertemporal na LINDB, analise as afirmações:<br><br>
+      I. O ato jurídico perfeito é aquele já consumado segundo a lei vigente ao tempo em que se efetuou.<br>
+      II. O servidor que ainda não completou o tempo necessário para aposentadoria possui direito adquirido ao regime anterior.<br>
+      III. A lei nova pode retroagir para alcançar atos anteriores, desde que não viole ato jurídico perfeito, direito adquirido e coisa julgada, e desde que ela própria o determine.<br>
+      IV. A coisa julgada é a decisão judicial de que já não cabe recurso, e é protegida contra lei nova por força constitucional.<br><br>
+      Estão corretas apenas:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> I e II.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> II e IV.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> I, III e IV.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> I e IV.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> II, III e IV.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br><br>I — CORRETO: art. 6º, §1º, LINDB.<br>II — ERRADO: servidor sem os requisitos completos tem apenas <em>expectativa de direito</em>, não direito adquirido.<br>III — CORRETO: a retroatividade é possível se a lei expressamente determinar e não violar os três institutos protetores.<br>IV — CORRETO: art. 5º, XXXVI, CF/88 + art. 6º, §3º, LINDB.</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 6º, §§1º a 3º; CF/88, art. 5º, XXXVI.</span>
+    </div>
+
+    <!-- Q5 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a responsabilidade do agente público pela Lei de Introdução às Normas do Direito Brasileiro, após a reforma promovida pela Lei nº 13.655/2018, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O agente público responde pessoalmente por qualquer decisão que cause dano ao erário, independentemente de culpa.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> O agente público não pode ser responsabilizado pessoalmente em nenhuma hipótese, respondendo apenas o Estado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> O agente público responde por culpa leve em suas decisões técnicas, bastando a demonstração de negligência.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">d)</span> O agente público responde pessoalmente apenas em caso de dolo ou erro grosseiro, não sendo suficiente a demonstração de mero erro técnico escusável.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A responsabilidade pessoal do agente decorre de qualquer violação ao princípio da legalidade, ainda que não caracterizado dolo.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: D.</strong><br>Art. 28, LINDB: "O agente público responderá pessoalmente por suas decisões ou opiniões técnicas em caso de dolo ou erro grosseiro." A regra protege o gestor público de responsabilização por decisões tecnicamente discutíveis, mas tomadas de boa-fé e dentro de margem razoável de interpretação.</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 28 (Lei nº 13.655/2018).</span>
+    </div>
+
+    <!-- Q6 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Nos termos da LINDB, qual lei rege a capacidade civil de estrangeiro domiciliado no Brasil?</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A lei do país de sua nacionalidade, pois o Brasil adota o critério da nacionalidade para o estatuto pessoal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A lei brasileira, pois o Brasil adota o critério do domicílio para o estatuto pessoal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A lei do país onde o ato foi celebrado, segundo o princípio da lex loci actus.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A lei do país onde os bens do estrangeiro estão situados.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A lei do país de nascimento do estrangeiro.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 7º, LINDB: "A lei do país em que domiciliada a pessoa determina as regras sobre [...] capacidade civil." O Brasil adota o critério do <strong>domicílio</strong> — não da nacionalidade. Portanto, estrangeiro domiciliado no Brasil tem sua capacidade civil regida pela lei brasileira.</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 7º — critério do domicílio.</span>
+    </div>
+
+    <!-- Q7 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> De acordo com o art. 20 da LINDB, inserido pela Lei nº 13.655/2018, nas esferas administrativa, controladora e judicial:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> As decisões podem ser fundamentadas exclusivamente em valores jurídicos abstratos, como moralidade e interesse público, sem necessidade de análise de consequências.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> O decisor está vinculado apenas à legalidade estrita, não sendo necessário considerar os efeitos práticos de sua decisão.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Não se decidirá com base em valores jurídicos abstratos sem que sejam consideradas as consequências práticas da decisão.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A motivação da decisão é dispensável quando o fundamento for um princípio constitucional expresso.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O decisor pode ignorar alternativas disponíveis, bastando demonstrar que a medida adotada é legal.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 20, LINDB: "Nas esferas administrativa, controladora e judicial, não se decidirá com base em valores jurídicos abstratos sem que sejam consideradas as consequências práticas da decisão." O parágrafo único acrescenta que a motivação deve demonstrar a necessidade e adequação da medida, considerando possíveis alternativas.</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 20 (Lei nº 13.655/2018).</span>
+    </div>
+  </div>
+
+</div>`
+};
+
+// Alias: a mesma aula aparece também no tópico de Direito Administrativo
+AULAS['da_44'] = AULAS['dciv_0'];
+  
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
 // ═══════════════════════════════════════════════════════
