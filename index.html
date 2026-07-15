@@ -96,17 +96,20 @@ body { background: var(--bg); color: var(--text); font-family: 'DM Mono', monosp
 /* MODAL AULA */
 .aula-overlay {
   position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 200;
-  display: flex; align-items: flex-start; justify-content: flex-end;
+  display: flex; align-items: center; justify-content: center;
   opacity: 0; pointer-events: none; transition: opacity 0.25s;
+  padding: 3vh 20px;
 }
 .aula-overlay.show { opacity: 1; pointer-events: all; }
 .aula-panel {
-  background: #ffffff; width: min(680px, 100vw); height: 100vh;
-  overflow-y: auto; transform: translateX(40px);
-  transition: transform 0.3s cubic-bezier(.22,1,.36,1);
+  background: #ffffff; width: min(920px, 96vw); height: 94vh;
+  border-radius: 16px; overflow-y: auto; overflow-x: hidden;
+  transform: scale(0.96) translateY(12px); opacity: 0;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+  transition: transform 0.3s cubic-bezier(.22,1,.36,1), opacity 0.25s;
   display: flex; flex-direction: column;
 }
-.aula-overlay.show .aula-panel { transform: translateX(0); }
+.aula-overlay.show .aula-panel { transform: scale(1) translateY(0); opacity: 1; }
 .aula-panel-header {
   position: sticky; top: 0; background: #fff;
   border-bottom: 0.5px solid #e5e5e5; padding: 14px 20px;
