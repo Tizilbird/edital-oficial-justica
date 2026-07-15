@@ -3789,6 +3789,405 @@ AULAS['dc_3'] = {
   </div>
 </div>`
 };
+
+// ═══════════════════════════════════════════════════════
+// AULA: Eficácia da Lei no Tempo e no Espaço; Conflito de Leis
+// Chave: dciv_1 (Direito Civil, tópico 1)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dciv_1'] = {
+  title: 'Eficácia da Lei no Tempo e no Espaço; Conflito de Leis',
+  sub: 'Direito Civil · LINDB + Doutrina + STF/STJ · Banca FCC',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">LINDB, arts. 1º–19 · CF/88, art. 5º, XXXVI · CPC, art. 13</div>
+  <h1 class="aula-h1">Eficácia da Lei no Tempo e no Espaço; Conflito de Leis</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="et-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="et-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Introdução</button>
+    <button class="aula-tab-btn" data-sec="1">Retroatividade</button>
+    <button class="aula-tab-btn" data-sec="2">Teorias e Graus</button>
+    <button class="aula-tab-btn" data-sec="3">Conflito no Espaço</button>
+    <button class="aula-tab-btn" data-sec="4">Homologação e Extradição</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Sínteses</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — INTRODUÇÃO ══ -->
+  <div class="aula-secao ativo" id="et-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🌐</div>
+        <div>
+          <span class="aula-tag aula-tag-lei">LINDB · CF/88, art. 5º, XXXVI</span>
+          <h3>Por que a lei gera conflitos no tempo e no espaço?</h3>
+        </div>
+      </div>
+      <p>Toda lei nasce, vige por um período e, em algum momento, é revogada ou substituída. Enquanto isso acontece, situações jurídicas continuam se desenrolando — contratos em execução, processos em andamento, direitos em vias de aquisição. O <strong>direito intertemporal</strong> resolve o choque entre a lei antiga e a lei nova sobre essas situações.</p>
+      <p style="margin-top:8px">Da mesma forma, quando uma relação jurídica tem elementos de mais de um país — partes de nacionalidades diferentes, bens em países distintos, contrato assinado no exterior —, surge o <strong>conflito de leis no espaço</strong>, resolvido pelas normas de Direito Internacional Privado da LINDB.</p>
+      <div class="aula-destaque-box"><p><strong>Por que a FCC cobra tanto isso?</strong> Porque exige raciocínio, não decoreba pura. A banca monta cenários (uma lei nova que altera prazo, uma sucessão com bens em dois países) e pede para o candidato aplicar a regra correta — não apenas recitar o artigo.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Dois problemas distintos, duas famílias de regras</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Conflito no tempo</h4><p>Lei A é substituída pela Lei B. Qual regula os fatos ocorridos na transição? Resolvido pelo <strong>art. 6º da LINDB</strong> e pelo <strong>art. 5º, XXXVI, da CF/88</strong>.</p></div>
+        <div class="aula-mini-card"><h4>Conflito no espaço</h4><p>A relação jurídica toca mais de um país. Qual lei nacional se aplica? Resolvido pelas <strong>normas de conexão dos arts. 7º a 19 da LINDB</strong> (Direito Internacional Privado).</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha recorrente:</strong> tratar os dois problemas como se fossem a mesma coisa. O conflito no tempo pergunta "lei velha ou lei nova?". O conflito no espaço pergunta "lei brasileira ou lei estrangeira?". São perguntas diferentes, com regras diferentes.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — RETROATIVIDADE ══ -->
+  <div class="aula-secao" id="et-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">⏳</div>
+        <div><span class="aula-tag aula-tag-lei">LINDB, art. 6º · CF/88, art. 5º, XXXVI</span><h3>Efeito imediato e geral — a regra do art. 6º</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 6º, LINDB:</strong> "A lei em vigor terá efeito imediato e geral, respeitados o ato jurídico perfeito, o direito adquirido e a coisa julgada."</p></div>
+      <p>Duas ideias combinadas aqui:</p>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Efeito imediato:</strong> assim que entra em vigor, a lei nova já se aplica aos fatos futuros e aos efeitos futuros de situações em curso — não é preciso esperar nada.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Efeito geral:</strong> aplica-se a todos, indistintamente — não é lei para casos específicos.</p></div>
+      <div class="aula-atencao-box"><p><strong>Atenção:</strong> "efeito imediato" não é sinônimo de "retroatividade". A lei nova rege o futuro; ela só retroagiria se alcançasse fatos ou efeitos já consumados no passado — e isso só é permitido nos limites do art. 6º.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Os três institutos protetores (art. 6º, §§1º a 3º)</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div>
+        <p><strong>Ato jurídico perfeito (§1º):</strong> "reputa-se ato jurídico perfeito o já consumado segundo a lei vigente ao tempo em que se efetuou." É o ato que já se completou nos seus requisitos de formação sob a lei antiga — a lei nova não pode desfazê-lo nem alterar sua validade retroativamente.</p>
+      </div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div>
+        <p><strong>Direito adquirido (§2º):</strong> "consideram-se adquiridos assim os direitos que o seu titular, ou alguém por ele, possa exercer, como aqueles cujo começo do exercício tenha termo pré-fixo, ou condição preestabelecida inalterável, a arbítrio de outrem." É o direito cujos requisitos legais já foram integralmente preenchidos — mesmo que o titular ainda não o tenha exercido.</p>
+      </div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div>
+        <p><strong>Coisa julgada (§3º):</strong> "chama-se coisa julgada ou caso julgado a decisão judicial de que já não caiba recurso." A lei nova não pode reabrir ou alterar o que já foi definitivamente decidido pelo Judiciário.</p>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Função de cada instituto:</strong> o ato jurídico perfeito protege a <em>formação</em> do ato; o direito adquirido protege o <em>conteúdo</em> do direito já consolidado; a coisa julgada protege a <em>decisão judicial</em> definitiva. São proteções complementares, não sobrepostas.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Direito adquirido × expectativa de direito × direito consumado</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Categoria</th><th>Situação</th><th>Proteção contra lei nova</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Expectativa de direito</strong></td><td>Requisitos ainda não completados</td><td>Nenhuma — a lei nova alcança livremente</td></tr>
+          <tr><td><strong>Direito adquirido</strong></td><td>Requisitos já completados, mas ainda não exercido</td><td>Total — a lei nova não pode atingir</td></tr>
+          <tr><td><strong>Direito consumado (exercido)</strong></td><td>Já exercido e esgotado seus efeitos</td><td>Total — protegido também como ato jurídico perfeito</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Exemplo clássico FCC:</strong> servidor que precisa de 30 anos de contribuição para se aposentar. Aos 28 anos de contribuição, sobrevém lei nova exigindo 35 anos. Ele tem apenas <strong>expectativa de direito</strong> — a lei nova se aplica a ele. Se já tivesse completado os 30 anos (ainda que não tivesse requerido a aposentadoria), teria <strong>direito adquirido</strong> — a lei nova não poderia exigir os 35 anos dele.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quem está protegido pelo art. 5º, XXXVI, CF/88?</h3>
+      <div class="aula-destaque-box"><p>A proteção do ato jurídico perfeito, direito adquirido e coisa julgada vale, em regra, apenas <strong>contra a lei ordinária</strong> (e leis complementares). O <strong>poder constituinte originário</strong> não se submete a essa vedação — pode atingir qualquer situação, mesmo consolidada, porque ele inaugura toda uma nova ordem jurídica.</p></div>
+      <div class="aula-atencao-box"><p><strong>E o poder constituinte derivado (Emenda Constitucional)?</strong> O tema é debatido, mas a posição dominante — inclusive prevalente no STF — é que a EC também deve respeitar o direito adquirido, o ato jurídico perfeito e a coisa julgada, salvo se a própria EC integrar cláusula pétrea em sentido contrário ou regular expressamente regime de transição (como fez a Reforma da Previdência, EC 103/2019, que respeitou quem já tinha os requisitos completos e criou regras de transição para quem estava no meio do caminho).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — TEORIAS E GRAUS DE RETROATIVIDADE ══ -->
+  <div class="aula-secao" id="et-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📐</div>
+        <div><span class="aula-tag aula-lei aula-tag-lei">Doutrina — Gabba × Roubier</span><h3>As duas grandes teorias do direito intertemporal</h3></div>
+      </div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Teoria subjetiva (Gabba)</h4><p>Foca na proteção dos <strong>direitos adquiridos</strong> do indivíduo. É a teoria adotada pelo Brasil — art. 6º, LINDB e art. 5º, XXXVI, CF/88 seguem essa lógica: o critério central é se há ou não direito adquirido a proteger.</p></div>
+        <div class="aula-mini-card"><h4>Teoria objetiva (Roubier)</h4><p>Foca na distinção entre <strong>efeitos passados e futuros</strong> de uma situação jurídica, dispensando o conceito de direito adquirido. Muito influente na doutrina francesa e usada de forma subsidiária/complementar pela doutrina brasileira para explicar a aplicação imediata da lei nova aos efeitos futuros de contratos em curso.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha FCC:</strong> "O Brasil adota exclusivamente a teoria objetiva de Roubier" — ERRADO. O Brasil adota primordialmente a <strong>teoria subjetiva de Gabba</strong> (proteção ao direito adquirido, expressamente prevista na LINDB e na CF/88). A teoria de Roubier é usada de forma auxiliar pela doutrina, mas não é a base normativa do art. 6º, LINDB.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Classificação dos graus de retroatividade (Matos Peixoto)</h3>
+      <p>Doutrina brasileira clássica (Paulo Roberto de Matos Peixoto) distingue três graus de retroatividade — muito cobrada em concursos:</p>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Retroatividade máxima (restitutória):</strong> a lei nova ataca até a coisa julgada e fatos já consumados no passado, desconstituindo situações plenamente acabadas. É a forma mais grave — em regra vedada no direito brasileiro (respeitados coisa julgada, ato jurídico perfeito e direito adquirido).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Retroatividade média:</strong> a lei nova atinge os efeitos pendentes de atos jurídicos verificados antes dela — por exemplo, prestações vencidas mas ainda não pagas, oriundas de contrato celebrado sob a lei antiga. Também é vedada, salvo quando a lei expressamente autoriza (respeitado o direito adquirido).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Retroatividade mínima (temperada ou mitigada):</strong> a lei nova atinge apenas os efeitos <strong>futuros</strong> de atos ou situações anteriores — por exemplo, as prestações que ainda vão vencer de um contrato de trato sucessivo. É a única modalidade compatível com a regra geral do "efeito imediato" do art. 6º, LINDB, sem violar direito adquirido.</p></div>
+      <div class="aula-destaque-box"><p><strong>Como isso cai na prova:</strong> a FCC descreve uma situação concreta (lei nova mexendo em juros de contrato em curso, por exemplo) e pede para classificar o grau de retroatividade envolvido. A regra geral do direito brasileiro é aplicar apenas a retroatividade mínima (que, tecnicamente, é apenas efeito imediato sobre o futuro) — os graus médio e máximo dependem de autorização legal expressa e ainda assim respeitando direito adquirido.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Ultratividade da lei — o espelho da retroatividade</h3>
+      <p>Se a retroatividade é a lei nova "olhando para trás", a <strong>ultratividade</strong> é a lei antiga "continuando a valer" para fatos ocorridos sob sua vigência, mesmo depois de revogada.</p>
+      <div class="aula-destaque-box"><p><strong>Exemplo central:</strong> contrato de locação celebrado sob a Lei X, que estabelecia certas regras de reajuste. Revogada a Lei X pela Lei Y, os efeitos já verificados (parcelas já vencidas, direitos já incorporados) continuam regidos pela Lei X — que se torna <strong>ultrativa</strong> para esse contrato específico, mesmo não estando mais em vigor para novos contratos.</p></div>
+      <div class="aula-atencao-box"><p><strong>Ultratividade não é exceção ao art. 6º — é decorrência dele:</strong> proteger o ato jurídico perfeito e o direito adquirido é, na prática, fazer a lei revogada continuar regendo aquela situação específica. A ultratividade e a irretroatividade são duas faces da mesma moeda.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — CONFLITO DE LEIS NO ESPAÇO ══ -->
+  <div class="aula-secao" id="et-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🌍</div>
+        <div><span class="aula-tag aula-tag-lei">LINDB, arts. 7º–19</span><h3>As normas de conexão do Direito Internacional Privado</h3></div>
+      </div>
+      <p>Quando a relação jurídica tem elemento estrangeiro, a LINDB indica, para cada matéria, <strong>qual país tem sua lei aplicada</strong> — são as chamadas <strong>normas de conexão</strong> (ou elementos de conexão).</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Estatuto pessoal — art. 7º, LINDB</h3>
+      <div class="aula-destaque-box"><p><strong>Regra-base:</strong> "A lei do país em que domiciliada a pessoa determina as regras sobre o começo e o fim da personalidade, o nome, a capacidade e os direitos de família." O Brasil adota o critério do <strong>domicílio</strong> — não da nacionalidade (diferente de países como Itália e França, que adotam a lei da nacionalidade).</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Matéria</th><th>Lei aplicável</th><th>Base legal</th></tr></thead>
+        <tbody>
+          <tr><td>Capacidade civil</td><td>Domicílio da pessoa</td><td>Art. 7º, caput</td></tr>
+          <tr><td>Casamento (regras gerais)</td><td>Domicílio dos nubentes</td><td>Art. 7º, §1º</td></tr>
+          <tr><td>Invalidade do matrimônio</td><td>Lei do domicílio do casal, se comum; senão, do primeiro domicílio conjugal</td><td>Art. 7º, §3º</td></tr>
+          <tr><td>Regime de bens (legal ou convencional)</td><td>Lei do domicílio dos nubentes; se domicílios distintos, a do primeiro domicílio conjugal</td><td>Art. 7º, §4º</td></tr>
+          <tr><td>Suprimento de idade para casar</td><td>Lei do domicílio do interessado</td><td>Art. 7º, §2º</td></tr>
+          <tr><td>Divórcio realizado no exterior</td><td>Reconhecido no Brasil, independentemente de homologação, se um dos cônjuges for brasileiro (após 1 ano da data da sentença, salvo se houver partilha de bens no Brasil)</td><td>Art. 7º, §6º</td></tr>
+          <tr><td>Tutela e curatela</td><td>Lei do domicílio do incapaz</td><td>Art. 7º, §7º</td></tr>
+          <tr><td>Domicílio não sabido</td><td>Considera-se domicílio da pessoa a sua residência, ou o lugar onde se encontre</td><td>Art. 7º, §8º</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Bens — art. 8º, LINDB (lex rei sitae)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 8º, caput:</strong> "Para qualificar os bens e regular as relações a eles concernentes, aplicar-se-á a lei do país em que estiverem situados." É a regra da <em>lex rei sitae</em> — o bem é regido pela lei do lugar onde está fisicamente.</p></div>
+      <div class="aula-atencao-box"><p><strong>Exceção — bens móveis que o proprietário trouxer ou se destinem a transporte (§1º):</strong> aplica-se a lei do domicílio do proprietário. <strong>Penhor (§2º):</strong> regula-se pela lei do domicílio do devedor (que detém a posse da coisa empenhada, no penhor comum).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Obrigações — art. 9º, LINDB (locus regit actum)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 9º, caput:</strong> "Para qualificar e reger as obrigações, aplicar-se-á a lei do país em que se constituírem." É a regra <em>locus regit actum</em> — o local de constituição da obrigação define a lei aplicável.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">§1º</div><p>Obrigação a ser executada no Brasil, dependente de forma essencial: será observada a forma exigida pela lei brasileira, admitidas as peculiaridades da lei estrangeira quanto aos requisitos extrínsecos do ato.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">§2º</div><p>Contrato entre ausentes (partes em países diferentes): reputa-se celebrado no lugar em que residir o <strong>proponente</strong> — regra de fixação do local de constituição quando as partes não estão fisicamente juntas.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Sucessão — art. 10, LINDB</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 10, caput:</strong> "A sucessão por morte ou por ausência obedece à lei do país em que era domiciliado o defunto ou o desaparecido, qualquer que seja a natureza e a situação dos bens." Regra da <em>lex domicilii</em> aplicada à sucessão.</p></div>
+      <div class="aula-atencao-box"><p><strong>Exceção protecionista — art. 10, §1º (também art. 5º, XXXI, CF/88):</strong> a sucessão de bens de estrangeiros situados no Brasil será regulada pela <strong>lei brasileira</strong> em benefício do cônjuge ou dos filhos brasileiros, sempre que não lhes seja mais favorável a lei pessoal do <em>de cujus</em>. É uma norma de proteção ao brasileiro herdeiro — aplica-se a lei mais benéfica a ele.</p></div>
+      <div class="aula-destaque-box"><p><strong>Art. 10, §2º:</strong> a lei do domicílio do herdeiro ou legatário regula a capacidade para suceder.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Pessoa jurídica estrangeira — art. 11, LINDB</h3>
+      <p>As organizações destinadas a fins de interesse coletivo, como sociedades e fundações, obedecem à lei do Estado em que se constituírem. Filiais, agências ou estabelecimentos no Brasil dependem de aprovação do Governo brasileiro, ficando sujeitos à lei brasileira.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Competência da autoridade judiciária brasileira — art. 12, LINDB</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 12, caput:</strong> É competente a autoridade judiciária brasileira quando for o <strong>réu domiciliado no Brasil</strong> ou aqui tiver de ser cumprida a obrigação.<br><strong>§1º:</strong> só a autoridade judiciária brasileira é competente para conhecer de ações relativas a imóveis situados no Brasil.<br><strong>§2º:</strong> a autoridade judiciária brasileira cumprirá diligências deprecadas por autoridade estrangeira, desde que devidamente homologadas e não ofendam a soberania nacional.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — HOMOLOGAÇÃO, EXTRADIÇÃO E ORDEM PÚBLICA ══ -->
+  <div class="aula-secao" id="et-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🛂</div>
+        <div><span class="aula-tag aula-tag-lei">LINDB, arts. 15 e 17 · CPC, arts. 960–965</span><h3>Homologação de sentença estrangeira</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 15, LINDB:</strong> será executada no Brasil a sentença proferida no estrangeiro, que reúna os seguintes requisitos: a) haver sido proferida por juiz competente; b) terem sido as partes citadas ou haver-se legalmente verificado a revelia; c) ter passado em julgado; d) estar traduzida por intérprete autorizado; e) ter sido homologada pelo STJ.</p></div>
+      <div class="aula-atencao-box"><p><strong>Atenção — competência mudou com a EC 45/2004:</strong> antes, a homologação de sentença estrangeira era competência do STF; desde a EC 45/2004 (art. 105, I, "i", CF/88), passou a ser competência do <strong>STJ</strong>. A LINDB (redigida em 1942) ainda cita "autoridade judiciária" de forma genérica — a doutrina e a lei processual atualizaram essa competência para o STJ.</p></div>
+      <div class="aula-destaque-box"><p><strong>CPC, art. 961, §5º:</strong> a sentença estrangeira de divórcio consensual produz efeitos no Brasil <strong>independentemente de homologação</strong> pelo STJ.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Ordem pública, soberania e bons costumes — art. 17, LINDB</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 17:</strong> "As leis, atos e sentenças de outro país, bem como quaisquer declarações de vontade, não terão eficácia no Brasil, quando ofenderem a soberania nacional, a ordem pública e os bons costumes."</p></div>
+      <p>Esse artigo funciona como uma <strong>cláusula de barreira</strong>: mesmo que a norma de conexão (arts. 7º a 13) indique a aplicação de lei estrangeira, se essa lei — ou seus efeitos — violar a ordem pública brasileira, ela é afastada.</p>
+      <div class="aula-atencao-box"><p><strong>Exemplos de aplicação:</strong> uma sentença estrangeira de poligamia não produz efeitos no Brasil (viola a ordem pública do casamento monogâmico); uma cláusula contratual estrangeira que autorize pena cruel não é reconhecida aqui.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Prova dos fatos ocorridos em país estrangeiro — art. 13, LINDB</h3>
+      <div class="aula-destaque-box"><p>"A prova dos fatos ocorridos em país estrangeiro rege-se pela lei que nele vigorar, quanto ao ônus e aos meios de produzir-se, não admitindo os tribunais brasileiros provas que a lei brasileira desconheça."</p></div>
+      <div class="aula-atencao-box"><p><strong>Combinação de dois critérios:</strong> o meio de prova em si (ex.: se testemunha ou documento é hábil) segue a lei estrangeira do local do fato — mas o meio de prova <strong>tem que ser reconhecido também pela lei brasileira</strong>. Se o Brasil desconhece totalmente aquele meio de prova, ele não é admitido aqui, ainda que válido no exterior.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Extradição — noções gerais (matéria correlata)</h3>
+      <p>Embora regulada principalmente pela Lei nº 13.445/2017 (Lei de Migração) e pela CF/88, a extradição dialoga com o tema de conflito de leis no espaço, pois envolve a entrega de uma pessoa a outro Estado para julgamento ou cumprimento de pena.</p>
+      <div class="aula-destaque-box"><p><strong>Regra constitucional (art. 5º, LI e LII, CF/88):</strong> nenhum brasileiro será extraditado, salvo o naturalizado, em caso de crime comum praticado antes da naturalização, ou de comprovado envolvimento em tráfico de entorpecentes. Não será concedida extradição de estrangeiro por crime político ou de opinião.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E SÍNTESES ══ -->
+  <div class="aula-secao" id="et-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Quadros comparativos — revisão rápida</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Graus de retroatividade — quadro-resumo</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Grau</th><th>O que atinge</th><th>Admitido no Brasil?</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Máxima (restitutória)</strong></td><td>Coisa julgada e fatos plenamente consumados</td><td><span class="aula-badge aula-badge-nao">NÃO</span> — vedada pelo art. 6º, LINDB</td></tr>
+          <tr><td><strong>Média</strong></td><td>Efeitos pendentes de atos anteriores (ex.: prestações vencidas não pagas)</td><td><span class="aula-badge aula-badge-nao">NÃO</span>, salvo previsão legal expressa que não atinja direito adquirido</td></tr>
+          <tr><td><strong>Mínima (temperada)</strong></td><td>Apenas efeitos futuros de situações anteriores</td><td><span class="aula-badge aula-badge-sim">SIM</span> — é a regra geral do "efeito imediato"</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Normas de conexão da LINDB — mapa rápido</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Matéria</th><th>Elemento de conexão</th><th>Artigo</th></tr></thead>
+        <tbody>
+          <tr><td>Pessoa (capacidade, nome, família)</td><td>Domicílio</td><td>Art. 7º</td></tr>
+          <tr><td>Bens</td><td>Local da situação (lex rei sitae)</td><td>Art. 8º</td></tr>
+          <tr><td>Obrigações/contratos</td><td>Local da constituição (locus regit actum)</td><td>Art. 9º</td></tr>
+          <tr><td>Sucessão</td><td>Domicílio do falecido (com exceção protecionista)</td><td>Art. 10</td></tr>
+          <tr><td>Pessoa jurídica</td><td>Local de constituição</td><td>Art. 11</td></tr>
+          <tr><td>Competência judiciária</td><td>Domicílio do réu no Brasil / imóvel situado no Brasil</td><td>Art. 12</td></tr>
+          <tr><td>Prova de fatos no exterior</td><td>Lei do local do fato + reconhecimento pela lei brasileira</td><td>Art. 13</td></tr>
+          <tr><td>Sentença estrangeira</td><td>Requisitos formais + homologação (STJ)</td><td>Art. 15</td></tr>
+          <tr><td>Limite geral (ordem pública)</td><td>Soberania, ordem pública e bons costumes</td><td>Art. 17</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobranças FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Art. 6º LINDB (ato jurídico perfeito, direito adquirido, coisa julgada); direito adquirido × expectativa de direito; critério do domicílio (art. 7º)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Graus de retroatividade (Matos Peixoto); lex rei sitae (art. 8º); locus regit actum (art. 9º); sucessão e exceção protecionista (art. 10, §1º)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Homologação de sentença estrangeira e competência do STJ; ordem pública (art. 17); competência da autoridade judiciária brasileira (art. 12)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Teorias de Gabba × Roubier; pessoa jurídica estrangeira (art. 11); prova de fatos no exterior (art. 13); extradição</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="et-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Sobre retroatividade e direito adquirido</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"A lei nova aplica-se de forma imediata inclusive aos efeitos passados de contratos em curso."</strong><br>✅ ERRADO. O efeito imediato do art. 6º, LINDB, atinge apenas os efeitos <strong>futuros</strong> — retroatividade mínima. Efeitos passados (prestações já vencidas) exigiriam retroatividade média, vedada em regra.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Quem ainda não completou os requisitos para determinado benefício tem direito adquirido a ele, desde que a expectativa exista há muito tempo."</strong><br>✅ ERRADO. O tempo de espera não transforma expectativa em direito adquirido — só o preenchimento integral dos requisitos legais o faz.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O poder constituinte originário está sujeito à vedação de retroatividade do art. 5º, XXXVI, CF/88."</strong><br>✅ ERRADO. O poder constituinte originário inaugura uma nova ordem jurídica e não se submete a essa vedação — ela recai sobre a lei ordinária (e, com temperamentos, sobre a emenda constitucional).</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"O ato jurídico perfeito é aquele já consumado segundo a lei vigente ao tempo em que se efetuou, sendo imune aos efeitos da lei nova."</strong><br>CORRETO — art. 6º, §1º, LINDB.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Sobre conflito de leis no espaço</h3>
+      <div class="aula-atencao-box"><p>❌ <strong>"O Brasil adota o critério da nacionalidade para reger a capacidade civil das pessoas, assim como a maioria dos países europeus."</strong><br>✅ ERRADO. O Brasil adota o critério do <strong>domicílio</strong> (art. 7º, LINDB) — diferente de países como Itália e França, que adotam a nacionalidade.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A sucessão de bens de estrangeiro situados no Brasil segue sempre a lei do país de domicílio do falecido, mesmo que prejudique o cônjuge ou filhos brasileiros."</strong><br>✅ ERRADO. O art. 10, §1º, LINDB (e o art. 5º, XXXI, CF/88) determinam a aplicação da <strong>lei brasileira</strong>, se mais favorável ao cônjuge ou filhos brasileiros.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A homologação de sentenças estrangeiras no Brasil é atualmente de competência do Supremo Tribunal Federal."</strong><br>✅ ERRADO. Desde a EC 45/2004, a competência é do <strong>STJ</strong> (art. 105, I, "i", CF/88).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Basta que a norma de conexão indique a lei estrangeira para que ela seja aplicada, ainda que viole a ordem pública brasileira."</strong><br>✅ ERRADO. O art. 17, LINDB, funciona como barreira: leis, atos e sentenças estrangeiros que ofendam soberania, ordem pública ou bons costumes não têm eficácia no Brasil.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"A sentença estrangeira de divórcio consensual produz efeitos no Brasil independentemente de homologação pelo STJ."</strong><br>CORRETO — art. 961, §5º, CPC/2015.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Os três institutos protetores do art. 6º</h4><p><strong>A-D-C:</strong> Ato jurídico perfeito → Direito adquirido → Coisa julgada</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Graus de retroatividade (do mais grave ao mais leve)</h4><p><strong>Máxima → Média → Mínima</strong><br>Só a mínima é compatível com a regra geral brasileira.</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Normas de conexão — o que rege o quê</h4><p>Pessoa → <strong>domicílio</strong><br>Bem → <strong>local da coisa</strong> (lex rei sitae)<br>Obrigação → <strong>local de constituição</strong> (locus regit actum)<br>Sucessão → <strong>domicílio do falecido</strong> (com exceção protecionista)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Homologação de sentença estrangeira</h4><p>Antes da EC 45/2004: STF<br>Depois da EC 45/2004: <strong>STJ</strong></p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="et-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC</h3></div></div><p style="font-size:13px;color:#888">Clique na opção que considera correta e depois em "Ver gabarito".</p></div>
+
+    <!-- Q1 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Servidor público necessita de 30 anos de contribuição para se aposentar por determinada regra. Ao atingir 30 anos de contribuição, mas antes de requerer o benefício, sobrevém lei nova exigindo 32 anos. Nessa hipótese:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> o servidor possui apenas expectativa de direito, sujeitando-se à nova exigência de 32 anos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> o servidor possui direito adquirido à aposentadoria com 30 anos, ainda que não a tenha requerido, não podendo a lei nova exigir-lhe os 32 anos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> o servidor deve requerer a aposentadoria em até 30 dias da nova lei, sob pena de perder o direito adquirido.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> a matéria é de retroatividade máxima, vedada em qualquer hipótese pela CF/88.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> o servidor só teria direito adquirido se tivesse efetivamente requerido a aposentadoria antes da lei nova.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 6º, §2º, LINDB: consideram-se adquiridos os direitos que o titular já possa exercer — o exercício efetivo (requerimento) não é necessário para a configuração do direito adquirido, basta que os requisitos legais estejam completos. Como o servidor já tinha 30 anos de contribuição, o direito já estava incorporado ao seu patrimônio jurídico antes da lei nova.</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 6º, §2º.</span>
+    </div>
+
+    <!-- Q2 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os graus de retroatividade da lei, segundo a classificação doutrinária de Matos Peixoto, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A retroatividade mínima atinge a coisa julgada e os fatos já plenamente consumados sob a lei antiga.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> A retroatividade máxima é a única compatível com a regra geral do art. 6º da LINDB.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> A retroatividade mínima, que atinge apenas os efeitos futuros de situações jurídicas anteriores, é a única compatível com a regra geral do efeito imediato da lei nova, prevista no art. 6º da LINDB.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A retroatividade média é sempre admitida no direito brasileiro, independentemente de previsão legal expressa.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Os três graus de retroatividade são igualmente vedados pelo ordenamento jurídico brasileiro, sem exceções.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>A retroatividade mínima atinge apenas os efeitos futuros de situações jurídicas constituídas no passado — é exatamente o que descreve o "efeito imediato" do art. 6º, LINDB, sem violar direito adquirido. A retroatividade média (efeitos pendentes) e a máxima (coisa julgada e fatos consumados) são, em regra, vedadas, salvo previsão legal expressa que ainda assim respeite o direito adquirido.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina — Matos Peixoto; LINDB, art. 6º.</span>
+    </div>
+
+    <!-- Q3 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> João, estrangeiro domiciliado no Brasil, falece deixando bens situados em território brasileiro. Sua esposa e filhos são brasileiros. A lei pessoal de João, de seu país de origem, é menos favorável a eles do que a lei brasileira. Nesse caso, aplica-se:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> a lei do país de origem de João, por força da regra geral do art. 10, caput, da LINDB, sem exceções.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> a lei brasileira, em benefício do cônjuge e dos filhos brasileiros, por força do art. 10, §1º, da LINDB e do art. 5º, XXXI, da CF/88.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> a lei do domicílio dos herdeiros no momento da abertura da sucessão, independentemente de nacionalidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> a lei do local em que os bens estiverem situados, por força do princípio da lex rei sitae aplicado à sucessão.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> a lei mais rigorosa entre a brasileira e a estrangeira, para proteger o interesse de eventuais credores.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 10, §1º, LINDB: a sucessão de bens de estrangeiros situados no Brasil será regulada pela lei brasileira em benefício do cônjuge ou dos filhos brasileiros, sempre que não lhes seja mais favorável a lei pessoal do de cujus. Essa é uma norma de proteção — aplica-se a lei mais benéfica ao herdeiro brasileiro, independentemente da regra geral do domicílio do falecido (art. 10, caput).</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 10, §1º; CF/88, art. 5º, XXXI.</span>
+    </div>
+
+    <!-- Q4 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a homologação de sentença estrangeira no ordenamento jurídico brasileiro, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Compete ao Supremo Tribunal Federal homologar sentenças estrangeiras, conforme redação original da LINDB, ainda em vigor.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Compete ao Superior Tribunal de Justiça homologar sentenças estrangeiras, desde a Emenda Constitucional nº 45/2004, sendo dispensada a homologação no caso de sentença estrangeira de divórcio consensual.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Toda sentença estrangeira, para produzir efeitos no Brasil, deve ser homologada pelo STJ, sem qualquer exceção.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A homologação de sentença estrangeira é sempre dispensável quando a sentença tratar de matéria de família.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Compete à Justiça Federal de primeira instância homologar sentenças estrangeiras relativas a brasileiros.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Desde a EC 45/2004 (art. 105, I, "i", CF/88), a competência para homologar sentença estrangeira é do STJ (antes era do STF). O CPC, art. 961, §5º, dispensa a homologação para sentença estrangeira de divórcio consensual — que produz efeitos no Brasil independentemente desse procedimento.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 105, I, "i" (EC 45/2004); CPC, art. 961, §5º; LINDB, art. 15.</span>
+    </div>
+
+    <!-- Q5 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o critério de conexão adotado pelo Brasil para reger a capacidade civil e os direitos de família das pessoas, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O Brasil adota o critério da nacionalidade, de modo que um italiano domiciliado no Brasil tem sua capacidade civil regida pela lei italiana.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> O Brasil adota o critério do domicílio, de modo que um italiano domiciliado no Brasil tem sua capacidade civil regida pela lei brasileira.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> O Brasil adota o critério do local de nascimento da pessoa, independentemente de seu domicílio atual.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O Brasil adota o critério da lex rei sitae também para reger a capacidade civil das pessoas.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O critério de conexão para a capacidade civil é escolhido livremente pelas partes, por meio de negócio jurídico processual.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 7º, caput, LINDB: "A lei do país em que domiciliada a pessoa determina as regras sobre [...] a capacidade [...]." O Brasil adota o critério do domicílio, e não da nacionalidade — diferente de vários países europeus (como Itália e França, que adotam a lei da nacionalidade para o estatuto pessoal).</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 7º, caput — critério do domicílio.</span>
+    </div>
+
+    <!-- Q6 -->
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinada lei estrangeira, aplicável a um contrato por força das normas de conexão da LINDB, prevê efeitos manifestamente incompatíveis com a ordem pública brasileira. Nesse caso:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> a lei estrangeira deve ser aplicada integralmente, pois as normas de conexão da LINDB não admitem exceção.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> a lei estrangeira não terá eficácia no Brasil quanto aos efeitos que ofendam a soberania nacional, a ordem pública ou os bons costumes, nos termos do art. 17 da LINDB.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> a incompatibilidade com a ordem pública brasileira deve ser decidida exclusivamente por lei complementar.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> a lei estrangeira só pode ser afastada se o STF, em controle concentrado, declarar sua inconstitucionalidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> a incompatibilidade com a ordem pública é irrelevante, pois normas de conexão são de aplicação obrigatória e automática.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 17, LINDB: leis, atos e sentenças de outro país, bem como quaisquer declarações de vontade, não terão eficácia no Brasil quando ofenderem a soberania nacional, a ordem pública e os bons costumes. Essa cláusula funciona como limite geral às normas de conexão dos arts. 7º a 13 — mesmo que a norma de conexão indique a lei estrangeira, seus efeitos podem ser afastados se violarem esses valores fundamentais do ordenamento brasileiro.</div>
+      <span class="aula-fonte-tag">Fundamento: LINDB, art. 17.</span>
+    </div>
+
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
