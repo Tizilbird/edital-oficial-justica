@@ -5692,6 +5692,389 @@ AULAS['dciv_5'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Desconsideração da Personalidade Jurídica
+// Chave: dciv_6 (Direito Civil, tópico 6)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dciv_6'] = {
+  title: 'Desconsideração da Personalidade Jurídica',
+  sub: 'Direito Civil · CC/2002, art. 50 + CDC, art. 28 + CLT + CPC · Banca FCC',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CC/2002, art. 50 · CDC, art. 28 · CLT, art. 2º, §2º · CPC, arts. 133–137</div>
+  <h1 class="aula-h1">Desconsideração da Personalidade Jurídica</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="dp-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="dp-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Introdução</button>
+    <button class="aula-tab-btn" data-sec="1">Teoria Maior</button>
+    <button class="aula-tab-btn" data-sec="2">Teoria Menor</button>
+    <button class="aula-tab-btn" data-sec="3">Modalidades</button>
+    <button class="aula-tab-btn" data-sec="4">Aspectos Processuais</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Sínteses</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — INTRODUÇÃO ══ -->
+  <div class="aula-secao ativo" id="dp-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🎭</div>
+        <div>
+          <span class="aula-tag aula-tag-lei">CC/2002, art. 50 · Doutrina</span>
+          <h3>O que é a desconsideração da personalidade jurídica?</h3>
+        </div>
+      </div>
+      <p>A pessoa jurídica tem <strong>personalidade e patrimônio próprios</strong>, distintos dos de seus sócios ou administradores (princípio da autonomia patrimonial). Essa separação é a razão de existir do instituto — permite limitar o risco do empreendedor. Mas quando essa autonomia é <strong>usada de forma abusiva</strong>, para fraudar credores ou burlar a lei, o juiz pode "levantar o véu" da pessoa jurídica e atingir o patrimônio pessoal de quem se beneficiou do abuso — sem, no entanto, extinguir ou anular a pessoa jurídica.</p>
+      <div class="aula-destaque-box"><p><strong>Ponto que a FCC adora cobrar:</strong> a desconsideração é <strong>episódica e relativa</strong> — vale para aquela obrigação específica discutida no processo. A pessoa jurídica continua existindo normalmente para todos os demais efeitos. Não se confunde com despersonificação (que extinguiria a PJ).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Origem e nome da teoria</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Disregard of Legal Entity</h4><p>Teoria de origem anglo-saxã (Inglaterra e EUA), incorporada ao direito brasileiro pela doutrina — precursor: Rubens Requião (1969).</p></div>
+        <div class="aula-mini-card"><h4>Nomenclaturas equivalentes</h4><p>"Levantamento do véu societário" (disregard doctrine), "penetração na pessoa jurídica" — todas descrevem o mesmo fenômeno: superar a autonomia patrimonial em caso concreto.</p></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Onde a desconsideração está prevista no ordenamento</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Diploma</th><th>Dispositivo</th><th>Teoria adotada</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Código Civil</strong></td><td>Art. 50 (redação dada pela Lei 13.874/2019 — Lei da Liberdade Econômica)</td><td>Teoria Maior</td></tr>
+          <tr><td><strong>CDC</strong></td><td>Art. 28</td><td>Teoria Menor (regra geral do CDC)</td></tr>
+          <tr><td><strong>Lei Ambiental</strong></td><td>Art. 4º, Lei 9.605/1998</td><td>Teoria Menor</td></tr>
+          <tr><td><strong>CLT</strong></td><td>Art. 2º, §2º (grupo econômico) + construção jurisprudencial do TST</td><td>Teoria Menor (predominante na Justiça do Trabalho)</td></tr>
+          <tr><td><strong>CPC</strong></td><td>Arts. 133 a 137 — Incidente de Desconsideração da Personalidade Jurídica (IDPJ)</td><td>Regra processual comum a todas</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Fundamental para a prova:</strong> cada lei adota uma teoria diferente sobre <em>quando</em> a desconsideração é cabível. O CPC (arts. 133–137) apenas disciplina o <em>procedimento</em> — não diz quando cabe a desconsideração, isso depende da lei material aplicável ao caso (CC, CDC, CLT etc.).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — TEORIA MAIOR ══ -->
+  <div class="aula-secao" id="dp-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, art. 50</span><h3>Teoria Maior — regra geral do Direito Civil</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 50, caput, CC:</strong> "Em caso de abuso da personalidade jurídica, caracterizado pelo desvio de finalidade ou pela confusão patrimonial, pode o juiz, a requerimento da parte, ou do Ministério Público quando lhe couber intervir no processo, desconsiderá-la para que os efeitos de certas e determinadas relações de obrigações sejam estendidos aos bens particulares de administradores ou de sócios da pessoa jurídica beneficiados direta ou indiretamente pelo abuso."</p></div>
+      <p>Chama-se "maior" porque exige <strong>mais requisitos</strong> para sua aplicação — não basta a mera insolvência da empresa (inadimplemento). É necessário provar o <strong>abuso da personalidade jurídica</strong>.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Os dois requisitos alternativos do abuso (art. 50, §1º e §2º)</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card">
+          <h4>Desvio de finalidade (§1º)</h4>
+          <p>"A utilização da pessoa jurídica com o propósito de lesar credores e para a prática de atos ilícitos de qualquer natureza." É o elemento <strong>subjetivo</strong> — uso intencional e fraudulento da PJ.</p>
+        </div>
+        <div class="aula-mini-card">
+          <h4>Confusão patrimonial (§2º)</h4>
+          <p>Elemento <strong>objetivo</strong>. Caracteriza-se por: I — cumprimento repetitivo pela sociedade de obrigações do sócio/administrador (ou vice-versa); II — transferência de ativos ou passivos sem contraprestações efetivas; III — outros atos de descumprimento da autonomia patrimonial.</p>
+        </div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>São requisitos ALTERNATIVOS, não cumulativos:</strong> basta provar UM dos dois (desvio de finalidade OU confusão patrimonial) para autorizar a desconsideração. A FCC costuma testar se o candidato sabe que não é preciso provar os dois ao mesmo tempo.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>O que NÃO caracteriza abuso — art. 50, §5º (Lei da Liberdade Econômica)</h3>
+      <div class="aula-destaque-box"><p><strong>§5º, art. 50, CC:</strong> "Não constitui desvio de finalidade a mera expansão ou a alteração da finalidade original da atividade econômica específica da pessoa jurídica."</p></div>
+      <p>Essa regra foi inserida pela Lei 13.874/2019 justamente para <strong>restringir</strong> o uso indevido da desconsideração — reforçando que mera insolvência, dificuldade financeira ou mudança de ramo de atuação da empresa não autorizam, por si só, atingir o patrimônio dos sócios.</p>
+      <div class="aula-atencao-box"><p><strong>Pegadinha clássica FCC:</strong> "O mero inadimplemento de obrigação pela sociedade autoriza a desconsideração da personalidade jurídica" — ERRADO. É pacífico no STJ que a simples insolvência ou inadimplência da PJ, isoladamente, <strong>não</strong> configura abuso apto a ensejar a desconsideração pela Teoria Maior.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quem pode ser atingido — o "beneficiado" pelo abuso</h3>
+      <p>O art. 50, caput, é claro: os efeitos se estendem aos bens de administradores ou sócios <strong>beneficiados direta ou indiretamente pelo abuso</strong>. Isso significa que:</p>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p>Não é qualquer sócio que responde — apenas quem participou do abuso ou dele se beneficiou.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p>Sócio minoritário, sem poder de administração e alheio à conduta abusiva, em princípio não deve ser atingido — a desconsideração não é sanção objetiva automática a todo o quadro societário.</p></div>
+      <div class="aula-atencao-box"><p><strong>Art. 50, §3º:</strong> o disposto no caput também se aplica à extensão das obrigações de sócios ou administradores <strong>à pessoa jurídica</strong> — é a chamada desconsideração <strong>inversa</strong> (veja Seção 3).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Teoria Maior Subjetiva × Teoria Maior Objetiva (classificação doutrinária)</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Subespécie</th><th>Foco</th><th>Adotada pelo art. 50?</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Teoria Maior Subjetiva</strong></td><td>Exige a intenção fraudulenta, o dolo (desvio de finalidade)</td><td>Parcialmente — corresponde ao §1º</td></tr>
+          <tr><td><strong>Teoria Maior Objetiva</strong></td><td>Basta a confusão patrimonial, independentemente de dolo</td><td>Parcialmente — corresponde ao §2º</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-destaque-box"><p>O art. 50 do CC, na redação atual, <strong>combina as duas vertentes</strong> como hipóteses alternativas — por isso a doutrina diz que o CC adotou uma "Teoria Maior mista".</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — TEORIA MENOR ══ -->
+  <div class="aula-secao" id="dp-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🛒</div>
+        <div><span class="aula-tag aula-tag-lei">CDC, art. 28 · Lei 9.605/98, art. 4º · CLT</span><h3>Teoria Menor — regimes de proteção especial</h3></div>
+      </div>
+      <p>Chama-se "menor" porque exige <strong>menos</strong> — basta a demonstração de que a personalidade jurídica é um <strong>obstáculo ao ressarcimento do prejuízo</strong>, dispensando prova de abuso, fraude ou confusão patrimonial. É adotada em regimes protetivos de partes vulneráveis: consumidor, meio ambiente e, na prática dos tribunais trabalhistas, o trabalhador.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Art. 28, CDC — o dispositivo mais "confuso" da lei</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 28, caput, CDC:</strong> "O juiz poderá desconsiderar a personalidade jurídica da sociedade quando, em detrimento do consumidor, houver abuso de direito, excesso de poder, infração da lei, fato ou ato ilícito ou violação dos estatutos ou contrato social. A desconsideração também será efetivada quando houver falência, estado de insolvência, encerramento ou inatividade da pessoa jurídica provocados por má administração."</p></div>
+      <div class="aula-atencao-box"><p><strong>A verdadeira "Teoria Menor" está no §5º, art. 28, CDC:</strong> "Também poderá ser desconsiderada a pessoa jurídica sempre que sua personalidade for, de alguma forma, obstáculo ao ressarcimento de prejuízos causados aos consumidores." Esse parágrafo, isoladamente interpretado pelo STJ, dispensa a prova de abuso ou fraude — basta que a PJ não tenha patrimônio suficiente para pagar o consumidor lesado.</p></div>
+      <div class="aula-destaque-box"><p><strong>Posição do STJ (REsp 279.273/SP — caso Shopping Center de Osasco):</strong> a mera prova de insolvência ou de que a pessoa jurídica não tem patrimônio suficiente para saldar a dívida com o consumidor já autoriza a desconsideração, com base no art. 28, §5º, CDC — <strong>independentemente</strong> da demonstração de fraude, abuso ou confusão patrimonial.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Art. 4º, Lei 9.605/1998 (Lei de Crimes Ambientais)</h3>
+      <div class="aula-destaque-box"><p>"Poderá ser desconsiderada a pessoa jurídica sempre que sua personalidade for obstáculo ao ressarcimento de prejuízos causados à qualidade do meio ambiente."</p></div>
+      <p>Segue a mesma lógica do CDC — basta que a PJ seja um obstáculo ao ressarcimento; não se exige prova de fraude ou confusão patrimonial.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Direito do Trabalho</h3>
+      <p>A CLT não tem um dispositivo específico e detalhado sobre desconsideração como o CDC — a <strong>construção é essencialmente jurisprudencial (TST)</strong>, aplicando por analogia o art. 28, §5º, CDC (Teoria Menor), dada a hipossuficiência do trabalhador, equiparada à do consumidor.</p>
+      <div class="aula-destaque-box"><p><strong>Súmula 435, TST:</strong> presume-se fraudulenta a alteração de endereço da empresa executada não seguida da devida comunicação aos órgãos competentes, cabendo desconsideração da personalidade jurídica quando dificultada a localização de bens.</p></div>
+      <div class="aula-atencao-box"><p><strong>Grupo econômico trabalhista (art. 2º, §§2º e 3º, CLT):</strong> não é exatamente desconsideração, mas <strong>responsabilidade solidária</strong> das empresas que integram o mesmo grupo econômico — mecanismo distinto, mas frequentemente confundido pela banca. Desconsideração atinge o sócio/administrador; responsabilidade de grupo econômico atinge outra pessoa jurídica do grupo.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Comparativo direto — Teoria Maior × Teoria Menor</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Teoria Maior (CC, art. 50)</th><th>Teoria Menor (CDC, art. 28, §5º)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Requisito</strong></td><td>Abuso: desvio de finalidade OU confusão patrimonial</td><td>Mera insuficiência patrimonial da PJ para pagamento</td></tr>
+          <tr><td><strong>Exige fraude/dolo?</strong></td><td>Sim (em uma das duas modalidades)</td><td>Não</td></tr>
+          <tr><td><strong>Campo de aplicação</strong></td><td>Relações civis e empresariais em geral</td><td>Relações de consumo, ambientais, trabalhistas (por construção)</td></tr>
+          <tr><td><strong>Rigor</strong></td><td>Mais rigorosa — mais difícil de aplicar</td><td>Mais branda — mais fácil de aplicar</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira FCC:</strong> "O Código Civil e o CDC adotam a mesma teoria da desconsideração da personalidade jurídica" — ERRADO. São teorias diferentes: CC = Teoria Maior (exige abuso); CDC = Teoria Menor (basta a insuficiência patrimonial).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — MODALIDADES ══ -->
+  <div class="aula-secao" id="dp-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🔄</div>
+        <div><span class="aula-tag aula-tag-lei">CC, art. 50, §3º · Doutrina · Jurisprudência</span><h3>Modalidades de Desconsideração</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Desconsideração Direta (tradicional)</h3>
+      <p>É a modalidade clássica: o juiz "atravessa" a pessoa jurídica para atingir o patrimônio pessoal dos <strong>sócios ou administradores</strong>, quando a PJ não tem patrimônio suficiente e há abuso (Teoria Maior) ou insuficiência patrimonial em relações protegidas (Teoria Menor).</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Desconsideração Inversa</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 50, §3º, CC:</strong> "O disposto no caput e nos §§1º e 2º deste artigo também se aplica à extensão das obrigações de sócios ou de administradores à pessoa jurídica."</p></div>
+      <p>Aqui o caminho é o <strong>oposto</strong>: o sócio (pessoa física) transfere seus bens para a pessoa jurídica com o objetivo de blindá-los da execução (ex.: dívida de família, alimentos, dívida pessoal). O juiz "atravessa a PJ ao contrário" para atingir o patrimônio da empresa em razão de dívida pessoal do sócio.</p>
+      <div class="aula-destaque-box"><p><strong>Exemplo clássico de prova — divórcio e partilha:</strong> marido transfere bens do casal para uma empresa da qual é sócio majoritário, na tentativa de subtraí-los da partilha ou de escapar da pensão alimentícia. O cônjuge/credor de alimentos pode requerer a desconsideração inversa para atingir o patrimônio da empresa.</p></div>
+      <div class="aula-atencao-box"><p><strong>Súmula 549, STJ (aplicada por analogia ao raciocínio):</strong> embora tratando de fiança em locação, consagra a lógica de que a boa-fé e a proteção de terceiros não podem ser usadas para blindar patrimônio de forma fraudulenta — princípio que também informa a desconsideração inversa.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Desconsideração Expansiva (ou "por Extensão")</h3>
+      <p>Modalidade de construção jurisprudencial (não expressamente prevista no art. 50): estende os efeitos da desconsideração para <strong>outra pessoa jurídica do mesmo grupo econômico</strong>, quando há confusão patrimonial entre as diversas empresas (ex.: mesma administração de fato, mesmo endereço, mesmos sócios ocultos).</p>
+      <div class="aula-atencao-box"><p><strong>Diferença para o grupo econômico da CLT:</strong> na desconsideração expansiva, o fundamento é o <em>abuso/confusão patrimonial</em> entre empresas formalmente distintas. No grupo econômico trabalhista (art. 2º, §2º, CLT), a responsabilidade solidária decorre da simples existência do grupo, independentemente de prova de confusão ou fraude.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quadro-síntese das modalidades</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Modalidade</th><th>Direção</th><th>Base legal</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Direta</strong></td><td>PJ → patrimônio do sócio/administrador</td><td>Art. 50, caput, CC</td></tr>
+          <tr><td><strong>Inversa</strong></td><td>Sócio/administrador → patrimônio da PJ</td><td>Art. 50, §3º, CC</td></tr>
+          <tr><td><strong>Expansiva</strong></td><td>PJ → patrimônio de outra PJ do mesmo grupo</td><td>Construção jurisprudencial</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — ASPECTOS PROCESSUAIS ══ -->
+  <div class="aula-secao" id="dp-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">📋</div>
+        <div><span class="aula-tag aula-tag-lei">CPC, arts. 133 a 137</span><h3>O Incidente de Desconsideração da Personalidade Jurídica (IDPJ)</h3></div>
+      </div>
+      <p>O CPC/2015 trouxe, pela primeira vez, um <strong>procedimento próprio</strong> para a desconsideração — antes disso, ela era decretada muitas vezes sem contraditório prévio, apenas na fase de execução. O IDPJ existe justamente para <strong>garantir o contraditório e a ampla defesa</strong> ao sócio/administrador antes de seu patrimônio ser atingido.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Cabimento e legitimidade (art. 133, CPC)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 133, caput:</strong> "O incidente de desconsideração da personalidade jurídica será instaurado a pedido da parte ou do Ministério Público, quando lhe couber intervir no processo."<br><strong>§1º:</strong> cabível em todas as fases do processo de conhecimento, no cumprimento de sentença e na execução fundada em título executivo extrajudicial.<br><strong>§2º:</strong> aplica-se também à desconsideração inversa.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha:</strong> o juiz <strong>não pode instaurar o IDPJ de ofício</strong> — depende de requerimento da parte ou do MP. É decorrência do princípio dispositivo (art. 2º, CPC).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Procedimento — passo a passo</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Pedido fundamentado</strong> — a parte (ou o MP) requer a desconsideração, demonstrando o preenchimento dos pressupostos legais previstos na lei material (art. 50, CC; art. 28, CDC etc.) — art. 134, §4º.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Suspensão do processo</strong> — a instauração do incidente suspende o processo principal, salvo se requerida na petição inicial, caso em que dispensa-se a suspensão (art. 134, §2º e §3º).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Citação do sócio/PJ</strong> — o sócio ou a pessoa jurídica atingida é citado para se manifestar e requerer provas em <strong>15 dias</strong> (art. 135).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">4</div><p><strong>Instrução, se necessária</strong> — havendo necessidade de produção de provas.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">5</div><p><strong>Decisão interlocutória</strong> — o incidente é resolvido por decisão interlocutória (art. 136), recorrível por <strong>agravo de instrumento</strong> (art. 1.015, IV, CPC — hipótese expressa de cabimento).</p></div>
+      <div class="aula-atencao-box"><p><strong>Se a decisão for proferida pelo relator, no âmbito de recurso já em tribunal:</strong> cabe agravo interno (art. 136, parágrafo único).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Efeitos da instauração e da decisão (art. 137)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 137, CPC:</strong> "Acolhido o pedido de desconsideração, a alienação ou a oneração de bens, havida em fraude de execução, será ineficaz em relação ao requerente." Ou seja: acolhida a desconsideração, os atos de disposição patrimonial praticados pelo sócio/PJ após a instauração do incidente, em fraude à execução, tornam-se ineficazes perante o credor.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Dispensa do incidente (art. 134, §2º)</h3>
+      <p>O IDPJ é dispensado (não instaurado como incidente autônomo) quando a desconsideração for requerida na <strong>própria petição inicial</strong> — nesse caso, a citação do sócio/administrador ocorre nos moldes tradicionais, como réu desde o início, sem necessidade de suspensão do processo.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Relação entre a desconsideração e o redirecionamento da execução fiscal</h3>
+      <div class="aula-atencao-box"><p><strong>Atenção — tema recorrente em provas de Tribunais/Fazenda Pública:</strong> o STJ entende que, nos casos de <strong>responsabilidade tributária</strong> pessoal do sócio-gerente já prevista expressamente em lei (art. 135, III, CTN — dissolução irregular da empresa, Súmula 435 STJ), <strong>não é necessário instaurar o IDPJ</strong>, pois não se trata propriamente de desconsideração da personalidade jurídica, mas de responsabilização direta por ato ilícito do próprio sócio, prevista em lei tributária específica (REsp 1.775.269/PR — Tema 981, recursos repetitivos).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E SÍNTESES ══ -->
+  <div class="aula-secao" id="dp-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Quadros comparativos — revisão rápida</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Panorama legislativo completo</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Fonte</th><th>Teoria</th><th>Requisito central</th></tr></thead>
+        <tbody>
+          <tr><td>CC, art. 50</td><td>Maior</td><td>Desvio de finalidade OU confusão patrimonial</td></tr>
+          <tr><td>CDC, art. 28, §5º</td><td>Menor</td><td>PJ como obstáculo ao ressarcimento (basta insuficiência patrimonial)</td></tr>
+          <tr><td>Lei 9.605/98, art. 4º</td><td>Menor</td><td>PJ como obstáculo à reparação ambiental</td></tr>
+          <tr><td>CLT (construção do TST)</td><td>Menor (por analogia ao CDC)</td><td>Hipossuficiência do trabalhador + insuficiência patrimonial</td></tr>
+          <tr><td>CPC, arts. 133–137</td><td>—</td><td>Apenas disciplina o procedimento (IDPJ)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobranças FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Requisitos alternativos do art. 50 (desvio de finalidade × confusão patrimonial); Teoria Maior × Teoria Menor; IDPJ — procedimento e recurso cabível</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Desconsideração inversa (art. 50, §3º); art. 50, §5º (mera expansão não é desvio); mero inadimplemento não autoriza desconsideração (Teoria Maior)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Art. 28, §5º, CDC — posição do STJ (caso Shopping Osasco); dispensa do IDPJ quando pedida na petição inicial; efeitos do art. 137</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Desconsideração expansiva; grupo econômico trabalhista × desconsideração; redirecionamento tributário sem IDPJ (Tema 981 STJ)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="dp-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"A desconsideração da personalidade jurídica extingue a pessoa jurídica para todos os efeitos."</strong><br>✅ ERRADO. A desconsideração é episódica: atinge apenas a obrigação discutida naquele processo — a PJ continua existindo normalmente para os demais fins.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O mero inadimplemento de uma obrigação pela sociedade autoriza a desconsideração com base no art. 50 do CC."</strong><br>✅ ERRADO. É necessário comprovar abuso — desvio de finalidade ou confusão patrimonial. Simples insolvência não basta na Teoria Maior.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O CDC exige prova de abuso ou fraude para a desconsideração, tal qual o Código Civil."</strong><br>✅ ERRADO. O CDC (art. 28, §5º) adota a Teoria Menor — basta que a PJ seja obstáculo ao ressarcimento do consumidor, dispensando prova de fraude.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A mera expansão ou alteração da finalidade original da atividade econômica da PJ caracteriza desvio de finalidade."</strong><br>✅ ERRADO. Art. 50, §5º, CC — expressamente afasta essa hipótese como causa de desvio.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O juiz pode instaurar de ofício o incidente de desconsideração da personalidade jurídica."</strong><br>✅ ERRADO. Depende de requerimento da parte ou do Ministério Público (art. 133, CPC).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A desconsideração inversa não tem previsão no Código Civil, sendo criação exclusivamente jurisprudencial."</strong><br>✅ ERRADO. Está expressamente prevista no art. 50, §3º, CC.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"A decisão que resolve o incidente de desconsideração da personalidade jurídica é impugnável por agravo de instrumento."</strong><br>CORRETO — art. 1.015, IV, CPC.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"Requerida a desconsideração na petição inicial, dispensa-se a instauração do incidente."</strong><br>CORRETO — art. 134, §2º, CPC.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Requisitos do art. 50 — Teoria Maior</h4><p><strong>D-C (alternativos):</strong> Desvio de finalidade <em>OU</em> Confusão patrimonial — nunca os dois juntos são exigidos</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Maior × Menor — quem exige mais</h4><p><strong>MAIOR</strong> exige MAIS prova (abuso) → CC<br><strong>MENOR</strong> exige MENOS prova (só insuficiência patrimonial) → CDC, ambiental, trabalhista</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Direção da desconsideração</h4><p><strong>Direta:</strong> PJ paga → sócio paga (indo "para dentro" do sócio)<br><strong>Inversa:</strong> sócio esconde bens na PJ → PJ paga (indo "para fora", na empresa)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 IDPJ — prazo e recurso</h4><p>Citação: <strong>15 dias</strong> para manifestação<br>Recurso: <strong>agravo de instrumento</strong> (art. 1.015, IV)</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="dp-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC</h3></div></div><p style="font-size:13px;color:#888">Clique na opção que considera correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Nos termos do art. 50 do Código Civil, a desconsideração da personalidade jurídica pressupõe:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A comprovação cumulativa de desvio de finalidade e confusão patrimonial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> O simples inadimplemento de obrigação contraída pela sociedade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> O abuso da personalidade jurídica, caracterizado alternativamente pelo desvio de finalidade ou pela confusão patrimonial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A mera insuficiência patrimonial da sociedade para o cumprimento de suas obrigações.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A alteração ou expansão da finalidade original da atividade econômica da sociedade.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 50, caput, CC: abuso caracterizado pelo desvio de finalidade OU pela confusão patrimonial — requisitos alternativos, não cumulativos. Alternativas B, D e E descrevem situações que o STJ e o §5º do art. 50 expressamente afastam como causas de desconsideração pela Teoria Maior.</div>
+      <span class="aula-fonte-tag">Fundamento: CC, art. 50, caput, §1º, §2º e §5º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a desconsideração da personalidade jurídica nas relações de consumo, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O CDC exige, tal como o Código Civil, a comprovação de desvio de finalidade ou confusão patrimonial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Segundo entendimento do STJ, a desconsideração pode ser decretada sempre que a personalidade jurídica for, de alguma forma, obstáculo ao ressarcimento de prejuízos causados aos consumidores, independentemente de fraude ou abuso.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A desconsideração em relações de consumo somente pode ser decretada em caso de falência decretada judicialmente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O CDC não prevê a possibilidade de desconsideração da personalidade jurídica, aplicando-se subsidiariamente apenas o art. 50 do CC.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A desconsideração no CDC exige autorização prévia do Ministério Público em todos os casos.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 28, §5º, CDC — Teoria Menor. O STJ (REsp 279.273/SP, caso Shopping Center de Osasco) consolidou que basta a demonstração de que a PJ é obstáculo ao ressarcimento do consumidor, sem necessidade de prova de fraude, abuso ou confusão patrimonial — diferentemente do regime do art. 50, CC.</div>
+      <span class="aula-fonte-tag">Fundamento: CDC, art. 28, §5º; STJ, REsp 279.273/SP.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Marcos, sócio majoritário de determinada sociedade empresária, na iminência de partilha de bens em processo de divórcio, transfere seu patrimônio pessoal para a pessoa jurídica da qual é sócio, na tentativa de subtraí-lo da meação. Nessa hipótese, o instrumento processual cabível para que a ex-cônjuge alcance o patrimônio da sociedade é:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Desconsideração direta, prevista no art. 50, caput, do Código Civil.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Desconsideração inversa, prevista no art. 50, §3º, do Código Civil.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Desconsideração expansiva, aplicável exclusivamente a grupos econômicos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Ação de nulidade do negócio jurídico, sem possibilidade de desconsideração da personalidade jurídica nesse caso.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Redirecionamento automático da execução, dispensada qualquer decisão judicial específica.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Trata-se de desconsideração inversa (art. 50, §3º, CC): o sócio transfere bens pessoais para a pessoa jurídica com o intuito de blindá-los de credores (aqui, da meação). O caminho é do sócio para a PJ — o oposto da desconsideração direta.</div>
+      <span class="aula-fonte-tag">Fundamento: CC, art. 50, §3º; CPC, art. 133, §2º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o Incidente de Desconsideração da Personalidade Jurídica, disciplinado pelo CPC/2015, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Pode ser instaurado de ofício pelo juiz sempre que verificar indícios de confusão patrimonial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> É cabível apenas na fase de conhecimento, não se aplicando ao cumprimento de sentença ou à execução de título extrajudicial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> A instauração do incidente suspende o processo, salvo quando a desconsideração for requerida na petição inicial, hipótese em que se dispensa a suspensão.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A decisão que resolve o incidente é irrecorrível, por se tratar de questão incidental de natureza processual.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O sócio ou a pessoa jurídica citados no incidente têm prazo de 5 dias para se manifestar e requerer provas.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>a) ERRADO — depende de requerimento da parte ou do MP (art. 133).<br>b) ERRADO — cabível em todas as fases: conhecimento, cumprimento de sentença e execução de título extrajudicial (art. 134, §1º).<br>c) CORRETO — art. 134, §§2º e 3º.<br>d) ERRADO — cabe agravo de instrumento (art. 1.015, IV).<br>e) ERRADO — o prazo é de 15 dias (art. 135).</div>
+      <span class="aula-fonte-tag">Fundamento: CPC, arts. 133 a 137.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Assinale a alternativa que apresenta corretamente uma distinção entre a Teoria Maior e a Teoria Menor da desconsideração da personalidade jurídica:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A Teoria Maior é aplicável às relações de consumo, ao passo que a Teoria Menor rege as relações civis em geral.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A Teoria Maior exige a comprovação de abuso da personalidade jurídica, enquanto a Teoria Menor se contenta com a demonstração de que a personalidade jurídica representa obstáculo ao ressarcimento do prejuízo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Ambas as teorias exigem os mesmos requisitos, variando apenas o órgão jurisdicional competente para decretar a desconsideração.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A Teoria Menor é mais rigorosa que a Teoria Maior, exigindo prova de dolo específico do sócio ou administrador.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A Teoria Maior é adotada pelo CDC e pela Lei de Crimes Ambientais, enquanto a Teoria Menor é adotada pelo Código Civil.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>A Teoria Maior (CC, art. 50) é mais rigorosa — exige prova de abuso (desvio de finalidade ou confusão patrimonial). A Teoria Menor (CDC, art. 28, §5º; Lei 9.605/98, art. 4º) é mais branda — basta que a PJ seja obstáculo ao ressarcimento do prejuízo, dispensando prova de fraude ou abuso.</div>
+      <span class="aula-fonte-tag">Fundamento: CC, art. 50; CDC, art. 28, §5º; Lei 9.605/98, art. 4º.</span>
+    </div>
+
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
