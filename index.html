@@ -5104,6 +5104,283 @@ AULAS['dciv_2'] = {
   </div>
 </div>`
 };
+
+// ═══════════════════════════════════════════════════════
+// AULA: Ausência
+// Chave: dciv_4 (Direito Civil, tópico 4)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dciv_4'] = {
+  title: 'Ausência',
+  sub: 'Direito Civil · CC/2002, arts. 22–39 · CPC, arts. 744–745 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">Código Civil, arts. 22 a 39 · CPC/2015, arts. 744–745</div>
+  <h1 class="aula-h1">Ausência</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="au-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="au-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito e Fase 1 — Curadoria</button>
+    <button class="aula-tab-btn" data-sec="1">Fase 2 — Sucessão Provisória</button>
+    <button class="aula-tab-btn" data-sec="2">Retorno do Ausente (fase provisória)</button>
+    <button class="aula-tab-btn" data-sec="3">Fase 3 — Sucessão Definitiva</button>
+    <button class="aula-tab-btn" data-sec="4">Efeitos Pessoais</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Jurisprudência</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — CONCEITO E FASE 1 ══ -->
+  <div class="aula-secao ativo" id="au-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🕳️</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, art. 22</span><h3>O que é a ausência?</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 22, CC:</strong> "Desaparecendo uma pessoa do seu domicílio sem dela haver notícia, se não houver deixado representante ou procurador a quem caiba administrar-lhe os bens, o juiz, a requerimento de qualquer interessado ou do Ministério Público, declarará a ausência, e nomear-lhe-á curador."</p></div>
+      <p>Ausência é o desaparecimento de uma pessoa de seu domicílio, sem notícias, gerando incerteza sobre sua vida ou morte. O direito reage protegendo o <strong>patrimônio</strong> do desaparecido enquanto se aguarda seu retorno — e, prolongando-se a incerteza, avançando gradualmente para uma solução definitiva (a presunção de morte).</p>
+      <div class="aula-destaque-box"><p><strong>Estrutura em 3 fases sucessivas (arts. 22 a 39, CC + arts. 744-745, CPC):</strong></p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Fase</th><th>Nome</th><th>Artigos</th></tr></thead>
+        <tbody>
+          <tr><td>1ª</td><td>Curadoria dos bens do ausente</td><td>Arts. 22 a 25, CC</td></tr>
+          <tr><td>2ª</td><td>Sucessão provisória</td><td>Arts. 26 a 36, CC</td></tr>
+          <tr><td>3ª</td><td>Sucessão definitiva</td><td>Arts. 37 a 39, CC</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Diferença crucial com o que já vimos em "Pessoas Naturais":</strong> o art. 7º, CC (morte presumida <strong>sem</strong> decretação de ausência) é para casos de certeza quase absoluta da morte (extrema probabilidade em situação de risco de vida, ou desaparecido em guerra). A <strong>ausência</strong> (arts. 22-39) é para o desaparecimento <strong>incerto</strong>, sem indício de morte — daí a necessidade de todo esse procedimento gradual e cauteloso.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Fase 1 — Curadoria dos bens do ausente (arts. 22 a 25)</h3>
+      <p>Ao declarar a ausência, o juiz nomeia um <strong>curador</strong> para arrecadar e administrar o patrimônio do desaparecido, na expectativa de seu retorno.</p>
+      <div class="aula-destaque-box"><p><strong>Ordem legal de curador (art. 25, CC):</strong></p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Cônjuge</strong> do ausente — desde que não esteja separado judicialmente, nem separado de fato por mais de 2 anos antes da declaração de ausência.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p>Na falta do cônjuge: <strong>pais</strong>.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p>Na falta dos pais: <strong>descendentes</strong> — os mais próximos precedem os mais remotos (filho antes de neto, neto antes de bisneto).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">4</div><p>Na falta de todos: <strong>escolha do juiz</strong>.</p></div>
+      <div class="aula-atencao-box"><p><strong>Cessação da curadoria (art. 1.163, CPC):</strong> cessa pelo comparecimento do ausente, do procurador ou de quem o represente; pela certeza da morte; ou pela abertura da sucessão provisória.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — FASE 2 — SUCESSÃO PROVISÓRIA ══ -->
+  <div class="aula-secao" id="au-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">⏳</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, art. 26</span><h3>Quando se pode requerer a sucessão provisória?</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 26, CC:</strong> "Decorrido um ano da arrecadação dos bens do ausente, ou, se ele deixou representante ou procurador, em se passando três anos, poderão os interessados requerer que se declare a ausência e se abra provisoriamente a sucessão."</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Situação</th><th>Prazo para requerer sucessão provisória</th></tr></thead>
+        <tbody>
+          <tr><td>Ausente <strong>sem</strong> procurador/representante</td><td><strong>1 ano</strong> da arrecadação dos bens</td></tr>
+          <tr><td>Ausente <strong>com</strong> procurador/representante</td><td><strong>3 anos</strong> da arrecadação dos bens</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Legitimados para requerer (art. 27, CC):</strong> o cônjuge não separado judicialmente; os herdeiros presumidos, legítimos ou testamentários; os que tiverem sobre os bens do ausente direito dependente de sua morte; os credores de obrigações vencidas e não pagas. O <strong>Ministério Público</strong> só atua se, decorrido o prazo, nenhum dos interessados o requerer.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Efeitos da sentença de sucessão provisória</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 28, CC:</strong> a sentença que determina a abertura da sucessão provisória só produz efeitos <strong>180 dias depois de publicada pela imprensa</strong>; mas, logo que passe em julgado, procede-se à abertura do testamento (se houver) e ao inventário e partilha dos bens, <strong>como se o ausente fosse falecido</strong>.</p></div>
+      <p>Os herdeiros entram na <strong>posse provisória</strong> dos bens — mas essa posse é <strong>precária e resolúvel</strong>: se o ausente reaparecer, os efeitos se desfazem.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Garantia (caução) e restrições ao exercício da posse provisória</h3>
+      <div class="aula-atencao-box"><p><strong>Regra geral (art. 30, CC):</strong> os herdeiros, para se imitirem na posse dos bens, devem prestar <strong>garantia</strong> (penhores ou hipotecas) equivalente ao seu quinhão.<br><br>
+      <strong>Exceção — art. 30, §2º:</strong> os <strong>ascendentes, descendentes e o cônjuge</strong>, uma vez provada sua qualidade de herdeiros, podem <strong>ficar dispensados</strong> da garantia.</p></div>
+      <div class="aula-destaque-box"><p><strong>Herdeiro que não puder prestar a garantia exigida (art. 30, §1º):</strong> é excluído da posse provisória — seus bens ficam sob administração do curador ou de outro herdeiro designado pelo juiz que preste a garantia. Justificando falta de meios, pode requerer que lhe entreguem metade dos rendimentos do quinhão que lhe tocaria.</p></div>
+      <div class="aula-atencao-box"><p><strong>Limitação sobre imóveis (art. 31, CC):</strong> os imóveis do ausente só podem ser alienados ou hipotecados por <strong>ordem judicial</strong>, para evitar ruína — ou desapropriados por interesse público. Bens móveis podem ser alienados livremente pelos herdeiros na posse provisória.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — RETORNO DO AUSENTE (FASE PROVISÓRIA) ══ -->
+  <div class="aula-secao" id="au-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">↩️</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, arts. 33–36</span><h3>O que acontece se o ausente reaparecer durante a sucessão provisória?</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 36, CC:</strong> "Se o ausente aparecer, ou se lhe provar a existência, depois de estabelecida a posse provisória, cessarão para logo as vantagens dos sucessores imitidos na posse, ficando, todavia, obrigados a tomar as medidas assecuratórias precisas, até a entrega dos bens a seu dono."</p></div>
+      <div class="aula-atencao-box"><p><strong>Art. 33 — comportamento do ausente importa (regra sobre frutos e rendimentos):</strong> se ficar provado que a ausência foi <strong>voluntária e injustificada</strong>, o ausente perde, em favor do sucessor, sua parte nos frutos e rendimentos que lhe caberiam. Ou seja: quem sumiu por vontade própria, sem justificativa, é "penalizado" patrimonialmente ao reaparecer.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Notícia de morte real do ausente durante a fase provisória</h3>
+      <p>Se, durante a sucessão provisória, se comprovar a data exata do falecimento do ausente, considera-se, nessa data, <strong>aberta a sucessão em favor dos herdeiros</strong> que o eram àquele tempo (art. 35, CC) — ou seja, a sucessão retroage à data real da morte, e não à data da sentença provisória.</p>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — FASE 3 — SUCESSÃO DEFINITIVA ══ -->
+  <div class="aula-secao" id="au-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">✅</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, arts. 37–39</span><h3>Quando se converte em sucessão definitiva?</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 37, CC:</strong> "Dez anos depois de passada em julgado a sentença que concede a abertura da sucessão provisória, poderão os interessados requerer a sucessão definitiva e o levantamento das cauções prestadas."</p></div>
+      <div class="aula-atencao-box"><p><strong>Exceção — art. 38, CC (regra especial para maiores de 80 anos):</strong> "Pode-se requerer a sucessão definitiva também quando o ausente contar 80 (oitenta) anos de idade, e houverem decorrido 5 (cinco) anos das últimas notícias suas." É um caminho <strong>mais curto</strong> — reduz o prazo de 10 anos (contados da sucessão provisória) para apenas 5 anos das últimas notícias, quando o ausente já é octogenário.</p></div>
+      <div class="aula-destaque-box"><p><strong>Efeito central da sucessão definitiva:</strong> a propriedade dos herdeiros, que na fase provisória era <strong>resolúvel</strong> (sujeita a desfazimento se o ausente voltasse), passa a ser <strong>plena e consolidada</strong> — os bens se incorporam definitivamente ao patrimônio dos sucessores.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Retorno do ausente após a sucessão definitiva — art. 39</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 39, caput:</strong> se o ausente <strong>não regressar</strong>, e nenhum interessado promover a sucessão definitiva dentro de 10 anos após a abertura da sucessão provisória, os bens arrecadados passarão ao <strong>Município</strong> ou ao <strong>Distrito Federal</strong>, se localizados nas respectivas circunscrições, incorporando-se ao domínio da <strong>União</strong>, quando situados em território federal.</p></div>
+      <div class="aula-atencao-box"><p><strong>Art. 39, parágrafo único — janela de 10 anos para reclamação:</strong> "regressando o ausente nos 10 anos seguintes à abertura da sucessão definitiva, ou algum de seus descendentes ou ascendentes, aquele ou estes haverão só os bens existentes no estado em que se acharem, os sub-rogados em seu lugar, ou o preço que os herdeiros e demais interessados houverem recebido pelos bens alienados depois daquele tempo."</p></div>
+      <div class="aula-destaque-box"><p><strong>Consequência prática:</strong> se o ausente reaparecer dentro dos 10 anos seguintes à sucessão definitiva, recupera o que sobrou dos bens (ou o valor recebido pela venda) — mas <strong>não recebe frutos e rendimentos</strong> do período em que esteve ausente. <strong>Passados esses 10 anos</strong>, o direito de reclamar se extingue definitivamente — mesmo que o ausente reapareça vivo.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — EFEITOS PESSOAIS ══ -->
+  <div class="aula-secao" id="au-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">💍</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, art. 1.571, §1º</span><h3>A ausência também gera efeitos pessoais — não apenas patrimoniais</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 1.571, §1º, CC:</strong> "O casamento válido somente se dissolve pela morte de um dos cônjuges ou pelo divórcio, <strong>aplicando-se a presunção estabelecida neste Código quanto ao ausente</strong>, para o fim de abertura de sucessão definitiva."</p></div>
+      <p>Isso significa que a <strong>presunção de morte do ausente</strong> (consolidada na sucessão definitiva) também gera efeito no <strong>direito de família</strong>: o vínculo conjugal se <strong>dissolve</strong>, permitindo que o cônjuge sobrevivente contraia novo casamento.</p>
+      <div class="aula-atencao-box"><p><strong>Pegadinha importante:</strong> é comum a banca afirmar que "ausência e morte presumida geram efeitos apenas patrimoniais, nunca pessoais" — isso é <strong>ERRADO</strong>. A dissolução do casamento pela presunção de morte do ausente é justamente um <strong>efeito pessoal</strong>, previsto expressamente no art. 1.571, §1º, CC.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E JURISPRUDÊNCIA ══ -->
+  <div class="aula-secao" id="au-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual + STJ</span><h3>Quadro-resumo das 3 fases</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Fase</th><th>Marco inicial</th><th>Natureza da posse/domínio</th><th>Retorno do ausente</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1. Curadoria</strong></td><td>Declaração de ausência</td><td>Curador administra — nada se transfere</td><td>Curadoria cessa imediatamente</td></tr>
+          <tr><td><strong>2. Sucessão provisória</strong></td><td>1 ano (sem procurador) / 3 anos (com procurador) da arrecadação</td><td>Posse <strong>precária e resolúvel</strong>, mediante caução</td><td>Cessam de imediato as vantagens dos sucessores (art. 36)</td></tr>
+          <tr><td><strong>3. Sucessão definitiva</strong></td><td>10 anos da sucessão provisória (ou 5 anos + 80 anos de idade — art. 38)</td><td>Propriedade <strong>plena e consolidada</strong></td><td>Só recupera bens existentes/sub-rogados, se voltar em até 10 anos (art. 39)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>STJ — REsp 1.924.451: interpretação do art. 38, CC</h3>
+      <div class="aula-destaque-box"><p>O STJ enfrentou a dúvida: o art. 38 (regra dos 80 anos + 5 anos sem notícias) seria apenas uma <strong>redução de prazo</strong> dentro do procedimento normal (ainda exigindo as fases de curadoria e sucessão provisória), ou permitiria <strong>ingresso direto</strong> na sucessão definitiva, dispensando as etapas anteriores?</p></div>
+      <div class="aula-atencao-box"><p><strong>Decisão do STJ:</strong> o art. 38, CC, autoriza o <strong>ingresso direto</strong> na sucessão definitiva, <strong>dispensando</strong> a decretação formal de ausência e a fase de sucessão provisória — interpretação que atende melhor aos fins sociais da norma, evitando prolongar desnecessariamente o procedimento quando o desaparecido já teria idade avançada e ausência prolongada.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobrança FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Prazos das 3 fases (1/3 anos → 10 anos → exceção do art. 38); ordem legal de curador (art. 25); efeitos do retorno em cada fase</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Caução e dispensa para ascendentes/descendentes/cônjuge; janela de 10 anos pós sucessão definitiva (art. 39); destino final dos bens (Município/DF/União)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Efeito pessoal — dissolução do casamento (art. 1.571, §1º); perda de frutos por ausência voluntária e injustificada (art. 33)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Restrições à alienação de imóveis na posse provisória; retroação da sucessão à data real da morte (art. 35)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="au-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"A ausência e a morte presumida geram apenas efeitos patrimoniais, nunca efeitos pessoais."</strong><br>✅ ERRADO. O art. 1.571, §1º, CC, prevê expressamente que a presunção de morte do ausente dissolve o vínculo conjugal — efeito claramente <strong>pessoal</strong>, não apenas patrimonial.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O prazo para requerer a sucessão provisória é sempre de 3 anos, independentemente de o ausente ter deixado procurador."</strong><br>✅ ERRADO. O prazo é de <strong>1 ano</strong> se não houver procurador/representante, e de <strong>3 anos</strong> se houver (art. 26, CC).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Todos os herdeiros, sem exceção, devem prestar caução para se imitir na posse provisória dos bens do ausente."</strong><br>✅ ERRADO. Ascendentes, descendentes e cônjuge podem ficar <strong>dispensados</strong> da garantia, uma vez provada a qualidade de herdeiro (art. 30, §2º).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A regra do art. 38, CC (80 anos + 5 anos sem notícias) apenas reduz o prazo dentro do procedimento normal, mantendo obrigatórias as fases de curadoria e sucessão provisória."</strong><br>✅ ERRADO. Segundo o STJ (REsp 1.924.451), o art. 38 autoriza o <strong>ingresso direto</strong> na sucessão definitiva, dispensando as fases anteriores.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Se o ausente reaparecer a qualquer tempo após a sucessão definitiva, tem direito de reaver a integralidade de seu patrimônio, incluindo frutos e rendimentos do período."</strong><br>✅ ERRADO. Só recupera, dentro dos <strong>10 anos seguintes</strong> à sucessão definitiva, os bens existentes/sub-rogados ou o preço recebido pela venda — sem direito a frutos/rendimentos. Após esses 10 anos, nada mais pode reclamar.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"Se ficar provado que a ausência foi voluntária e injustificada, o ausente perde, em favor do sucessor, sua parte nos frutos e rendimentos."</strong><br>CORRETO — art. 33, CC.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Ordem do curador (art. 25)</h4><p><strong>Cônjuge → Pais → Descendentes (mais próximo primeiro) → Escolha do juiz</strong></p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Prazos para sucessão provisória</h4><p><strong>Sem procurador → 1 ano / Com procurador → 3 anos</strong> (da arrecadação)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Prazo para sucessão definitiva</h4><p><strong>10 anos</strong> da sucessão provisória — OU — <strong>80 anos de idade + 5 anos</strong> sem notícias (art. 38, direto)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Janela pós sucessão definitiva</h4><p>Ausente reaparece em até <strong>10 anos</strong> → recupera bens/sub-rogados/preço. Depois disso → <strong>nada</strong>.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="au-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a ordem de nomeação de curador do ausente, nos termos do art. 25 do Código Civil, é correto afirmar que a curadoria compete, sucessivamente:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Aos descendentes, aos pais e, por fim, ao cônjuge, nesta ordem.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Ao cônjuge (não separado judicialmente, nem separado de fato há mais de 2 anos), aos pais e aos descendentes, precedendo os mais próximos aos mais remotos, e, na falta de todos, à escolha do juiz.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Exclusivamente ao Ministério Público, que atua como curador legal em todos os casos de ausência.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Ao cônjuge, ainda que separado judicialmente, com preferência sobre quaisquer outros parentes.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Aos credores do ausente, antes de qualquer parente, para assegurar o pagamento de dívidas pendentes.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 25, CC: cônjuge não separado judicialmente nem separado de fato há mais de 2 anos → pais → descendentes (mais próximos precedem os mais remotos) → escolha do juiz, na falta de todos.</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, art. 25.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinada pessoa desapareceu de seu domicílio sem deixar procurador ou representante. Passado 1 ano da arrecadação de seus bens, os interessados requereram e obtiveram a abertura da sucessão provisória. Nessa fase, é correto afirmar que:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Todos os herdeiros adquirem, desde logo, propriedade plena e irrevogável sobre os bens do ausente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A posse conferida aos herdeiros é precária e resolúvel, sendo em regra exigida garantia (caução), da qual podem ser dispensados os ascendentes, descendentes e o cônjuge.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Os bens imóveis do ausente podem ser livremente alienados pelos herdeiros na posse provisória, sem necessidade de autorização judicial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A sentença de abertura da sucessão provisória produz efeitos imediatamente após sua publicação, sem qualquer prazo de carência.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Os herdeiros presumidos não podem requerer a abertura da sucessão provisória, sendo essa legitimidade exclusiva do Ministério Público.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>a) ERRADO — a propriedade na sucessão provisória é resolúvel, não plena.<br>b) CORRETO — arts. 30, caput e §2º.<br>c) ERRADO — imóveis só podem ser alienados/hipotecados por ordem judicial (art. 31).<br>d) ERRADO — a sentença só produz efeitos 180 dias após publicada (art. 28).<br>e) ERRADO — herdeiros presumidos são legitimados diretos (art. 27); o MP só atua subsidiariamente.</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, arts. 27, 28, 30 e 31.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Segundo entendimento do Superior Tribunal de Justiça sobre a interpretação do art. 38 do Código Civil, quando o ausente conta 80 anos de idade e decorreram 5 anos das últimas notícias suas:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Apenas o prazo para requerer a sucessão provisória é reduzido, mantendo-se obrigatória essa fase antes da sucessão definitiva.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Os interessados podem requerer diretamente a sucessão definitiva, dispensando a decretação formal de ausência e a fase de sucessão provisória.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> É necessário aguardar os 10 anos regulares contados da sucessão provisória, não havendo qualquer abreviação de prazo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A sucessão definitiva, nesse caso, somente pode ser requerida pelo Ministério Público.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A regra do art. 38 aplica-se apenas quando o ausente desapareceu em situação de catástrofe ou calamidade pública.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>O STJ (REsp 1.924.451) fixou que o art. 38, CC, autoriza o ingresso direto na sucessão definitiva, dispensando a decretação de ausência e a sucessão provisória — interpretação que melhor atende aos fins sociais da norma diante da idade avançada do ausente e do longo período sem notícias.</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, art. 38; STJ, REsp 1.924.451.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Consolidada a sucessão definitiva dos bens de determinado ausente, este reaparece 7 anos depois. Nos termos do art. 39 do Código Civil, o ausente:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Não tem mais nenhum direito sobre seus bens, uma vez que a sucessão definitiva torna a transmissão irreversível a partir de sua consolidação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Tem direito de haver os bens existentes no estado em que se acharem, os sub-rogados em seu lugar, ou o preço recebido pelos herdeiros que os alienaram, mas sem direito aos frutos e rendimentos do período.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Tem direito de reaver a integralidade de seu patrimônio original, acrescido de todos os frutos e rendimentos gerados durante sua ausência.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Só pode reaver seus bens se comprovar que a ausência decorreu de motivo de força maior, sendo irrelevante o prazo transcorrido.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Perde definitivamente o direito aos bens, cabendo reclamação apenas aos seus descendentes ou ascendentes, nunca a ele próprio.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 39, parágrafo único, CC: regressando o ausente nos 10 anos seguintes à abertura da sucessão definitiva, terá direito aos bens existentes no estado em que se acharem, aos sub-rogados em seu lugar, ou ao preço recebido pela alienação — sem direito a frutos e rendimentos do período de ausência.</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, art. 39, parágrafo único.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os efeitos pessoais da ausência no direito de família, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A ausência e a morte presumida do ausente produzem exclusivamente efeitos patrimoniais, jamais repercutindo sobre o vínculo conjugal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> O casamento válido se dissolve pela presunção de morte do ausente estabelecida no Código Civil, para o fim de abertura da sucessão definitiva, possibilitando novo casamento ao cônjuge sobrevivente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> O cônjuge do ausente somente pode contrair novo casamento após decisão judicial específica de divórcio litigioso, independentemente da sucessão definitiva.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A simples abertura da sucessão provisória já autoriza o cônjuge a contrair novo casamento.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O casamento do ausente é automaticamente anulado a partir da declaração de ausência, independentemente de qualquer sucessão.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 1.571, §1º, CC: o casamento válido se dissolve pela morte de um dos cônjuges ou pelo divórcio, aplicando-se a presunção estabelecida no Código quanto ao ausente, para o fim de abertura da sucessão definitiva. É, portanto, efeito pessoal (não apenas patrimonial) da ausência, vinculado à consolidação da sucessão definitiva — não à provisória.</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, art. 1.571, §1º.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
