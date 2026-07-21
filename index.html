@@ -6075,6 +6075,300 @@ AULAS['dciv_6'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Poder Normativo e Poder de Polícia
+// Chave: da_3 (Direito Administrativo, tópico 3)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['da_3'] = {
+  title: 'Poder Normativo e Poder de Polícia',
+  sub: 'Direito Administrativo · CF/88, art. 84 · CTN, art. 78 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CF/88, art. 84, IV e VI · CTN, art. 78 · STF, Tema 532 (RE 633.782)</div>
+  <h1 class="aula-h1">Poder Normativo e Poder de Polícia</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="pn-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="pn-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Poder Normativo — Conceito</button>
+    <button class="aula-tab-btn" data-sec="1">Decreto Regulamentar × Autônomo</button>
+    <button class="aula-tab-btn" data-sec="2">Poder de Polícia — Conceito</button>
+    <button class="aula-tab-btn" data-sec="3">Ciclo de Polícia</button>
+    <button class="aula-tab-btn" data-sec="4">Delegação — STF × STJ</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Jurisprudência</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — PODER NORMATIVO — CONCEITO ══ -->
+  <div class="aula-secao ativo" id="pn-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📜</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 84, IV</span><h3>O que é o poder normativo (regulamentar)?</h3></div>
+      </div>
+      <p>É a prerrogativa conferida à Administração Pública para editar <strong>atos gerais e abstratos</strong> — decretos, regulamentos, resoluções, portarias, instruções normativas — com a finalidade de <strong>detalhar a fiel execução das leis</strong>, sem inovar na ordem jurídica criando direitos ou obrigações não previstos em lei.</p>
+      <div class="aula-destaque-box"><p><strong>Art. 84, IV, CF/88:</strong> compete privativamente ao Presidente da República "sancionar, promulgar e fazer publicar as leis, bem como expedir decretos e regulamentos para sua fiel execução."</p></div>
+      <div class="aula-atencao-box"><p><strong>Limite constitucional central — princípio da legalidade (art. 5º, II, CF/88):</strong> o regulamento não pode <strong>criar direitos, obrigações ou penalidades</strong> que a lei não previu. Se o decreto extrapola os limites da lei que regulamenta, é chamado de <strong>decreto ou regulamento executório em excesso</strong> — hipótese em que o Congresso Nacional pode <strong>sustar</strong> o ato (art. 49, V, CF/88).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Espécies de atos normativos infralegais — hierarquia decrescente</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Ato</th><th>Quem edita</th><th>Função</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Decreto</strong></td><td>Chefe do Executivo (Presidente, Governador, Prefeito)</td><td>Regulamenta lei para sua fiel execução, ou disciplina matéria de organização interna</td></tr>
+          <tr><td><strong>Regulamento</strong></td><td>Geralmente aprovado por decreto</td><td>Detalha o funcionamento de órgãos e procedimentos</td></tr>
+          <tr><td><strong>Resolução</strong></td><td>Órgãos colegiados (agências reguladoras, conselhos, tribunais)</td><td>Disciplina matérias técnicas específicas da competência do órgão</td></tr>
+          <tr><td><strong>Portaria</strong></td><td>Ministros, secretários, dirigentes de órgãos</td><td>Organiza o funcionamento interno de repartições e serviços</td></tr>
+          <tr><td><strong>Instrução normativa</strong></td><td>Órgãos técnicos (ex.: Receita Federal)</td><td>Padroniza procedimentos técnicos de aplicação da legislação</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — DECRETO REGULAMENTAR × AUTÔNOMO ══ -->
+  <div class="aula-secao" id="pn-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 84, IV e VI (EC 32/2001)</span><h3>Decreto regulamentar × decreto autônomo</h3></div>
+      </div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Decreto regulamentar (de execução)</h4><p>Regra geral. Depende sempre de <strong>lei prévia</strong> — apenas detalha, esclarece e viabiliza a fiel execução de uma lei já existente (art. 84, IV). Não pode inovar.</p></div>
+        <div class="aula-mini-card"><h4>Decreto autônomo</h4><p>Exceção, criada pela <strong>EC 32/2001</strong>. Dispensa lei prévia — o próprio decreto disciplina diretamente a matéria, mas <strong>apenas nas hipóteses taxativas</strong> do art. 84, VI, CF/88.</p></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 84, VI, CF/88 — as duas únicas hipóteses de decreto autônomo:</strong><br>
+      a) <strong>organização e funcionamento da administração federal</strong>, quando não implicar aumento de despesa nem criação ou extinção de órgãos públicos;<br>
+      b) <strong>extinção de funções ou cargos públicos</strong>, quando vagos.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha clássica:</strong> o decreto autônomo <strong>não pode criar cargos</strong>, nem aumentar despesa, nem extinguir órgãos — apenas reorganizar a estrutura já existente e extinguir cargos <strong>vagos</strong> (nunca ocupados). Qualquer coisa além disso exige lei em sentido formal.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Controle do poder normativo</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Controle legislativo (art. 49, V, CF/88):</strong> compete exclusivamente ao Congresso Nacional sustar os atos normativos do Poder Executivo que <strong>exorbitem do poder regulamentar</strong> ou dos limites de delegação legislativa.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Controle judicial:</strong> decreto que extrapola a lei regulamentada pode ser impugnado por <strong>ADI</strong> (se afronta diretamente a Constituição) ou controle de legalidade em ações ordinárias/mandado de segurança (se afronta a lei, não a CF/88 diretamente).</p></div>
+      <div class="aula-atencao-box"><p><strong>Distinção importante para ADI:</strong> só cabe controle concentrado de constitucionalidade quando o decreto ofende <strong>diretamente</strong> a Constituição. Se o decreto apenas extrapola os limites da <strong>lei</strong> que regulamenta (sem violar a CF diretamente), trata-se de <strong>ilegalidade</strong>, não inconstitucionalidade — hipótese de "crise de legalidade", não cabendo ADI, mas controle difuso ou a sustação pelo Congresso.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — PODER DE POLÍCIA — CONCEITO ══ -->
+  <div class="aula-secao" id="pn-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">👮</div>
+        <div><span class="aula-tag aula-tag-lei">CTN, art. 78</span><h3>Conceito legal de poder de polícia</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 78, CTN:</strong> "Considera-se poder de polícia a atividade da administração pública que, limitando ou disciplinando direito, interesse ou liberdade, regula a prática de ato ou abstenção de fato, em razão de interesse público concernente à segurança, à higiene, à ordem, aos costumes, à disciplina da produção e do mercado, ao exercício de atividades econômicas dependentes de concessão ou autorização do Poder Público, à tranquilidade pública ou ao respeito à propriedade e aos direitos individuais ou coletivos."</p></div>
+      <p>É o poder de <strong>restringir e condicionar</strong> o exercício de liberdades individuais e o uso da propriedade privada, em nome do interesse público — abrange desde a exigência de alvará de funcionamento até a fiscalização sanitária e a aplicação de multas de trânsito.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Polícia administrativa × polícia judiciária</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Polícia Administrativa</th><th>Polícia Judiciária</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Objeto</strong></td><td>Bens, direitos e atividades (caráter preventivo, geral)</td><td>Pessoas — apuração de infrações penais</td></tr>
+          <tr><td><strong>Natureza</strong></td><td>Predominantemente preventiva</td><td>Predominantemente repressiva</td></tr>
+          <tr><td><strong>Quem exerce</strong></td><td>Órgãos e agentes administrativos diversos (vigilância sanitária, fiscalização ambiental, etc.)</td><td>Polícias Civil e Federal</td></tr>
+          <tr><td><strong>Regência</strong></td><td>Direito Administrativo</td><td>Direito Processual Penal</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Atributos do poder de polícia</h3>
+      <div class="aula-macete-box"><h4>Macete: D-A-C</h4><p style="margin-top:6px">Discricionariedade · Autoexecutoriedade · Coercibilidade</p></div>
+      <div class="aula-grid2" style="margin-top:10px">
+        <div class="aula-mini-card"><h4>Discricionariedade</h4><p>Margem de escolha quanto ao momento e à forma de agir, dentro dos limites legais. Nem sempre presente — há atos de polícia vinculados (ex.: concessão de licença cujo requisito está totalmente definido em lei).</p></div>
+        <div class="aula-mini-card"><h4>Autoexecutoriedade</h4><p>A Administração pode executar suas próprias decisões, sem precisar de prévia autorização judicial. Subdivide-se em <strong>exigibilidade</strong> (meios indiretos de coerção, como multa) e <strong>executoriedade</strong> propriamente dita (meios diretos, como apreensão de mercadoria).</p></div>
+        <div class="aula-mini-card"><h4>Coercibilidade</h4><p>Imperatividade — o ato de polícia se impõe independentemente da concordância do particular, podendo ser exigido o uso da força para seu cumprimento.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha:</strong> nem todo ato de polícia é discricionário — alguns são vinculados (ex.: licença para construir, quando atendidos todos os requisitos objetivos). E nem todo ato de polícia é autoexecutório de forma direta — a cobrança de multa não paga, por exemplo, normalmente exige execução fiscal judicial.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — CICLO DE POLÍCIA ══ -->
+  <div class="aula-secao" id="pn-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🔄</div>
+        <div><span class="aula-tag aula-tag-dica">Doutrina — Diogo Figueiredo Moreira Neto</span><h3>As quatro fases do ciclo de polícia</h3></div>
+      </div>
+      <p>O exercício do poder de polícia se desenvolve em <strong>quatro fases sucessivas</strong>, que ajudam a entender o que pode ou não ser delegado a terceiros:</p>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Ordem de polícia:</strong> a norma abstrata, geral, que impõe a restrição (ex.: a lei que exige CNH para dirigir). É a <strong>base legislativa</strong>.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Consentimento de polícia:</strong> ato administrativo que formaliza a permissão para o exercício de determinada atividade (ex.: emissão da CNH, alvará, licença).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Fiscalização de polícia:</strong> verificação do cumprimento das normas (ex.: instalação e operação de radares, blitz de trânsito).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">4</div><p><strong>Sanção de polícia:</strong> aplicação da penalidade em caso de descumprimento (ex.: multa de trânsito).</p></div>
+      <div class="aula-destaque-box"><p><strong>Por que essa divisão importa tanto?</strong> Porque a jurisprudência trata cada fase de forma diferente quanto à possibilidade de <strong>delegação a pessoas jurídicas de direito privado</strong> — é exatamente aqui que mora a divergência STF × STJ, tratada na próxima aba.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — DELEGAÇÃO — STF × STJ ══ -->
+  <div class="aula-secao" id="pn-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">⚡</div>
+        <div><span class="aula-tag aula-tag-lei">STF, Tema 532 (RE 633.782/MG) · caso BHTrans</span><h3>Pode delegar o poder de polícia a pessoa jurídica de direito privado?</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Tese fixada pelo STF (Plenário, Rel. Min. Luiz Fux, 2020 — Tema 532):</strong> "É constitucional a delegação do poder de polícia, por meio de lei, a pessoas jurídicas de direito privado integrantes da Administração Pública indireta de <strong>capital social majoritariamente público</strong> que prestem <strong>exclusivamente</strong> serviço público de atuação própria do Estado e em <strong>regime não concorrencial</strong>."</p></div>
+      <p>O caso concreto envolvia a <strong>BHTrans</strong> (empresa de economia mista de Belo Horizonte) aplicando multas de trânsito — o STF entendeu que sim, é possível, desde que atendidos os três requisitos da tese.</p>
+      <div class="aula-atencao-box"><p><strong>Requisitos cumulativos exigidos pelo STF:</strong><br>
+      1. Delegação por <strong>lei</strong> (não por simples ato administrativo);<br>
+      2. Entidade com <strong>capital social majoritariamente público</strong> (empresa pública ou sociedade de economia mista integrante da Administração indireta);<br>
+      3. Entidade que preste <strong>exclusivamente</strong> serviço público próprio do Estado, em <strong>regime não concorrencial</strong> (ou seja, não pode ser uma empresa que também atue no mercado privado, disputando concorrência com particulares).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>A divergência que mais cai em prova: STF × STJ sobre a fase de SANÇÃO</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Fase do ciclo</th><th>STF (Tema 532)</th><th>STJ (posição superada pelo STF, mas cobrada por contraste)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Ordem</strong></td><td>Indelegável — sempre</td><td>Indelegável</td></tr>
+          <tr><td><strong>Consentimento</strong></td><td>Delegável</td><td>Delegável</td></tr>
+          <tr><td><strong>Fiscalização</strong></td><td>Delegável</td><td>Delegável (inclusive instalação de radares)</td></tr>
+          <tr><td><strong>Sanção</strong></td><td><strong>Delegável</strong>, cumpridos os requisitos do Tema 532</td><td><strong>Indelegável</strong> — decorreria do "poder de império" do Estado, exclusivo de pessoas jurídicas de direito público (REsp 817.534/MG)</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-destaque-box"><p><strong>Ponto-chave para a prova:</strong> a posição do STJ (só consentimento e fiscalização são delegáveis; ordem e sanção seriam sempre indelegáveis) é a jurisprudência <strong>mais antiga</strong>. O <strong>STF avançou</strong> e permitiu também a delegação da sanção, desde que presentes os três requisitos do Tema 532. Quando a questão perguntar "segundo o STF", a resposta é que a <strong>sanção pode ser delegada</strong>. Quando perguntar pela linha histórica do STJ (jurisprudência superada, mas ainda cobrada para efeito de contraste doutrinário), a resposta é que só consentimento e fiscalização eram delegáveis.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Delegação a pessoas jurídicas de direito público</h3>
+      <div class="aula-atencao-box"><p><strong>Regra sem controvérsia:</strong> a delegação do <strong>ciclo completo</strong> de polícia (inclusive ordem e sanção) para outra pessoa jurídica de <strong>direito público</strong> da Administração indireta (autarquias, por exemplo) nunca foi objeto de controvérsia — isso sempre foi admitido, pois essas entidades também exercem parcela do poder de império do Estado. A discussão do Tema 532 é específica para pessoas jurídicas de <strong>direito privado</strong>.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E JURISPRUDÊNCIA ══ -->
+  <div class="aula-secao" id="pn-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Quadro-resumo — poderes normativo e de polícia</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Poder Normativo</th><th>Poder de Polícia</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Objeto</strong></td><td>Editar atos gerais e abstratos para fiel execução das leis</td><td>Restringir/condicionar liberdades e propriedade em prol do interesse público</td></tr>
+          <tr><td><strong>Base constitucional</strong></td><td>Art. 84, IV e VI, CF/88</td><td>Art. 78, CTN (conceito legal) + doutrina</td></tr>
+          <tr><td><strong>Limite central</strong></td><td>Não pode inovar além da lei regulamentada</td><td>Deve respeitar proporcionalidade e razoabilidade</td></tr>
+          <tr><td><strong>Controle</strong></td><td>Sustação pelo Congresso (art. 49, V, CF)</td><td>Judicial (legalidade, proporcionalidade do ato concreto)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobrança FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Tese do Tema 532, STF (requisitos cumulativos: lei + capital majoritariamente público + regime não concorrencial); atributos do poder de polícia (D-A-C)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Ciclo de polícia (ordem-consentimento-fiscalização-sanção) e o que é delegável; decreto regulamentar × autônomo (hipóteses do art. 84, VI)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Controle do poder normativo (art. 49, V, CF); polícia administrativa × judiciária; espécies de atos normativos infralegais</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Posição histórica do STJ pré-Tema 532; distinção exigibilidade × executoriedade</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="pn-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"Segundo o STF, a fase de sanção do ciclo de polícia é sempre indelegável a pessoas jurídicas de direito privado."</strong><br>✅ ERRADO. O STF (Tema 532) admite a delegação da sanção, desde que cumpridos os três requisitos: lei + capital majoritariamente público + regime não concorrencial. A indelegabilidade da sanção era a posição histórica do STJ, superada.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A fase de ordem de polícia pode ser delegada a pessoas jurídicas de direito privado, desde que por lei."</strong><br>✅ ERRADO. A <strong>ordem de polícia é absolutamente indelegável</strong> a pessoas jurídicas de direito privado — decorre da competência legislativa, restrita aos entes públicos previstos na Constituição.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O decreto autônomo pode ser utilizado para criar cargos públicos e aumentar despesa, desde que aprovado pelo Chefe do Executivo."</strong><br>✅ ERRADO. O art. 84, VI, CF/88, veda expressamente que o decreto autônomo implique aumento de despesa ou criação de órgãos — só pode reorganizar estrutura já existente e extinguir cargos <strong>vagos</strong>.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Todo decreto que extrapola os limites da lei regulamentada configura inconstitucionalidade, cabendo ADI."</strong><br>✅ ERRADO. Se o decreto extrapola apenas a <strong>lei</strong> (sem violar diretamente a CF), trata-se de <strong>ilegalidade</strong> — hipótese de controle pelo Congresso (art. 49, V, CF) ou controle difuso, não de ADI.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Todos os atos de poder de polícia são discricionários e autoexecutórios."</strong><br>✅ ERRADO. Há atos de polícia vinculados (ex.: licença cujos requisitos objetivos estão todos definidos em lei), e a autoexecutoriedade também não é absoluta (cobrança de multa não paga normalmente exige execução judicial).</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"É constitucional a delegação do poder de polícia, por meio de lei, a pessoas jurídicas de direito privado integrantes da Administração Pública indireta de capital social majoritariamente público que prestem exclusivamente serviço público próprio do Estado, em regime não concorrencial."</strong><br>CORRETO — tese literal do Tema 532, STF.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Atributos do poder de polícia</h4><p><strong>D-A-C:</strong> Discricionariedade · Autoexecutoriedade · Coercibilidade</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Ciclo de polícia</h4><p><strong>O-C-F-S:</strong> Ordem (indelegável sempre) → Consentimento → Fiscalização → Sanção (delegável pelo STF, com requisitos)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Requisitos do Tema 532, STF</h4><p><strong>Lei + Capital majoritariamente público + Regime não concorrencial</strong></p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Decreto autônomo — únicas hipóteses</h4><p><strong>Organizar</strong> (sem criar órgão/despesa) <strong>ou extinguir cargo vago</strong> — nada além disso</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="pn-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Segundo a tese fixada pelo STF no Tema 532 de Repercussão Geral, é constitucional a delegação do poder de polícia, por meio de lei, a pessoas jurídicas de direito privado integrantes da Administração Pública indireta, desde que:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Sejam empresas privadas contratadas mediante licitação, independentemente da composição de seu capital social.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Tenham capital social majoritariamente público e prestem exclusivamente serviço público de atuação própria do Estado, em regime não concorrencial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Atuem em regime de livre concorrência com empresas privadas do mesmo setor.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A delegação se dê por simples ato administrativo do chefe do Poder Executivo, dispensada lei específica.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Prestem, entre outras atividades, serviços em regime concorrencial, desde que o poder de polícia seja apenas parte de suas funções.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Tese literal do Tema 532, STF (RE 633.782/MG): delegação por lei, a entidade de capital majoritariamente público, que preste exclusivamente serviço público próprio do Estado, em regime não concorrencial. As demais alternativas descaracterizam algum desses três requisitos cumulativos.</div>
+      <span class="aula-fonte-tag">Fundamento: STF, Tema 532 (RE 633.782/MG), Rel. Min. Luiz Fux.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre as fases do ciclo de polícia e sua delegabilidade a pessoas jurídicas de direito privado, segundo a jurisprudência atual do STF, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A ordem de polícia é delegável, desde que por meio de lei específica.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Somente o consentimento de polícia é delegável, sendo as demais fases sempre reservadas ao Poder Público.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> São delegáveis o consentimento, a fiscalização e a sanção de polícia, cumpridos os requisitos fixados pelo STF; a ordem de polícia é absolutamente indelegável.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A fiscalização de polícia é a única fase absolutamente indelegável, por envolver a instalação de equipamentos de controle.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Todas as quatro fases do ciclo de polícia podem ser delegadas a qualquer pessoa jurídica de direito privado, sem exigência de requisitos específicos.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>A ordem de polícia (a norma legislativa em si) é sempre indelegável, por decorrer da competência legislativa. As demais três fases — consentimento, fiscalização e sanção — são delegáveis a pessoas jurídicas de direito privado, desde que cumpridos os requisitos do Tema 532 (lei, capital majoritariamente público, regime não concorrencial).</div>
+      <span class="aula-fonte-tag">Fundamento: STF, Tema 532; doutrina — ciclo de polícia (Diogo Figueiredo Moreira Neto).</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Nos termos do art. 84, VI, da Constituição Federal, o decreto autônomo pode ser utilizado para:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Criar novos órgãos públicos federais, desde que não haja aumento de despesa.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Extinguir cargos públicos federais, ainda que providos, para conter despesas com pessoal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Dispor sobre a organização e funcionamento da administração federal, quando não implicar aumento de despesa nem criação ou extinção de órgãos públicos, e extinguir funções ou cargos públicos, quando vagos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Instituir, majorar ou reduzir tributos federais, dispensada a edição de lei em sentido formal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Criar obrigações e penalidades não previstas em lei, desde que relacionadas à organização administrativa interna.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 84, VI, "a" e "b", CF/88 (EC 32/2001): o decreto autônomo só pode (a) dispor sobre organização e funcionamento da administração federal, sem aumento de despesa nem criação/extinção de órgão, e (b) extinguir funções ou cargos públicos vagos (nunca providos). Não pode criar órgãos, extinguir cargos ocupados, tratar de matéria tributária ou criar obrigações/penalidades.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 84, VI, "a" e "b" (EC 32/2001).</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os atributos do poder de polícia, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Todo ato de polícia administrativa é discricionário, jamais podendo ser vinculado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> A autoexecutoriedade permite à Administração executar diretamente todas as suas decisões, inclusive a cobrança judicial de multas não pagas, sem necessidade de processo próprio.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> A coercibilidade traduz a imperatividade do ato de polícia, que se impõe independentemente da concordância do particular, podendo ser exigido o uso da força para seu cumprimento.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A discricionariedade é atributo absoluto do poder de polícia, incompatível com qualquer hipótese de vinculação legal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A autoexecutoriedade dispensa, em qualquer hipótese, a necessidade de execução fiscal judicial para a cobrança de multas administrativas.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Coercibilidade é a imperatividade do ato, que se impõe unilateralmente, admitindo o uso da força se necessário. As demais alternativas erram ao tornar absolutos os atributos: nem todo ato é discricionário (há atos vinculados) e a autoexecutoriedade não dispensa, em regra, a execução fiscal judicial para cobrança de multas não pagas.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina — atributos do poder de polícia (discricionariedade, autoexecutoriedade, coercibilidade).</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinado decreto do Chefe do Poder Executivo, ao regulamentar lei federal, cria obrigação não prevista no texto legal, extrapolando os limites da fiel execução da lei regulamentada. Nesse caso:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O decreto é válido, pois o poder regulamentar permite ao Executivo complementar livremente qualquer lacuna da lei.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> O decreto exorbita do poder regulamentar, podendo ser sustado pelo Congresso Nacional, nos termos do art. 49, V, da Constituição Federal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A hipótese configura inconstitucionalidade direta, cabendo exclusivamente ação direta de inconstitucionalidade perante o STF.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Somente o Poder Judiciário, em controle concentrado, pode invalidar o decreto, sendo vedada qualquer atuação do Poder Legislativo nesse sentido.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O decreto se convalida automaticamente após 180 dias de vigência, tornando-se imune a qualquer forma de controle.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Quando o decreto extrapola os limites da lei regulamentada (sem violar diretamente a CF), configura-se exorbitância do poder regulamentar — hipótese de ilegalidade, sujeita à sustação pelo Congresso Nacional (art. 49, V, CF/88), além do controle judicial de legalidade (não necessariamente ADI, reservada a casos de ofensa direta à Constituição).</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 49, V.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
