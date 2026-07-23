@@ -6911,6 +6911,257 @@ AULAS['da_5'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Direito Processual Intertemporal
+// Chave: dpc_2 (Direito Processual Civil, tópico 2)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dpc_2'] = {
+  title: 'Direito Processual Intertemporal',
+  sub: 'Direito Processual Civil · CPC/2015, arts. 14 e 1.046 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CPC/2015, arts. 14 e 1.046 · LINDB, art. 6º · STJ/STF — jurisprudência consolidada</div>
+  <h1 class="aula-h1">Direito Processual Intertemporal</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="pi-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="pi-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito e Regra Geral</button>
+    <button class="aula-tab-btn" data-sec="1">Teoria do Isolamento dos Atos</button>
+    <button class="aula-tab-btn" data-sec="2">O que se Protege</button>
+    <button class="aula-tab-btn" data-sec="3">Aplicações Práticas Clássicas</button>
+    <button class="aula-tab-btn" data-sec="4">Caso Recente — Lei 14.879/2024</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Jurisprudência</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — CONCEITO E REGRA GERAL ══ -->
+  <div class="aula-secao ativo" id="pi-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">⏱️</div>
+        <div><span class="aula-tag aula-tag-lei">CPC/2015, art. 14</span><h3>O problema: o que fazer quando a lei processual muda no meio do processo?</h3></div>
+      </div>
+      <p>Diferente do direito material — cuja regra intertemporal está na LINDB (art. 6º) — o Direito Processual Civil tem sua <strong>própria norma de transição</strong>, prevista expressamente no CPC/2015.</p>
+      <div class="aula-destaque-box"><p><strong>Art. 14, CPC:</strong> "A norma processual não retroagirá e será aplicável imediatamente aos processos em curso, respeitados os atos processuais praticados e as situações jurídicas consolidadas sob a vigência da norma revogada."</p></div>
+      <p>Dois comandos combinados nesse único artigo: <strong>(1)</strong> a lei processual nova não retroage — não atinge atos já praticados; <strong>(2)</strong> a lei processual nova tem <strong>aplicação imediata</strong> aos processos que já estão em curso — diferente do que ocorreria, por exemplo, com uma lei penal mais severa.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Por que a regra processual é mais "agressiva" que a regra material?</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Direito material (LINDB, art. 6º)</h4><p>Regra de tratamento protetivo mais amplo: respeita ato jurídico perfeito, direito adquirido e coisa julgada — mas tende a preservar por mais tempo a lei antiga para as relações já constituídas.</p></div>
+        <div class="aula-mini-card"><h4>Direito processual (CPC, art. 14)</h4><p>A lei nova entra em vigor e passa a reger <strong>imediatamente</strong> todos os atos processuais futuros dos processos já em andamento — só respeita o que já foi <strong>praticado</strong>. Isso porque o processo é visto como sucessão de atos autônomos, e não como uma relação jurídica única e estática.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Base legal complementar — art. 1.046, CPC:</strong> "Ao entrar em vigor este Código, suas disposições se aplicarão desde logo aos processos pendentes, ficando revogada a Lei nº 5.869, de 11 de janeiro de 1973." Foi essa a regra que disciplinou, na prática, a transição do CPC/1973 para o CPC/2015 em 2016.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — TEORIA DO ISOLAMENTO DOS ATOS ══ -->
+  <div class="aula-secao" id="pi-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🧩</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina + STJ consolidado</span><h3>Teoria do Isolamento dos Atos Processuais (tempus regit actum)</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p>É a teoria adotada expressamente pelo art. 14, CPC: <strong>cada ato processual deve ser considerado isoladamente</strong> dos demais, para fins de determinar qual lei o rege — aplicando-se sempre a lei <strong>vigente no momento em que o ato foi praticado</strong> (daí o brocardo latino <em>tempus regit actum</em> — "o tempo rege o ato").</p></div>
+      <p>O processo não é tratado como um bloco único e indivisível: é uma <strong>sucessão de atos autônomos</strong> (petição inicial, citação, contestação, sentença, recurso...), e cada um deles é julgado por sua própria "fotografia temporal" — a lei vigente exatamente quando aquele ato específico foi praticado.</p>
+      <div class="aula-atencao-box"><p><strong>Consequência direta:</strong> num mesmo processo, pode ser perfeitamente normal que atos praticados no início sigam a lei revogada, e atos praticados depois da entrada em vigor da lei nova já sigam o regime processual atualizado — sem que isso gere qualquer nulidade ou incoerência.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Posição consolidada do STJ</h3>
+      <div class="aula-destaque-box"><p><strong>STJ, jurisprudência pacífica:</strong> "as regras de direito intertemporal são orientadas pela Teoria do Isolamento dos Atos Processuais (tempus regit actum), segundo a qual a avaliação sobre a regularidade de determinado ato deve ser feita de acordo com a lei vigente no momento da sua prática." Esse entendimento é tão consolidado que já enseja a aplicação da <strong>Súmula 83, STJ</strong> (não cabe recurso especial quando o acórdão recorrido coincide com jurisprudência dominante) sempre que a controvérsia gira exclusivamente sobre qual lei processual aplicar no tempo.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — O QUE SE PROTEGE ══ -->
+  <div class="aula-secao" id="pi-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🛡️</div>
+        <div><span class="aula-tag aula-tag-lei">CPC, art. 14 c/c LINDB, art. 6º · CF/88, art. 5º, XXXVI</span><h3>Os três institutos protetores, agora aplicados ao processo</h3></div>
+      </div>
+      <p>O próprio art. 14, CPC, remete à mesma lógica protetiva do direito material — mas aplicada aos <strong>atos processuais</strong>:</p>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Ato processual perfeito (consumado):</strong> o ato já praticado corretamente sob a lei antiga permanece <strong>válido</strong>, ainda que a lei nova exija forma diferente para atos daquele tipo. Ex.: uma petição protocolada com a formatação exigida pela lei antiga não precisa ser "corrigida" retroativamente conforme a lei nova.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Situações jurídicas processuais consolidadas:</strong> direitos processuais já adquiridos sob a lei antiga (ex.: prazo recursal que já começou a correr sob determinado regime) tendem a se completar sob aquele mesmo regime, mesmo que sobrevenha lei nova no meio do prazo.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Coisa julgada:</strong> decisões já transitadas em julgado antes da lei nova não são reabertas ou reinterpretadas por ela.</p></div>
+      <div class="aula-atencao-box"><p><strong>Fundamento tríplice sempre cobrado:</strong> a regra de transição processual se apoia simultaneamente em três normas — <strong>art. 14, CPC</strong> (regra específica processual) + <strong>art. 6º, LINDB</strong> (regra geral de direito intertemporal) + <strong>art. 5º, XXXVI, CF/88</strong> (fundamento constitucional que protege ato jurídico perfeito, direito adquirido e coisa julgada).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — APLICAÇÕES PRÁTICAS CLÁSSICAS ══ -->
+  <div class="aula-secao" id="pi-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">📐</div>
+        <div><span class="aula-tag aula-tag-lei">Aplicações consolidadas na transição CPC/1973 → CPC/2015</span><h3>Como a teoria funciona na prática — casos clássicos</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Situação</th><th>Regra aplicada</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Recursos</strong></td><td>Regidos pela lei vigente na data da <strong>publicação</strong> da decisão recorrida — não pela data da interposição do recurso, nem pela data do trânsito em julgado.</td></tr>
+          <tr><td><strong>Prazos (contagem em dias úteis)</strong></td><td>A regra do art. 219, CPC/2015 (contagem em dias úteis) só passou a valer para prazos que começaram a correr <strong>após</strong> a entrada em vigor do novo Código.</td></tr>
+          <tr><td><strong>Ação rescisória</strong></td><td>O prazo para propor ação rescisória é regido pela lei vigente ao tempo do <strong>trânsito em julgado</strong> da decisão rescindenda — não pela lei vigente quando a rescisória é ajuizada.</td></tr>
+          <tr><td><strong>Honorários recursais (art. 85, §11, CPC)</strong></td><td>STJ (Tema 1.059/1.055 — jurisprudência consolidada): só cabem honorários recursais em recursos interpostos contra decisão <strong>publicada já na vigência do CPC/2015</strong>.</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-destaque-box"><p><strong>Padrão que se repete em todos esses casos:</strong> a lei aplicável a um ato processual específico (recurso, prazo, honorários) é sempre a vigente no <strong>marco temporal daquele ato em si</strong> — normalmente a publicação da decisão que o desencadeia — e não a data de outro evento processual do mesmo processo.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Prescrição intercorrente — um caso de "mudança de critério" no meio do processo</h3>
+      <div class="aula-atencao-box"><p>Em temas de prescrição intercorrente na execução, o STJ (Tema Repetitivo) já reconheceu que a análise dos atos praticados <strong>antes</strong> de determinada data (marco de uma alteração jurisprudencial relevante) deve seguir a perspectiva então vigente (inércia do credor), e os atos praticados <strong>depois</strong> devem seguir o critério posterior (efetividade da execução) — respeitando sempre a irretroatividade da norma/entendimento processual.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — CASO RECENTE — LEI 14.879/2024 ══ -->
+  <div class="aula-secao" id="pi-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🆕</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 14.879/2024 — art. 63, §5º, CPC · STJ, 2025</span><h3>Exemplo de prova recente e muito didático</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p>A <strong>Lei nº 14.879/2024</strong> incluiu o <strong>§5º ao art. 63, CPC</strong>, permitindo ao juiz <strong>declarar de ofício</strong> a incompetência de juízo quando identificar escolha <strong>abusiva/aleatória</strong> de foro de eleição pelo autor — regra que rompe, para essa hipótese específica, com a regra geral de que a incompetência relativa não pode ser reconhecida de ofício.</p></div>
+      <div class="aula-atencao-box"><p><strong>O que o STJ decidiu (2025):</strong> essa nova possibilidade de declinação de ofício <strong>somente se aplica às ações ajuizadas após a vigência</strong> da Lei 14.879/2024. Se a ação foi ajuizada <strong>antes</strong> dessa lei, o novo §5º do art. 63 <strong>não retroage</strong> para alcançá-la — mesmo que a decisão sobre competência venha a ser proferida já sob a vigência da lei nova.</p></div>
+      <div class="aula-destaque-box"><p><strong>Por que esse caso é perfeito para entender a teoria do isolamento?</strong> Porque mostra que, para o STJ, o marco relevante aqui não foi "a data da decisão sobre competência" nem "a data da contestação" — foi a <strong>data do ajuizamento da ação</strong>, que fixa o marco processual de estabilização da competência sob determinado regime legal. Isso reforça que cada instituto processual pode ter seu <strong>próprio marco temporal relevante</strong>, a depender da natureza do ato (aqui, a propositura da demanda).</p></div>
+      <div class="aula-atencao-box"><p><strong>Complemento — prorrogação de competência:</strong> se o réu apresenta contestação sem impugnar a competência do juízo, ocorre a <strong>prorrogação de competência</strong> (art. 65, CPC) — tornando-se irrelevante, a partir daí, qualquer discussão posterior sobre eventual declinação de ofício.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E JURISPRUDÊNCIA ══ -->
+  <div class="aula-secao" id="pi-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Quadro-resumo — direito intertemporal processual</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Conceito</th><th>Conteúdo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Regra geral (art. 14, CPC)</strong></td><td>Lei processual nova: aplicação imediata + irretroatividade quanto aos atos já praticados</td></tr>
+          <tr><td><strong>Teoria adotada</strong></td><td>Isolamento dos Atos Processuais (tempus regit actum)</td></tr>
+          <tr><td><strong>O que se protege</strong></td><td>Ato processual perfeito + situações processuais consolidadas + coisa julgada</td></tr>
+          <tr><td><strong>Base tríplice</strong></td><td>Art. 14, CPC + Art. 6º, LINDB + Art. 5º, XXXVI, CF/88</td></tr>
+          <tr><td><strong>Marco temporal típico p/ recursos</strong></td><td>Data de publicação da decisão recorrida (não a interposição do recurso)</td></tr>
+          <tr><td><strong>Marco temporal típico p/ ação rescisória</strong></td><td>Data do trânsito em julgado da decisão rescindenda</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobrança FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Literalidade do art. 14, CPC; Teoria do Isolamento dos Atos Processuais (tempus regit actum); aplicação imediata × irretroatividade</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Casos concretos de marco temporal (recursos = publicação da decisão; rescisória = trânsito em julgado); base tríplice (art. 14 CPC + art. 6º LINDB + art. 5º, XXXVI, CF)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Aplicação da nova regra do art. 63, §5º, CPC (Lei 14.879/2024) só a ações ajuizadas após a vigência; honorários recursais (art. 85, §11)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Art. 1.046, CPC (revogação expressa do CPC/73); prescrição intercorrente e mudança de critério jurisprudencial</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="pi-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"A lei processual nova somente se aplica aos processos iniciados após sua vigência, sendo vedada sua aplicação aos processos em curso."</strong><br>✅ ERRADO. O art. 14, CPC, determina exatamente o contrário: a lei processual nova tem <strong>aplicação imediata</strong> aos processos em curso — respeitados apenas os atos já praticados.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Todo o processo deve ser regido integralmente pela mesma lei processual, desde o seu início até o trânsito em julgado, ainda que sobrevenha lei nova."</strong><br>✅ ERRADO. Pela Teoria do Isolamento dos Atos Processuais, <strong>cada ato</strong> é regido pela lei vigente no momento de sua prática — é perfeitamente possível (e comum) que atos diferentes do mesmo processo sigam leis diferentes.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Os recursos são regidos pela lei processual vigente na data de sua interposição, e não na data da publicação da decisão recorrida."</strong><br>✅ ERRADO. O marco relevante para recursos é a <strong>publicação da decisão recorrida</strong> — não a data em que a parte efetivamente interpõe o recurso.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A regra do art. 63, §5º, CPC, incluída pela Lei 14.879/2024, aplica-se retroativamente a todas as ações em curso, independentemente da data de ajuizamento."</strong><br>✅ ERRADO. O STJ decidiu que essa nova possibilidade de declinação de ofício <strong>só se aplica às ações ajuizadas após a vigência</strong> da lei — não retroage para ações já ajuizadas antes.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O direito processual intertemporal não guarda qualquer relação com a LINDB, por se tratar de matéria exclusivamente regida pelo CPC."</strong><br>✅ ERRADO. A doutrina e a jurisprudência combinam <strong>art. 14, CPC + art. 6º, LINDB + art. 5º, XXXVI, CF/88</strong> como fundamento tríplice da proteção intertemporal processual.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"O prazo para ajuizamento de ação rescisória é regido pela lei processual vigente ao tempo do trânsito em julgado da decisão rescindenda."</strong><br>CORRETO.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Art. 14, CPC — os dois comandos</h4><p><strong>Não retroage + Aplica-se de imediato</strong> aos processos em curso, respeitados os atos já praticados</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Teoria adotada</h4><p><strong>Isolamento dos Atos Processuais</strong> = tempus regit actum ("o tempo rege o ato")</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Base tríplice</h4><p><strong>Art. 14 (CPC) + Art. 6º (LINDB) + Art. 5º, XXXVI (CF)</strong></p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Marco temporal de cada instituto (decore por associação)</h4><p><strong>Recurso</strong> → publicação da decisão recorrida<br><strong>Rescisória</strong> → trânsito em julgado da decisão rescindenda<br><strong>Art. 63, §5º (Lei 14.879/24)</strong> → data do ajuizamento da ação</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="pi-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Segundo o art. 14 do CPC/2015, a norma processual:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Retroagirá sempre que beneficiar uma das partes do processo em curso.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Não retroagirá e será aplicável imediatamente aos processos em curso, respeitados os atos processuais praticados e as situações jurídicas consolidadas sob a vigência da norma revogada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Somente se aplica aos processos ajuizados após sua vigência, sendo vedada sua aplicação aos processos pendentes.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Aplica-se retroativamente para desconstituir atos processuais já praticados sob a lei revogada, sempre que a lei nova for mais benéfica à parte.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Depende de manifestação expressa das partes para que passe a reger o processo em curso.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Transcrição literal do art. 14, CPC/2015: a norma processual não retroage, mas tem aplicação imediata aos processos em curso, respeitados os atos já praticados e as situações jurídicas consolidadas.</div>
+      <span class="aula-fonte-tag">Fundamento: CPC/2015, art. 14.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> A teoria adotada pelo Direito Processual Civil brasileiro para resolver conflitos de leis processuais no tempo é conhecida como:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Teoria da unidade processual, segundo a qual todo o processo deve ser regido pela mesma lei do início ao fim.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Teoria do Isolamento dos Atos Processuais, segundo a qual cada ato deve ser considerado separadamente dos demais para o fim de se determinar a lei que o rege, aplicando-se a vigente no momento de sua prática.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Teoria da retroatividade mínima, aplicável exclusivamente ao direito processual penal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Teoria da ultratividade absoluta, segundo a qual a lei revogada sempre continua a reger todo o processo já iniciado sob sua vigência.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Teoria da retroatividade objetiva de Roubier, incorporada expressamente ao art. 14 do CPC.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Jurisprudência consolidada do STJ: as regras de direito intertemporal processual se orientam pela Teoria do Isolamento dos Atos Processuais (tempus regit actum) — cada ato regido pela lei vigente no momento de sua prática, expressamente incorporada ao art. 14, CPC/2015.</div>
+      <span class="aula-fonte-tag">Fundamento: CPC/2015, art. 14; jurisprudência consolidada do STJ.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o marco temporal relevante para determinar a lei processual aplicável a determinados institutos, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Os recursos são regidos pela lei processual vigente na data de sua efetiva interposição pela parte.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Os recursos são regidos pela lei processual vigente na data da publicação da decisão recorrida.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A ação rescisória é regida pela lei processual vigente na data de seu ajuizamento, independentemente de quando ocorreu o trânsito em julgado da decisão rescindenda.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Os honorários recursais previstos no art. 85, §11, do CPC são devidos em qualquer recurso, independentemente da data de publicação da decisão impugnada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A contagem de prazos em dias úteis, prevista no art. 219 do CPC/2015, aplica-se retroativamente a prazos já iniciados sob o CPC/1973.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Os recursos são regidos pela lei vigente na data da publicação da decisão recorrida — não na data da interposição. A ação rescisória segue a lei vigente ao tempo do trânsito em julgado da decisão rescindenda (não do ajuizamento da rescisória). Honorários recursais só cabem em recursos contra decisão publicada já sob o CPC/2015. A contagem em dias úteis só vale para prazos iniciados após a vigência do novo Código.</div>
+      <span class="aula-fonte-tag">Fundamento: STJ — jurisprudência consolidada sobre marcos temporais processuais; CPC/2015, arts. 85, §11, e 219.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> A Lei nº 14.879/2024 incluiu o §5º ao art. 63 do CPC, permitindo ao juiz declarar de ofício a incompetência de juízo em caso de escolha abusiva de foro de eleição. Ação foi ajuizada antes da vigência dessa lei, tendo o réu apresentado contestação sem impugnar a competência do juízo. Segundo entendimento do STJ, nessa hipótese:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A nova regra se aplica retroativamente, autorizando a declinação de ofício mesmo em ações ajuizadas antes de sua vigência.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A nova legislação não se aplica ao caso concreto, por força do art. 14 do CPC (Teoria do Isolamento dos Atos Processuais), e, tendo o réu deixado de impugnar a competência na contestação, ocorreu a prorrogação de competência do juízo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A competência deve ser obrigatoriamente redistribuída, independentemente da ausência de impugnação pelo réu.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A prorrogação de competência é instituto incompatível com o direito processual intertemporal, não podendo ser invocada nesse caso.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A nova regra do art. 63, §5º, CPC, aplica-se a todo processo em que a decisão sobre competência seja proferida após sua vigência, ainda que a ação tenha sido ajuizada antes.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>O STJ decidiu que a possibilidade de declinação de ofício introduzida pela Lei 14.879/2024 só se aplica às ações ajuizadas após sua vigência (art. 14, CPC — Teoria do Isolamento dos Atos Processuais). Além disso, a apresentação de contestação sem impugnação da competência gera a prorrogação de competência (art. 65, CPC), afastando qualquer fundamento para redistribuição.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 14.879/2024; CPC/2015, arts. 14, 63, §5º e 65; STJ, 2025.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o fundamento jurídico da proteção conferida aos atos processuais já praticados diante de lei processual superveniente, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Decorre exclusivamente do art. 14 do CPC, sem qualquer relação com a Lei de Introdução às Normas do Direito Brasileiro ou com a Constituição Federal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Decorre da combinação entre o art. 14 do CPC, o art. 6º da LINDB e o art. 5º, XXXVI, da Constituição Federal, que protegem o ato jurídico perfeito, o direito adquirido e a coisa julgada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Decorre unicamente de enunciados doutrinários do Fórum Permanente de Processualistas Civis, sem qualquer base legal ou constitucional.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Aplica-se apenas às relações de direito material, não tendo qualquer repercussão sobre atos processuais.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Restringe-se ao período de transição entre o CPC/1973 e o CPC/2015, não se aplicando a leis processuais supervenientes ao CPC/2015.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>A proteção aos atos processuais já praticados se apoia na combinação de três normas: art. 14, CPC (regra processual específica) + art. 6º, LINDB (regra geral de direito intertemporal) + art. 5º, XXXVI, CF/88 (fundamento constitucional). Essa lógica não se limita à transição CPC/1973-2015 — aplica-se a qualquer lei processual superveniente, como demonstra o caso da Lei 14.879/2024.</div>
+      <span class="aula-fonte-tag">Fundamento: CPC/2015, art. 14; LINDB, art. 6º; CF/88, art. 5º, XXXVI.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
