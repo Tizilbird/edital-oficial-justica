@@ -7457,6 +7457,590 @@ AULAS['dpc_3'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Aplicação da Lei Penal no Tempo e no Espaço
+// Chave: dp_1 (Direito Penal, tópico 1)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dp_1'] = {
+  title: 'Aplicação da Lei Penal no Tempo e no Espaço',
+  sub: 'Direito Penal · CP, arts. 4º a 12 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">Código Penal, arts. 4º a 12 · CF/88, art. 5º, XL · STF/STJ</div>
+  <h1 class="aula-h1">Aplicação da Lei Penal no Tempo e no Espaço</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="lt-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="lt-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Lei Penal no Tempo</button>
+    <button class="aula-tab-btn" data-sec="1">Sucessão de Leis</button>
+    <button class="aula-tab-btn" data-sec="2">Princípios no Espaço</button>
+    <button class="aula-tab-btn" data-sec="3">Território e Lugar do Crime</button>
+    <button class="aula-tab-btn" data-sec="4">Extraterritorialidade</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Jurisprudência</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — LEI PENAL NO TEMPO ══ -->
+  <div class="aula-secao ativo" id="lt-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">⏳</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 5º, XL · CP, art. 2º</span><h3>Regra geral: irretroatividade da lei penal mais gravosa</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, XL, CF/88:</strong> "A lei penal não retroagirá, salvo para beneficiar o réu." Único dispositivo entre os princípios penais expressos que traz, ele mesmo, sua exceção: a irretroatividade é a regra; a retroatividade da lei mais benéfica é a exceção constitucionalmente autorizada.</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Conceito</th><th>Significado</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Irretroatividade (regra)</strong></td><td>Lei penal mais grave não alcança fatos praticados antes de sua vigência</td></tr>
+          <tr><td><strong>Retroatividade benéfica (exceção)</strong></td><td>Lei penal mais favorável ao réu retroage, mesmo após o trânsito em julgado (art. 2º, § único, CP)</td></tr>
+          <tr><td><strong>Ultratividade da lei benéfica</strong></td><td>Lei antiga mais favorável continua regendo o fato, mesmo depois de revogada por lei mais severa</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Tempo do crime — Teoria da Atividade (art. 4º, CP)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 4º, CP:</strong> "Considera-se praticado o crime no momento da <strong>ação ou omissão</strong>, ainda que outro seja o momento do <strong>resultado</strong>."</p></div>
+      <p>O Brasil adota a <strong>teoria da atividade</strong> para determinar o tempo do crime — importa o momento da conduta (ação/omissão), não o momento em que o resultado efetivamente ocorre.</p>
+      <div class="aula-atencao-box"><p><strong>Consequência prática central:</strong> se o agente pratica a conduta sob a vigência da lei A, mas o resultado só se consuma depois, já sob a lei B, é a <strong>lei A</strong> (vigente no momento da conduta) que rege o fato para efeitos de imputabilidade, menoridade penal e demais institutos vinculados ao momento do crime.</p></div>
+      <div class="aula-atencao-box"><p><strong>Não confundir com o lugar do crime:</strong> para o <strong>tempo</strong> do crime, o CP adota a teoria da <strong>atividade</strong> (só a conduta importa). Para o <strong>lugar</strong> do crime (art. 6º, CP, tratado adiante), o CP adota a teoria da <strong>ubiquidade</strong> (conduta OU resultado) — são teorias diferentes para perguntas diferentes.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — SUCESSÃO DE LEIS PENAIS ══ -->
+  <div class="aula-secao" id="lt-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🔄</div>
+        <div><span class="aula-tag aula-tag-lei">CP, arts. 2º e 3º</span><h3>As quatro hipóteses de sucessão de leis penais no tempo</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Hipótese</th><th>O que ocorre</th><th>Retroage?</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Abolitio criminis</strong></td><td>Lei nova deixa de considerar crime uma conduta antes incriminada</td><td>Sim — extingue a punibilidade e faz cessar todos os efeitos <strong>penais</strong> da condenação (mas não os efeitos civis)</td></tr>
+          <tr><td><strong>Novatio legis incriminadora</strong></td><td>Lei nova passa a considerar crime conduta antes atípica</td><td>Nunca — irretroativa (só vale para fatos futuros)</td></tr>
+          <tr><td><strong>Novatio legis in pejus</strong></td><td>Lei nova torna mais grave o tratamento de conduta já criminalizada</td><td>Nunca — irretroativa</td></tr>
+          <tr><td><strong>Novatio legis in mellius</strong></td><td>Lei nova torna mais benéfico o tratamento de conduta já criminalizada</td><td>Sim — retroage, inclusive após o trânsito em julgado</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Abolitio criminis — atenção ao detalhe mais cobrado:</strong> extingue a punibilidade e <strong>faz cessar a execução e os efeitos penais</strong> da condenação (reincidência, por exemplo) — mas <strong>não</strong> atinge os efeitos <strong>civis</strong> da sentença (ex.: obrigação de reparar o dano, que pode continuar sendo executada na esfera cível).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quem decide qual lei é "mais benéfica"? E é possível combinar duas leis?</h3>
+      <div class="aula-destaque-box"><p><strong>Competência para aplicar a lei mais benéfica:</strong> se ainda não há trânsito em julgado, cabe ao <strong>juiz do processo de conhecimento</strong>; se já houve trânsito em julgado, cabe ao <strong>juiz da execução penal</strong> (Súmula 611, STF).</p></div>
+      <div class="aula-atencao-box"><p><strong>Vedação à combinação de leis (lex tertia):</strong> a jurisprudência dominante do STF e do STJ <strong>não admite</strong> que o juiz combine partes de uma lei antiga com partes de uma lei nova, extraindo o "melhor de cada uma" para criar uma <strong>terceira norma inédita</strong>, que nunca existiu na forma decidida pelo legislador. O juiz deve escolher <strong>a lei como um todo</strong> — ou aplica integralmente a lei antiga, ou aplica integralmente a lei nova, sempre optando pela mais favorável ao réu no conjunto.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Normas penais em branco e leis de vigência temporária (art. 3º, CP)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 3º, CP:</strong> "A lei excepcional ou temporária, embora decorrido o período de sua duração ou cessadas as circunstâncias que a determinaram, aplica-se ao fato praticado durante sua vigência." É a <strong>ultratividade obrigatória</strong> das leis temporárias/excepcionais — mesmo depois de encerrado o período de vigência, a lei continua regendo os fatos praticados enquanto estava em vigor.</p></div>
+      <div class="aula-atencao-box"><p><strong>Sobre normas de natureza híbrida (penal + processual):</strong> segundo entendimento do STF, normas dotadas simultaneamente de aspectos penais e processuais devem retroagir quando mais benéficas ao réu, desde que ainda não tenha ocorrido o trânsito em julgado da condenação — combinando a lógica da retroatividade penal benéfica com a natureza mista do dispositivo.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — PRINCÍPIOS NO ESPAÇO ══ -->
+  <div class="aula-secao" id="lt-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🌐</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina</span><h3>Os cinco princípios de aplicação espacial da lei penal</h3></div>
+      </div>
+      <div class="aula-macete-box"><h4>Macete: T-N-D-U-R</h4><p style="margin-top:6px">Territorialidade · Nacionalidade · Defesa (real) · Universalidade (justiça universal) · Representação (pavilhão/bandeira)</p></div>
+      <table class="aula-tabela-comp" style="margin-top:10px">
+        <thead><tr><th>Princípio</th><th>Critério</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Territorialidade</strong></td><td>Aplica-se a lei do local onde o crime foi praticado, independentemente da nacionalidade do autor</td></tr>
+          <tr><td><strong>Nacionalidade ativa</strong></td><td>Aplica-se a lei do país de origem do <strong>autor</strong> do crime, onde quer que ele o tenha praticado</td></tr>
+          <tr><td><strong>Nacionalidade passiva</strong></td><td>Aplica-se a lei do país de origem da <strong>vítima</strong>, onde quer que o crime tenha ocorrido</td></tr>
+          <tr><td><strong>Defesa (real ou proteção)</strong></td><td>Aplica-se a lei do país cujos <strong>bens jurídicos</strong> foram lesados, independentemente da nacionalidade do autor ou do local do crime</td></tr>
+          <tr><td><strong>Universalidade (justiça universal)</strong></td><td>Aplica-se a lei de qualquer país que detenha o agente, em razão de cooperação internacional no combate a determinados crimes</td></tr>
+          <tr><td><strong>Representação (pavilhão/bandeira)</strong></td><td>Aplica-se a lei da bandeira/nacionalidade da embarcação ou aeronave, quando o crime nela cometido não é julgado no local</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Qual princípio o Brasil adota? Territorialidade temperada (mitigada)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, caput, CP:</strong> "Aplica-se a lei brasileira, sem prejuízo de convenções, tratados e regras de direito internacional, ao crime cometido no território nacional."</p></div>
+      <p>O Brasil adota, como <strong>regra</strong>, o princípio da <strong>territorialidade</strong> — mas de forma <strong>temperada/mitigada</strong>, pois: (1) admite-se a prevalência de tratados e convenções internacionais sobre a regra geral; e (2) o art. 7º, CP, complementa a territorialidade com hipóteses de <strong>extraterritorialidade</strong>, aplicando a lei brasileira também a fatos ocorridos fora do território nacional.</p>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — TERRITÓRIO E LUGAR DO CRIME ══ -->
+  <div class="aula-secao" id="lt-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🗺️</div>
+        <div><span class="aula-tag aula-tag-lei">CP, art. 5º, §§1º e 2º</span><h3>Conceito de território — território real × por extensão</h3></div>
+      </div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Território real (físico)</h4><p>Solo, subsolo, águas interiores, mar territorial e espaço aéreo correspondente, dentro dos limites geográficos do Brasil.</p></div>
+        <div class="aula-mini-card"><h4>Território por extensão (ficto)</h4><p>Embarcações e aeronaves <strong>públicas</strong> (ou a serviço do governo brasileiro) — consideradas território brasileiro <strong>onde quer que se encontrem</strong>. Embarcações e aeronaves <strong>brasileiras mercantes ou privadas</strong> — consideradas território brasileiro quando em <strong>alto-mar</strong> ou no espaço aéreo correspondente.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha muito cobrada:</strong> embarcação ou aeronave <strong>estrangeira</strong> de propriedade privada, quando <strong>em pouso ou atracada</strong> em território brasileiro (porto ou aeroporto nacional), submete-se à <strong>lei brasileira</strong> — a regra do art. 5º, §2º, CP, trata das embarcações/aeronaves estrangeiras em alto-mar ou espaço aéreo correspondente, mas quando aportadas no Brasil, aplica-se normalmente a territorialidade real (estão fisicamente em território nacional).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Lugar do crime — Teoria da Ubiquidade (art. 6º, CP)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 6º, CP:</strong> "Considera-se praticado o crime no lugar em que ocorreu a <strong>ação ou omissão</strong>, no todo ou em parte, bem como onde se produziu ou <strong>deveria produzir-se o resultado</strong>."</p></div>
+      <p>Diferente do <strong>tempo</strong> do crime (só a conduta importa — teoria da atividade), para o <strong>lugar</strong> do crime o CP adota a teoria da <strong>ubiquidade</strong> (mista): considera-se praticado tanto onde ocorreu a conduta <strong>quanto</strong> onde ocorreu (ou deveria ocorrer) o resultado.</p>
+      <div class="aula-atencao-box"><p><strong>Por que essa diferença de critério entre tempo e lugar?</strong> Porque a finalidade é distinta: para o tempo, busca-se segurança jurídica quanto à lei aplicável ao agente (por isso só a conduta conta). Para o lugar, busca-se <strong>evitar lacunas de punição</strong> em crimes transnacionais — permitindo que tanto o país da conduta quanto o país do resultado possam processar o agente, otimizando a cooperação penal internacional.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — EXTRATERRITORIALIDADE ══ -->
+  <div class="aula-secao" id="lt-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🛫</div>
+        <div><span class="aula-tag aula-tag-lei">CP, art. 7º</span><h3>Extraterritorialidade Incondicionada — art. 7º, I</h3></div>
+      </div>
+      <p>Aplica-se a lei brasileira a crimes cometidos <strong>fora</strong> do território nacional, <strong>independentemente</strong> de qualquer condição — nem sequer é necessário que o agente ingresse no Brasil.</p>
+      <div class="aula-destaque-box"><p><strong>Hipóteses do art. 7º, I:</strong><br>
+      a) contra a vida ou a liberdade do Presidente da República;<br>
+      b) contra o patrimônio ou a fé pública da União, Estado, DF, Território, Município, empresa pública, sociedade de economia mista, autarquia ou fundação instituída pelo Poder Público;<br>
+      c) contra a administração pública, por quem está a seu serviço;<br>
+      d) de genocídio, quando o agente for brasileiro ou domiciliado no Brasil.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> não é <strong>qualquer</strong> crime contra o Presidente da República que atrai a extraterritorialidade incondicionada — apenas aqueles praticados contra sua <strong>vida ou liberdade</strong> (alínea "a"). Um crime contra a honra do Presidente, por exemplo, não se enquadra nessa hipótese.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Extraterritorialidade Condicionada — art. 7º, II</h3>
+      <div class="aula-destaque-box"><p><strong>Hipóteses do art. 7º, II:</strong><br>
+      a) crimes que, por tratado ou convenção, o Brasil se obrigou a reprimir;<br>
+      b) praticados por brasileiro;<br>
+      c) praticados em aeronaves ou embarcações brasileiras, mercantes ou de propriedade privada, quando em território estrangeiro e aí não sejam julgados.</p></div>
+      <div class="aula-atencao-box"><p><strong>Condições cumulativas do §2º, art. 7º (aplicam-se a TODAS as hipóteses do inciso II):</strong><br>
+      a) entrar o agente no território nacional;<br>
+      b) ser o fato punível também no país em que foi praticado;<br>
+      c) estar o crime incluído entre aqueles pelos quais a lei brasileira autoriza a extradição;<br>
+      d) não ter sido o agente absolvido no estrangeiro ou não ter aí cumprido a pena;<br>
+      e) não ter sido o agente perdoado no estrangeiro ou, por outro motivo, não estar extinta a punibilidade, segundo a lei mais favorável.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hipótese especial — art. 7º, §3º</h3>
+      <div class="aula-destaque-box"><p>Aplica-se ainda a lei brasileira ao crime cometido por <strong>estrangeiro contra brasileiro fora do Brasil</strong>, se, reunidas as condições do §2º: não foi pedida ou foi negada a extradição; houve requisição do Ministro da Justiça.</p></div>
+      <div class="aula-atencao-box"><p><strong>Distinção-chave (frequentemente testada):</strong> a extraterritorialidade condicionada padrão (art. 7º, II) exige apenas que o agente <strong>entre</strong> no território nacional. Já a hipótese especial do §3º (crime de estrangeiro contra brasileiro no exterior) exige, além das condições do §2º, que <strong>não tenha sido pedida ou tenha sido negada a extradição</strong> e que haja <strong>requisição do Ministro da Justiça</strong>.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Pena cumprida no estrangeiro — art. 8º, CP</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 8º:</strong> "A pena cumprida no estrangeiro atenua a pena imposta no Brasil pelo mesmo crime, quando diversas, ou nela é computada, quando idênticas." Evita duplo cumprimento integral de pena pelo mesmo fato, sem violar a independência das jurisdições de cada país.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Contagem de prazo penal — art. 10, CP</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 10, CP:</strong> "O dia do começo <strong>inclui-se</strong> no cômputo do prazo. Contam-se os dias, meses e anos pelo calendário comum."</p></div>
+      <div class="aula-atencao-box"><p><strong>Diferença marcante do prazo processual:</strong> no <strong>Direito Penal material</strong>, inclui-se o dia do começo. Já nos prazos <strong>processuais</strong> em geral, a regra costuma ser excluir o dia do começo e incluir o dia final — não confunda os dois regimes de contagem.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E JURISPRUDÊNCIA ══ -->
+  <div class="aula-secao" id="lt-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Quadro-resumo: tempo × lugar do crime</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Aspecto</th><th>Teoria adotada</th><th>Base legal</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Tempo do crime</strong></td><td>Teoria da Atividade — só a conduta importa</td><td>Art. 4º, CP</td></tr>
+          <tr><td><strong>Lugar do crime</strong></td><td>Teoria da Ubiquidade — conduta OU resultado</td><td>Art. 6º, CP</td></tr>
+          <tr><td><strong>Aplicação espacial da lei</strong></td><td>Territorialidade temperada (regra) + extraterritorialidade (exceções)</td><td>Arts. 5º e 7º, CP</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobrança FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Teoria da atividade (tempo) × teoria da ubiquidade (lugar); abolitio criminis e seus efeitos; vedação à combinação de leis (lex tertia)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Extraterritorialidade incondicionada × condicionada (rol de hipóteses); condições cumulativas do §2º, art. 7º; território por extensão</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Hipótese especial do §3º; pena cumprida no estrangeiro (art. 8º); Súmula 611, STF (competência execução × conhecimento)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Contagem de prazo penal (art. 10); leis excepcionais/temporárias (art. 3º); normas híbridas penal-processuais retroagindo</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="lt-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"Na hipótese de sucessão de leis penais no tempo, é permitido ao juiz aplicar parte de uma lei anterior e parte de uma lei posterior, desde que o resultado seja mais favorável ao réu."</strong><br>✅ ERRADO. A jurisprudência dominante <strong>veda a combinação de leis</strong> (lex tertia) — o juiz escolhe uma lei por inteiro, não pode criar uma terceira norma combinando trechos de cada uma.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A abolitio criminis extingue a punibilidade, mas não faz cessar a execução da pena nem os efeitos penais da condenação, apenas suspende temporariamente seus efeitos."</strong><br>✅ ERRADO. A abolitio criminis <strong>faz cessar a execução e os efeitos penais</strong> da condenação — só os efeitos <strong>civis</strong> permanecem.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"É qualquer crime praticado contra o Presidente da República que atrai a extraterritorialidade incondicionada da lei brasileira."</strong><br>✅ ERRADO. Somente os crimes contra a <strong>vida ou liberdade</strong> do Presidente (art. 7º, I, "a", CP) — não qualquer crime.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O tempo do crime é definido pela teoria da ubiquidade, considerando-se praticado tanto no momento da conduta quanto no momento do resultado."</strong><br>✅ ERRADO. A ubiquidade é para o <strong>lugar</strong> do crime (art. 6º). Para o <strong>tempo</strong>, adota-se a teoria da <strong>atividade</strong> (art. 4º) — só a conduta importa.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A extraterritorialidade condicionada dispensa qualquer requisito, bastando que o crime tenha sido praticado por brasileiro."</strong><br>✅ ERRADO. Além de se enquadrar numa das hipóteses do art. 7º, II, ainda é preciso cumprir <strong>todas</strong> as condições cumulativas do §2º (entrar no território, dupla tipicidade, extraditabilidade, ausência de absolvição/cumprimento de pena/extinção de punibilidade no exterior).</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"A pena cumprida no estrangeiro atenua a pena imposta no Brasil pelo mesmo crime, quando diversas, ou nela é computada, quando idênticas."</strong><br>CORRETO — art. 8º, CP.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Tempo × Lugar do crime</h4><p><strong>Tempo</strong> → Atividade (só conduta) <br><strong>Lugar</strong> → Ubiquidade (conduta OU resultado)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Princípios espaciais</h4><p><strong>T-N-D-U-R:</strong> Territorialidade · Nacionalidade (ativa/passiva) · Defesa · Universalidade · Representação</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Extraterritorialidade — incondicionada × condicionada</h4><p><strong>Incondicionada</strong> → não precisa de nada, nem entrar no Brasil<br><strong>Condicionada</strong> → precisa cumprir TODAS as 5 condições do §2º</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Combinação de leis</h4><p><strong>Proibida (lex tertia)</strong> — escolhe uma lei inteira, nunca mistura pedaços</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="lt-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a determinação do tempo e do lugar do crime, segundo o Código Penal, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Adota-se a teoria da ubiquidade para o tempo do crime, e a teoria da atividade para o lugar do crime.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Considera-se praticado o crime no momento da ação ou omissão, ainda que outro seja o momento do resultado (teoria da atividade); e no lugar em que ocorreu a ação ou omissão, no todo ou em parte, bem como onde se produziu ou deveria produzir-se o resultado (teoria da ubiquidade).</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Considera-se praticado o crime exclusivamente no momento e no lugar em que se produziu o resultado, segundo a teoria do resultado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O tempo e o lugar do crime são sempre determinados pela mesma teoria, a da ubiquidade, tanto para fins de aplicação da lei no tempo quanto no espaço.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Considera-se praticado o crime no momento e lugar da denúncia oferecida pelo Ministério Público.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 4º, CP (tempo do crime = teoria da atividade, só a conduta importa) e art. 6º, CP (lugar do crime = teoria da ubiquidade, conduta ou resultado). São teorias diferentes para perguntas diferentes — pegadinha clássica trocar uma pela outra.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, arts. 4º e 6º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Lei nova entra em vigor tornando mais severa a pena de determinado crime já existente no Código Penal. Antes do trânsito em julgado da condenação do réu, sobrevém outra lei, ainda mais recente, tornando a pena novamente mais branda que a original. Sobre a aplicação dessas leis ao caso, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O juiz pode combinar dispositivos das três leis, extraindo de cada uma o ponto mais favorável ao réu.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Deve ser aplicada a lei intermediária (mais severa), por ser a vigente no momento da prática do fato.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Deve ser aplicada, em sua integralidade, a lei mais benéfica entre as três, sendo vedada a combinação de dispositivos de leis diversas (lex tertia).</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Nenhuma das leis supervenientes pode ser aplicada, prevalecendo sempre a lei vigente ao tempo do fato, ainda que mais gravosa.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A aplicação da lei mais benéfica depende de requerimento do Ministério Público, não podendo o juiz aplicá-la de ofício.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Deve ser aplicada, na íntegra, a lei mais favorável ao réu dentre as vigentes (a original ou a mais recente, a depender de qual seja efetivamente mais benéfica em seu conjunto) — vedada a combinação de trechos de leis diferentes (lex tertia), posição consolidada no STF e STJ.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, art. 2º; jurisprudência consolidada STF/STJ — vedação à lex tertia.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre as hipóteses de extraterritorialidade da lei penal brasileira, previstas no art. 7º do Código Penal, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Qualquer crime praticado contra o Presidente da República, inclusive contra sua honra, atrai a extraterritorialidade incondicionada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> O crime de genocídio praticado no exterior por estrangeiro sem qualquer vínculo com o Brasil está sujeito à extraterritorialidade incondicionada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> O crime de genocídio, quando o agente for brasileiro ou domiciliado no Brasil, está sujeito à extraterritorialidade incondicionada, aplicando-se a lei brasileira independentemente de qualquer condição.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Os crimes praticados por brasileiro no exterior estão sempre sujeitos à extraterritorialidade incondicionada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A extraterritorialidade condicionada dispensa a exigência de dupla tipicidade entre a lei brasileira e a lei do país onde o crime foi praticado.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 7º, I, "d", CP: genocídio, quando o agente for brasileiro ou domiciliado no Brasil, é hipótese de extraterritorialidade incondicionada. Se o agente não tiver nenhum desses vínculos, a hipótese não se enquadra no inciso I. Crimes por brasileiro no exterior (art. 7º, II, "b") são extraterritorialidade condicionada, exigindo, entre outras condições, a dupla tipicidade (§2º, "b").</div>
+      <span class="aula-fonte-tag">Fundamento: CP, art. 7º, I, "a" e "d", e II, "b", §2º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Cidadão brasileiro pratica crime de estelionato em país estrangeiro, não sendo aí julgado. Regressa voluntariamente ao Brasil. Para que se aplique a lei penal brasileira a esse fato, com base na extraterritorialidade condicionada (art. 7º, II, "b", CP), é necessário, entre outras condições cumulativas do §2º do mesmo artigo:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Que o fato seja punível apenas segundo a lei brasileira, sendo irrelevante a legislação do país onde foi praticado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Que o fato seja punível também no país em que foi praticado (dupla tipicidade) e que o crime esteja incluído entre aqueles pelos quais a lei brasileira autoriza a extradição.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Que haja prévia extradição formal do agente pelo país estrangeiro, ainda que ele já tenha regressado voluntariamente ao Brasil.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Que o Ministro da Justiça requisite expressamente a aplicação da lei brasileira, sendo essa condição obrigatória em toda extraterritorialidade condicionada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Que o agente tenha sido absolvido no estrangeiro pelo mesmo fato, circunstância que autoriza nova persecução penal no Brasil.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 7º, §2º, "b" e "c", CP: entre as condições cumulativas estão a dupla tipicidade (punível também no país onde foi praticado) e a extraditabilidade (crime incluído entre os que autorizam extradição pela lei brasileira). A exigência de requisição do Ministro da Justiça (alternativa D) é específica da hipótese do §3º (crime de estrangeiro contra brasileiro no exterior), não da regra geral do inciso II. A absolvição no estrangeiro (alternativa E) é justamente impeditiva, não autorizativa.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, art. 7º, II, "b", e §§2º e 3º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o conceito de território para fins de aplicação da lei penal brasileira, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Embarcações e aeronaves brasileiras mercantes ou privadas são consideradas território nacional onde quer que se encontrem, inclusive em território estrangeiro.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Embarcações e aeronaves brasileiras públicas, ou a serviço do governo brasileiro, são consideradas território nacional onde quer que se encontrem; já as mercantes ou privadas são consideradas território nacional quando em alto-mar ou no espaço aéreo correspondente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Embarcações e aeronaves estrangeiras, quando atracadas ou pousadas em território brasileiro, permanecem sujeitas exclusivamente à lei de seu país de origem.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O conceito de território, para fins penais, corresponde exatamente ao conceito de território para fins de direito internacional público, sem qualquer ficção jurídica adicional.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Somente embarcações públicas, e não aeronaves públicas, são consideradas território brasileiro por extensão.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 5º, §1º, CP: embarcações e aeronaves brasileiras, de guerra ou a serviço do governo, onde quer que se encontrem, e as mercantes ou privadas, quando em alto-mar ou espaço aéreo correspondente, são consideradas extensão do território nacional. Embarcações/aeronaves estrangeiras atracadas/pousadas no Brasil submetem-se, em regra, à territorialidade real brasileira, e não exclusivamente à lei de origem.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, art. 5º, §§1º e 2º.</span>
+    </div>
+  </div>
+</div>`
+};
+// ═══════════════════════════════════════════════════════
+// AULA: Conflito Aparente de Normas Penais
+// Chave: dp_4 (Direito Penal, tópico 4)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dp_4'] = {
+  title: 'Conflito Aparente de Normas Penais',
+  sub: 'Direito Penal · Doutrina + Súmula 17, STJ · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">Doutrina penal · Súmula 17, STJ · STJ, Controvérsia 708 (2025)</div>
+  <h1 class="aula-h1">Conflito Aparente de Normas Penais</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="ca-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="ca-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito e Requisitos</button>
+    <button class="aula-tab-btn" data-sec="1">Especialidade</button>
+    <button class="aula-tab-btn" data-sec="2">Subsidiariedade</button>
+    <button class="aula-tab-btn" data-sec="3">Consunção</button>
+    <button class="aula-tab-btn" data-sec="4">Alternatividade</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Jurisprudência</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — CONCEITO E REQUISITOS ══ -->
+  <div class="aula-secao ativo" id="ca-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">⚔️</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina</span><h3>O que é conflito (ou concurso) aparente de normas?</h3></div>
+      </div>
+      <p>Ocorre quando <strong>uma única conduta</strong> parece se enquadrar em <strong>mais de uma norma penal</strong> ao mesmo tempo — mas, na análise final, apenas <strong>uma</strong> delas deve efetivamente ser aplicada. O conflito é apenas <strong>aparente</strong>: não existe, de fato, mais de um crime; existe um único fato que, à primeira vista, parece se enquadrar em duas ou mais descrições típicas.</p>
+      <div class="aula-destaque-box"><p><strong>Finalidade central dos critérios de solução:</strong> evitar o <strong>bis in idem</strong> — a dupla punição do agente pelo mesmo fato, sob o pretexto de que ele "cometeu dois crimes" quando, na realidade, praticou apenas uma conduta que se enquadra corretamente em um único tipo penal.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Os três requisitos cumulativos para configurar o conflito aparente</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Unidade de fato:</strong> deve haver uma <strong>única</strong> conduta (ação ou omissão) — se há mais de uma conduta, o caso é de <strong>concurso de crimes</strong> (material, formal ou continuado), não de conflito aparente de normas.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Pluralidade de normas aparentemente aplicáveis:</strong> duas ou mais leis penais parecem, à primeira vista, incidir sobre o mesmo fato.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Vigência simultânea das normas:</strong> todas as normas em aparente conflito devem estar <strong>em vigor ao mesmo tempo</strong> — se uma delas já foi revogada, o problema deixa de ser de conflito aparente de normas e passa a ser de <strong>direito penal intertemporal</strong> (sucessão de leis no tempo).</p></div>
+      <div class="aula-atencao-box"><p><strong>Distinção crucial e muito cobrada:</strong> conflito aparente de normas <strong>não é o mesmo</strong> que "conflito de leis penais no tempo". São institutos diferentes: o conflito aparente resolve qual norma <strong>vigente</strong> incide sobre um único fato; o conflito no tempo resolve qual lei (entre uma revogada e outra vigente) deve reger o fato.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Os quatro princípios que solucionam o conflito aparente</h3>
+      <div class="aula-macete-box"><h4>Macete: "Quer conflito? Então CASE"</h4><p style="margin-top:6px">Consunção · Alternatividade · Subsidiariedade · Especialidade</p></div>
+      <div class="aula-atencao-box"><p><strong>Atenção — controvérsia doutrinária sobre a alternatividade:</strong> parte expressiva da doutrina (Cezar Bitencourt, entre outros) entende que a <strong>alternatividade não resolve conflito algum</strong>, pois os tipos de ação múltipla já preveem, eles mesmos, qual verbo se aplica — não havendo, portanto, verdadeiro conflito entre normas distintas. Mesmo assim, é comum a doutrina majoritária e as bancas de concurso listarem a alternatividade como o <strong>quarto</strong> princípio, ao lado dos outros três, que são inquestionavelmente aceitos.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — ESPECIALIDADE ══ -->
+  <div class="aula-secao" id="ca-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🎯</div>
+        <div><span class="aula-tag aula-tag-lei">Lex specialis derogat legi generali</span><h3>Princípio da Especialidade</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p>A norma <strong>especial</strong> afasta a aplicação da norma <strong>geral</strong>. A norma especial contém <strong>todos os elementos</strong> da norma geral, acrescidos de um ou mais elementos <strong>especializantes</strong> (que tornam a conduta mais específica).</p></div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Exemplo clássico</h4><p><strong>Infanticídio (art. 123, CP)</strong> prevalece sobre <strong>homicídio (art. 121, CP)</strong> quando a mãe mata o próprio filho, durante o parto ou logo após, sob influência do estado puerperal — os elementos especializantes (relação de maternidade + estado puerperal + momento do parto) tornam o infanticídio a norma especial.</p></div>
+        <div class="aula-mini-card"><h4>Análise em abstrato, não em concreto</h4><p>A relação de especialidade se verifica <strong>comparando os tipos penais em abstrato</strong> — não é preciso analisar o caso concreto para saber qual norma é especial: basta comparar as descrições típicas.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Toda ação que realiza o tipo especial também realiza, necessariamente, o tipo geral — mas o inverso não é verdadeiro</strong> (Jescheck). Esse é o teste lógico para identificar a especialidade: se A sempre implica B, mas B nem sempre implica A, então A é a norma especial em relação a B.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "na relação de especialidade, prevalece a norma cujo preceito secundário preveja a maior pena" — <strong>ERRADO</strong>. A especialidade não é definida pela gravidade da pena, mas pela presença dos <strong>elementos especializantes</strong> no tipo — a norma especial pode até prever pena <strong>menor</strong> que a geral (como ocorre no infanticídio, cuja pena é menor que a do homicídio simples).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — SUBSIDIARIEDADE ══ -->
+  <div class="aula-secao" id="ca-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🔽</div>
+        <div><span class="aula-tag aula-tag-lei">Lex primaria derogat legi subsidiariae</span><h3>Princípio da Subsidiariedade</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p>A norma <strong>primária (principal)</strong> afasta a aplicação da norma <strong>subsidiária</strong>. As duas normas descrevem <strong>diferentes graus de violação</strong> do mesmo bem jurídico (ou de bens jurídicos relacionados) — a subsidiária funciona como um "soldado de reserva": só se aplica quando a norma principal, mais grave, <strong>não puder ser aplicada</strong> ao caso.</p></div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Subsidiariedade expressa</h4><p>A própria lei reconhece o caráter subsidiário. Ex.: art. 132, CP (perigo para a vida ou saúde de outrem) — "se o fato não constitui crime mais grave"; art. 15, Estatuto do Desarmamento (disparo de arma de fogo) — subsidiário em relação a crimes mais graves praticados com a arma.</p></div>
+        <div class="aula-mini-card"><h4>Subsidiariedade tácita</h4><p>Não há previsão expressa na lei, mas a doutrina reconhece a relação de "grau menor/grau maior" entre as normas — o crime menos grave é absorvido pelo mais grave quando ambos protegem o mesmo bem jurídico em intensidades diferentes.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "aplica-se o princípio da subsidiariedade apenas quando expressamente previsto em lei" — <strong>ERRADO</strong>. A subsidiariedade pode ser <strong>expressa</strong> (quando a lei traz a cláusula "se o fato não constitui crime mais grave") ou <strong>tácita</strong> (reconhecida pela doutrina, mesmo sem previsão expressa).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Especialidade × Subsidiariedade — não confundir</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Especialidade</th><th>Subsidiariedade</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Relação entre as normas</strong></td><td>Geral × Especial (elementos especializantes)</td><td>Principal × Subsidiária (graus de violação do mesmo bem)</td></tr>
+          <tr><td><strong>Lógica</strong></td><td>Norma especial sempre prevalece, independentemente da pena</td><td>Norma subsidiária só se aplica se a principal não puder incidir</td></tr>
+          <tr><td><strong>Metáfora didática</strong></td><td>Círculos concêntricos — o especial está contido no geral</td><td>Soldado de reserva — entra em campo só na ausência do titular</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — CONSUNÇÃO ══ -->
+  <div class="aula-secao" id="ca-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🌀</div>
+        <div><span class="aula-tag aula-tag-lei">Lex consumens derogat legi consumptae</span><h3>Princípio da Consunção (ou Absorção)</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p>O <strong>crime-fim absorve o crime-meio</strong>. Quando a prática de um crime é etapa necessária (ou fase de execução) para a consumação de outro crime mais amplo, o agente responde <strong>apenas pelo crime-fim</strong> — o crime-meio fica absorvido, não gerando concurso de crimes.</p></div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Exemplo clássico</h4><p>"A" invade a casa de "B" para matá-lo, e o mata. "A" responde <strong>apenas por homicídio (art. 121, CP)</strong> — o crime de violação de domicílio (art. 150, CP), praticado como meio para consumar o homicídio, é absorvido.</p></div>
+        <div class="aula-mini-card"><h4>Súmula 17, STJ</h4><p>"Quando o falso se exaure no estelionato, sem mais potencialidade lesiva, é por este absorvido." A falsificação de documento (falsum) é absorvida pelo estelionato quando esgota sua função apenas como meio de enganar a vítima.</p></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>As quatro hipóteses clássicas de consunção</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Crime progressivo:</strong> o agente, para alcançar o resultado mais grave desde o início pretendido, necessariamente passa por uma fase que já configura um crime menos grave (ex.: para matar, é preciso antes lesionar). O crime menos grave (lesão) é absorvido pelo mais grave (homicídio).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Progressão criminosa:</strong> o agente, inicialmente, quer praticar um crime menos grave, mas <strong>muda de desígnio</strong> no curso da execução e pratica um crime mais grave. Ex.: agride a vítima com intenção de lesioná-la (dolo de lesão), mas depois decide matá-la (dolo de morte). Só responde pelo resultado final mais grave.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Antefato impunível (ante factum não punível):</strong> conduta anterior que serve de meio necessário para a prática do crime principal, sem autonomia própria de punição (ex.: falsificar chave para depois furtar).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">4</div><p><strong>Pós-fato impunível (post factum não punível, ou exaurimento):</strong> conduta posterior que representa apenas o exaurimento do proveito do crime principal, sem lesionar novo bem jurídico autônomo (ex.: o ladrão que vende o bem furtado ao invés de simplesmente guardá-lo, sem enganar terceiro de boa-fé — a venda em si não configura novo crime autônomo de receptação por parte do próprio autor do furto).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Consunção pode ocorrer entre bens jurídicos distintos?</h3>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "o princípio da consunção jamais é aplicável a crimes contra bens jurídicos distintos" — <strong>ERRADO</strong>. A consunção pode, sim, ocorrer entre normas que protegem bens jurídicos <strong>diferentes</strong> (ex.: violação de domicílio — inviolabilidade do lar — absorvida pelo homicídio — vida), desde que exista <strong>nexo de dependência</strong> entre a conduta-meio e a conduta-fim, dentro do mesmo contexto fático.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — ALTERNATIVIDADE ══ -->
+  <div class="aula-secao" id="ca-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🔀</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina — princípio controvertido</span><h3>Princípio da Alternatividade</h3></div>
+      </div>
+      <p>Aplica-se aos <strong>tipos penais de ação múltipla ou de conteúdo variado</strong> (também chamados de <strong>tipos mistos alternativos</strong>) — aqueles cujo núcleo do tipo prevê <strong>vários verbos</strong>, sendo que a prática de <strong>mais de um deles, no mesmo contexto fático, contra a mesma vítima e o mesmo objeto</strong>, configura <strong>um único crime</strong> (e não vários, em concurso).</p>
+      <div class="aula-destaque-box"><p><strong>Exemplo clássico:</strong> o art. 33 da Lei de Drogas (Lei 11.343/06) descreve os verbos "importar, exportar, remeter, preparar, produzir, fabricar, adquirir, vender, expor à venda, oferecer..." — se o agente pratica <strong>vários</strong> desses verbos em relação à <strong>mesma</strong> substância entorpecente, no mesmo contexto, responde por <strong>um único crime</strong> de tráfico, não por vários crimes em concurso.</p></div>
+      <div class="aula-atencao-box"><p><strong>Por que parte da doutrina rejeita a alternatividade como "verdadeiro" conflito de normas?</strong> Porque, tecnicamente, não há <strong>duas normas diferentes</strong> em disputa — há apenas <strong>um único tipo penal</strong> (com vários núcleos/verbos) sendo corretamente aplicado uma única vez. Não é uma norma "vencendo" outra — é a correta interpretação de que os vários verbos, quando praticados em sequência sobre o mesmo objeto, não multiplicam a infração.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E JURISPRUDÊNCIA ══ -->
+  <div class="aula-secao" id="ca-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Quadro-resumo dos quatro princípios</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Princípio</th><th>Brocardo</th><th>Lógica central</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Especialidade</strong></td><td>Lex specialis derogat legi generali</td><td>Norma especial (elementos especializantes) sempre prevalece sobre a geral</td></tr>
+          <tr><td><strong>Subsidiariedade</strong></td><td>Lex primaria derogat legi subsidiariae</td><td>Norma principal prevalece; subsidiária só se aplica na ausência da principal</td></tr>
+          <tr><td><strong>Consunção</strong></td><td>Lex consumens derogat legi consumptae</td><td>Crime-fim absorve o crime-meio (progressivo, progressão, ante/pós-fato)</td></tr>
+          <tr><td><strong>Alternatividade</strong></td><td>—</td><td>Tipos de ação múltipla: vários verbos praticados = um único crime</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>STJ — Controvérsia 708 (Terceira Seção, abril/2025)</h3>
+      <div class="aula-destaque-box"><p>O STJ analisou a possibilidade de aplicação da contravenção penal de <strong>vias de fato</strong> (art. 21, Lei de Contravenções Penais), com a qualificadora incluída pela Lei 14.994/2024, no contexto de <strong>violência doméstica contra a mulher</strong>. Firmou-se o entendimento de que <strong>não é possível</strong> tal aplicação, por força dos princípios da <strong>especialidade</strong> e da <strong>proibição de bis in idem</strong> — a legislação específica de violência doméstica (que tipifica condutas próprias e mais graves) afasta a incidência da contravenção genérica no mesmo contexto fático.</p></div>
+      <div class="aula-atencao-box"><p><strong>Por que esse caso é ótimo para revisão:</strong> mostra a especialidade em ação prática e recente — evidenciando que, mesmo diante de reforma legislativa pontual (Lei 14.994/2024), o critério de especialidade continua sendo usado para evitar a aplicação simultânea (ou seletiva incorreta) de normas que tutelam a mesma situação fática sob perspectivas jurídicas concorrentes.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobrança FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Distinção especialidade × subsidiariedade × consunção; requisitos do conflito aparente (unidade de fato, pluralidade de normas, vigência simultânea)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Súmula 17, STJ (falso absorvido pelo estelionato); as quatro hipóteses de consunção (progressivo, progressão, ante/pós-fato); subsidiariedade expressa × tácita</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Princípio da alternatividade e sua controvérsia doutrinária; consunção entre bens jurídicos distintos; distinção com conflito no tempo</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Controvérsia 708, STJ (2025) — vias de fato × violência doméstica</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="ca-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"Na relação de especialidade entre duas normas, prevalecerá a norma cujo preceito secundário preveja a maior pena."</strong><br>✅ ERRADO. A especialidade é definida pelos <strong>elementos especializantes</strong> do tipo, não pela gravidade da pena — a norma especial pode até ter pena menor (ex.: infanticídio).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Segundo o princípio da especialidade, diante da impossibilidade de aplicação da norma mais grave, aplica-se a norma menos grave."</strong><br>✅ ERRADO. Essa é a descrição da <strong>subsidiariedade</strong>, não da especialidade.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Aplica-se o princípio da subsidiariedade apenas quando expressamente previsto em lei."</strong><br>✅ ERRADO. A subsidiariedade pode ser <strong>expressa</strong> ou <strong>tácita</strong> (reconhecida pela doutrina mesmo sem previsão legal explícita).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O princípio da consunção jamais é aplicável a crimes contra bens jurídicos distintos."</strong><br>✅ ERRADO. A consunção pode ocorrer entre bens jurídicos diferentes, desde que exista nexo de dependência entre a conduta-meio e a conduta-fim (ex.: violação de domicílio absorvida pelo homicídio).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O conflito aparente de normas é também conhecido pela doutrina como conflito de leis penais no tempo."</strong><br>✅ ERRADO. São institutos <strong>diferentes</strong>: o conflito aparente pressupõe normas <strong>vigentes simultaneamente</strong>; o conflito no tempo trata da sucessão entre lei revogada e lei vigente.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"O princípio da alternatividade é aplicável a infrações penais de ação múltipla ou de conteúdo variado."</strong><br>CORRETO — tipos com vários verbos, cuja prática múltipla sobre o mesmo objeto configura crime único.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Os quatro princípios</h4><p><strong>"Quer conflito? Então CASE":</strong> Consunção · Alternatividade · Subsidiariedade · Especialidade</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Requisitos do conflito aparente</h4><p><strong>Unidade de fato + Pluralidade de normas + Vigência simultânea</strong></p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 4 hipóteses de consunção</h4><p><strong>Progressivo</strong> (grave desde o início) · <strong>Progressão</strong> (muda de ideia no meio) · <strong>Antefato</strong> (preparação absorvida) · <strong>Pós-fato</strong> (exaurimento absorvido)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Súmula 17, STJ</h4><p>Falso <strong>se exaure</strong> no estelionato (sem mais potencialidade lesiva) → <strong>absorvido</strong></p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="ca-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> São requisitos cumulativos para a configuração do conflito aparente de normas penais:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Pluralidade de condutas, relevância causal e identidade de vítima.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Unidade de fato, pluralidade de normas aparentemente aplicáveis e vigência simultânea de todas as normas em conflito.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Pluralidade de fatos e de normas, associada à existência de liame subjetivo entre os agentes envolvidos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Unicidade de norma penal aplicável e pluralidade de condutas praticadas em contextos distintos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Existência de trânsito em julgado de condenação anterior pelo mesmo fato.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Requisitos cumulativos: (1) unidade de fato — uma única conduta; (2) pluralidade de normas penais aparentemente aplicáveis a esse fato; (3) vigência simultânea de todas essas normas. Se houver pluralidade de condutas, o caso é de concurso de crimes, não de conflito aparente de normas.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina penal — requisitos do conflito aparente de normas.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinada mãe, sob influência do estado puerperal, mata o próprio filho durante o parto. Nesse caso, aplica-se o princípio da:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Subsidiariedade, pois o crime de infanticídio é subsidiário em relação ao homicídio.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Especialidade, pois o infanticídio contém todos os elementos do homicídio, acrescidos de elementos especializantes (relação de maternidade, estado puerperal e o momento do parto ou logo após), prevalecendo sobre o crime geral.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Consunção, pois o homicídio absorve o infanticídio como crime-meio.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Alternatividade, por se tratar de tipo penal de ação múltipla.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Nenhum dos princípios de conflito aparente se aplica, devendo o agente responder por ambos os crimes em concurso formal.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Exemplo clássico de especialidade: o art. 123, CP (infanticídio), contém todos os elementos do art. 121, CP (homicídio), acrescidos dos elementos especializantes (relação de maternidade + estado puerperal + momento do parto/logo após). A norma especial prevalece sobre a geral, independentemente da pena prevista ser menor.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, arts. 121 e 123; doutrina — princípio da especialidade.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Segundo a Súmula 17 do Superior Tribunal de Justiça, quando o crime de falsidade documental se exaure no crime de estelionato, sem mais potencialidade lesiva:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O agente responde por ambos os crimes, em concurso material.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> O agente responde por ambos os crimes, em concurso formal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> A falsidade é absorvida pelo estelionato, respondendo o agente apenas por este último.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O estelionato é absorvido pela falsidade documental, respondendo o agente apenas por esta.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Aplica-se o princípio da alternatividade, sendo facultado ao Ministério Público escolher qual dos dois crimes denunciar.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Súmula 17, STJ: "Quando o falso se exaure no estelionato, sem mais potencialidade lesiva, é por este absorvido." Aplicação do princípio da consunção — o falso (crime-meio) é absorvido pelo estelionato (crime-fim), quando esgota sua função apenas como meio enganoso, sem lesividade autônoma adicional.</div>
+      <span class="aula-fonte-tag">Fundamento: Súmula 17, STJ; doutrina — princípio da consunção.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o princípio da subsidiariedade no conflito aparente de normas penais, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Só se admite subsidiariedade quando expressamente prevista em lei, sendo vedada a subsidiariedade tácita.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A norma subsidiária descreve grau menor de violação do mesmo bem jurídico, aplicando-se somente quando a norma principal, mais grave, não puder incidir sobre o caso concreto.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A subsidiariedade é sinônimo de especialidade, sendo os termos intercambiáveis na doutrina penal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A norma principal só prevalece sobre a subsidiária quando prevista em lei especial, nunca em lei geral.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A subsidiariedade pressupõe necessariamente bens jurídicos totalmente distintos entre as normas em conflito.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>A subsidiariedade pressupõe normas que descrevem diferentes graus de violação do mesmo bem jurídico (ou bem relacionado) — a subsidiária é o "soldado de reserva", que só atua quando a principal não incide. Pode ser expressa ou tácita, não se confunde com especialidade, e não exige bens jurídicos totalmente distintos (ao contrário, normalmente há proximidade entre eles).</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina — princípio da subsidiariedade.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> No contexto de violência doméstica contra a mulher, o Superior Tribunal de Justiça (Controvérsia 708, Terceira Seção, 2025) analisou a possibilidade de aplicação da contravenção penal de vias de fato, com a qualificadora incluída pela Lei nº 14.994/2024. Segundo o entendimento firmado, tal aplicação:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> É possível, cumulativamente com a legislação específica de violência doméstica, por força do princípio da consunção.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Não é possível, por força dos princípios da especialidade e da proibição de bis in idem, prevalecendo a legislação específica de violência doméstica no mesmo contexto fático.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> É obrigatória, devendo a contravenção ser sempre aplicada em concurso formal com o crime previsto na legislação de violência doméstica.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Depende exclusivamente da vontade da vítima, por se tratar de ação penal privada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> É vedada por completo, ainda que fora do contexto de violência doméstica contra a mulher.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>O STJ (Controvérsia 708, Terceira Seção, 2025) entendeu que não é possível aplicar a contravenção de vias de fato no contexto de violência doméstica contra a mulher, por força dos princípios da especialidade e da vedação ao bis in idem — a legislação específica de violência doméstica prevalece sobre a norma genérica no mesmo contexto fático.</div>
+      <span class="aula-fonte-tag">Fundamento: STJ, Controvérsia 708 (Terceira Seção, 2025); Lei 14.994/2024.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
