@@ -8605,6 +8605,335 @@ AULAS['dpp_2'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Ação Civil Pública
+// Chave: dc_10 (Direito Constitucional, tópico 10)
+// Base: Lei 7.347/85 + CDC (Lei 8.078/90, arts. 81-104) + CF/88, art. 129, III
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dc_10'] = {
+  title: 'Ação Civil Pública',
+  sub: 'Lei 7.347/1985 + CDC, arts. 81-104 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">Lei nº 7.347/1985 · CF/88, art. 129, III · CDC, arts. 81 a 104</div>
+  <h1 class="aula-h1">Ação Civil Pública</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="acp-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="acp-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito</button>
+    <button class="aula-tab-btn" data-sec="1">Legitimidade Ativa</button>
+    <button class="aula-tab-btn" data-sec="2">Objeto e Cabimento</button>
+    <button class="aula-tab-btn" data-sec="3">Procedimento e Inquérito Civil</button>
+    <button class="aula-tab-btn" data-sec="4">Coisa Julgada</button>
+    <button class="aula-tab-btn" data-sec="5">Jurisprudência STF/STJ</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — CONCEITO ══ -->
+  <div class="aula-secao ativo" id="acp-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 7.347/1985 · CF/88, art. 129, III</span><h3>O que é a Ação Civil Pública?</h3></div>
+      </div>
+      <p>É o instrumento processual coletivo destinado à tutela de <strong>direitos difusos, coletivos e individuais homogêneos</strong>, quando lesados ou ameaçados — meio ambiente, consumidor, patrimônio público, ordem urbanística, ordem econômica, honra de grupos raciais/étnicos, entre outros bens de relevância social prevista em lei.</p>
+      <div class="aula-destaque-box"><p><strong>Art. 129, III, CF/88:</strong> é função institucional do Ministério Público "promover o inquérito civil e a ação civil pública, para a proteção do patrimônio público e social, do meio ambiente e de outros interesses difusos e coletivos." O MP é o legitimado mais frequente, mas <strong>não é o único</strong> — ver aba de legitimidade.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Terminologia: Ação Civil Pública × Ação Coletiva</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Ação Civil Pública (Lei 7.347/85)</h4><p>Tutela direitos <strong>difusos e coletivos</strong> em regra, mas também pode veicular direitos <strong>individuais homogêneos</strong> por força da integração com o CDC.</p></div>
+        <div class="aula-mini-card"><h4>Ação Coletiva (CDC, Título III)</h4><p>Nomenclatura mais usada quando o foco é a defesa de <strong>direitos individuais homogêneos</strong> do consumidor — mas os dois diplomas se comunicam integralmente (art. 21, LACP + art. 90, CDC).</p></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Diálogo das fontes (art. 21, LACP + art. 90, CDC):</strong> a LACP e o CDC formam um <strong>microssistema processual coletivo</strong> — aplica-se o CDC (Título III) subsidiariamente à LACP, e vice-versa. É por isso que a classificação tripartite dos direitos metaindividuais (difusos, coletivos e individuais homogêneos) vem do art. 81, § único, CDC, mas se aplica integralmente às ações civis públicas.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Os três direitos metaindividuais — art. 81, parágrafo único, CDC</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Espécie</th><th>Titularidade</th><th>Divisibilidade</th><th>Exemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Difusos</strong></td><td>Pessoas indeterminadas, ligadas por circunstância de fato</td><td>Indivisível</td><td>Poluição de um rio que afeta toda a coletividade ribeirinha</td></tr>
+          <tr><td><strong>Coletivos (stricto sensu)</strong></td><td>Grupo, categoria ou classe determinável, ligados entre si ou com a parte contrária por relação jurídica base</td><td>Indivisível</td><td>Consumidores de um mesmo plano de saúde lesados por cláusula abusiva</td></tr>
+          <tr><td><strong>Individuais homogêneos</strong></td><td>Pessoas determinadas ou determináveis</td><td>Divisível — origem comum</td><td>Consumidores lesados por um mesmo produto defeituoso, cada um com seu próprio dano</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha clássica:</strong> os individuais homogêneos são chamados por parte da doutrina de direitos <strong>"acidentalmente coletivos"</strong> — são, na essência, direitos individuais divisíveis, tratados coletivamente apenas por conveniência processual (mesma origem comum do dano).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — LEGITIMIDADE ATIVA ══ -->
+  <div class="aula-secao" id="acp-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">👥</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 7.347/85, art. 5º</span><h3>Rol de legitimados — legitimação concorrente e disjuntiva</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, caput, LACP:</strong> têm legitimidade para propor a ação principal e a cautelar: I — o Ministério Público; II — a Defensoria Pública; III — a União, os Estados, o Distrito Federal e os Municípios; IV — a autarquia, empresa pública, fundação ou sociedade de economia mista; V — a associação que, concomitantemente, esteja constituída há pelo menos 1 ano e inclua entre suas finalidades institucionais a proteção do bem tutelado.</p></div>
+      <div class="aula-atencao-box"><p><strong>Legitimação concorrente e disjuntiva:</strong> qualquer um dos legitimados pode propor a ação, isoladamente, sem necessidade de autorização dos demais — todos estão em pé de igualdade quanto à possibilidade de agir.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Associações — os dois requisitos e a dispensa judicial</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Pré-constituição há pelo menos 1 ano</strong> (requisito temporal).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Pertinência temática</strong> — a finalidade institucional da associação deve incluir a proteção do bem discutido na ação.</p></div>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, §4º, LACP:</strong> o juiz pode <strong>dispensar o requisito da pré-constituição</strong>, quando haja manifesto interesse social evidenciado pela dimensão ou característica do dano, ou pela relevância do bem jurídico a ser protegido.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Ministério Público — natureza da legitimação e atuação como fiscal da lei</h3>
+      <div class="aula-destaque-box"><p><strong>Súmula 601, STJ:</strong> "O Ministério Público tem legitimidade ativa para atuar na defesa de direitos difusos, coletivos e individuais homogêneos com respaldo constitucional e legal." A legitimidade do MP alcança <strong>inclusive</strong> direitos individuais homogêneos <strong>disponíveis</strong>, desde que revestidos de relevância social.</p></div>
+      <div class="aula-atencao-box"><p><strong>MP não autor:</strong> se não propôs a ação, o Ministério Público atua obrigatoriamente como <strong>fiscal da ordem jurídica (custos legis)</strong> — art. 5º, §1º, LACP. A ausência de intimação do MP para intervir gera <strong>nulidade absoluta</strong> do processo.</p></div>
+      <div class="aula-atencao-box"><p><strong>Súmula 643, STF:</strong> "O Ministério Público tem legitimidade para promover ação civil pública cujo fundamento seja a ilegalidade de reajuste de mensalidades escolares."</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Litisconsórcio entre Ministérios Públicos e desistência/abandono</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, §5º, LACP:</strong> admite-se o <strong>litisconsórcio facultativo</strong> entre os Ministérios Públicos da União e dos Estados na propositura da ação.<br><strong>Art. 5º, §3º, LACP:</strong> em caso de desistência infundada ou abandono da ação por associação legitimada, o Ministério Público <strong>ou outro legitimado</strong> assumirá a titularidade ativa.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — OBJETO E CABIMENTO ══ -->
+  <div class="aula-secao" id="acp-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🎯</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 7.347/85, arts. 1º e 3º</span><h3>Hipóteses de cabimento — rol do art. 1º</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 1º, LACP:</strong> regem-se pela lei as ações de responsabilidade por danos morais e patrimoniais causados: I — ao meio ambiente; II — ao consumidor; III — a bens e direitos de valor artístico, estético, histórico, turístico e paisagístico; IV — a qualquer outro interesse difuso ou coletivo; V — por infração da ordem econômica; VI — à ordem urbanística; VII — à honra e à dignidade de grupos raciais, étnicos ou religiosos; VIII — ao patrimônio público e social.</p></div>
+      <div class="aula-atencao-box"><p><strong>Rol exemplificativo, não taxativo:</strong> o inciso IV ("qualquer outro interesse difuso ou coletivo") funciona como <strong>cláusula geral de abertura</strong> — a ACP não se limita às hipóteses expressamente listadas, abarcando qualquer direito transindividual relevante.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>O que NÃO pode ser objeto de ACP — art. 1º, parágrafo único</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 1º, § único, LACP:</strong> "Não será cabível ação civil pública para veicular pretensões que envolvam tributos, contribuições previdenciárias, o Fundo de Garantia do Tempo de Serviço - FGTS ou outros fundos de natureza institucional cujos beneficiários podem ser individualmente determinados."</p></div>
+      <div class="aula-atencao-box"><p><strong>Contexto histórico:</strong> essa vedação foi introduzida pela MP 2.180-35/2001, em reação a ACPs propostas pelo MP contra majoração de tributos. É norma <strong>controvertida</strong>, criticada por parte da doutrina como restrição inconstitucional ao acesso à justiça coletivo — mas ainda vigente e cobrável literalmente em prova.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Provimentos possíveis — não se limita a indenização</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 3º, LACP:</strong> "A ação civil poderá ter por objeto a condenação em dinheiro ou o cumprimento de obrigação de fazer ou não fazer."</p></div>
+      <p>A ACP não é apenas indenizatória — é o principal instrumento para obrigações de fazer/não fazer de natureza coletiva (ex.: obrigar empresa a instalar filtro de poluição, retirar produto do mercado, adequar acessibilidade).</p>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — PROCEDIMENTO E INQUÉRITO CIVIL ══ -->
+  <div class="aula-secao" id="acp-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">📋</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 7.347/85, art. 2º</span><h3>Competência — regra do local do dano</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 2º, caput, LACP:</strong> "As ações previstas nesta Lei serão propostas no foro do local onde ocorrer o dano, cujo juízo terá competência funcional para processar e julgar a causa."</p></div>
+      <div class="aula-atencao-box"><p><strong>Competência funcional = absoluta:</strong> não se prorroga, não admite eleição de foro, e sua inobservância pode ser arguida a qualquer tempo. Se o dano é de âmbito regional ou nacional, aplica-se a regra específica do art. 93, CDC (competência do foro da Capital do Estado ou do Distrito Federal, conforme a abrangência).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Inquérito Civil — instrumento investigativo exclusivo do MP</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 8º, §1º, LACP:</strong> o Ministério Público poderá instaurar, sob sua presidência, <strong>inquérito civil</strong>, ou requisitar de qualquer organismo público ou particular certidões, informações, exames ou perícias.</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Característica</th><th>Descrição</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Natureza</strong></td><td>Procedimento administrativo investigativo, inquisitivo e facultativo (não obrigatório para propor a ACP)</td></tr>
+          <tr><td><strong>Titularidade</strong></td><td>Exclusiva do Ministério Público — outros legitimados não podem instaurá-lo, mas podem requerer sua abertura</td></tr>
+          <tr><td><strong>Contraditório</strong></td><td>Não pleno — é fase pré-processual, informativa, sem litígio judicializado ainda</td></tr>
+          <tr><td><strong>Arquivamento</strong></td><td>Sujeito a revisão pelo Conselho Superior do MP ou órgão equivalente (art. 9º, LACP)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Compromisso de Ajustamento de Conduta (TAC) — art. 5º, §6º</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, §6º, LACP:</strong> "Os órgãos públicos legitimados poderão tomar dos interessados compromisso de ajustamento de sua conduta às exigências legais, mediante cominações, que terá <strong>eficácia de título executivo extrajudicial</strong>."</p></div>
+      <div class="aula-atencao-box"><p><strong>Só pode ser tomado por órgão público legitimado</strong> (MP, Defensoria, entes federados, autarquias, empresas públicas, fundações, sociedades de economia mista) — associações <strong>não podem</strong> celebrar TAC, por não serem órgãos públicos.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Custas, honorários e litigância</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 18, LACP:</strong> nas ações civis públicas, não haverá adiantamento de custas, emolumentos, honorários periciais e quaisquer outras despesas, nem condenação da associação autora em honorários de advogado, custas e despesas processuais, <strong>salvo comprovada má-fé</strong>.</p></div>
+      <div class="aula-atencao-box"><p><strong>Assimetria proposital:</strong> essa isenção não é recíproca — visa incentivar o acesso coletivo à justiça, protegendo o legitimado ativo (especialmente associações) do risco financeiro de litigar, sem, no entanto, blindar litigância de má-fé comprovada.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — COISA JULGADA ══ -->
+  <div class="aula-secao" id="acp-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🔒</div>
+        <div><span class="aula-tag aula-tag-lei">CDC, art. 103 + LACP, art. 16</span><h3>Regime especial da coisa julgada coletiva</h3></div>
+      </div>
+      <p>A coisa julgada nas ações coletivas segue regime <strong>diferente</strong> do processo individual — varia conforme a espécie de direito tutelado e o resultado do julgamento. É o ponto mais denso e mais cobrado do tema.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Direitos difusos e coletivos — secundum eventum probationis</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 103, I e II, CDC:</strong> a sentença fará coisa julgada <strong>erga omnes</strong> (difusos) ou <strong>ultra partes, limitadamente ao grupo, categoria ou classe</strong> (coletivos), <strong>exceto se o pedido for julgado improcedente por insuficiência de provas</strong> — hipótese em que qualquer legitimado poderá intentar outra ação, com idêntico fundamento, valendo-se de nova prova.</p></div>
+      <div class="aula-atencao-box"><p><strong>"Secundum eventum probationis"</strong> = a coisa julgada depende do resultado da prova produzida. Improcedência por <strong>insuficiência de provas</strong> não impede nova ação; improcedência com <strong>exame exauriente do mérito</strong> (provas suficientes) forma coisa julgada material erga omnes, impedindo repetição.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Direitos individuais homogêneos — secundum eventum litis</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 103, III, CDC:</strong> a sentença fará coisa julgada <strong>erga omnes, apenas no caso de procedência do pedido</strong>, para beneficiar todas as vítimas e seus sucessores.</p></div>
+      <div class="aula-atencao-box"><p><strong>"Secundum eventum litis"</strong> = a coisa julgada favorável (procedência) beneficia a todos (transporte in utilibus da coisa julgada); a <strong>improcedência não prejudica</strong> as ações individuais dos que não participaram do processo coletivo como litisconsortes (art. 103, §2º, CDC) — cada indivíduo pode ainda buscar sua reparação particular.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Transporte in utilibus e liquidação/execução individual</h3>
+      <p>Julgada procedente a ação coletiva sobre direitos individuais homogêneos, as vítimas podem promover a <strong>liquidação e execução individual</strong> da sentença coletiva (arts. 97 a 100, CDC), sem necessidade de repetir toda a fase de conhecimento — basta provar o nexo causal e o dano próprio.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Litispendência com ações individuais — art. 104, CDC</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 104, CDC:</strong> as ações coletivas <strong>não induzem litispendência</strong> para as ações individuais, mas os efeitos da coisa julgada erga omnes ou ultra partes <strong>não beneficiarão</strong> os autores das ações individuais, se não for requerida sua <strong>suspensão no prazo de 30 dias</strong>, a contar da ciência nos autos do ajuizamento da ação coletiva.</p></div>
+      <div class="aula-atencao-box"><p><strong>Sistema opt-in para o benefício:</strong> o indivíduo não é obrigado a suspender sua ação — mas, se quiser aproveitar um eventual resultado favorável da ação coletiva, deve requerer a suspensão dentro do prazo de 30 dias.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — JURISPRUDÊNCIA STF/STJ ══ -->
+  <div class="aula-secao" id="acp-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🏛️</div>
+        <div><span class="aula-tag aula-tag-dica">STF — Tema 1075 (RE 1.101.937)</span><h3>Limitação territorial da coisa julgada — art. 16, LACP</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 16, LACP:</strong> "A sentença civil fará coisa julgada erga omnes, nos limites da competência territorial do órgão prolator, exceto se o pedido for julgado improcedente por insuficiência de provas."</p></div>
+      <div class="aula-destaque-box"><p><strong>Tese do STF (Tema 1075, 2023):</strong> o STF reconheceu a <strong>constitucionalidade</strong> do art. 16 da LACP — os efeitos da coisa julgada de ação civil pública ficam, em regra, limitados à competência territorial do órgão julgador. Isso não impede, contudo, que a <strong>extensão subjetiva</strong> dos beneficiários seja definida pela abrangência do dano e pela qualidade dos interesses jurídicos tutelados, tal como delimitado na sentença.</p></div>
+      <div class="aula-atencao-box"><p><strong>Ponto de atenção para a prova:</strong> por muito tempo, o STJ considerava o art. 16 <strong>ineficaz/inaplicável</strong>, sob o argumento de que confundia coisa julgada (instituto processual) com competência territorial (instituto de organização judiciária). O STF, ao julgar o Tema 1075, <strong>validou</strong> a norma — atualize sempre pela posição mais recente do STF quando a questão contrastar os dois entendimentos.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>STF — Tema 897 (RE 852.475): imprescritibilidade do ressarcimento por improbidade dolosa</h3>
+      <div class="aula-destaque-box"><p>São <strong>imprescritíveis</strong> as ações de ressarcimento ao erário fundadas na prática de <strong>ato doloso</strong> tipificado na Lei de Improbidade Administrativa. Se o dano decorreu de conduta <strong>culposa</strong>, aplica-se o regime prescricional comum. Tema relevante porque muitas ACPs de improbidade cumulam pedido de ressarcimento ao erário.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quadro-síntese de súmulas aplicáveis</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Súmula</th><th>Conteúdo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Súmula 601, STJ</strong></td><td>MP tem legitimidade para defender difusos, coletivos e individuais homogêneos, inclusive disponíveis com relevância social</td></tr>
+          <tr><td><strong>Súmula 643, STF</strong></td><td>MP tem legitimidade para ACP sobre ilegalidade de reajuste de mensalidades escolares</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="acp-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"É cabível ação civil pública para veicular pretensões relativas a tributos e contribuições previdenciárias."</strong><br>✅ ERRADO. Art. 1º, § único, LACP: expressamente vedado.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Qualquer associação, independentemente de tempo de constituição, pode propor ação civil pública."</strong><br>✅ ERRADO. Exige-se pré-constituição há pelo menos 1 ano e pertinência temática — dispensável apenas por decisão judicial fundamentada em relevância social (art. 5º, §4º).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O compromisso de ajustamento de conduta pode ser celebrado por qualquer legitimado, inclusive associações."</strong><br>✅ ERRADO. Só órgãos <strong>públicos</strong> legitimados podem celebrar TAC (art. 5º, §6º) — associações estão excluídas dessa prerrogativa.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A improcedência de ação civil pública sobre direito difuso, por qualquer motivo, sempre impede nova ação com idêntico fundamento."</strong><br>✅ ERRADO. Só a improcedência por <strong>insuficiência de provas</strong> não forma coisa julgada material — se houver exame exauriente do mérito, a improcedência é definitiva.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Na tutela de direitos individuais homogêneos, a coisa julgada é erga omnes tanto na procedência quanto na improcedência do pedido."</strong><br>✅ ERRADO. É <strong>secundum eventum litis</strong>: só a procedência gera efeito erga omnes; a improcedência não prejudica ações individuais dos que não litigaram como litisconsortes.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A propositura de ação civil pública suspende automaticamente as ações individuais sobre a mesma matéria."</strong><br>✅ ERRADO. Não há litispendência automática (art. 104, CDC) — o indivíduo deve requerer a suspensão em até 30 dias, se quiser se beneficiar do resultado coletivo.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"A competência para processar e julgar a ação civil pública é a do local do dano, tendo natureza funcional (absoluta)."</strong><br>CORRETO — art. 2º, LACP.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Legitimados (art. 5º, LACP)</h4><p><strong>M-D-U-A(utarquia/empresa)-Ass:</strong> MP · Defensoria · União/Estados/DF/Municípios · Autarquias/empresas públicas/fundações/SEM · Associações (1 ano + pertinência)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Coisa julgada — regra de ouro</h4><p><strong>Difusos/Coletivos</strong> → secundum eventum <strong>probationis</strong> (só falta de provas reabre)<br><strong>Individuais homogêneos</strong> → secundum eventum <strong>litis</strong> (só procedência vincula a todos)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 TAC × Inquérito civil</h4><p><strong>TAC</strong> → qualquer órgão público legitimado<br><strong>Inquérito civil</strong> → exclusivo do MP</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="acp-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Nos termos da Lei nº 7.347/1985, não será cabível ação civil pública para veicular pretensões que envolvam:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Danos ao meio ambiente e ao consumidor.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Infração à ordem econômica e à ordem urbanística.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Tributos, contribuições previdenciárias, FGTS ou outros fundos de natureza institucional cujos beneficiários possam ser individualmente determinados.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Danos ao patrimônio público e social.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Ofensa à honra e dignidade de grupos raciais, étnicos ou religiosos.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 1º, parágrafo único, LACP: veda expressamente a ACP para pretensões tributárias, previdenciárias, FGTS ou fundos institucionais com beneficiários individualmente determináveis.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 7.347/85, art. 1º, parágrafo único.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinada associação, constituída há 6 meses, pretende propor ação civil pública em defesa do meio ambiente, alegando dano de grande extensão e relevância social. Nesse caso:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A associação é parte ilegítima, pois o requisito de pré-constituição há pelo menos 1 ano é absoluto e não admite exceção.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> O juiz pode dispensar o requisito da pré-constituição, diante do manifesto interesse social evidenciado pela dimensão ou característica do dano.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A associação pode propor a ação, mas apenas em litisconsórcio necessário com o Ministério Público.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Somente o Ministério Público pode requerer ao juiz a dispensa do requisito temporal em nome da associação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A pertinência temática dispensa, por si só, o requisito de pré-constituição, independentemente de decisão judicial.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 5º, §4º, LACP: o juiz pode dispensar o requisito da pré-constituição de um ano quando haja manifesto interesse social evidenciado pela dimensão ou característica do dano, ou pela relevância do bem jurídico.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 7.347/85, art. 5º, §4º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a coisa julgada nas ações civis públicas que tutelam direitos difusos, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A sentença de improcedência, qualquer que seja seu fundamento, sempre forma coisa julgada material erga omnes.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A sentença fará coisa julgada erga omnes, exceto se o pedido for julgado improcedente por insuficiência de provas, hipótese em que qualquer legitimado poderá intentar outra ação com idêntico fundamento, valendo-se de nova prova.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A coisa julgada em direitos difusos segue o regime secundum eventum litis, da mesma forma que os individuais homogêneos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A coisa julgada, em qualquer hipótese, produz efeitos apenas entre as partes do processo coletivo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Somente o autor original da ação pode propor nova demanda em caso de improcedência por insuficiência de provas.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 103, I, CDC: coisa julgada erga omnes, exceto improcedência por insuficiência de provas — regime secundum eventum probationis. Qualquer legitimado (não só o autor original) pode propor nova ação com nova prova.</div>
+      <span class="aula-fonte-tag">Fundamento: CDC, art. 103, I.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Julgada procedente ação civil pública que tutelava direitos individuais homogêneos de consumidores lesados por produto defeituoso, é correto afirmar que:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Apenas os consumidores que figuraram expressamente como litisconsortes no processo coletivo podem se beneficiar da sentença.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A sentença fará coisa julgada erga omnes, beneficiando todas as vítimas e seus sucessores, que poderão promover a liquidação e execução individual do julgado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Os consumidores lesados precisarão ajuizar nova ação de conhecimento, sendo vedado o aproveitamento da sentença coletiva.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A coisa julgada, mesmo procedente, não pode ser aproveitada por vítimas que não participaram do processo coletivo, ainda que de forma individual.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A sentença produz efeitos apenas para o legitimado que propôs a ação, e não para os consumidores lesados.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 103, III, CDC: procedente o pedido em ação sobre individuais homogêneos, a coisa julgada é erga omnes, beneficiando todas as vítimas e sucessores — que podem promover liquidação/execução individual (arts. 97-100, CDC), sem repetir a fase de conhecimento.</div>
+      <span class="aula-fonte-tag">Fundamento: CDC, art. 103, III, e arts. 97 a 100.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Segundo a tese fixada pelo STF no Tema 1075 de Repercussão Geral, a respeito do art. 16 da Lei nº 7.347/1985:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O dispositivo é inconstitucional, pois confunde institutos processuais distintos (coisa julgada e competência territorial).</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> O dispositivo é constitucional, limitando os efeitos da coisa julgada à competência territorial do órgão julgador, sem prejuízo de que a extensão subjetiva dos beneficiários seja definida pela abrangência do dano e pela qualidade dos interesses tutelados.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A coisa julgada em ação civil pública produz sempre efeitos nacionais, independentemente da competência territorial do juízo prolator.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O art. 16 aplica-se exclusivamente às ações propostas pelo Ministério Público, não alcançando as demais legitimadas.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A limitação territorial da coisa julgada é aplicável apenas aos direitos individuais homogêneos.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>STF, Tema 1075 (RE 1.101.937, 2023): reconheceu a constitucionalidade do art. 16, LACP — os efeitos da coisa julgada ficam limitados à competência territorial do órgão julgador, mas isso não repercute na definição dos beneficiários, fixada pela extensão do dano e pela natureza dos interesses tutelados na sentença.</div>
+      <span class="aula-fonte-tag">Fundamento: STF, Tema 1075 (RE 1.101.937); Lei 7.347/85, art. 16.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o inquérito civil e o compromisso de ajustamento de conduta, previstos na Lei nº 7.347/1985, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O inquérito civil pode ser instaurado por qualquer legitimado à ação civil pública, inclusive associações.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> O compromisso de ajustamento de conduta pode ser celebrado por associações civis legitimadas, tendo eficácia de título executivo judicial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> O inquérito civil é instrumento investigativo exclusivo do Ministério Público, enquanto o compromisso de ajustamento de conduta, com eficácia de título executivo extrajudicial, só pode ser tomado por órgãos públicos legitimados.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A instauração do inquérito civil é pressuposto processual obrigatório para a propositura da ação civil pública.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O compromisso de ajustamento de conduta tem natureza de sentença homologatória, dependendo de chancela judicial para produzir efeitos.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 8º, §1º, LACP: inquérito civil é exclusivo do MP. Art. 5º, §6º, LACP: TAC só pode ser tomado por órgãos públicos legitimados, tendo eficácia de título executivo extrajudicial (não depende de homologação judicial). O inquérito civil é facultativo, não pressuposto processual.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 7.347/85, arts. 5º, §6º, e 8º, §1º.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
