@@ -8934,6 +8934,577 @@ AULAS['dc_10'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Ação Declaratória de Constitucionalidade (ADC)
+// Chave: dc_14 (Direito Constitucional, tópico 14)
+// Base: CF/88, art. 102, I, "a" + Lei 9.868/1999 + STF
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dc_14'] = {
+  title: 'Ação Declaratória de Constitucionalidade (ADC)',
+  sub: 'CF/88, art. 102, I, "a" · Lei 9.868/1999 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CF/88, art. 102, I, "a", e §2º · EC 3/1993 · Lei nº 9.868/1999</div>
+  <h1 class="aula-h1">Ação Declaratória de Constitucionalidade (ADC)</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="adc-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="adc-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito e Origem</button>
+    <button class="aula-tab-btn" data-sec="1">Objeto e Requisitos</button>
+    <button class="aula-tab-btn" data-sec="2">Legitimidade Ativa</button>
+    <button class="aula-tab-btn" data-sec="3">Procedimento</button>
+    <button class="aula-tab-btn" data-sec="4">Medida Cautelar e Efeitos</button>
+    <button class="aula-tab-btn" data-sec="5">ADC × ADI — Fungibilidade</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — CONCEITO E ORIGEM ══ -->
+  <div class="aula-secao ativo" id="adc-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">✅</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 102, I, "a" · EC 3/1993</span><h3>O que é a ADC?</h3></div>
+      </div>
+      <p>É a ação do controle concentrado de constitucionalidade por meio da qual se busca uma <strong>declaração judicial de que uma lei ou ato normativo federal é constitucional</strong> — ou seja, é o "espelho invertido" da ADI: em vez de pedir a retirada de uma norma do ordenamento por inconstitucionalidade, pede-se a <strong>confirmação judicial de sua validade</strong>.</p>
+      <div class="aula-destaque-box"><p><strong>Art. 102, I, "a", CF/88 (redação da EC 3/1993):</strong> compete ao STF processar e julgar, originariamente, "a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a <strong>ação declaratória de constitucionalidade de lei ou ato normativo federal</strong>."</p></div>
+      <div class="aula-atencao-box"><p><strong>Diferença estrutural que mais cai em prova:</strong> a ADI pode ter por objeto lei ou ato normativo <strong>federal ou estadual</strong>. A ADC só pode ter por objeto lei ou ato normativo <strong>federal</strong> — jamais estadual ou municipal.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Origem histórica — EC 3/1993</h3>
+      <p>A ADC foi introduzida no ordenamento brasileiro pela <strong>Emenda Constitucional nº 3, de 1993</strong> — não existia na redação original da CF/88 de 1988. Foi criada para resolver um problema prático: normas que, embora presumidamente constitucionais, geravam <strong>insegurança jurídica generalizada</strong> por serem massivamente contestadas em milhares de processos individuais, com decisões contraditórias entre juízes e tribunais.</p>
+      <div class="aula-destaque-box"><p><strong>Função primordial da ADC:</strong> pacificar a controvérsia judicial, obtendo uma manifestação <strong>vinculante e definitiva</strong> do STF que encerre as divergências entre instâncias inferiores sobre a validade de uma norma.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Natureza jurídica — ambivalência com a ADI</h3>
+      <div class="aula-destaque-box"><p>ADI e ADC são consideradas pela doutrina e pelo STF como <strong>ações de sinais trocados</strong> (ou "ações gêmeas", ou de "natureza dúplice/ambivalente") — possuem o <strong>mesmo objeto de fundo</strong> (a validade constitucional de uma norma), mas pedidos opostos: a ADI pede a declaração de inconstitucionalidade; a ADC pede a declaração de constitucionalidade.</p></div>
+      <div class="aula-atencao-box"><p><strong>Consequência prática dessa ambivalência:</strong> julgada procedente uma ADC, isso equivale, na prática, a julgar improcedente uma ADI sobre a mesma norma (e vice-versa) — os efeitos processuais e a eficácia da decisão seguem a mesma lógica.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — OBJETO E REQUISITOS ══ -->
+  <div class="aula-secao" id="adc-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🎯</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.868/99, art. 14</span><h3>Objeto — só lei ou ato normativo federal</h3></div>
+      </div>
+      <p>Só pode ser objeto de ADC lei ou ato normativo <strong>federal</strong>, editado após a promulgação da CF/88 e ainda em vigor no momento do julgamento. Vale a mesma lógica de objeto da ADI quanto aos demais requisitos (ato normativo abstrato, geral, editado pelo Poder Público, atualmente vigente).</p>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "cabe ADC contra lei estadual" — ERRADO. A ADC é <strong>exclusiva</strong> para normas federais. Se a norma for estadual, o instrumento cabível para "confirmar" sua constitucionalidade não é a ADC — a controvérsia sobre lei estadual só pode ser resolvida por ADI (julgada improcedente) ou, no âmbito estadual, por representação de inconstitucionalidade perante o TJ local, com parâmetro na Constituição Estadual.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Requisito da controvérsia judicial relevante (art. 14, III)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 14, III, Lei 9.868/99:</strong> a petição inicial indicará "a existência de <strong>controvérsia judicial relevante</strong> sobre a aplicação da disposição objeto da ação declaratória."</p></div>
+      <p>É o requisito específico e diferenciador da ADC (não exigido na ADI). O autor precisa demonstrar que existe efetiva divergência entre juízos/tribunais sobre a aplicação daquela norma — decisões conflitantes, número expressivo de processos discutindo sua validade, doutrina dividida, etc.</p>
+      <div class="aula-atencao-box"><p><strong>Consequência da ausência desse requisito:</strong> a petição inicial <strong>será indeferida liminarmente pelo Relator</strong>, se não demonstrada a controvérsia judicial relevante (art. 15, Lei 9.868/99) — decisão da qual cabe agravo.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Petição inicial — requisitos gerais (art. 14, Lei 9.868/99)</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p>Indicação do dispositivo da lei ou ato normativo questionado e os fundamentos jurídicos do pedido.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p>O pedido, com suas especificações.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p>Comprovação da existência de controvérsia judicial relevante sobre a aplicação da norma.</p></div>
+      <div class="aula-atencao-box"><p><strong>Inépcia da inicial:</strong> a petição inicial deve ser instruída com <strong>cópia do ato normativo questionado</strong> e com os documentos necessários para comprovar a impugnação (art. 14, § único).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — LEGITIMIDADE ATIVA ══ -->
+  <div class="aula-secao" id="adc-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">👥</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 103, caput</span><h3>Rol de legitimados — hoje IDÊNTICO ao da ADI</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>EC 45/2004</strong> unificou o rol de legitimados: hoje, os <strong>mesmos legitimados da ADI</strong> (art. 103, CF/88) também podem propor ADC. Antes da EC 45/2004, o rol da ADC era muito mais restrito (só Presidente da República, Mesas do Senado e da Câmara, e Procurador-Geral da República) — essa distinção histórica já <strong>não existe mais</strong>.</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Inciso</th><th>Legitimado</th></tr></thead>
+        <tbody>
+          <tr><td>I</td><td>Presidente da República</td></tr>
+          <tr><td>II</td><td>Mesa do Senado Federal</td></tr>
+          <tr><td>III</td><td>Mesa da Câmara dos Deputados</td></tr>
+          <tr><td>IV</td><td>Mesa de Assembleia Legislativa ou da Câmara Legislativa do DF</td></tr>
+          <tr><td>V</td><td>Governador de Estado ou do Distrito Federal</td></tr>
+          <tr><td>VI</td><td>Procurador-Geral da República</td></tr>
+          <tr><td>VII</td><td>Conselho Federal da Ordem dos Advogados do Brasil</td></tr>
+          <tr><td>VIII</td><td>Partido político com representação no Congresso Nacional</td></tr>
+          <tr><td>IX</td><td>Confederação sindical ou entidade de classe de âmbito nacional</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha muito frequente:</strong> "a legitimidade para propor ADC é mais restrita que a da ADI, cabendo apenas ao Presidente da República, às Mesas do Congresso Nacional e ao PGR" — <strong>ERRADO desde a EC 45/2004</strong>. Hoje os legitimados são exatamente os mesmos.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Pertinência temática — só para os legitimados "especiais"</h3>
+      <div class="aula-destaque-box"><p>Assim como na ADI, a jurisprudência do STF exige <strong>pertinência temática</strong> (relação de afinidade entre a finalidade institucional do legitimado e o objeto da ação) apenas para os legitimados <strong>"especiais" ou "interessados"</strong>: Governador de Estado/DF, Mesa de Assembleia Legislativa/Câmara Legislativa do DF, confederação sindical e entidade de classe de âmbito nacional. Os demais (Presidente, Mesas do Congresso, PGR, Conselho Federal da OAB e partido político com representação no Congresso) são "legitimados universais" — dispensam pertinência temática.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — PROCEDIMENTO ══ -->
+  <div class="aula-secao" id="adc-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">📋</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.868/99, arts. 18 a 20</span><h3>Ausência de AGU e presença facultativa do PGR</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Não se admite intervenção de terceiros no processo de ADC</strong> (art. 18, Lei 9.868/99) — assim como na ADI, é processo objetivo, sem partes em sentido subjetivo.</p></div>
+      <div class="aula-atencao-box"><p><strong>Diferença central em relação à ADI quanto aos pareceres obrigatórios:</strong><br>
+      • Na <strong>ADI</strong>, é obrigatória a citação do <strong>Advogado-Geral da União</strong> para defender o ato impugnado (art. 103, §3º, CF/88), e é obrigatória a oitiva do <strong>Procurador-Geral da República</strong>.<br>
+      • Na <strong>ADC</strong>, <strong>não há citação do AGU</strong> — isso porque a AGU já teria, em tese, essa função de "defesa" naturalmente cumprida pelo próprio propósito da ação (que já busca confirmar a validade da norma). O Procurador-Geral da República, contudo, <strong>deve ser previamente ouvido</strong> em todos os processos de competência do STF (art. 103, §1º, CF/88), o que inclui a ADC.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Amicus curiae — admissível também na ADC</h3>
+      <div class="aula-destaque-box"><p>Embora não se admita intervenção de terceiros em sentido processual clássico, o <strong>Relator pode admitir a manifestação de outros órgãos ou entidades</strong> (amicus curiae), considerando a relevância da matéria e a representatividade dos postulantes (art. 7º, §2º, Lei 9.868/99, aplicado por analogia/expressamente estendido à ADC).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quórum de julgamento e de instalação da sessão</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 22, Lei 9.868/99:</strong> a decisão sobre a constitucionalidade ou inconstitucionalidade da lei ou ato normativo somente será tomada se presentes na sessão pelo menos <strong>8 Ministros</strong> (quórum de instalação/deliberação).<br><strong>Art. 23:</strong> efetuado o julgamento, proclamar-se-á a constitucionalidade ou a inconstitucionalidade da disposição impugnada se num ou noutro sentido se tiverem manifestado pelo menos <strong>6 Ministros</strong> (maioria absoluta), quer se trate de procedência ou improcedência.</p></div>
+      <div class="aula-atencao-box"><p><strong>Não atingido o quórum de 6 votos</strong> em qualquer sentido, e havendo Ministros ausentes em número que possa influir no julgamento, este será <strong>suspenso</strong> a fim de aguardar-se a presença dos Ministros ausentes, até que se atinja o número necessário para prolação da decisão num ou noutro sentido (art. 23, § único).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — MEDIDA CAUTELAR E EFEITOS ══ -->
+  <div class="aula-secao" id="adc-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">⏸️</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.868/99, art. 21</span><h3>Medida cautelar em ADC — efeito bem específico</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 21, Lei 9.868/99:</strong> "O Supremo Tribunal Federal, por decisão da maioria absoluta de seus membros, poderá deferir pedido de medida cautelar na ação declaratória de constitucionalidade, consistente na <strong>determinação de que os juízes e os Tribunais suspendam o julgamento dos processos que envolvam a aplicação da lei ou do ato normativo objeto da ação até seu julgamento definitivo</strong>."</p></div>
+      <div class="aula-atencao-box"><p><strong>O que a cautelar NÃO faz:</strong> a cautelar em ADC <strong>não suspende a eficácia da norma</strong> (a norma continua em vigor — afinal, a própria ação pretende confirmá-la) — o que ela faz é <strong>suspender o julgamento</strong> dos processos em curso sobre aquela matéria, "congelando" a controvérsia até a decisão final do STF, evitando decisões contraditórias enquanto o Supremo não se manifesta definitivamente.</p></div>
+      <div class="aula-destaque-box"><p><strong>Prazo de eficácia da cautelar:</strong> a medida cautelar, concedida, tem eficácia de <strong>180 dias</strong>, findo o qual perde sua eficácia, salvo se o STF entender de outra forma (art. 21, § único).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Efeitos da decisão de mérito — eficácia erga omnes e efeito vinculante</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 102, §2º, CF/88 (EC 45/2004):</strong> "As decisões definitivas de mérito, proferidas pelo Supremo Tribunal Federal, nas ações diretas de inconstitucionalidade e nas <strong>ações declaratórias de constitucionalidade</strong>, produzirão <strong>eficácia contra todos</strong> e <strong>efeito vinculante</strong>, relativamente aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal."</p></div>
+      <div class="aula-atencao-box"><p><strong>Marco histórico importante:</strong> antes da EC 45/2004, a Lei 9.868/99 já previa esse efeito vinculante <strong>apenas para a ADC</strong> (art. 28, § único, redação original) — a EC 45/2004 <strong>estendeu</strong> expressamente esse mesmo regime à ADI, unificando o tratamento de ambas na Constituição.</p></div>
+      <div class="aula-atencao-box"><p><strong>Vinculação não alcança o Poder Legislativo em sua função típica:</strong> tanto na ADI quanto na ADC, o efeito vinculante <strong>não alcança o Poder Legislativo</strong> no exercício de sua função típica de legislar — o Legislativo pode editar nova lei com conteúdo idêntico ao que foi declarado inconstitucional (ou reeditar matéria), sem que isso configure, por si só, desrespeito à decisão (posição consolidada do STF, ainda que sujeito a novo controle).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Efeitos temporais — regra geral e modulação</h3>
+      <div class="aula-destaque-box"><p><strong>Regra geral:</strong> a decisão que julga procedente a ADC (confirmando a constitucionalidade) tem, em regra, efeitos <strong>ex tunc</strong> (retroativos) e <strong>erga omnes</strong> — mas, assim como na ADI, o STF pode <strong>modular os efeitos temporais</strong> da decisão (art. 27, Lei 9.868/99), por razões de segurança jurídica ou de excepcional interesse social, restringindo os efeitos ou decidindo que só tenha eficácia a partir do trânsito em julgado ou de outro momento a ser fixado — desde que por <strong>maioria de dois terços</strong> dos membros.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — ADC × ADI — FUNGIBILIDADE ══ -->
+  <div class="aula-secao" id="adc-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🔄</div>
+        <div><span class="aula-tag aula-tag-dica">Jurisprudência do STF</span><h3>Fungibilidade entre ADI e ADC</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p>O STF admite a <strong>fungibilidade</strong> entre ADI e ADC — se o autor ajuizar uma ação com o nome/pedido incorreto (por exemplo, uma ADI quando o correto seria uma ADC, ou vice-versa), o Tribunal pode <strong>receber a petição inicial e processá-la sob o rótulo processual correto</strong>, dado o caráter dúplice/ambivalente dessas ações — desde que atendidos os pressupostos de admissibilidade da ação que efetivamente deveria ter sido proposta.</p></div>
+      <div class="aula-atencao-box"><p><strong>Razão da fungibilidade:</strong> como ambas tratam do mesmo objeto de fundo (a validade constitucional de uma norma), a diferença entre elas está, na prática, apenas no <strong>polo do pedido</strong> — a fungibilidade evita que erros formais na petição inicial impeçam a análise do mérito relevante da controvérsia constitucional.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quadro comparativo definitivo — ADI × ADC</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>ADI</th><th>ADC</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Objeto</strong></td><td>Lei ou ato normativo <strong>federal ou estadual</strong></td><td>Lei ou ato normativo <strong>federal</strong> apenas</td></tr>
+          <tr><td><strong>Pedido</strong></td><td>Declarar a inconstitucionalidade</td><td>Declarar a constitucionalidade</td></tr>
+          <tr><td><strong>Legitimados</strong></td><td>Art. 103, CF/88 (rol de 9 incisos)</td><td>Idêntico à ADI, desde a EC 45/2004</td></tr>
+          <tr><td><strong>Requisito específico</strong></td><td>Não exige controvérsia judicial prévia</td><td>Exige comprovação de <strong>controvérsia judicial relevante</strong></td></tr>
+          <tr><td><strong>Citação do AGU</strong></td><td>Obrigatória (defende o ato impugnado)</td><td>Não há citação do AGU</td></tr>
+          <tr><td><strong>Manifestação do PGR</strong></td><td>Obrigatória</td><td>Obrigatória</td></tr>
+          <tr><td><strong>Cautelar</strong></td><td>Suspende a eficácia/aplicação da norma impugnada</td><td>Suspende o <strong>julgamento</strong> dos processos sobre a norma (não suspende a norma em si)</td></tr>
+          <tr><td><strong>Efeitos da decisão de mérito</strong></td><td>Erga omnes + vinculante (regra geral: ex tunc)</td><td>Erga omnes + vinculante (regra geral: ex tunc)</td></tr>
+          <tr><td><strong>Fungibilidade</strong></td><td>Admitida com a ADC</td><td>Admitida com a ADI</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="adc-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"Cabe ação declaratória de constitucionalidade em face de lei ou ato normativo estadual, desde que haja controvérsia judicial relevante."</strong><br>✅ ERRADO. A ADC só admite objeto <strong>federal</strong> — jamais estadual ou municipal, independentemente da controvérsia.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Os legitimados para propor ADC são mais restritos que os da ADI, cabendo apenas ao Presidente da República, às Mesas do Congresso Nacional e ao Procurador-Geral da República."</strong><br>✅ ERRADO. Desde a EC 45/2004, o rol de legitimados da ADC é <strong>idêntico</strong> ao da ADI (art. 103, CF/88).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A concessão de medida cautelar em ADC suspende a vigência e a eficácia da lei ou ato normativo objeto da ação."</strong><br>✅ ERRADO. A cautelar em ADC <strong>não</strong> suspende a norma — ela determina que os juízes e tribunais <strong>suspendam o julgamento</strong> dos processos que envolvam sua aplicação, até a decisão final do STF.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"É obrigatória, no processo de ADC, a citação do Advogado-Geral da União para defender o ato impugnado, tal como ocorre na ADI."</strong><br>✅ ERRADO. Diferente da ADI, na ADC <strong>não há citação do AGU</strong>. O que é obrigatório em ambas é a prévia manifestação do Procurador-Geral da República.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A petição inicial de ADC dispensa a demonstração de controvérsia judicial relevante, bastando o interesse abstrato do legitimado em confirmar a validade da norma."</strong><br>✅ ERRADO. A comprovação da <strong>controvérsia judicial relevante</strong> é requisito específico e obrigatório da petição inicial de ADC (art. 14, III, Lei 9.868/99) — sua ausência gera indeferimento liminar.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"As decisões definitivas de mérito em ADC produzem eficácia contra todos e efeito vinculante em relação aos demais órgãos do Poder Judiciário e à Administração Pública direta e indireta, em todas as esferas."</strong><br>CORRETO — art. 102, §2º, CF/88.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Objeto da ADC</h4><p>Só lei/ato normativo <strong>FEDERAL</strong> — nunca estadual (diferente da ADI, que admite os dois)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Legitimados</h4><p>Desde a <strong>EC 45/2004</strong>: mesmo rol da ADI (art. 103, CF/88) — não decore lista separada</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Requisito exclusivo da ADC</h4><p><strong>Controvérsia judicial relevante</strong> — não existe exigência equivalente na ADI</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Cautelar — o que ela faz</h4><p>Não suspende a norma → <strong>suspende o julgamento</strong> dos processos em curso (prazo: 180 dias)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 AGU × PGR</h4><p><strong>AGU:</strong> só na ADI (defende o ato)<br><strong>PGR:</strong> manifestação obrigatória em ambas</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="adc-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> A ação declaratória de constitucionalidade, prevista no art. 102, I, "a", da Constituição Federal, tem por objeto:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Lei ou ato normativo federal, estadual ou municipal, indistintamente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Exclusivamente atos normativos estaduais impugnados em face da Constituição Estadual.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Exclusivamente lei ou ato normativo federal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Lei ou ato normativo federal ou estadual, desde que anteriores à Constituição de 1988.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Qualquer decisão judicial que discuta a aplicação de norma federal.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Diferente da ADI (que admite lei federal ou estadual como objeto), a ADC é restrita exclusivamente a lei ou ato normativo federal, nos termos do art. 102, I, "a", CF/88.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 102, I, "a".</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a legitimidade ativa para a propositura de ação declaratória de constitucionalidade, é correto afirmar que:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> É mais restrita que a legitimidade para a ação direta de inconstitucionalidade, cabendo apenas ao Presidente da República, às Mesas do Senado e da Câmara e ao Procurador-Geral da República.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> É idêntica à legitimidade para a ação direta de inconstitucionalidade, desde a Emenda Constitucional nº 45/2004, abrangendo o rol completo do art. 103 da Constituição Federal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> É exclusiva do Procurador-Geral da República, por se tratar de instrumento de defesa da presunção de constitucionalidade das leis.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Estende-se a qualquer cidadão, por analogia com a ação popular.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Depende de pertinência temática para todos os legitimados, sem exceção.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Desde a EC 45/2004, o rol de legitimados para a ADC passou a ser idêntico ao da ADI, previsto no art. 103, CF/88 — encerrando a antiga distinção que restringia a ADC a poucos legitimados.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 103 (EC 45/2004).</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Nos termos da Lei nº 9.868/1999, constitui requisito específico da petição inicial da ação declaratória de constitucionalidade, não exigido na ação direta de inconstitucionalidade:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A indicação do dispositivo da lei ou ato normativo questionado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> A qualificação completa do legitimado ativo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> A comprovação da existência de controvérsia judicial relevante sobre a aplicação da disposição objeto da ação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A manifestação prévia do Advogado-Geral da União sobre o mérito da causa.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A juntada de parecer favorável do Conselho Federal da OAB.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 14, III, Lei 9.868/99: a petição inicial de ADC deve indicar a existência de controvérsia judicial relevante sobre a aplicação da norma — requisito específico dessa ação, sem correspondência na ADI. Sua ausência acarreta indeferimento liminar pelo Relator (art. 15).</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.868/99, arts. 14, III, e 15.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> A respeito da medida cautelar em ação declaratória de constitucionalidade, prevista no art. 21 da Lei nº 9.868/1999, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Sua concessão suspende imediatamente a vigência e a eficácia da lei ou ato normativo objeto da ação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Consiste na determinação de que os juízes e Tribunais suspendam o julgamento dos processos que envolvam a aplicação da lei ou ato normativo objeto da ação, até seu julgamento definitivo, tendo eficácia, em regra, por 180 dias.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Somente pode ser concedida por unanimidade dos membros do Supremo Tribunal Federal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Tem eficácia indeterminada, não se sujeitando a qualquer prazo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Depende de prévia oitiva do órgão ou autoridade que editou a norma, sob pena de nulidade.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 21, Lei 9.868/99: a cautelar em ADC determina a suspensão do julgamento dos processos sobre a matéria (não a suspensão da norma em si), sendo deferida por maioria absoluta e tendo eficácia, em regra, de 180 dias.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.868/99, art. 21 e parágrafo único.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os efeitos da decisão de mérito proferida em ação declaratória de constitucionalidade, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Produzem efeitos apenas entre as partes que figuraram no processo, sem repercussão sobre terceiros.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Produzem eficácia contra todos e efeito vinculante relativamente aos demais órgãos do Poder Judiciário e à Administração Pública direta e indireta, nas esferas federal, estadual e municipal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Vinculam também o Poder Legislativo em sua função típica de legislar, impedindo a edição de lei com conteúdo idêntico.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Não podem, em nenhuma hipótese, ter seus efeitos temporais modulados pelo Supremo Tribunal Federal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Somente vinculam órgãos do Poder Judiciário, não alcançando a Administração Pública.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 102, §2º, CF/88: as decisões definitivas de mérito em ADI e ADC produzem eficácia erga omnes e efeito vinculante para o Judiciário e a Administração Pública direta e indireta, em todas as esferas. Esse efeito não alcança o Legislativo em sua função típica de legislar, e a modulação temporal é admitida nos termos do art. 27, Lei 9.868/99.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 102, §2º; Lei 9.868/99, art. 27.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinado legitimado propõe ação direta de inconstitucionalidade contra lei federal, quando, na realidade, seu real interesse seria a confirmação da validade dessa mesma norma diante de controvérsia judicial. Segundo a jurisprudência do Supremo Tribunal Federal sobre a fungibilidade entre as ações do controle concentrado:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A petição inicial deve ser necessariamente extinta sem resolução de mérito, sendo vedada qualquer conversão processual.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> O STF pode receber e processar a ação sob o rótulo processual correto, em razão do caráter dúplice/ambivalente entre ADI e ADC, desde que atendidos os pressupostos de admissibilidade da ação cabível.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A fungibilidade só é admitida quando a ação for proposta pelo Procurador-Geral da República.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A fungibilidade entre ADI e ADC não é reconhecida pela jurisprudência do STF, por se tratar de ações com pedidos antagônicos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A conversão da ação só é possível mediante novo ajuizamento, vedada a correção nos mesmos autos.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>O STF admite a fungibilidade entre ADI e ADC, justamente em razão do caráter dúplice/ambivalente dessas ações, que tratam do mesmo objeto de fundo (a validade constitucional da norma) com pedidos opostos — desde que presentes os requisitos de admissibilidade da ação efetivamente cabível ao caso.</div>
+      <span class="aula-fonte-tag">Fundamento: jurisprudência do STF — fungibilidade ADI/ADC.</span>
+    </div>
+  </div>
+</div>`
+};
+// ═══════════════════════════════════════════════════════
+// AULA: Controle de Constitucionalidade — Sistemas Difuso e Concentrado
+// Chave: dc_11 (Direito Constitucional, tópico 11)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dc_11'] = {
+  title: 'Controle de Constitucionalidade: Sistemas Difuso e Concentrado',
+  sub: 'Direito Constitucional · CF/88, arts. 52, X, 97 e 102 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CF/88, arts. 52, X, 97 e 102 · Lei 9.868/99 · Súmula Vinculante 10, STF</div>
+  <h1 class="aula-h1">Controle de Constitucionalidade: Sistemas Difuso e Concentrado</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="cc-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="cc-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito e Pressupostos</button>
+    <button class="aula-tab-btn" data-sec="1">Controle Difuso</button>
+    <button class="aula-tab-btn" data-sec="2">Reserva de Plenário</button>
+    <button class="aula-tab-btn" data-sec="3">Papel do Senado (art. 52, X)</button>
+    <button class="aula-tab-btn" data-sec="4">Controle Concentrado</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Jurisprudência</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — CONCEITO E PRESSUPOSTOS ══ -->
+  <div class="aula-secao ativo" id="cc-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina + CF/88</span><h3>O que é controle de constitucionalidade?</h3></div>
+      </div>
+      <p>É o mecanismo pelo qual se verifica a <strong>compatibilidade</strong> das normas infraconstitucionais com a Constituição — retirando do ordenamento (ou afastando sua aplicação) as normas que a contrariem.</p>
+      <div class="aula-destaque-box"><p><strong>Pressupostos para existir controle de constitucionalidade:</strong></p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Supremacia constitucional:</strong> a Constituição ocupa o topo do ordenamento — nenhuma norma pode contrariá-la.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Rigidez constitucional:</strong> a Constituição exige processo de alteração mais dificultoso que o das leis ordinárias — só assim se justifica um controle de compatibilidade vertical.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Órgão com poder de controle:</strong> existência de um órgão (Judiciário, no modelo brasileiro) habilitado a realizar essa fiscalização.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Classificação quanto ao momento e quanto ao órgão</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Espécies</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Quanto ao momento</strong></td><td>Preventivo (antes da promulgação — ex.: veto jurídico do Executivo, atuação das Comissões de Constituição e Justiça) × Repressivo (depois da promulgação — regra geral, exercido pelo Judiciário)</td></tr>
+          <tr><td><strong>Quanto ao órgão</strong></td><td>Político (Legislativo/Executivo) × Jurisdicional (Judiciário) × Misto (combina os dois — modelo brasileiro)</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-destaque-box"><p><strong>O Brasil adota o sistema misto:</strong> o controle preventivo é predominantemente político (CCJ do Congresso, veto do Presidente por inconstitucionalidade); o controle repressivo é predominantemente jurisdicional, mas combina <strong>dois sistemas</strong> — o <strong>difuso</strong> (concreto) e o <strong>concentrado</strong> (abstrato), foco desta aula.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — CONTROLE DIFUSO ══ -->
+  <div class="aula-secao" id="cc-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🔀</div>
+        <div><span class="aula-tag aula-tag-lei">Origem: Marbury v. Madison (EUA, 1803)</span><h3>Controle Difuso, Concreto, Incidental ou "Via de Exceção"</h3></div>
+      </div>
+      <p>É exercido por <strong>qualquer juiz ou tribunal</strong>, no julgamento de um caso concreto, como <strong>questão prejudicial</strong> ao mérito da causa — a parte não pede diretamente a declaração de inconstitucionalidade como objeto principal da ação; ela surge <strong>incidentalmente</strong>, como fundamento para a solução do caso concreto.</p>
+      <div class="aula-destaque-box"><p><strong>Características centrais:</strong></p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Característica</th><th>Descrição</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Via</strong></td><td>Via de exceção/defesa — incidental, não é o pedido principal</td></tr>
+          <tr><td><strong>Quem exerce</strong></td><td>Qualquer juiz ou tribunal do país (inclusive juízo de primeira instância)</td></tr>
+          <tr><td><strong>Objeto do processo</strong></td><td>A inconstitucionalidade é <strong>questão prejudicial</strong> — o pedido principal é outro (ex.: cobrança, anulação de ato, etc.)</td></tr>
+          <tr><td><strong>Efeitos (regra tradicional)</strong></td><td><em>Inter partes</em> (só atinge as partes do processo) e <em>ex tunc</em> (retroativo, pela teoria da nulidade)</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha muito recorrente:</strong> "o controle difuso é feito exclusivamente pelo STF" — <strong>ERRADO</strong>. É exatamente o oposto: o controle difuso pode ser exercido por <strong>qualquer</strong> juiz ou tribunal — o STF é o órgão de cúpula que unifica a interpretação em <strong>última instância</strong>, mas não detém exclusividade sobre esse controle.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — RESERVA DE PLENÁRIO ══ -->
+  <div class="aula-secao" id="cc-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🏛️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 97 · Súmula Vinculante 10, STF</span><h3>Cláusula de Reserva de Plenário</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 97, CF/88:</strong> "Somente pelo <strong>voto da maioria absoluta</strong> de seus membros ou dos membros do respectivo órgão especial poderão os tribunais declarar a inconstitucionalidade de lei ou ato normativo do Poder Público."</p></div>
+      <p>Nos <strong>Tribunais</strong> (não em juízo de primeiro grau — a reserva de plenário só se aplica a órgãos colegiados de segunda instância ou superiores), <strong>órgãos fracionários</strong> (turmas, câmaras) <strong>não podem</strong> declarar a inconstitucionalidade de lei — essa competência é exclusiva do <strong>Plenário</strong> ou do <strong>Órgão Especial</strong> do próprio tribunal, por maioria absoluta de votos.</p>
+      <div class="aula-destaque-box"><p><strong>Súmula Vinculante 10, STF:</strong> viola a cláusula de reserva de plenário a decisão de órgão fracionário de tribunal que, embora <strong>não declare expressamente</strong> a inconstitucionalidade de lei ou ato normativo do Poder Público, <strong>afasta sua incidência</strong>, no todo ou em parte.</p></div>
+      <div class="aula-atencao-box"><p><strong>Ponto central da SV 10:</strong> não importa se o órgão fracionário usou ou não a palavra "inconstitucional" — o que importa é o <strong>efeito prático</strong> da decisão. Se a Turma/Câmara, na prática, deixa de aplicar a lei por entendê-la incompatível com a CF (ainda que sem declarar isso expressamente), já está violando a reserva de plenário.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Exceções à reserva de plenário — quando o órgão fracionário PODE decidir sozinho</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 949, parágrafo único, CPC/2015:</strong> os órgãos fracionários dos tribunais <strong>não submeterão ao plenário</strong> ou ao órgão especial a arguição de inconstitucionalidade quando já houver pronunciamento destes ou do <strong>plenário do STF</strong> sobre a questão.</p></div>
+      <p>Nessas hipóteses, o órgão fracionário está apenas <strong>replicando</strong> uma decisão já tomada — não há necessidade de repetir o procedimento de reserva de plenário, pois a questão já foi resolvida pela instância competente anteriormente.</p>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — PAPEL DO SENADO (ART. 52, X) ══ -->
+  <div class="aula-secao" id="cc-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">📜</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 52, X</span><h3>A antiga função clássica do Senado no controle difuso</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 52, X, CF/88:</strong> compete privativamente ao Senado Federal "suspender a execução, no todo ou em parte, de lei declarada inconstitucional por <strong>decisão definitiva do Supremo Tribunal Federal</strong>."</p></div>
+      <p>Historicamente, essa regra era o mecanismo pelo qual o efeito do controle difuso (originalmente restrito às partes do processo) se <strong>ampliava</strong> para toda a coletividade: o STF declarava a inconstitucionalidade em um caso concreto (efeito inter partes), e o Senado, por resolução, <strong>estendia</strong> essa suspensão para todos (efeito erga omnes), mediante ato discricionário próprio.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Mutação constitucional recente — o novo papel do Senado</h3>
+      <div class="aula-atencao-box"><p><strong>Entendimento atual do STF:</strong> a declaração de inconstitucionalidade proferida pelo STF, <strong>ainda que em sede de controle difuso</strong>, já gera <strong>imediatamente</strong> efeito <strong>erga omnes e vinculante</strong> — de forma que o Senado apenas <strong>comunicará</strong>, para fins de <strong>publicidade</strong>, o que já foi decidido pelo STF. Isso representa uma <strong>mutação constitucional</strong> (mudança de sentido da norma sem alteração do texto): antes, entendia-se que a decisão do Senado de suspender a execução da lei era <strong>discricionária</strong>; hoje, sua atuação é entendida como de mera <strong>publicidade e cumprimento</strong> — o efeito ampliado (erga omnes) já decorreria diretamente da decisão do STF.</p></div>
+      <div class="aula-destaque-box"><p><strong>Consequência prática importante — os limites da atuação do Senado:</strong> o Senado <strong>não pode ampliar, restringir ou interpretar</strong> o que foi decidido pelo STF — sua atuação deve corresponder <strong>exatamente</strong> ao que a Corte declarou. Ele não tem margem para "estender por arrastamento" a suspensão a dispositivos que o STF não declarou inconstitucionais, nem para reinterpretar o alcance da decisão judicial.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "o Senado Federal pode interpretar a decisão judicial emanada pelo STF, ampliando ou restringindo seu alcance conforme sua própria análise política" — <strong>ERRADO</strong>. O papel do Senado é vinculado <strong>ao que foi efetivamente decidido</strong> pelo STF — não há margem de interpretação ou ampliação autônoma por parte da Casa Legislativa.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — CONTROLE CONCENTRADO ══ -->
+  <div class="aula-secao" id="cc-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🎯</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 102, I, "a" · Lei 9.868/99</span><h3>Controle Concentrado, Abstrato ou "Via de Ação"</h3></div>
+      </div>
+      <p>É exercido por <strong>um único órgão competente</strong> — o <strong>STF</strong> (controle de leis federais/estaduais em face da CF/88) ou o <strong>Tribunal de Justiça</strong> (controle de leis estaduais/municipais em face da Constituição Estadual) — mediante <strong>ação direta</strong>, cujo <strong>objeto principal</strong> é a própria declaração de (in)constitucionalidade.</p>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Característica</th><th>Descrição</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Via</strong></td><td>Via de ação — a inconstitucionalidade é o próprio pedido principal</td></tr>
+          <tr><td><strong>Quem exerce</strong></td><td>Órgão único e competente (STF ou TJ), por provocação de legitimados específicos</td></tr>
+          <tr><td><strong>Natureza do processo</strong></td><td>Processo <strong>objetivo</strong> — não parte de um caso concreto entre litigantes, mas busca invalidar a norma em tese, em abstrato</td></tr>
+          <tr><td><strong>Teoria adotada</strong></td><td>Teoria da nulidade (a norma inconstitucional é nula desde a origem — regra geral)</td></tr>
+          <tr><td><strong>Efeitos (regra geral)</strong></td><td><em>Erga omnes</em> (todos) e <em>vinculante</em> (para os demais órgãos do Judiciário e para a Administração Pública direta e indireta), em regra <em>ex tunc</em>, salvo modulação</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Modulação de efeitos (art. 27, Lei 9.868/99):</strong> por razões de segurança jurídica ou excepcional interesse social, o STF pode, por maioria de <strong>dois terços</strong> de seus membros, restringir os efeitos da declaração de inconstitucionalidade, ou decidir que ela só tenha eficácia a partir de seu trânsito em julgado ou de outro momento a ser fixado — afastando, nesses casos, a regra geral do efeito <em>ex tunc</em>.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E JURISPRUDÊNCIA ══ -->
+  <div class="aula-secao" id="cc-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Quadro comparativo definitivo: difuso × concentrado</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Controle Difuso</th><th>Controle Concentrado</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Origem histórica</strong></td><td>EUA — Marbury v. Madison (1803)</td><td>Áustria — Hans Kelsen; no Brasil, CF/1934 (ADI Interventiva) ou CF/1946 (EC 16/1965), conforme a corrente doutrinária</td></tr>
+          <tr><td><strong>Quem exerce</strong></td><td>Qualquer juiz ou tribunal</td><td>STF (leis federais/estaduais × CF) ou TJ (leis estaduais/municipais × CE)</td></tr>
+          <tr><td><strong>Via</strong></td><td>Via de exceção/defesa (incidental)</td><td>Via de ação (principal)</td></tr>
+          <tr><td><strong>Objeto do processo</strong></td><td>Questão prejudicial — o pedido principal é outro</td><td>A própria inconstitucionalidade é o pedido</td></tr>
+          <tr><td><strong>Natureza do processo</strong></td><td>Subjetivo (caso concreto entre partes)</td><td>Objetivo (sem partes formais, em abstrato)</td></tr>
+          <tr><td><strong>Efeitos (regra geral)</strong></td><td>Inter partes e ex tunc — mas hoje já com repercussão erga omnes/vinculante automática quando decidido pelo STF</td><td>Erga omnes e vinculante, ex tunc (salvo modulação)</td></tr>
+          <tr><td><strong>Papel do Senado</strong></td><td>Art. 52, X — hoje apenas dá publicidade (mutação constitucional)</td><td>Não há papel do Senado — os efeitos já nascem erga omnes da própria decisão</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobrança FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Distinção via de exceção × via de ação; quem pode exercer cada controle; reserva de plenário (art. 97, CF) e Súmula Vinculante 10</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Mutação constitucional do art. 52, X (papel atual do Senado); efeitos erga omnes/vinculante automáticos da decisão do STF em controle difuso; modulação de efeitos (art. 27, Lei 9.868/99)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Exceções à reserva de plenário (art. 949, § único, CPC); processo objetivo × subjetivo; teoria da nulidade</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Origem histórica dos dois sistemas; limites da atuação do Senado (vedação de ampliação/interpretação autônoma)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="cc-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"O controle difuso é feito exclusivamente pelo STF, enquanto o controle concentrado pode ser feito por qualquer juiz."</strong><br>✅ ERRADO. É exatamente o inverso: o controle <strong>difuso</strong> pode ser exercido por <strong>qualquer</strong> juiz ou tribunal; o controle <strong>concentrado</strong> é exercido por órgão único e competente (STF ou TJ).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Uma Turma de Tribunal pode declarar a inconstitucionalidade de lei sem se submeter ao Plenário ou ao Órgão Especial, desde que fundamente adequadamente a decisão."</strong><br>✅ ERRADO. Salvo as exceções do art. 949, § único, CPC (pronunciamento anterior do plenário do próprio tribunal ou do STF), a reserva de plenário (art. 97, CF) exige que a declaração seja feita pelo <strong>Plenário</strong> ou <strong>Órgão Especial</strong>, por maioria absoluta.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Não viola a reserva de plenário a decisão de órgão fracionário que, sem declarar expressamente a inconstitucionalidade, afasta a incidência da norma."</strong><br>✅ ERRADO. Súmula Vinculante 10, STF: viola, sim, a reserva de plenário — não importa a ausência de declaração formal, o que conta é o <strong>efeito prático</strong> de afastar a norma.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Atualmente, a decisão do Senado Federal de suspender a execução de lei declarada inconstitucional pelo STF em controle difuso é ato discricionário e político, podendo o Senado inclusive não suspender a lei."</strong><br>✅ ERRADO. Pela mutação constitucional consolidada pelo STF, a decisão já gera efeito erga omnes e vinculante automaticamente — o Senado apenas <strong>dá publicidade</strong> ao que já foi decidido, não havendo mais discricionariedade nesse sentido.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O Senado Federal pode estender, por arrastamento, a suspensão da lei a dispositivos que o STF não declarou inconstitucionais."</strong><br>✅ ERRADO. O Senado deve se ater exatamente ao que foi decidido pelo STF — não tem margem para ampliar ou interpretar autonomamente o alcance da decisão.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"O controle concentrado é exercido por meio de processo objetivo, no qual a inconstitucionalidade é a própria matéria principal, com efeitos erga omnes e vinculantes, em regra ex tunc, salvo modulação."</strong><br>CORRETO.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Difuso × Concentrado — quem faz</h4><p><strong>Difuso</strong> → qualquer juiz (via de exceção)<br><strong>Concentrado</strong> → só STF/TJ (via de ação)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Reserva de plenário</h4><p><strong>Só Plenário/Órgão Especial</strong> declara inconstitucionalidade em Tribunal — turmas/câmaras não podem sozinhas (art. 97, CF + SV 10)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Papel atual do Senado (art. 52, X)</h4><p>Antes: <strong>discricionário</strong> (ampliava efeito)<br>Hoje: <strong>só dá publicidade</strong> — efeito erga omnes já nasce da decisão do STF</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Modulação de efeitos</h4><p><strong>2/3 dos membros do STF</strong> podem restringir efeitos ou fixar outro momento de eficácia (art. 27, Lei 9.868/99)</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="cc-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a diferença fundamental entre o controle difuso e o controle concentrado de constitucionalidade, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O controle difuso é feito pelo Legislativo e o controle concentrado é feito pelo Judiciário.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> O controle difuso é exercido pelo STF e o controle concentrado por qualquer juiz.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> O controle difuso é incidental e pode ser exercido por qualquer juiz ou tribunal, enquanto o controle concentrado é principal e processado por meio de ação direta perante o órgão competente (STF ou TJ, conforme o caso).</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O controle difuso é feito apenas em ações diretas, e o controle concentrado, em recursos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O controle difuso é feito pelo Executivo e o controle concentrado pelo Legislativo.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>O controle difuso é incidental (via de exceção), exercido por qualquer juiz ou tribunal no julgamento de caso concreto. O controle concentrado é principal (via de ação), processado por meio de ação direta perante o STF (CF/88) ou o TJ (Constituição Estadual).</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina constitucional — sistemas de controle de constitucionalidade; CF/88, art. 102, I, "a".</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinada Turma de Tribunal de Justiça, ao julgar recurso, afasta a incidência de lei estadual no caso concreto, por entendê-la incompatível com a Constituição Federal, sem, contudo, declarar expressamente a inconstitucionalidade da norma. Segundo a Súmula Vinculante nº 10 do STF, essa decisão:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> É válida, pois a reserva de plenário exige apenas a declaração expressa e formal de inconstitucionalidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Viola a cláusula de reserva de plenário, pois basta que o órgão fracionário afaste a incidência da norma, no todo ou em parte, ainda que sem declaração expressa de inconstitucionalidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> É válida, desde que a Turma tenha fundamentado detalhadamente sua decisão.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Somente violaria a reserva de plenário se a lei fosse federal, e não estadual.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> É válida, pois a reserva de plenário se aplica apenas ao controle concentrado, nunca ao controle difuso exercido por Tribunais.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Súmula Vinculante 10, STF: viola a cláusula de reserva de plenário (art. 97, CF/88) a decisão de órgão fracionário que, embora não declare expressamente a inconstitucionalidade de lei ou ato normativo, afasta sua incidência, no todo ou em parte. A reserva de plenário se aplica tanto no controle concentrado quanto no controle difuso exercido no âmbito de Tribunais.</div>
+      <span class="aula-fonte-tag">Fundamento: Súmula Vinculante 10, STF; CF/88, art. 97.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o papel do Senado Federal previsto no art. 52, X, da CF/88, à luz da mutação constitucional reconhecida pelo STF, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O Senado ainda detém discricionariedade plena para decidir se suspende, ou não, a execução de lei declarada inconstitucional pelo STF em controle difuso.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A decisão do STF que declara a inconstitucionalidade de lei, ainda que em controle difuso, já produz efeito erga omnes e vinculante de forma imediata, cabendo ao Senado apenas dar publicidade ao que foi decidido.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> O Senado pode ampliar, por arrastamento, os efeitos da decisão do STF a dispositivos legais não expressamente declarados inconstitucionais.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A resolução do Senado é pressuposto indispensável para que a decisão do STF em controle difuso produza qualquer efeito, ainda que entre as partes do processo original.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O Senado pode reinterpretar o conteúdo da decisão do STF, ajustando-o conforme seu próprio juízo de conveniência política.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Pela mutação constitucional consolidada pelo STF, a declaração de inconstitucionalidade em controle difuso já gera, de imediato, efeito erga omnes e vinculante — o Senado apenas comunica/dá publicidade ao que foi decidido, sem discricionariedade, sem poder de ampliação por arrastamento e sem margem de reinterpretação do conteúdo decidido.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 52, X; STF — mutação constitucional sobre o papel do Senado.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre as exceções à cláusula de reserva de plenário, nos termos do art. 949, parágrafo único, do CPC/2015, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Não existem exceções à reserva de plenário, sendo sempre obrigatória a submissão ao Plenário ou Órgão Especial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Os órgãos fracionários dos Tribunais não submeterão ao Plenário ou ao Órgão Especial a arguição de inconstitucionalidade quando já houver pronunciamento destes ou do Plenário do STF sobre a questão.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A exceção somente se aplica quando o pronunciamento anterior for de Tribunal diverso daquele em que tramita o novo processo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A exceção depende de prévia autorização do Senado Federal para cada caso concreto.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A exceção somente se aplica a decisões do STF proferidas em controle concentrado, nunca em controle difuso.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 949, parágrafo único, CPC/2015: dispensa-se a submissão ao Plenário/Órgão Especial quando já houver pronunciamento destes (do próprio tribunal) ou do Plenário do STF sobre a mesma questão — o órgão fracionário apenas replica o entendimento já firmado.</div>
+      <span class="aula-fonte-tag">Fundamento: CPC/2015, art. 949, parágrafo único.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre as características do controle concentrado de constitucionalidade, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Constitui processo subjetivo, no qual a inconstitucionalidade surge apenas incidentalmente, como questão prejudicial ao mérito.</div>
+      <div class="aula-opcao" onclky="aulaMarcar(this,'errada')"><span class="letra">b)</span> Pode ser exercido por qualquer juiz de primeiro grau, desde que fundamentada a decisão.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Constitui processo objetivo, no qual a inconstitucionalidade é a própria matéria principal, com efeitos, em regra, erga omnes e vinculantes, admitida a modulação de efeitos por maioria de dois terços dos membros do STF.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Produz, invariavelmente, efeitos apenas entre as partes do processo, jamais alcançando terceiros.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> É incompatível com a modulação temporal dos efeitos da decisão, sendo sempre ex tunc de forma absoluta.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>O controle concentrado é processo objetivo, com a inconstitucionalidade como matéria principal, efeitos erga omnes e vinculantes (regra), e admite modulação de efeitos por maioria de 2/3 do STF (art. 27, Lei 9.868/99), afastando, quando necessário, a regra geral do efeito ex tunc.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.868/99, art. 27; doutrina — características do controle concentrado.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
