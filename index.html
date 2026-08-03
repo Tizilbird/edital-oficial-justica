@@ -10041,6 +10041,733 @@ AULAS['da_7'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Extinção, Revogação, Invalidação e Convalidação dos Atos Administrativos
+// Chave: da_9 (Direito Administrativo, tópico 9)
+// Base: Doutrina — Di Pietro, CABM, JSCF · Lei 9.784/99 · Súmulas 346 e 473, STF
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['da_9'] = {
+  title: 'Extinção, Revogação, Invalidação e Convalidação',
+  sub: 'Direito Administrativo · Lei 9.784/99 · Súmulas 346 e 473, STF · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">Lei 9.784/99, arts. 53-55 · Súmulas 346 e 473, STF · Doutrina administrativa</div>
+  <h1 class="aula-h1">Extinção, Revogação, Invalidação e Convalidação</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="ex-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="ex-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Extinção — Panorama Geral</button>
+    <button class="aula-tab-btn" data-sec="1">Revogação</button>
+    <button class="aula-tab-btn" data-sec="2">Invalidação (Anulação)</button>
+    <button class="aula-tab-btn" data-sec="3">Prazo Decadencial — Art. 54, Lei 9.784/99</button>
+    <button class="aula-tab-btn" data-sec="4">Convalidação</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Jurisprudência</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — EXTINÇÃO — PANORAMA GERAL ══ -->
+  <div class="aula-secao ativo" id="ex-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🔚</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina — Di Pietro</span><h3>Extinção: o gênero</h3></div>
+      </div>
+      <p>Extinção é o <strong>gênero</strong> que engloba todas as formas pelas quais um ato administrativo deixa de produzir efeitos ou desaparece do mundo jurídico. Revogação e invalidação (anulação) são apenas <strong>duas espécies</strong> dentro desse gênero — mas não são as únicas.</p>
+      <div class="aula-destaque-box"><p><strong>Por que isso importa para a prova:</strong> a FCC frequentemente testa se o candidato confunde "extinção" com "revogação" — tratando-as como sinônimos. Na verdade, revogação é apenas <strong>uma</strong> das formas de extinção; existem várias outras, listadas abaixo.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>As formas de extinção do ato administrativo</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Forma</th><th>Conceito</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cumprimento de seus efeitos</strong></td><td>O ato exauriu integralmente sua finalidade (ex.: uma licença de uso já totalmente utilizada e expirada naturalmente).</td></tr>
+          <tr><td><strong>Desaparecimento do sujeito ou do objeto</strong></td><td>Extingue-se o ato quando desaparece a pessoa a quem se dirigia (morte do beneficiário de uma licença personalíssima) ou o próprio objeto sobre o qual incidia (destruição do bem que era objeto de tombamento).</td></tr>
+          <tr><td><strong>Renúncia</strong></td><td>O próprio beneficiário abre mão dos efeitos do ato que lhe favorecia (ex.: renúncia a uma licença ou permissão concedida).</td></tr>
+          <tr><td><strong>Retirada</strong></td><td>Gênero que engloba a <strong>revogação</strong>, a <strong>anulação (invalidação)</strong>, a <strong>cassação</strong>, a <strong>caducidade</strong> e a <strong>contraposição</strong> — retirada é a extinção do ato por uma nova manifestação de vontade da Administração.</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "revogação e extinção são sinônimos" — <strong>ERRADO</strong>. Revogação é apenas uma espécie do gênero "retirada", que por sua vez é apenas uma das formas de extinção do ato administrativo.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>As espécies de retirada — visão panorâmica antes de aprofundar</h3>
+      <div class="aula-macete-box"><h4>Macete: RA-CA-CA-CO</h4><p style="margin-top:6px">Revogação · Anulação · Cassação · Caducidade · Contraposição</p></div>
+      <table class="aula-tabela-comp" style="margin-top:10px">
+        <thead><tr><th>Espécie</th><th>Motivo da extinção</th><th>O ato original era válido?</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Revogação</strong></td><td>Conveniência e oportunidade (mérito)</td><td>Sim — era válido</td></tr>
+          <tr><td><strong>Anulação (invalidação)</strong></td><td>Ilegalidade</td><td>Não — era inválido desde a origem</td></tr>
+          <tr><td><strong>Cassação</strong></td><td>Descumprimento de condição imposta ao beneficiário</td><td>Sim, mas o beneficiário deixou de atender requisitos</td></tr>
+          <tr><td><strong>Caducidade</strong></td><td>Superveniência de norma jurídica incompatível com o ato</td><td>Sim, mas norma posterior o tornou incompatível</td></tr>
+          <tr><td><strong>Contraposição</strong></td><td>Edição de novo ato, com fundamento de competência diverso, cujos efeitos são contrapostos aos do ato anterior</td><td>Sim, mas ato novo neutraliza o anterior</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Cassação × Caducidade × Contraposição — exemplos que a FCC adora</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Cassação</h4><p><strong>Exemplo:</strong> cassação de uma licença para funcionamento de restaurante, porque o estabelecimento deixou de observar as condições sanitárias exigidas — o beneficiário descumpriu requisito que lhe competia manter.</p></div>
+        <div class="aula-mini-card"><h4>Caducidade</h4><p><strong>Exemplo clássico:</strong> permissão de uso de bem público para exploração de determinada atividade que se torna <strong>incompatível</strong> com lei posterior que passa a proibir aquela atividade no local.</p></div>
+        <div class="aula-mini-card"><h4>Contraposição</h4><p><strong>Exemplo:</strong> exoneração de servidor (novo ato, com fundamento de competência diverso do ato de nomeação) que extingue os efeitos do ato de nomeação anterior.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — REVOGAÇÃO ══ -->
+  <div class="aula-secao" id="ex-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🔄</div>
+        <div><span class="aula-tag aula-tag-lei">Súmula 473, STF</span><h3>Conceito e fundamento</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p>Revogação é a <strong>retirada de um ato administrativo válido</strong> por razões de <strong>conveniência e oportunidade</strong> (mérito administrativo) — a Administração, no exercício de sua discricionariedade, entende que o ato, embora legal, <strong>deixou de atender ao interesse público</strong> e deve ser retirado do mundo jurídico.</p></div>
+      <div class="aula-destaque-box"><p><strong>Súmula 473, STF:</strong> "A administração pode anular seus próprios atos, quando eivados de vícios que os tornam ilegais, porque deles não se originam direitos; ou <strong>revogá-los, por motivo de conveniência ou oportunidade</strong>, respeitados os direitos adquiridos, e ressalvada, em todos os casos, a apreciação judicial."</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Competência para revogar</h3>
+      <div class="aula-destaque-box"><p>A revogação é exercida no âmbito da <strong>autotutela administrativa</strong> — só a <strong>própria Administração</strong> pode revogar seus atos, nunca o Poder Judiciário. Isso decorre da natureza discricionária do juízo de conveniência e oportunidade: o Judiciário não pode substituir o mérito administrativo pela sua própria valoração, sob pena de violar a separação dos Poderes.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "o Poder Judiciário pode revogar ato administrativo quando entender que ele não atende mais ao interesse público" — <strong>ERRADO</strong>. O Judiciário pode <strong>anular</strong> atos ilegais, mas jamais <strong>revogar</strong> — a revogação é prerrogativa exclusiva da Administração, por envolver juízo de mérito.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Limites à revogação — atos irrevogáveis</h3>
+      <p>Nem todo ato administrativo pode ser revogado. A doutrina lista hipóteses em que a revogação é <strong>vedada</strong>:</p>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Atos que já exauriram seus efeitos (consumados):</strong> não há mais o que revogar, pois o ato já produziu integralmente sua finalidade.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Atos vinculados:</strong> como não há juízo de conveniência/oportunidade nesses atos (o administrador só verifica se a lei foi cumprida), não cabe revogação — o vinculado só pode ser anulado, se ilegal.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Atos que geraram direitos adquiridos:</strong> a Súmula 473, STF, é expressa: a revogação deve respeitar os direitos adquiridos do beneficiário.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">4</div><p><strong>Atos "meros atos administrativos" (certidões, atestados, votos em órgãos colegiados):</strong> não geram efeitos jurídicos próprios revogáveis — apenas certificam ou declaram uma situação.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">5</div><p><strong>Atos que integram um procedimento (atos enunciativos, de mero expediente):</strong> não podem ser isoladamente revogados sem afetar todo o procedimento.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">6</div><p><strong>Atos que a lei declara irrevogáveis</strong> — por expressa disposição legal.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Efeitos da revogação</h3>
+      <div class="aula-destaque-box"><p>A revogação produz efeitos <strong>ex nunc</strong> (a partir de agora, prospectivos) — o ato era válido e produziu efeitos regulares até o momento da revogação; a retirada não desconstitui o que já ocorreu, apenas encerra a produção de efeitos futuros.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — INVALIDAÇÃO (ANULAÇÃO) ══ -->
+  <div class="aula-secao" id="ex-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">Súmula 346, STF · Lei 9.784/99, art. 53</span><h3>Conceito e fundamento</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p>Invalidação (também chamada de <strong>anulação</strong>) é a retirada de um ato administrativo <strong>ilegal</strong> — praticado com vício em algum de seus elementos (competência, finalidade, forma, motivo ou objeto). Diferente da revogação, não envolve juízo de conveniência: é <strong>questão de legalidade</strong>.</p></div>
+      <div class="aula-destaque-box"><p><strong>Súmula 346, STF:</strong> "A administração pública pode declarar a nulidade dos seus próprios atos."<br><strong>Art. 53, Lei 9.784/99:</strong> "A Administração deve anular seus próprios atos, quando eivados de vício de legalidade, e pode revogá-los por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos."</p></div>
+      <div class="aula-atencao-box"><p><strong>Nuance de redação muito cobrada:</strong> repare que a Súmula 346 e o art. 53 dizem que a Administração <strong>"pode"</strong> declarar a nulidade — mas a doutrina majoritária entende que se trata, na verdade, de um <strong>poder-dever</strong>: identificado o vício de legalidade, a Administração <strong>deve</strong> anular o ato, não tendo discricionariedade para mantê-lo ilegal em vigor (ressalvadas as hipóteses de convalidação, vistas adiante).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quem pode anular?</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>A própria Administração</strong>, de ofício ou mediante provocação — no exercício da <strong>autotutela</strong> (Súmulas 346 e 473, STF).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>O Poder Judiciário</strong>, quando provocado — a autotutela administrativa não afasta o controle judicial (art. 5º, XXXV, CF/88 — inafastabilidade da jurisdição).</p></div>
+      <div class="aula-atencao-box"><p><strong>Diferença crucial de competência entre revogação e anulação:</strong> a <strong>revogação</strong> é exclusiva da Administração (envolve mérito). A <strong>anulação</strong> pode ser feita tanto pela Administração quanto pelo Judiciário (envolve legalidade, matéria sempre sujeita a controle jurisdicional).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Efeitos da anulação</h3>
+      <div class="aula-destaque-box"><p>A anulação produz, <strong>em regra</strong>, efeitos <strong>ex tunc</strong> (retroativos) — como o ato era ilegal desde a origem, ele é retirado do mundo jurídico como se nunca tivesse existido validamente, desfazendo, em regra, todos os efeitos já produzidos.</p></div>
+      <div class="aula-atencao-box"><p><strong>Ressalva importante — direitos de terceiros de boa-fé:</strong> mesmo com efeito retroativo, a anulação deve <strong>preservar direitos adquiridos de terceiros de boa-fé</strong> que confiaram na aparência de legalidade do ato. Essa ressalva ganhou força normativa expressa com a Lei da Liberdade Econômica (Lei 13.874/2019) e com o art. 24 da LINDB (incluído pela Lei 13.655/2018), que veda a invalidação retroativa de atos praticados conforme orientação geral da época, sob pena de violar a segurança jurídica.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — PRAZO DECADENCIAL — ART. 54, LEI 9.784/99 ══ -->
+  <div class="aula-secao" id="ex-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">⏳</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.784/99, art. 54</span><h3>O limite temporal ao poder de anular — proteção da boa-fé</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 54, caput, Lei 9.784/99:</strong> "O direito da Administração de anular os atos administrativos de que decorram efeitos favoráveis para os destinatários <strong>decai em 5 (cinco) anos</strong>, contados da data em que foram praticados, <strong>salvo comprovada má-fé</strong>."</p></div>
+      <p>Esse prazo é o principal mecanismo de proteção da <strong>segurança jurídica</strong> e da <strong>boa-fé</strong> do administrado — se a Administração não anular o ato favorável dentro desse prazo, o direito de anular <strong>decai</strong> (extingue-se), e o ato ilegal se torna, na prática, insuscetível de anulação por decurso do tempo.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Requisitos cumulativos para incidência do prazo do art. 54</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Ato do qual decorram efeitos favoráveis</strong> ao destinatário (ex.: concessão de aposentadoria, licença, nomeação) — atos <strong>desfavoráveis</strong> não se submetem a esse prazo, pois não há boa-fé do administrado a proteger nesse sentido.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Ausência de má-fé</strong> do beneficiário — comprovada a má-fé, o prazo <strong>não corre</strong>, e a Administração pode anular a qualquer tempo.</p></div>
+      <div class="aula-atencao-box"><p><strong>Contagem do prazo — §1º, art. 54:</strong> "No caso de efeitos patrimoniais contínuos, o prazo de decadência contará da percepção do primeiro pagamento." Ou seja, para benefícios que se renovam periodicamente (como uma aposentadoria mensal), o prazo de 5 anos começa a correr do <strong>primeiro pagamento</strong>, não de cada pagamento subsequente.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Suspensão do prazo — §2º, art. 54</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 54, §2º:</strong> "Considera-se exercício do direito de anular qualquer medida de autoridade administrativa que importe impugnação à validade do ato." Ou seja, se a Administração, dentro do prazo, adota <strong>qualquer</strong> medida que já sinalize a impugnação da validade do ato (abertura de processo administrativo, por exemplo), isso já é considerado exercício do direito de anular, interrompendo o curso do prazo decadencial.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Posição do STF/STJ sobre o marco inicial da contagem quando a Lei 9.784/99 ainda não existia</h3>
+      <div class="aula-atencao-box"><p><strong>Entendimento consolidado:</strong> para atos praticados <strong>antes</strong> da vigência da Lei 9.784/99 (que entrou em vigor em 1999), o STF e o STJ entendem que o prazo decadencial de 5 anos deve ser contado a partir da <strong>data de entrada em vigor da própria lei</strong> — e não da data de prática do ato — sob pena de se admitir a aplicação retroativa de um prazo que ainda não existia.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Aplicação subsidiária a Estados e Municípios</h3>
+      <div class="aula-atencao-box"><p><strong>Cuidado com a abrangência da Lei 9.784/99:</strong> ela é lei <strong>federal</strong>, aplicável diretamente à Administração Pública Federal. O STJ, contudo, já admitiu sua aplicação <strong>subsidiária/analógica</strong> a Estados e Municípios que não possuam legislação própria disciplinando prazo decadencial equivalente — reforçando o princípio da segurança jurídica mesmo na ausência de norma local específica.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — CONVALIDAÇÃO ══ -->
+  <div class="aula-secao" id="ex-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🩹</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.784/99, art. 55</span><h3>Conceito — "salvar" o ato ao invés de anulá-lo</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 55, Lei 9.784/99:</strong> "Em decisão na qual se evidencie não acarretarem lesão ao interesse público nem prejuízo a terceiros, os atos que apresentarem defeitos sanáveis poderão ser convalidados pela própria Administração."</p></div>
+      <p>Convalidação (também chamada de <strong>saneamento</strong>) é o ato administrativo pelo qual a Administração <strong>corrige o vício</strong> de um ato anterior, com efeitos <strong>retroativos (ex tunc)</strong>, mantendo-o válido a partir de sua origem — é uma alternativa à anulação, aplicável apenas a vícios <strong>sanáveis</strong>.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Requisitos para a convalidação</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Vício sanável</strong> — apenas defeitos que admitem correção (em regra, vícios de <strong>competência</strong> — quando não exclusiva — e de <strong>forma</strong>, quando não essencial).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Ausência de lesão ao interesse público.</strong></p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Ausência de prejuízo a terceiros.</strong></p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Vícios convalidáveis × vícios insanáveis</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Elemento</th><th>Convalidável?</th><th>Observação</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Competência</strong></td><td>Sim, em regra</td><td>Convalidável quando não se tratar de competência <strong>exclusiva</strong> e <strong>indelegável</strong> — nesse caso, o vício é insanável.</td></tr>
+          <tr><td><strong>Forma</strong></td><td>Sim, em regra</td><td>Convalidável quando a forma não for <strong>essencial</strong> à validade do ato (formalidade não solene).</td></tr>
+          <tr><td><strong>Finalidade</strong></td><td>Não</td><td>Vício insanável — desvio de finalidade sempre gera nulidade, nunca convalidação.</td></tr>
+          <tr><td><strong>Motivo</strong></td><td>Não</td><td>Vício insanável — se o motivo é falso ou inexistente, não há como "corrigi-lo" retroativamente.</td></tr>
+          <tr><td><strong>Objeto</strong></td><td>Não</td><td>Vício insanável — objeto ilícito ou impossível não admite correção.</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Macete essencial:</strong> só se convalida vício de <strong>competência</strong> (não exclusiva) e <strong>forma</strong> (não essencial). Finalidade, motivo e objeto <strong>nunca</strong> são convalidáveis — são sempre vícios insanáveis que exigem anulação.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Formas de convalidação</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Ratificação</h4><p>A própria autoridade que praticou o ato viciado (ou autoridade superior) o convalida, suprindo o vício, sem alterar seu conteúdo.</p></div>
+        <div class="aula-mini-card"><h4>Reforma</h4><p>A Administração retira a parte inválida do ato, mantendo a parte válida (aproveitamento parcial).</p></div>
+        <div class="aula-mini-card"><h4>Conversão</h4><p>A Administração aproveita o ato viciado, transformando-o em outro tipo de ato administrativo, para o qual os requisitos estejam presentes.</p></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Convalidação é ato vinculado ou discricionário?</h3>
+      <div class="aula-atencao-box"><p><strong>Divergência doutrinária relevante para prova:</strong> parte da doutrina (Celso Antônio Bandeira de Mello) entende que, presentes os requisitos legais (vício sanável, ausência de lesão ao interesse público e a terceiros), a Administração tem o <strong>dever</strong> de convalidar (ato vinculado) — não devendo optar pela anulação de um ato que poderia ser salvo sem prejuízo a ninguém. Já outra corrente entende que a convalidação envolve certa <strong>discricionariedade</strong> da Administração, cabendo a ela avaliar a conveniência de convalidar ou anular. A leitura literal do art. 55 ("poderão ser convalidados") sugere faculdade, mas a doutrina majoritária tende a reforçar que, evidenciados os requisitos, a convalidação se impõe como <strong>dever</strong>, dado o princípio da economia processual/proporcionalidade.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E JURISPRUDÊNCIA ══ -->
+  <div class="aula-secao" id="ex-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Quadro comparativo definitivo</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Revogação</th><th>Anulação (Invalidação)</th><th>Convalidação</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Motivo</strong></td><td>Conveniência e oportunidade (mérito)</td><td>Ilegalidade</td><td>Correção de vício sanável</td></tr>
+          <tr><td><strong>O ato original era válido?</strong></td><td>Sim</td><td>Não</td><td>Não (mas o vício é sanável)</td></tr>
+          <tr><td><strong>Quem pode praticar</strong></td><td>Só a Administração (autotutela)</td><td>Administração ou Judiciário</td><td>Só a Administração</td></tr>
+          <tr><td><strong>Efeitos temporais</strong></td><td>Ex nunc</td><td>Ex tunc (em regra)</td><td>Ex tunc</td></tr>
+          <tr><td><strong>Prazo</strong></td><td>Sem prazo específico (respeitado direito adquirido)</td><td>5 anos, se favorável ao destinatário e sem má-fé (art. 54)</td><td>Sem prazo específico na lei</td></tr>
+          <tr><td><strong>Fundamento sumular</strong></td><td>Súmula 473, STF</td><td>Súmula 346, STF</td><td>Art. 55, Lei 9.784/99</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobrança FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Revogação × anulação (competência, motivo, efeitos ex nunc × ex tunc); Súmulas 346 e 473, STF; prazo decadencial de 5 anos (art. 54, Lei 9.784/99)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Vícios convalidáveis (só competência não exclusiva e forma não essencial); requisitos cumulativos da convalidação; contagem do prazo em efeitos patrimoniais contínuos (§1º)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Cassação, caducidade e contraposição como espécies de retirada; formas de convalidação (ratificação, reforma, conversão); atos irrevogáveis</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Marco inicial do prazo para atos anteriores à Lei 9.784/99; aplicação subsidiária a Estados/Municípios; natureza vinculada × discricionária da convalidação</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="ex-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"O Poder Judiciário pode revogar ato administrativo por considerá-lo inconveniente ao interesse público."</strong><br>✅ ERRADO. Revogação é exclusiva da <strong>Administração</strong> — o Judiciário só pode <strong>anular</strong> atos ilegais, jamais substituir o juízo de mérito.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A anulação produz efeitos ex nunc, enquanto a revogação produz efeitos ex tunc."</strong><br>✅ ERRADO — está invertido. <strong>Anulação → ex tunc</strong> (retroativo); <strong>Revogação → ex nunc</strong> (prospectivo).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O direito da Administração de anular atos favoráveis ao destinatário decai em 5 anos, mesmo comprovada a má-fé do beneficiário."</strong><br>✅ ERRADO. Art. 54, caput: o prazo de 5 anos é <strong>afastado</strong> em caso de má-fé comprovada — a Administração pode anular a qualquer tempo nesse caso.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"É possível convalidar ato administrativo com vício de finalidade, desde que não haja lesão ao interesse público."</strong><br>✅ ERRADO. Vícios de <strong>finalidade, motivo e objeto</strong> são sempre <strong>insanáveis</strong> — só se convalidam vícios de competência (não exclusiva) e de forma (não essencial).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Revogação e extinção do ato administrativo são conceitos sinônimos."</strong><br>✅ ERRADO. Extinção é o <strong>gênero</strong> (que também engloba cumprimento de efeitos, desaparecimento de sujeito/objeto, renúncia e retirada); revogação é apenas <strong>uma espécie</strong> de retirada.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Para efeitos patrimoniais contínuos, o prazo decadencial de 5 anos se renova a cada novo pagamento efetuado."</strong><br>✅ ERRADO. Art. 54, §1º: o prazo conta-se da <strong>percepção do primeiro pagamento</strong>, não se renovando a cada parcela.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"A Administração Pública pode declarar a nulidade dos seus próprios atos, quando eivados de vícios que os tornam ilegais."</strong><br>CORRETO — Súmula 346, STF.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Revogação × Anulação</h4><p><strong>Revogação:</strong> mérito, só Adm., ex nunc, Súmula 473<br><strong>Anulação:</strong> legalidade, Adm. ou Judiciário, ex tunc, Súmula 346</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Vícios convalidáveis</h4><p>Só <strong>Competência</strong> (não exclusiva) e <strong>Forma</strong> (não essencial) — Finalidade, Motivo e Objeto NUNCA se convalidam</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Prazo decadencial — art. 54</h4><p><strong>5 anos</strong> + ato favorável ao destinatário + <strong>sem má-fé</strong> = requisitos cumulativos</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Espécies de retirada</h4><p><strong>RA-CA-CA-CO:</strong> Revogação · Anulação · Cassação · Caducidade · Contraposição</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="ex-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Nos termos da Súmula 473 do Supremo Tribunal Federal, a Administração pode revogar seus próprios atos:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Sempre que verificar vício de legalidade, com efeitos retroativos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos, e ressalvada, em todos os casos, a apreciação judicial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Somente mediante autorização prévia do Poder Judiciário.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Apenas nos primeiros 5 anos contados da prática do ato, sob pena de decadência.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Desde que haja comprovada má-fé do beneficiário do ato.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Transcrição da Súmula 473, STF: a revogação se dá por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos, ressalvada sempre a apreciação judicial (que pode controlar a legalidade do processo de revogação, ainda que não o mérito em si).</div>
+      <span class="aula-fonte-tag">Fundamento: Súmula 473, STF.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o prazo decadencial previsto no art. 54 da Lei nº 9.784/1999, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Aplica-se a qualquer ato administrativo, favorável ou desfavorável ao destinatário, no prazo de 5 anos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> O direito da Administração de anular atos administrativos de que decorram efeitos favoráveis para os destinatários decai em 5 anos, contados da data em que foram praticados, salvo comprovada má-fé.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Não se aplica a atos com efeitos patrimoniais contínuos, que são imprescritíveis.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> É contado sempre a partir da percepção do último pagamento, no caso de efeitos patrimoniais contínuos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Aplica-se mesmo em caso de má-fé comprovada do beneficiário, para preservar a segurança jurídica.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 54, caput, Lei 9.784/99: prazo de 5 anos, contados da prática do ato, aplicável apenas a atos favoráveis ao destinatário e afastado em caso de má-fé comprovada. Para efeitos patrimoniais contínuos, o prazo conta-se do primeiro pagamento (§1º), não do último.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.784/99, art. 54, caput e §1º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinado ato administrativo apresenta vício de competência, tendo sido praticado por autoridade que não detinha competência exclusiva para tanto. Constatando-se que o saneamento do vício não acarreta lesão ao interesse público nem prejuízo a terceiros, a Administração poderá:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Apenas anular o ato, sendo vedada qualquer outra solução.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Convalidar o ato, suprindo o vício de competência, com efeitos retroativos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Apenas revogá-lo, por se tratar de questão de conveniência e oportunidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Solicitar autorização do Poder Judiciário para sanar o vício.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Aguardar o transcurso do prazo decadencial de 5 anos antes de tomar qualquer providência.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 55, Lei 9.784/99: vício de competência não exclusiva é sanável — presentes os requisitos (ausência de lesão ao interesse público e a terceiros), a Administração pode convalidar o ato, suprindo o defeito com efeitos ex tunc.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.784/99, art. 55.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> São vícios insanáveis, insuscetíveis de convalidação pela Administração Pública:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Competência não exclusiva e forma não essencial.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Finalidade, motivo e objeto.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Apenas o vício de forma, em qualquer hipótese.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Somente o vício de competência, ainda que não exclusiva.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Todos os elementos do ato administrativo, sem exceção.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Os vícios de finalidade, motivo e objeto são sempre insanáveis, exigindo anulação do ato. Apenas os vícios de competência (quando não exclusiva) e forma (quando não essencial) admitem convalidação.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina administrativa — vícios convalidáveis × insanáveis.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre as espécies de retirada do ato administrativo, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Cassação é a extinção do ato em razão de norma jurídica superveniente incompatível com sua manutenção.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Caducidade é a extinção do ato administrativo em decorrência da superveniência de norma jurídica que o torna incompatível com a ordem jurídica vigente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Contraposição consiste na extinção do ato em razão do descumprimento, pelo beneficiário, das condições que deveria atender.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Revogação e anulação são espécies do gênero cassação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Caducidade e cassação são sinônimos na doutrina majoritária.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Caducidade: extinção por superveniência de norma incompatível com o ato (ex.: lei nova que proíbe atividade antes permitida). Cassação: extinção por descumprimento de condição pelo beneficiário. Contraposição: extinção por edição de novo ato com fundamento de competência diverso, cujos efeitos se contrapõem ao anterior. São espécies distintas, não sinônimas.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina administrativa — espécies de retirada do ato administrativo.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Quanto à competência para extinguir atos administrativos, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Tanto a revogação quanto a anulação podem ser praticadas pelo Poder Judiciário, indistintamente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A revogação é prerrogativa exclusiva da Administração Pública, ao passo que a anulação pode ser praticada tanto pela própria Administração quanto pelo Poder Judiciário, quando provocado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A anulação é prerrogativa exclusiva da Administração, sendo vedada sua apreciação pelo Poder Judiciário.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Nem a revogação nem a anulação podem ser exercidas de ofício pela Administração, dependendo sempre de provocação do interessado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A convalidação pode ser realizada pelo Poder Judiciário, em substituição à Administração Pública.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Revogação (juízo de mérito) é prerrogativa exclusiva da Administração. Anulação (juízo de legalidade) pode ser feita pela própria Administração (autotutela — Súmula 346, STF) ou pelo Poder Judiciário, quando provocado (art. 5º, XXXV, CF/88). A convalidação, por sua vez, é sempre ato da própria Administração.</div>
+      <span class="aula-fonte-tag">Fundamento: Súmulas 346 e 473, STF; CF/88, art. 5º, XXXV.</span>
+    </div>
+  </div>
+</div>`
+};
+// ═══════════════════════════════════════════════════════
+// AULA: Classificação, Formação e Efeitos dos Atos Administrativos
+// Chave: da_8 (Direito Administrativo, tópico 8)
+// Base: Doutrina — Di Pietro, Celso Antônio Bandeira de Mello, JSCF
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['da_8'] = {
+  title: 'Classificação, Formação e Efeitos dos Atos Administrativos',
+  sub: 'Direito Administrativo · Doutrina · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">Doutrina administrativa — Di Pietro, CABM, JSCF · Lei 9.784/99</div>
+  <h1 class="aula-h1">Classificação, Formação e Efeitos dos Atos Administrativos</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="ca-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="ca-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Formação (Perfeição-Validade-Eficácia)</button>
+    <button class="aula-tab-btn" data-sec="1">Quanto à Composição de Vontades</button>
+    <button class="aula-tab-btn" data-sec="2">Quanto aos Destinatários e Alcance</button>
+    <button class="aula-tab-btn" data-sec="3">Quanto à Liberdade e Exequibilidade</button>
+    <button class="aula-tab-btn" data-sec="4">Efeitos dos Atos Administrativos</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Jurisprudência</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — FORMAÇÃO: PERFEIÇÃO, VALIDADE E EFICÁCIA ══ -->
+  <div class="aula-secao ativo" id="ca-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🧱</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina — Hely Lopes Meirelles</span><h3>As três fases do ciclo de vida do ato administrativo</h3></div>
+      </div>
+      <p>Antes de classificar o ato, é preciso entender <strong>como ele nasce e passa a produzir efeitos</strong>. A doutrina distingue três planos distintos, que não se confundem entre si — um ato pode estar em qualquer combinação desses três estados.</p>
+      <div class="aula-macete-box"><h4>Macete: P-V-E</h4><p style="margin-top:6px">Perfeição · Validade · Eficácia</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Perfeição</h3>
+      <div class="aula-destaque-box"><p>Diz respeito ao <strong>ciclo de formação</strong> do ato — se todas as etapas necessárias para sua existência já foram concluídas. Um ato é <strong>perfeito</strong> quando já completou o iter procedimental de sua criação (todas as manifestações de vontade exigidas já ocorreram).</p></div>
+      <div class="aula-atencao-box"><p><strong>Ato imperfeito</strong> é aquele cujo processo de formação ainda não se encerrou — falta alguma manifestação de vontade, aprovação ou visto exigido em lei. Enquanto imperfeito, o ato ainda <strong>não existe</strong> como ato administrativo completo.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Validade</h3>
+      <div class="aula-destaque-box"><p>Diz respeito à <strong>conformidade do ato com a lei</strong> — se ele foi produzido em obediência aos requisitos e elementos exigidos pelo ordenamento jurídico (competência, finalidade, forma, motivo e objeto). Ato <strong>válido</strong> é aquele expedido em perfeita consonância com as normas jurídicas pertinentes.</p></div>
+      <div class="aula-atencao-box"><p><strong>Ato inválido</strong> é aquele que apresenta vício em algum de seus elementos — pode ser nulo (vício insanável) ou anulável (vício sanável mediante convalidação). Perfeição e validade são planos <strong>independentes</strong>: um ato pode ser perfeito (já concluído seu ciclo de formação) e, ainda assim, <strong>inválido</strong> (produzido em desacordo com a lei).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Eficácia</h3>
+      <div class="aula-destaque-box"><p>Diz respeito à <strong>disponibilidade do ato para produção de efeitos</strong> — se o ato já está apto a ser executado e a gerar consequências jurídicas concretas. Um ato pode ser perfeito e válido, mas ainda <strong>ineficaz</strong>, se sua produção de efeitos depender de um evento futuro (publicação, termo, condição suspensiva).</p></div>
+      <div class="aula-atencao-box"><p><strong>Exemplo clássico:</strong> um decreto de nomeação já assinado pela autoridade competente (perfeito) e sem vícios (válido), mas que só produzirá efeitos a partir da <strong>publicação no Diário Oficial</strong> — antes disso, é perfeito e válido, porém <strong>ineficaz</strong>.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quadro-síntese — os três planos são independentes entre si</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Plano</th><th>Pergunta que responde</th><th>Quando falha</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Perfeição</strong></td><td>O ciclo de formação já terminou?</td><td>Ato imperfeito (formação incompleta)</td></tr>
+          <tr><td><strong>Validade</strong></td><td>O ato está em conformidade com a lei?</td><td>Ato inválido (nulo ou anulável)</td></tr>
+          <tr><td><strong>Eficácia</strong></td><td>O ato já pode produzir efeitos?</td><td>Ato ineficaz (pendente de condição/termo/publicação)</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "todo ato perfeito é necessariamente válido e eficaz" — <strong>ERRADO</strong>. Os três planos são autônomos — um ato pode ser perfeito e inválido (vício de competência, por exemplo), ou perfeito, válido e ainda ineficaz (pendente de publicação).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — QUANTO À COMPOSIÇÃO DE VONTADES ══ -->
+  <div class="aula-secao" id="ca-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🔗</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina — classificação quanto à formação</span><h3>Atos simples, complexos e compostos</h3></div>
+      </div>
+      <p>Essa classificação analisa <strong>quantas manifestações de vontade</strong> (e de quantos órgãos) são necessárias para a formação do ato — é um dos critérios mais cobrados em prova, justamente por gerar confusão entre "complexo" e "composto".</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Ato simples</h3>
+      <div class="aula-destaque-box"><p>Resulta da manifestação de vontade de <strong>um único órgão</strong> (unipessoal ou colegiado). Pode ser <strong>simples singular</strong> (praticado por um único agente — ex.: portaria de um Secretário) ou <strong>simples colegiado</strong> (praticado por um órgão colegiado, mas ainda assim considerado uma única vontade institucional — ex.: decisão de um Tribunal de Contas em sessão plenária).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Ato complexo</h3>
+      <div class="aula-destaque-box"><p>Resulta da <strong>conjugação de vontades de dois ou mais órgãos diferentes</strong>, sendo necessária a <strong>fusão dessas vontades em um único ato final</strong> — nenhuma das vontades isoladamente forma o ato; só a soma delas o completa.</p></div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Exemplo clássico</h4><p>Nomeação de Ministros do STF: depende da vontade do <strong>Presidente da República</strong> (indicação) somada à <strong>aprovação do Senado Federal</strong> (sabatina e aprovação por maioria absoluta) — só com as duas vontades reunidas o ato de nomeação se completa.</p></div>
+        <div class="aula-mini-card"><h4>Momento de perfeição</h4><p>O ato complexo só se considera <strong>perfeito</strong> quando a <strong>última vontade necessária</strong> se manifesta — antes disso, o ato é imperfeito (formação incompleta).</p></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Ato composto</h3>
+      <div class="aula-destaque-box"><p>Também resulta de <strong>duas manifestações de vontade</strong>, mas de <strong>natureza distinta</strong>: uma delas é o <strong>ato principal</strong> (que já é, em si mesmo, autônomo e completo) e a outra é um <strong>ato instrumental/acessório</strong> — de mera ratificação, homologação, visto ou aprovação — que apenas confirma ou possibilita a eficácia do ato principal.</p></div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Exemplo clássico</h4><p>Ato de dispensa de servidor que depende de <strong>visto ou homologação</strong> de autoridade superior. O ato principal é a decisão da autoridade que dispensa; o visto é apenas <strong>instrumental</strong>, não se funde ao ato principal — apenas o autoriza a produzir efeitos.</p></div>
+        <div class="aula-mini-card"><h4>Diferença central para o complexo</h4><p>No composto, há <strong>um ato principal e outro acessório</strong> (relação de subordinação/instrumentalidade). No complexo, há <strong>duas vontades de igual hierarquia</strong>, que se fundem para formar um <strong>único</strong> ato final (relação de coordenação/fusão).</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira e recorrente:</strong> "o ato composto resulta da conjugação de vontades de dois órgãos distintos, fundidas em um único ato" — <strong>ERRADO</strong>, essa é a definição de ato <strong>complexo</strong>. No ato composto, há um ato <strong>principal</strong> e um <strong>ato instrumental</strong> que apenas o ratifica/homologa — não há fusão de vontades em pé de igualdade.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quadro comparativo — simples × complexo × composto</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Simples</th><th>Complexo</th><th>Composto</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Nº de vontades</strong></td><td>Uma (órgão único)</td><td>Duas ou mais, de órgãos diferentes</td><td>Duas, de natureza distinta</td></tr>
+          <tr><td><strong>Relação entre as vontades</strong></td><td>—</td><td>Coordenação — se fundem em um único ato</td><td>Subordinação — principal + instrumental (acessório)</td></tr>
+          <tr><td><strong>Exemplo</strong></td><td>Portaria de um Secretário</td><td>Nomeação de Ministro do STF (Presidente + Senado)</td><td>Ato de dispensa dependente de visto/homologação</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — QUANTO AOS DESTINATÁRIOS E ALCANCE ══ -->
+  <div class="aula-secao" id="ca-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🎯</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina</span><h3>Quanto aos destinatários — gerais × individuais</h3></div>
+      </div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Ato geral (normativo)</h4><p>Destinado a <strong>destinatários indeterminados</strong>, com efeitos abstratos e impessoais. Ex.: decreto regulamentar, instrução normativa. Predomina a <strong>abstração</strong> — não se dirige a pessoa específica.</p></div>
+        <div class="aula-mini-card"><h4>Ato individual (concreto)</h4><p>Destinado a <strong>destinatário determinado ou determinável</strong>, com efeitos concretos. Ex.: ato de nomeação de um servidor, licença para construir concedida a um particular específico.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Importância prática — controle de constitucionalidade:</strong> atos gerais/normativos podem, em regra, ser impugnados por ADI perante o STF (se dotados de generalidade e abstração suficientes); atos individuais/concretos, em regra, <strong>não</strong> são impugnáveis por ADI, pois não têm o caráter geral e abstrato exigido pelo controle concentrado.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quanto ao alcance — internos × externos</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Ato interno</h4><p>Produz efeitos <strong>dentro</strong> da própria Administração — não atinge diretamente terceiros/particulares. Ex.: portaria organizando o funcionamento de uma repartição, ordem de serviço interna.</p></div>
+        <div class="aula-mini-card"><h4>Ato externo</h4><p>Produz efeitos <strong>fora</strong> da Administração, atingindo diretamente particulares. Depende, em regra, de <strong>publicação</strong> para gerar efeitos (condição de eficácia). Ex.: decreto de desapropriação, ato de aplicação de multa a um particular.</p></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quanto ao objeto — atos de império, de gestão e de expediente</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Espécie</th><th>Característica</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Atos de império (jus imperii)</strong></td><td>Praticados pela Administração no exercício de sua <strong>supremacia</strong> sobre o particular, impondo obrigações unilateralmente — regidos pelo direito público (ex.: desapropriação, interdição de estabelecimento).</td></tr>
+          <tr><td><strong>Atos de gestão</strong></td><td>Praticados pela Administração em posição de <strong>igualdade</strong> com o particular, sem uso de prerrogativas de supremacia — regidos, em regra, pelo direito privado (ex.: alienação de bem público em hasta pública, celebração de contrato de locação).</td></tr>
+          <tr><td><strong>Atos de expediente</strong></td><td>Atos de <strong>rotina interna</strong>, sem qualquer conteúdo decisório — dão andamento a processos administrativos (ex.: juntada de documento, certidão de recebimento). Não inovam na ordem jurídica.</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Crítica doutrinária:</strong> parte da doutrina moderna (Di Pietro, entre outros) considera essa classificação <strong>ultrapassada</strong>, pois hoje se entende que todo ato praticado pela Administração — mesmo os "de gestão" — está sujeito a um <strong>regime jurídico predominantemente público</strong> (ainda que com influência de normas privadas). Mesmo assim, a classificação segue sendo cobrada literalmente pelas bancas.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — QUANTO À LIBERDADE E EXEQUIBILIDADE ══ -->
+  <div class="aula-secao" id="ca-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina</span><h3>Quanto à liberdade de atuação — vinculados × discricionários</h3></div>
+      </div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Ato vinculado</h4><p>A lei <strong>não deixa margem de escolha</strong> ao administrador — todos os elementos do ato (competência, finalidade, forma, motivo e objeto) estão previamente definidos, restando ao agente apenas <strong>verificar</strong> se os requisitos legais estão presentes e praticar o ato tal como a lei determina.</p></div>
+        <div class="aula-mini-card"><h4>Ato discricionário</h4><p>A lei confere ao administrador <strong>margem de liberdade</strong> quanto ao <strong>motivo</strong> e/ou ao <strong>objeto</strong> do ato — dentro dos limites legais, o agente pode escolher a solução mais conveniente e oportuna para o caso concreto (juízo de conveniência e oportunidade — mérito administrativo).</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Ponto-chave sempre cobrado:</strong> mesmo o ato discricionário tem <strong>competência, finalidade e forma sempre vinculadas</strong> — a discricionariedade só pode recair sobre <strong>motivo e objeto</strong>. O Judiciário pode sempre controlar a legalidade do ato discricionário (inclusive seus elementos vinculados), mas não pode substituir o <strong>mérito</strong> (juízo de conveniência/oportunidade) pela sua própria valoração, sob pena de violar a separação dos Poderes.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Quanto à exequibilidade — perfeitos, pendentes e consumados</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Espécie</th><th>Característica</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Ato perfeito e exequível</strong></td><td>Já concluiu sua formação e está apto a ser executado desde logo — pode ser exigido imediatamente.</td></tr>
+          <tr><td><strong>Ato pendente</strong></td><td>Já é perfeito, mas ainda depende de um evento futuro (termo, condição suspensiva ou requisito de eficácia) para começar a produzir efeitos — ex.: nomeação já publicada, mas com posse condicionada a data futura.</td></tr>
+          <tr><td><strong>Ato consumado</strong></td><td>Já produziu integralmente todos os seus efeitos — exauriu-se, tornando-se irreversível ou irretratável (ex.: uma licença de construção já integralmente utilizada e a obra concluída).</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Relevância prática — mandado de segurança:</strong> a doutrina do "ato consumado" é frequentemente relacionada à impossibilidade de impetração de mandado de segurança quando o ato já exauriu todos os seus efeitos, tornando inútil a via mandamental para desfazê-lo (casos de perda de objeto).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — EFEITOS DOS ATOS ADMINISTRATIVOS ══ -->
+  <div class="aula-secao" id="ca-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">💥</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina — CABM, Di Pietro</span><h3>Efeitos próprios (típicos) × efeitos impróprios (atípicos)</h3></div>
+      </div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Efeitos próprios (típicos)</h4><p>São os efeitos <strong>diretamente pretendidos</strong> pelo agente ao praticar o ato — a consequência jurídica que o próprio ato busca produzir. Ex.: no ato de demissão, o efeito próprio é a extinção do vínculo funcional do servidor.</p></div>
+        <div class="aula-mini-card"><h4>Efeitos impróprios (atípicos)</h4><p>São efeitos <strong>colaterais ou reflexos</strong>, que o ato produz sem que essa fosse sua finalidade direta. Subdividem-se em <strong>efeitos atípicos preliminares</strong> e <strong>efeitos atípicos reflexos</strong>.</p></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Subdivisão dos efeitos atípicos (impróprios)</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Efeito atípico preliminar (prodrômico):</strong> ocorre <strong>antes</strong> de o ato se tornar perfeito e exequível — é o efeito que vincula a Administração a <strong>não obstar</strong> a produção do ato enquanto ele ainda está em formação, ou seja, o dever de a autoridade não impedir que se complete o ciclo de formação de um ato que já depende apenas de outra manifestação. Ex.: um ato composto que depende de aprovação de outro órgão — enquanto se aguarda a aprovação, já existe o dever da autoridade de não frustrar essa aprovação de má-fé.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Efeito atípico reflexo:</strong> ocorre quando o ato, embora dirigido a uma relação jurídica específica, <strong>atinge terceiros estranhos</strong> a essa relação. Ex.: a rescisão de um contrato administrativo (efeito próprio: extinguir o vínculo entre Administração e contratado) pode atingir <strong>reflexamente</strong> um sublocatário ou subcontratado que não é parte na relação original.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Efeitos quanto ao tempo — ex nunc × ex tunc</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Efeito ex nunc (prospectivo)</h4><p>O ato produz efeitos <strong>a partir de sua edição/publicação</strong>, sem retroagir. É a regra geral — ex.: a <strong>revogação</strong> de um ato administrativo válido produz efeitos ex nunc, respeitando os efeitos já produzidos até então.</p></div>
+        <div class="aula-mini-card"><h4>Efeito ex tunc (retroativo)</h4><p>O ato produz efeitos <strong>retroativos</strong>, como se nunca tivesse existido validamente. É a regra para a <strong>anulação</strong> de ato administrativo ilegal — desfaz-se o ato e, em regra, seus efeitos desde a origem, resguardados terceiros de boa-fé e direitos adquiridos.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Regra de ouro para memorizar:</strong> <strong>Revogação → ex nunc</strong> (ato era válido, só deixou de ser conveniente); <strong>Anulação → ex tunc</strong> (ato era inválido desde o nascimento, retira-se do mundo jurídico com efeitos retroativos, ressalvada a boa-fé de terceiros e situações consolidadas).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Efeito repristinatório — atenção redobrada</h3>
+      <div class="aula-destaque-box"><p>Ocorre quando a <strong>anulação ou revogação de um ato revogador</strong> faz com que o ato anteriormente revogado <strong>volte a produzir efeitos</strong>. No Direito Administrativo, diferente da regra geral do direito (que veda a repristinação automática — art. 2º, §3º, LINDB), a doutrina majoritária entende que a anulação do ato revogador (por ser ilegal) restaura automaticamente a vigência do ato revogado, salvo se a própria decisão dispuser de outro modo.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha frequente:</strong> não confundir com a regra de repristinação da LINDB (art. 2º, §3º) — no âmbito legislativo, a lei revogada <strong>não</strong> se restaura automaticamente pela revogação da lei revogadora, salvo disposição expressa. Já no âmbito dos <strong>atos administrativos</strong>, a doutrina reconhece o efeito repristinatório com mais naturalidade quando se trata de <strong>anulação</strong> (por ilegalidade) do ato revogador.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E JURISPRUDÊNCIA ══ -->
+  <div class="aula-secao" id="ca-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Mapa geral das classificações</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério classificatório</th><th>Espécies</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Quanto à formação</strong></td><td>Simples · Complexo · Composto</td></tr>
+          <tr><td><strong>Quanto aos destinatários</strong></td><td>Geral (normativo) · Individual (concreto)</td></tr>
+          <tr><td><strong>Quanto ao alcance</strong></td><td>Interno · Externo</td></tr>
+          <tr><td><strong>Quanto ao objeto</strong></td><td>De império · De gestão · De expediente</td></tr>
+          <tr><td><strong>Quanto à liberdade de atuação</strong></td><td>Vinculado · Discricionário</td></tr>
+          <tr><td><strong>Quanto à exequibilidade</strong></td><td>Perfeito e exequível · Pendente · Consumado</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Precedente STF — nomeação de dirigentes e ato complexo</h3>
+      <div class="aula-destaque-box"><p>O STF já reconheceu, em diversos julgados, que a nomeação de dirigentes de <strong>agências reguladoras</strong> e de outros cargos que dependem de <strong>indicação do Executivo + aprovação do Senado Federal</strong> configura hipótese clássica de <strong>ato administrativo complexo</strong> — o ato de nomeação só se aperfeiçoa com a soma das duas vontades (Executivo e Legislativo), sendo <strong>imperfeito</strong> até que ambas se manifestem.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobrança FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Distinção simples × complexo × composto (com exemplos); perfeição × validade × eficácia como planos independentes</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Vinculado × discricionário (o que pode ser discricionário: só motivo e objeto); revogação ex nunc × anulação ex tunc</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Geral × individual (impacto no controle de constitucionalidade); interno × externo; efeitos próprios × impróprios (preliminar/reflexo)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Atos de império × gestão × expediente (crítica doutrinária); efeito repristinatório dos atos administrativos; ato consumado e MS</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="ca-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"O ato composto resulta da conjugação de vontades de dois ou mais órgãos diferentes, que se fundem para formar um único ato final."</strong><br>✅ ERRADO. Essa é a definição do ato <strong>complexo</strong>. No ato composto, há um ato principal (autônomo) e um ato instrumental/acessório (visto, homologação), sem fusão de vontades em pé de igualdade.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Todo ato administrativo perfeito é necessariamente válido e eficaz."</strong><br>✅ ERRADO. Perfeição, validade e eficácia são planos independentes — um ato pode ser perfeito e inválido, ou perfeito, válido e ainda ineficaz (pendente de publicação, por exemplo).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"No ato discricionário, todos os elementos do ato, inclusive competência e forma, admitem liberdade de escolha do administrador."</strong><br>✅ ERRADO. Mesmo no ato discricionário, <strong>competência, finalidade e forma são sempre vinculados</strong> — a discricionariedade só pode recair sobre <strong>motivo</strong> e/ou <strong>objeto</strong>.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A anulação do ato administrativo produz efeitos ex nunc, ao passo que a revogação produz efeitos ex tunc."</strong><br>✅ ERRADO — está invertido. <strong>Anulação → ex tunc</strong> (retroage, pois o ato era ilegal desde a origem); <strong>Revogação → ex nunc</strong> (o ato era válido, apenas deixou de ser conveniente).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Atos administrativos individuais e concretos são normalmente impugnáveis por ação direta de inconstitucionalidade perante o STF."</strong><br>✅ ERRADO. A ADI, em regra, exige ato normativo <strong>geral e abstrato</strong> — atos individuais/concretos, em regra, não se submetem a esse controle concentrado.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"O ato administrativo complexo só se considera perfeito quando a última vontade necessária à sua formação se manifesta."</strong><br>CORRETO.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Simples × Complexo × Composto</h4><p><strong>Simples</strong> = 1 órgão só<br><strong>Complexo</strong> = 2+ órgãos, vontades se FUNDEM (coordenação)<br><strong>Composto</strong> = 1 ato principal + 1 acessório que só RATIFICA (subordinação)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 P-V-E — planos independentes</h4><p><strong>Perfeição</strong> (formação completa) · <strong>Validade</strong> (conforme a lei) · <strong>Eficácia</strong> (apto a produzir efeitos) — nenhum garante o outro</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 O que pode ser discricionário</h4><p>Só <strong>Motivo</strong> e <strong>Objeto</strong> — Competência, Finalidade e Forma são SEMPRE vinculados</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Ex nunc × Ex tunc</h4><p><strong>R</strong>evogação → <strong>ex N</strong>unc (a partir de agora)<br><strong>A</strong>nulação → <strong>ex T</strong>unc (desde o início)</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="ca-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> A nomeação de dirigente de agência reguladora, que depende de indicação do Chefe do Poder Executivo e posterior aprovação pelo Senado Federal, é classificada, quanto à formação, como ato administrativo:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Simples, pois deriva da manifestação de vontade de um único Poder.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Complexo, pois resulta da conjugação de vontades de órgãos distintos, que se fundem para formar um único ato, somente se considerando perfeito quando a última vontade necessária se manifesta.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Composto, pois a aprovação do Senado tem natureza de mero ato instrumental de ratificação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> De gestão, por não envolver prerrogativas de supremacia da Administração.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> De expediente, por se tratar de ato de rotina administrativa sem conteúdo decisório próprio.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Trata-se de ato complexo: as vontades do Executivo (indicação) e do Legislativo (aprovação do Senado) têm igual hierarquia e se fundem para formar um único ato de nomeação. O ato só se considera perfeito quando a última manifestação necessária (aprovação do Senado) ocorre — entendimento também já reconhecido pelo STF.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina administrativa — classificação quanto à formação; jurisprudência do STF.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os planos de perfeição, validade e eficácia dos atos administrativos, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Um ato administrativo perfeito é necessariamente válido, ainda que apresente vício em algum de seus elementos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Perfeição, validade e eficácia constituem planos independentes entre si, podendo um ato ser perfeito e válido, mas ainda ineficaz, quando sua produção de efeitos depender de evento futuro, como a publicação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A eficácia do ato administrativo se confunde com sua validade, sendo conceitos sinônimos na doutrina majoritária.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Um ato imperfeito pode, ainda assim, produzir efeitos jurídicos plenos, independentemente da conclusão de seu ciclo de formação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A validade do ato administrativo depende exclusivamente de sua publicação no órgão oficial.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Os três planos (perfeição, validade e eficácia) são autônomos. Um ato pode ter completado seu ciclo de formação (perfeito) e estar em conformidade com a lei (válido), mas ainda depender de um evento futuro — como a publicação — para produzir efeitos (eficácia).</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina administrativa — Hely Lopes Meirelles, planos do ato administrativo.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a classificação dos atos administrativos quanto à liberdade de atuação do administrador, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> No ato discricionário, todos os elementos, inclusive competência, finalidade e forma, admitem margem de escolha do administrador.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A discricionariedade administrativa pode recair apenas sobre o motivo e o objeto do ato, permanecendo sempre vinculados os elementos competência, finalidade e forma.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> O Poder Judiciário não pode controlar a legalidade de ato discricionário, sob pena de violação da separação dos Poderes.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Ato vinculado é aquele que confere ao administrador ampla margem de conveniência e oportunidade para sua prática.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A discricionariedade elimina, por completo, a possibilidade de controle jurisdicional sobre o ato administrativo.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Mesmo nos atos discricionários, competência, finalidade e forma permanecem sempre vinculados à lei — a margem de escolha do administrador (juízo de conveniência e oportunidade) só pode incidir sobre motivo e/ou objeto. O Judiciário pode sempre controlar a legalidade do ato, inclusive de seus elementos vinculados, mas não substitui o mérito administrativo.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina administrativa — elementos vinculados e discricionários do ato.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os efeitos temporais da revogação e da anulação dos atos administrativos, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A revogação produz efeitos ex tunc, retroagindo à data de edição do ato revogado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A revogação produz efeitos ex nunc, respeitando os efeitos já produzidos até então, enquanto a anulação, em regra, produz efeitos ex tunc, ressalvados direitos de terceiros de boa-fé.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Tanto a revogação quanto a anulação produzem sempre efeitos ex tunc, sem exceção.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A anulação produz efeitos ex nunc, pois o ato anulado era válido até a decisão de invalidação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Não há distinção entre os efeitos temporais da revogação e da anulação no direito administrativo brasileiro.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Regra consolidada: revogação (ato válido que se torna inconveniente) produz efeitos ex nunc; anulação (ato inválido desde a origem) produz, em regra, efeitos ex tunc, respeitados direitos adquiridos e a boa-fé de terceiros.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina administrativa — efeitos da revogação e da anulação.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinado ato de dispensa de servidor depende, para produzir efeitos, de visto de homologação de autoridade hierarquicamente superior, que apenas confirma a decisão já tomada pela autoridade que praticou o ato principal. Trata-se, quanto à formação, de ato administrativo:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Simples, pois deriva de manifestação de vontade de um único órgão.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Complexo, pois há fusão de vontades de igual hierarquia entre os dois órgãos envolvidos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Composto, pois há um ato principal, autônomo e completo, e um ato instrumental de mera homologação, que apenas confirma sua eficácia.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> De gestão, por envolver relação de subordinação entre servidores.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Geral, por atingir destinatários indeterminados.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Exemplo clássico de ato composto: há um ato principal (a decisão de dispensa), autônomo e completo em si, e um ato instrumental/acessório (o visto de homologação), que apenas ratifica e possibilita a eficácia do ato principal — sem fusão de vontades em pé de igualdade, diferente do ato complexo.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina administrativa — ato composto.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os efeitos dos atos administrativos, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Os efeitos próprios (típicos) do ato correspondem sempre a consequências reflexas, não diretamente pretendidas pelo agente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Os efeitos impróprios (atípicos) subdividem-se em efeitos preliminares (prodrômicos), que vinculam a Administração antes de o ato se tornar perfeito, e efeitos reflexos, que atingem terceiros estranhos à relação jurídica originária.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Um ato administrativo jamais pode produzir efeitos que atinjam pessoas estranhas à relação jurídica para a qual foi originalmente dirigido.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Os efeitos próprios e impróprios do ato administrativo são sinônimos na doutrina majoritária.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O efeito atípico preliminar somente pode ocorrer após a consumação plena dos efeitos do ato administrativo.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Os efeitos impróprios (atípicos) do ato administrativo se subdividem em: (1) efeito atípico preliminar/prodrômico, que vincula a Administração antes mesmo de o ato se tornar perfeito e exequível; e (2) efeito atípico reflexo, que atinge terceiros estranhos à relação jurídica para a qual o ato foi originalmente dirigido.</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina administrativa — Celso Antônio Bandeira de Mello, efeitos dos atos administrativos.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
