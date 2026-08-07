@@ -10768,6 +10768,616 @@ AULAS['da_8'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Associações e Fundações
+// Chave: dciv_7 (Direito Civil, tópico 7)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dciv_7'] = {
+  title: 'Associações e Fundações',
+  sub: 'Direito Civil · CC/2002, arts. 53–69 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">Código Civil, arts. 53 a 69 · Lei 11.127/2005 · Lei 13.151/2015</div>
+  <h1 class="aula-h1">Associações e Fundações</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="af-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="af-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Associações — Conceito e Estatuto</button>
+    <button class="aula-tab-btn" data-sec="1">Associados — Direitos e Exclusão</button>
+    <button class="aula-tab-btn" data-sec="2">Assembleia Geral e Dissolução</button>
+    <button class="aula-tab-btn" data-sec="3">Fundações — Conceito e Constituição</button>
+    <button class="aula-tab-btn" data-sec="4">Fundações — Finalidades e Fiscalização</button>
+    <button class="aula-tab-btn" data-sec="5">Alteração do Estatuto e Extinção</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — ASSOCIAÇÕES — CONCEITO E ESTATUTO ══ -->
+  <div class="aula-secao ativo" id="af-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🤝</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, art. 53</span><h3>Conceito de associação</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 53, caput:</strong> "Constituem-se as associações pela união de pessoas que se organizem para fins <strong>não econômicos</strong>." <strong>Parágrafo único:</strong> "Não há, entre os associados, direitos e obrigações recíprocos."</p></div>
+      <p>É a espécie de pessoa jurídica de direito privado formada pela <strong>união de pessoas</strong> (corporação) em torno de uma finalidade comum, <strong>sem intuito de partilhar lucros ou resultados econômicos</strong> entre os associados.</p>
+      <div class="aula-atencao-box"><p><strong>"Fins não econômicos" não significa "sem atividade econômica":</strong> a associação pode desenvolver atividade econômica em sentido amplo (vender produtos, cobrar mensalidade, prestar serviços remunerados) — o que a caracteriza é a <strong>ausência de finalidade lucrativa a ser distribuída entre os associados</strong>. Eventual superávit deve ser reinvestido nos fins institucionais, nunca repartido como lucro.</p></div>
+      <div class="aula-destaque-box"><p><strong>Ausência de reciprocidade entre associados:</strong> diferente de uma sociedade (onde os sócios têm direitos e obrigações recíprocos entre si, como affectio societatis e partilha de resultados), na associação os vínculos jurídicos relevantes se dão entre <strong>cada associado e a entidade</strong> — não entre os associados uns com os outros.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Requisitos obrigatórios do estatuto — art. 54, CC (sob pena de nulidade)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 54, caput:</strong> "Sob pena de nulidade, o estatuto das associações conterá:"</p></div>
+      <div class="aula-macete-box"><h4>Macete: D-R-D-F-M-C-G</h4><p style="margin-top:6px">Denominação/fins/sede · Requisitos de admissão/demissão/exclusão · Direitos e deveres dos associados · Fontes de recursos · Modo de constituição dos órgãos deliberativos · Condições de alteração/dissolução · Gestão administrativa e aprovação de contas</p></div>
+      <table class="aula-tabela-comp" style="margin-top:10px">
+        <thead><tr><th>Inciso</th><th>Conteúdo obrigatório</th></tr></thead>
+        <tbody>
+          <tr><td><strong>I</strong></td><td>Denominação, fins e sede da associação</td></tr>
+          <tr><td><strong>II</strong></td><td>Requisitos para admissão, demissão e exclusão dos associados</td></tr>
+          <tr><td><strong>III</strong></td><td>Direitos e deveres dos associados</td></tr>
+          <tr><td><strong>IV</strong></td><td>Fontes de recursos para sua manutenção</td></tr>
+          <tr><td><strong>V</strong></td><td>Modo de constituição e de funcionamento dos órgãos deliberativos (redação da Lei 11.127/2005)</td></tr>
+          <tr><td><strong>VI</strong></td><td>Condições para a alteração das disposições estatutárias e para a dissolução</td></tr>
+          <tr><td><strong>VII</strong></td><td>Forma de gestão administrativa e de aprovação das respectivas contas (incluído pela Lei 11.127/2005)</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Consequência da ausência de qualquer desses requisitos:</strong> o próprio art. 54, caput, comina expressamente <strong>nulidade</strong> — não se trata de mera irregularidade sanável a qualquer tempo, mas de vício grave na formação do estatuto.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — ASSOCIADOS — DIREITOS E EXCLUSÃO ══ -->
+  <div class="aula-secao" id="af-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">👥</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, arts. 55 e 56</span><h3>Categorias e qualidade de associado</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 55:</strong> "Os associados devem ter iguais direitos, mas o estatuto poderá instituir <strong>categorias com vantagens especiais</strong>." A igualdade entre associados é a regra, mas admite-se, por previsão estatutária expressa, a criação de categorias diferenciadas (ex.: associado fundador, associado contribuinte, associado honorário).</p></div>
+      <div class="aula-destaque-box"><p><strong>Art. 56, caput:</strong> "A qualidade de associado é <strong>intransmissível</strong>, se o estatuto não dispuser o contrário." <strong>Parágrafo único:</strong> se o associado for titular de quota ou fração ideal do patrimônio da associação, a transferência daquela quota ou fração <strong>não importará, por si só</strong>, na atribuição da qualidade de associado ao adquirente ou ao herdeiro, salvo disposição diversa do estatuto.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> transferir a quota patrimonial de um associado a terceiro <strong>não transforma automaticamente</strong> esse terceiro em novo associado — são vínculos jurídicos distintos (a quota patrimonial e a própria condição de associado), salvo se o estatuto dispuser de forma diferente.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Exclusão de associado — art. 57</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 57:</strong> "A exclusão do associado só é admissível havendo <strong>justa causa</strong>, obedecido o disposto no estatuto; sendo este omisso, poderá também ocorrer se for reconhecida a existência de <strong>motivos graves</strong>, em deliberação fundamentada, pela <strong>maioria absoluta</strong> dos presentes à assembleia geral especialmente convocada para esse fim, assegurado direito de defesa e de recurso, nos termos do estatuto."</p></div>
+      <div class="aula-atencao-box"><p><strong>Devido processo associativo:</strong> a exclusão não pode ser um ato arbitrário — exige <strong>justa causa</strong>, <strong>fundamentação</strong> e observância ao <strong>contraditório e ampla defesa</strong> dentro da esfera associativa, com direito assegurado de recurso conforme o estatuto.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Direito ao exercício de função — art. 58</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 58:</strong> "Nenhum associado poderá ser impedido de exercer direito ou função que lhe tenha sido legitimamente conferido, a não ser nos casos e pela forma previstos na lei ou no estatuto."</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — ASSEMBLEIA GERAL E DISSOLUÇÃO ══ -->
+  <div class="aula-secao" id="af-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🏛️</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, art. 59 (redação da Lei 11.127/2005)</span><h3>Competência privativa da Assembleia Geral</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 59:</strong> "Compete <strong>privativamente</strong> à assembleia geral: I — destituir os administradores; II — alterar o estatuto."</p></div>
+      <p>A Assembleia Geral é o <strong>órgão soberano</strong> da associação — essas duas competências (destituir administradores e alterar o estatuto) são <strong>indelegáveis</strong> a qualquer outro órgão interno (diretoria, conselho fiscal, etc.), ainda que o próprio estatuto tentasse prever o contrário.</p>
+      <div class="aula-destaque-box"><p><strong>Parágrafo único, art. 59:</strong> para as deliberações do inciso I (destituição de administradores) e do inciso II (alteração do estatuto), exige-se deliberação de assembleia especialmente convocada para esse fim, cujo <strong>quórum</strong> será o estabelecido no estatuto, bem como os critérios de eleição dos administradores.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "a diretoria da associação pode, mediante autorização estatutária expressa, deliberar sobre a alteração do estatuto ou a destituição de administradores" — <strong>ERRADO</strong>. Essas competências são <strong>privativas</strong> da Assembleia Geral — nem mesmo o estatuto pode transferi-las para outro órgão.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Convocação da Assembleia — art. 60</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 60:</strong> "A convocação da assembleia geral far-se-á na forma do estatuto, garantido a <strong>um quinto</strong> dos associados o direito de promovê-la."</p></div>
+      <div class="aula-atencao-box"><p><strong>Direito de minoria qualificada:</strong> mesmo que a diretoria não convoque a assembleia, <strong>1/5 dos associados</strong> tem legitimidade própria para provocar sua convocação — mecanismo de proteção contra o imobilismo ou a captura da gestão associativa pela cúpula dirigente.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Dissolução e destino do patrimônio — art. 61</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 61, caput:</strong> dissolvida a associação, o remanescente do patrimônio líquido, deduzidas as eventuais quotas/frações ideais dos associados-titulares (art. 56, § único), será destinado à entidade de <strong>fins não econômicos designada no estatuto</strong>, ou, sendo este omisso, por deliberação dos associados, a <strong>instituição municipal, estadual ou federal</strong> de fins idênticos ou semelhantes.</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Hipótese</th><th>Destino do patrimônio remanescente</th></tr></thead>
+        <tbody>
+          <tr><td>Estatuto designa entidade</td><td>Vai para a entidade designada (fins não econômicos)</td></tr>
+          <tr><td>Estatuto omisso</td><td>Deliberação dos associados → instituição municipal/estadual/federal de fins idênticos/semelhantes</td></tr>
+          <tr><td>Não sendo possível nenhuma das hipóteses acima (§2º)</td><td>Patrimônio se devolve à Fazenda do Estado, do DF ou da União</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-destaque-box"><p><strong>§1º, art. 61:</strong> por cláusula do estatuto ou, no seu silêncio, por deliberação dos associados, pode-se, antes da destinação do remanescente referida no caput, <strong>atribuir aos associados</strong> o quantum da sua contribuição ao patrimônio da associação, atualizado o respectivo valor.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — FUNDAÇÕES — CONCEITO E CONSTITUIÇÃO ══ -->
+  <div class="aula-secao" id="af-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🏦</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, art. 62</span><h3>Conceito de fundação — patrimônio, não pessoas</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 62, caput:</strong> "Para criar uma fundação, o seu instituidor fará, por escritura pública ou testamento, dotação especial de bens livres, especificando o fim a que se destina, e declarando, se quiser, a maneira de administrá-la."</p></div>
+      <p>Diferente da associação (elemento <strong>subjetivo</strong> — união de pessoas), a fundação nasce de um <strong>patrimônio</strong> (elemento <strong>objetivo</strong>) que o instituidor destaca de seu próprio acervo, afetando-o permanentemente a uma finalidade de interesse social. A fundação <strong>não tem sócios ou associados</strong> — apenas administradores que gerem esse patrimônio conforme a vontade do instituidor.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>As duas fases de constituição da fundação</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Ato de instituição:</strong> definição, por escritura pública ou testamento, dos bens livres que serão destacados do patrimônio do instituidor e afetados à finalidade fundacional específica.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Elaboração do estatuto:</strong> disciplina o funcionamento da fundação — pode ser feita pelo <strong>próprio instituidor</strong>, por <strong>pessoa por ele designada</strong>, ou, se o encargo não for cumprido no prazo assinalado pelo instituidor (ou, se este não fixou prazo, em 180 dias), pelo <strong>Ministério Público</strong> (art. 65, CC).</p></div>
+      <div class="aula-destaque-box"><p><strong>Art. 65, parágrafo único:</strong> se o Ministério Público não elaborar o estatuto no prazo de <strong>180 dias</strong>, contado do vencimento do prazo do instituidor, a incumbência caberá ao <strong>juiz</strong>.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Insuficiência de bens — art. 63</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 63:</strong> "Quando insuficientes para constituir a fundação, os bens a ela destinados serão, se de outro modo não dispuser o instituidor, <strong>incorporados em outra fundação que se proponha a fim igual ou semelhante</strong>."</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — FUNDAÇÕES — FINALIDADES E FISCALIZAÇÃO ══ -->
+  <div class="aula-secao" id="af-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">📜</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, art. 62, parágrafo único (redação da Lei 13.151/2015)</span><h3>Rol taxativo de finalidades — diferença essencial com as associações</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 62, parágrafo único:</strong> "A fundação somente poderá constituir-se para fins de: <strong>relevância pública e social</strong>, tais como assistência social; cultura, defesa e conservação do patrimônio histórico e artístico; educação; saúde; segurança alimentar e nutricional; defesa, preservação e conservação do meio ambiente e promoção do desenvolvimento sustentável; pesquisa científica, desenvolvimento de tecnologias alternativas, modernização de sistemas de gestão, produção e divulgação de informações e conhecimentos técnicos e científicos; promoção da ética, da cidadania, da democracia e dos direitos humanos; e atividades religiosas."</p></div>
+      <div class="aula-atencao-box"><p><strong>Diferença essencial com as associações:</strong> as associações admitem <strong>qualquer</strong> finalidade não econômica (rol aberto). As fundações se sujeitam a um <strong>rol taxativo</strong> de finalidades de relevância pública e social, expressamente listadas na lei — reflexo do maior controle estatal sobre o destino de um patrimônio permanentemente afetado a fins que a sociedade considera especialmente relevantes.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Fiscalização pelo Ministério Público — art. 66</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 66, caput:</strong> "Velará pelas fundações o Ministério Público do Estado onde situadas." <strong>§1º:</strong> se funcionarem no Distrito Federal ou em Território, a competência é do <strong>MPDFT</strong>. <strong>§2º:</strong> se a fundação estender sua atividade por mais de um Estado, caberá o encargo, em cada um deles, ao respectivo Ministério Público.</p></div>
+      <div class="aula-atencao-box"><p><strong>Por que só a fundação tem essa fiscalização especial (e não a associação)?</strong> Como a fundação não tem "donos" nem membros que fiscalizem uns aos outros — apenas um patrimônio afetado a um fim de relevância social —, a lei atribui ao <strong>Ministério Público</strong> o papel de <strong>guardião permanente</strong> da finalidade fundacional, evitando desvios administrativos sem essa fiscalização externa e institucional.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — ALTERAÇÃO DO ESTATUTO E EXTINÇÃO ══ -->
+  <div class="aula-secao" id="af-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">✏️</div>
+        <div><span class="aula-tag aula-tag-lei">CC/2002, art. 67</span><h3>Alteração do estatuto da fundação — requisitos cumulativos</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 67:</strong> para que se possa alterar o estatuto da fundação é mister que a reforma: I — seja deliberada por <strong>dois terços</strong> dos competentes para gerir e representar a fundação; II — não contrarie ou desvirtue o fim desta; III — seja aprovada pelo <strong>órgão do Ministério Público</strong> no prazo máximo de <strong>45 dias</strong>, findo o qual sem manifestação, a aprovação poderá ser suprida por decisão judicial (art. 68).</p></div>
+      <div class="aula-atencao-box"><p><strong>Aprovação pelo MP não é discricionária eternamente:</strong> se o Ministério Público não se manifestar em 45 dias, o silêncio pode ser <strong>suprido judicialmente</strong> — a fundação não fica refém indefinidamente da inércia do órgão ministerial.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Extinção da fundação — art. 69</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 69:</strong> "Tornando-se <strong>ilícita, impossível ou inútil</strong> a finalidade a que visa a fundação, ou vencido o <strong>prazo de sua existência</strong>, o órgão do Ministério Público, ou qualquer interessado, lhe promoverá a extinção, incorporando-se o seu patrimônio, salvo disposição em contrário no ato constitutivo, ou no estatuto, em outra fundação, designada pelo juiz, que se proponha a fim igual ou semelhante."</p></div>
+      <div class="aula-atencao-box"><p><strong>Comparação final — destino do patrimônio remanescente:</strong><br>
+      • <strong>Associação dissolvida:</strong> vai para entidade designada no estatuto, ou instituição pública de fins semelhantes, com possibilidade de restituição atualizada da contribuição dos associados antes disso.<br>
+      • <strong>Fundação extinta:</strong> incorpora-se, em regra, a <strong>outra fundação</strong> de fim igual ou semelhante, designada pelo <strong>juiz</strong> — sem a lógica de "restituição de quotas", já que a fundação não tem membros/associados titulares de frações do patrimônio.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="af-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"As associações podem ser constituídas para qualquer finalidade, inclusive econômica, desde que os resultados sejam integralmente distribuídos entre os associados."</strong><br>✅ ERRADO. Associações têm fins <strong>não econômicos</strong> (art. 53, CC) — não pode haver distribuição de resultado/lucro entre os associados.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A qualidade de associado é sempre transmissível, independentemente de previsão estatutária."</strong><br>✅ ERRADO. É, em regra, <strong>intransmissível</strong>, "se o estatuto não dispuser o contrário" (art. 56, caput, CC).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A diretoria da associação pode, mediante autorização estatutária, alterar o estatuto e destituir administradores."</strong><br>✅ ERRADO. São competências <strong>privativas</strong> da Assembleia Geral (art. 59, CC) — indelegáveis a qualquer outro órgão, mesmo por previsão estatutária.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A exclusão de associado pode ocorrer a qualquer tempo, por decisão unilateral e imotivada da diretoria."</strong><br>✅ ERRADO. Exige <strong>justa causa</strong>, deliberação fundamentada em assembleia (se o estatuto for omisso), e devido processo com defesa e recurso (art. 57, CC).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"As fundações podem ser constituídas para qualquer finalidade lícita, da mesma forma que as associações."</strong><br>✅ ERRADO. Diferente das associações, as fundações se sujeitam a um <strong>rol taxativo</strong> de finalidades de relevância pública e social (art. 62, § único, CC).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A alteração do estatuto de uma fundação prescinde de qualquer manifestação do Ministério Público, bastando a deliberação dos administradores."</strong><br>✅ ERRADO. Exige aprovação do <strong>MP</strong> no prazo de 45 dias (art. 67, III), suprível judicialmente em caso de silêncio.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"Compete ao Ministério Público do Estado onde situada a fundação velar por ela, cabendo ao MPDFT quando funcionar no Distrito Federal ou em Território."</strong><br>CORRETO — art. 66, CC.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Associação × Fundação</h4><p><strong>Associação</strong> = pessoas (elemento subjetivo), fins não econômicos <strong>amplos</strong><br><strong>Fundação</strong> = patrimônio (elemento objetivo), fins <strong>taxativos</strong> de relevância pública</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Competência privativa da Assembleia Geral (art. 59)</h4><p><strong>Destituir administradores + Alterar estatuto</strong> — sempre privativo, nunca delegável</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Alteração do estatuto da fundação — 3 requisitos (art. 67)</h4><p><strong>2/3 dos competentes + não desvirtuar o fim + aprovação do MP (45 dias)</strong></p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Fiscalização das fundações</h4><p><strong>MP Estadual</strong> (regra) · <strong>MPDFT</strong> (DF/Território) · <strong>Vários MPs</strong> (se atua em mais de um Estado)</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="af-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Nos termos do Código Civil, compete privativamente à assembleia geral de uma associação:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Aprovar as contas anuais e fiscalizar a diretoria, podendo essa competência ser delegada ao conselho fiscal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Destituir os administradores e alterar o estatuto, competências que não podem ser delegadas a nenhum outro órgão da associação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Admitir e excluir associados, ainda que o estatuto atribua essa competência à diretoria.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Representar judicialmente a associação, em substituição aos administradores regularmente eleitos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Definir a política salarial dos empregados da associação, sem possibilidade de delegação.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 59, CC: compete privativamente à assembleia geral destituir os administradores e alterar o estatuto — competências indelegáveis a qualquer outro órgão da associação, mesmo por previsão estatutária.</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, art. 59.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> João, associado de determinada entidade, é titular de uma fração ideal do patrimônio associativo. Ao transferir essa fração a um terceiro, é correto afirmar, segundo o Código Civil:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O terceiro adquire automaticamente a qualidade de associado, independentemente de disposição estatutária.</div>
+      <div class="aula-opcao" onclky="aulaMarcar(this,'errada')"><span class="letra">b)</span> A transferência da fração ideal é sempre nula, por ser a qualidade de associado personalíssima e intransmissível em qualquer hipótese.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> A transferência da quota ou fração ideal não importa, por si só, na atribuição da qualidade de associado ao adquirente, salvo disposição diversa do estatuto.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A transferência depende de aprovação unânime de todos os demais associados, reunidos em assembleia geral.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A qualidade de associado é sempre transmitida automaticamente aos herdeiros, ainda que o estatuto disponha em contrário.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 56, parágrafo único, CC: a transferência de quota ou fração ideal do patrimônio associativo não importa, por si só, na atribuição da qualidade de associado ao adquirente, salvo disposição diversa do estatuto — são vínculos jurídicos distintos.</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, art. 56, parágrafo único.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a constituição das fundações, nos termos do Código Civil, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Podem ser constituídas para qualquer finalidade lícita, sem restrição de rol, da mesma forma que as associações.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Constituem-se por escritura pública ou testamento, mediante dotação especial de bens livres pelo instituidor, que especificará o fim a que se destinam, somente podendo visar fins de relevância pública e social taxativamente previstos em lei.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Dependem da união de, no mínimo, três pessoas naturais, que assumirão a condição de instituidores conjuntos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> São constituídas exclusivamente por testamento, sendo vedada a constituição por escritura pública entre vivos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Dispensam a elaboração de estatuto, bastando o ato de instituição para sua plena constituição.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 62, caput e parágrafo único, CC: a fundação se constitui por escritura pública ou testamento, mediante dotação de bens livres com fim especificado, sujeita a rol taxativo de finalidades de relevância pública e social — diferente das associações, que admitem qualquer fim não econômico.</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, art. 62, caput e parágrafo único.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a fiscalização das fundações pelo Ministério Público, nos termos do art. 66 do Código Civil, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Compete sempre ao Ministério Público Federal, independentemente do local em que a fundação esteja situada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Compete ao Ministério Público do Estado onde a fundação está situada; se funcionar no Distrito Federal ou em Território, a competência é do Ministério Público do Distrito Federal e Territórios; e, se a fundação estender sua atividade por mais de um Estado, caberá o encargo, em cada um deles, ao respectivo Ministério Público.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Não há fiscalização específica do Ministério Público sobre as fundações, aplicando-se o mesmo regime das associações.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Compete exclusivamente ao Poder Judiciário, sendo vedada qualquer atuação do Ministério Público na fiscalização de fundações.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Compete ao Tribunal de Contas do respectivo ente federativo, e não ao Ministério Público.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 66, caput e §§1º e 2º, CC: fiscalização pelo MP Estadual (regra), MPDFT (DF/Território) ou por cada MP estadual correspondente, se a fundação atuar em mais de um Estado.</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, art. 66.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Para que se possa alterar o estatuto de uma fundação, nos termos do art. 67 do Código Civil, é necessário, cumulativamente, que a reforma:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Seja deliberada pela maioria simples dos competentes para gerir e representar a fundação, independentemente de aprovação do Ministério Público.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Seja deliberada por dois terços dos competentes para gerir e representar a fundação, não contrarie ou desvirtue seu fim, e seja aprovada pelo órgão do Ministério Público no prazo de 45 dias, podendo essa aprovação ser suprida por decisão judicial em caso de silêncio.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Seja aprovada por unanimidade dos administradores, sendo vedada qualquer participação do Ministério Público no processo de alteração.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Seja submetida exclusivamente à apreciação judicial, sendo dispensada qualquer deliberação interna dos administradores da fundação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Contrarie o fim original da fundação, desde que aprovada pela maioria dos administradores.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 67, CC: exige-se cumulativamente (i) deliberação por 2/3 dos competentes para gerir e representar a fundação; (ii) que a reforma não contrarie nem desvirtue o fim fundacional; e (iii) aprovação do Ministério Público no prazo de 45 dias, suprível judicialmente em caso de silêncio (art. 68, CC).</div>
+      <span class="aula-fonte-tag">Fundamento: CC/2002, art. 67 e 68.</span>
+    </div>
+  </div>
+</div>`
+};
+// ═══════════════════════════════════════════════════════
+// AULA: Ação — Conceito, Classificação, Condições e Elementos
+// Chave: dpc_5 (Direito Processual Civil, tópico 5)
+// Base: CPC/2015, arts. 17-18 e 319-337 · Doutrina — Liebman, CABM
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dpc_5'] = {
+  title: 'Ação: Conceito, Classificação, Condições e Elementos',
+  sub: 'Direito Processual Civil · CPC/2015 · Teoria da Asserção · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CPC/2015, arts. 17, 18, 337 · Doutrina — Liebman, Chiovenda, teoria eclética</div>
+  <h1 class="aula-h1">Ação: Conceito, Classificação, Condições e Elementos</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="ac-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="ac-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito e Teorias</button>
+    <button class="aula-tab-btn" data-sec="1">Condições da Ação no CPC/2015</button>
+    <button class="aula-tab-btn" data-sec="2">Teoria da Asserção</button>
+    <button class="aula-tab-btn" data-sec="3">Elementos da Ação</button>
+    <button class="aula-tab-btn" data-sec="4">Classificação das Ações</button>
+    <button class="aula-tab-btn" data-sec="5">Quadros e Jurisprudência</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — CONCEITO E TEORIAS ══ -->
+  <div class="aula-secao ativo" id="ac-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">⚡</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina — evolução histórica</span><h3>O que é ação?</h3></div>
+      </div>
+      <p>Ação é o <strong>direito público subjetivo</strong> de provocar a atuação do Estado-juiz, exigindo a prestação da tutela jurisdicional para determinado caso concreto. É o instrumento pelo qual o titular de uma pretensão resistida (ou simplesmente carente de solução judicial) invoca a função jurisdicional.</p>
+      <div class="aula-destaque-box"><p><strong>Por que a FCC cobra tanto a evolução histórica?</strong> Porque entender as teorias explica <strong>por que</strong> o CPC/2015 abandonou as "condições da ação" como categoria autônoma — sem saber a evolução, o candidato não entende a mudança de tratamento entre o CPC/1973 e o atual.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>As teorias sobre a natureza jurídica da ação</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Teoria imanentista (civilista)</h4><p>Ação é a própria pretensão de direito material em movimento — não existe autonomia entre direito material e ação. Ação seria o direito material "armado" para a guerra. Teoria superada — não explica ações julgadas improcedentes (sem direito material, mas com processo válido).</p></div>
+        <div class="aula-mini-card"><h4>Teoria concretista (Wach/Chiovenda)</h4><p>Ação é direito autônomo em relação ao direito material, mas só existe quando a sentença é favorável ao autor. Ainda insuficiente — não explica a legitimidade de quem perde a ação.</p></div>
+        <div class="aula-mini-card"><h4>Teoria abstrata (Degenkolb/Plósz)</h4><p>Ação é totalmente autônoma e abstrata — direito de simplesmente provocar o Judiciário, independentemente do resultado (procedência ou improcedência). Qualquer pessoa tem "ação" no sentido processual, ainda que não tenha razão no mérito.</p></div>
+        <div class="aula-mini-card"><h4>Teoria eclética (Liebman) — adotada pelo Brasil</h4><p>Posição intermediária: a ação é autônoma e abstrata, mas seu exercício regular depende do preenchimento de certas <strong>condições da ação</strong> — sem as quais o processo é extinto sem resolução do mérito (carência de ação).</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>O Brasil, historicamente, adotou a teoria eclética de Liebman</strong> — daí o CPC/1973 trazer expressamente as "condições da ação" (legitimidade, interesse de agir e, originalmente, possibilidade jurídica do pedido) como categoria autônoma, distinta do mérito. O CPC/2015 manteve a essência, mas <strong>reformulou o tratamento</strong>, como se vê na próxima aba.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — CONDIÇÕES DA AÇÃO NO CPC/2015 ══ -->
+  <div class="aula-secao" id="ac-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🔑</div>
+        <div><span class="aula-tag aula-tag-lei">CPC/2015, arts. 17 e 485, VI</span><h3>O que mudou do CPC/1973 para o CPC/2015</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 17, CPC/2015:</strong> "Para postular em juízo é necessário ter interesse e legitimidade."</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Aspecto</th><th>CPC/1973</th><th>CPC/2015</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Condições da ação como categoria autônoma</strong></td><td>Expressamente prevista (art. 267, VI)</td><td>Não é mais tratada como categoria processual autônoma e distinta — o CPC/2015 não usa mais a expressão "condições da ação"</td></tr>
+          <tr><td><strong>Possibilidade jurídica do pedido</strong></td><td>3ª condição da ação, autônoma</td><td><strong>Absorvida pelo interesse de agir / mérito</strong> — deixou de ser condição autônoma</td></tr>
+          <tr><td><strong>Legitimidade e interesse de agir</strong></td><td>Condições da ação (art. 267, VI)</td><td>Tratadas como <strong>pressupostos processuais</strong> de natureza própria, cuja ausência gera extinção sem mérito (art. 485, VI)</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira e muito atual:</strong> "o CPC/2015 manteve as três condições da ação clássicas: legitimidade, interesse de agir e possibilidade jurídica do pedido" — <strong>ERRADO</strong>. A possibilidade jurídica do pedido <strong>deixou de existir como condição autônoma</strong> — hoje, se o pedido é juridicamente impossível, isso se resolve como <strong>questão de mérito</strong> (improcedência), não mais como carência de ação.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Legitimidade (legitimatio ad causam)</h3>
+      <div class="aula-destaque-box"><p>É a <strong>pertinência subjetiva da ação</strong> — a correspondência entre quem figura como parte no processo e quem seria, segundo a lei, o titular da relação jurídica de direito material discutida.</p></div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Legitimidade ordinária (regra)</h4><p>A pessoa defende em juízo, em nome próprio, direito próprio. É a regra geral.</p></div>
+        <div class="aula-mini-card"><h4>Legitimidade extraordinária (exceção)</h4><p>A pessoa defende em juízo, em nome próprio, direito <strong>alheio</strong> — só admitida quando expressamente autorizada por lei (art. 18, CPC). Ex.: MP propondo ação civil pública em defesa de direitos coletivos.</p></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 18, parágrafo único, CPC:</strong> havendo substituição processual, o substituído <strong>pode intervir</strong> como assistente litisconsorcial.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Interesse de agir (interesse processual)</h3>
+      <div class="aula-destaque-box"><p>É a demonstração de que a via jurisdicional é <strong>necessária e útil</strong> para a satisfação da pretensão do autor. Costuma ser desdobrado em dois binômios pela doutrina.</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Binômio</th><th>Significado</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Necessidade</strong></td><td>A tutela jurisdicional é indispensável para obter o bem da vida pretendido — não há outro caminho eficaz fora do processo.</td></tr>
+          <tr><td><strong>Utilidade (adequação)</strong></td><td>O provimento jurisdicional pretendido deve ser apto a proporcionar ao autor o resultado prático buscado — a via escolhida (o tipo de ação/procedimento) deve ser adequada ao fim almejado.</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Parte da doutrina moderna acrescenta um terceiro elemento — adequação:</strong> a via processual escolhida deve corresponder ao provimento pretendido (ex.: não cabe mandado de segurança para o que exige dilação probatória complexa). Alguns autores tratam adequação como integrante da própria utilidade; outros como elemento autônomo — a FCC costuma cobrar o binômio necessidade/utilidade como regra geral.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — TEORIA DA ASSERÇÃO ══ -->
+  <div class="aula-secao" id="ac-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🔍</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina consagrada no STJ</span><h3>Como as condições da ação são analisadas — momento e critério</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Teoria da asserção (prospettazione):</strong> a análise das condições da ação (legitimidade e interesse de agir) deve ser feita <strong>em abstrato</strong>, com base apenas nas <strong>alegações feitas pelo autor na petição inicial</strong> — <em>in status assertionis</em> — sem investigar se essas alegações são, de fato, verdadeiras.</p></div>
+      <p>Se, a partir do que o autor <strong>afirma</strong>, ele parece ser parte legítima e ter interesse processual, o juiz deve <strong>admitir a ação</strong> e seguir para a instrução — a comprovação (ou não) daquilo que foi afirmado é, então, questão de <strong>mérito</strong>, a ser resolvida ao final, com produção de provas.</p>
+      <div class="aula-atencao-box"><p><strong>Consequência prática fundamental:</strong> se, examinadas as alegações da petição inicial, o juiz constata que o autor <strong>não seria</strong>, mesmo em tese, o titular do direito alegado (ou não teria, mesmo em tese, interesse processual), extingue-se o processo <strong>sem resolução do mérito</strong> (carência de ação, art. 485, VI). Se, ao contrário, as alegações abstratamente demonstram legitimidade e interesse, mas a instrução processual revela que, na realidade, o autor não tinha razão, a sentença deve ser de <strong>improcedência</strong> (resolução de mérito, art. 487, I).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Exemplo prático — diferenciando carência de ação e improcedência</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Carência de ação (extinção sem mérito)</h4><p>"A" propõe ação de cobrança contra "B", mas na petição inicial narra fatos que evidenciam, desde logo, que a dívida é de "C", e não de "B" — mesmo em tese, "B" não seria o legítimo devedor segundo o próprio relato do autor. Extingue-se sem mérito por ilegitimidade passiva.</p></div>
+        <div class="aula-mini-card"><h4>Improcedência (resolução de mérito)</h4><p>"A" propõe ação de cobrança contra "B", alegando que "B" é o devedor de determinado contrato. Em tese, a narrativa é coerente (B seria parte legítima). Após a instrução, prova-se que a dívida, na verdade, nunca existiu ou já foi paga. Julga-se <strong>improcedente</strong> o pedido — não é caso de carência.</p></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Posição consolidada no STJ</h3>
+      <div class="aula-destaque-box"><p>O STJ adota reiteradamente a teoria da asserção como critério para aferição das condições da ação, entendendo que a verificação da legitimidade e do interesse de agir deve ocorrer <strong>à luz da relação jurídica narrada na petição inicial</strong>, e não da comprovação efetiva dos fatos alegados — essa comprovação é tarefa da fase instrutória, atinente ao mérito da causa.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — ELEMENTOS DA AÇÃO ══ -->
+  <div class="aula-secao" id="ac-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🧩</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina — CPC/2015, art. 337, §§1º-4º</span><h3>As três "peças" que identificam uma ação</h3></div>
+      </div>
+      <p>Os elementos da ação servem para <strong>individualizar</strong> uma demanda e permitir a comparação entre duas ou mais ações — é o instrumento técnico para identificar <strong>litispendência, coisa julgada e conexão</strong>.</p>
+      <div class="aula-macete-box"><h4>Macete: PA-CA-PE</h4><p style="margin-top:6px">Partes · Causa de pedir · Pedido</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Partes</h3>
+      <div class="aula-destaque-box"><p>São os sujeitos que ocupam os polos ativo e passivo da relação jurídica processual — autor(es) e réu(s). Para fins de identificação da ação, o que importa é a <strong>qualidade jurídica</strong> em que a parte figura no processo, não apenas seu nome civil.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Causa de pedir (causa petendi)</h3>
+      <div class="aula-destaque-box"><p>É o conjunto de fatos e fundamentos jurídicos que sustentam o pedido — subdivide-se em <strong>causa de pedir remota</strong> (os fatos que originaram a pretensão) e <strong>causa de pedir próxima</strong> (o fundamento jurídico decorrente desses fatos, a relação jurídica em si).</p></div>
+      <div class="aula-atencao-box"><p><strong>Teoria da substanciação (adotada pelo CPC brasileiro):</strong> o autor deve narrar na petição inicial <strong>os fatos e os fundamentos jurídicos do pedido</strong> (art. 319, III, CPC) — não basta invocar genericamente a relação jurídica (o que bastaria pela chamada "teoria da individuação", não adotada aqui). É a <strong>causa de pedir remota (fatos)</strong> que delimita e individualiza a demanda para fins de litispendência/coisa julgada — mudança na fundamentação jurídica, sem alteração dos fatos, não configura, em regra, nova causa de pedir (iura novit curia).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Pedido</h3>
+      <div class="aula-destaque-box"><p>É aquilo que o autor pretende obter com o processo — subdivide-se em <strong>pedido imediato</strong> (a espécie de provimento jurisdicional requerido: condenatório, declaratório, constitutivo) e <strong>pedido mediato</strong> (o bem da vida perseguido em si — a soma em dinheiro, o imóvel, a obrigação de fazer).</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Requisito do pedido (art. 322, CPC)</th><th>Significado</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Certeza</strong></td><td>O pedido deve ser expresso, não podendo o juiz decidir de forma diversa (implícita), ressalvadas as exceções legais (ex.: juros legais, correção monetária)</td></tr>
+          <tr><td><strong>Determinação (em regra)</strong></td><td>O pedido deve ser certo quanto ao gênero, quantidade e qualidade — admite-se pedido genérico nas hipóteses do art. 324, §1º, CPC (ações universais, quando não se pode determinar as consequências do ato/fato, ou quando a determinação depender de ato do réu)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Aplicações práticas dos elementos — art. 337, §§1º a 4º, CPC</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Litispendência:</strong> duas ações são idênticas (mesmas partes, mesma causa de pedir e mesmo pedido) e ambas em curso, sem trânsito em julgado de nenhuma delas.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Coisa julgada:</strong> ação idêntica a outra já <strong>transitada em julgado</strong>.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Conexão (art. 55, CPC):</strong> duas ações compartilham o mesmo pedido <strong>ou</strong> a mesma causa de pedir (não precisam ser idênticas em tudo).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — CLASSIFICAÇÃO DAS AÇÕES ══ -->
+  <div class="aula-secao" id="ac-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🗂️</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina — classificação trinária e quinária</span><h3>Quanto à natureza do provimento jurisdicional pretendido</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p>A classificação mais cobrada em concurso é a que leva em conta o tipo de <strong>tutela jurisdicional</strong> pretendida pelo pedido imediato — a doutrina apresenta uma classificação <strong>trinária clássica</strong> e uma <strong>quinária</strong> (mais moderna, com duas categorias adicionais).</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Espécie</th><th>Característica</th><th>Exemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Declaratória</strong></td><td>Busca apenas certificar a existência, inexistência ou o modo de ser de uma relação jurídica, sem impor obrigação de cumprimento</td><td>Ação declaratória de inexistência de débito</td></tr>
+          <tr><td><strong>Constitutiva</strong></td><td>Busca criar, modificar ou extinguir uma relação jurídica</td><td>Ação de divórcio, ação anulatória de negócio jurídico</td></tr>
+          <tr><td><strong>Condenatória</strong></td><td>Busca impor ao réu o cumprimento de uma prestação (pagar, fazer, não fazer, entregar coisa) — gera título executivo</td><td>Ação de cobrança, ação indenizatória</td></tr>
+          <tr><td><strong>Executiva lato sensu</strong> (classificação quinária)</td><td>A própria sentença já produz efeitos práticos de execução, sem necessidade de fase autônoma de cumprimento (a satisfação decorre naturalmente do provimento)</td><td>Ação de despejo, ação reivindicatória (em certas correntes)</td></tr>
+          <tr><td><strong>Mandamental</strong> (classificação quinária)</td><td>A sentença contém uma <strong>ordem</strong> a ser cumprida sob pena de sanção (multa, prisão em casos excepcionais), com maior imperatividade que a condenatória comum</td><td>Mandado de segurança, ação que impõe obrigação de fazer com multa cominatória</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Ponto de atenção para a prova:</strong> a classificação trinária (declaratória, constitutiva, condenatória) é a mais tradicional e cobrada; a inclusão da <strong>executiva lato sensu</strong> e <strong>mandamental</strong> como categorias autônomas é posição doutrinária mais recente (Pontes de Miranda), não unânime — mas frequentemente exigida em provas que descrevem mandado de segurança ou ação de despejo pedindo a classificação "correta".</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Ações dúplices</h3>
+      <div class="aula-destaque-box"><p>São ações em que <strong>tanto o autor quanto o réu</strong> podem obter um provimento favorável, independentemente de reconvenção — a própria estrutura da relação jurídica de direito material discutida permite que a defesa do réu já contenha, implicitamente, um "pedido" que pode ser acolhido. Exemplos: ações possessórias (art. 556, CPC — o réu pode pedir proteção possessória e indenização por perdas e danos na própria contestação, sem reconvenção) e ação de exigir contas.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — QUADROS E JURISPRUDÊNCIA ══ -->
+  <div class="aula-secao" id="ac-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📊</div>
+        <div><span class="aula-tag aula-tag-dica">Síntese visual</span><h3>Quadro-resumo — condições, elementos e institutos</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Conceito</th><th>Definição resumida</th><th>Base legal</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Legitimidade</strong></td><td>Correspondência entre parte processual e titular da relação de direito material</td><td>Art. 17, CPC</td></tr>
+          <tr><td><strong>Interesse de agir</strong></td><td>Necessidade + utilidade (adequação) da tutela jurisdicional</td><td>Art. 17, CPC</td></tr>
+          <tr><td><strong>Consequência da ausência</strong></td><td>Extinção sem resolução de mérito</td><td>Art. 485, VI, CPC</td></tr>
+          <tr><td><strong>Momento de análise</strong></td><td>Teoria da asserção — pelas alegações da petição inicial, em abstrato</td><td>Doutrina + STJ</td></tr>
+          <tr><td><strong>Elementos da ação</strong></td><td>Partes, causa de pedir e pedido</td><td>Art. 337, §§1º-4º, CPC</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Hierarquia de cobrança FCC</h3>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EEEDFE;color:#3C3489">Altíssimo</div><p style="font-size:13px;color:#555">Legitimidade × interesse de agir (art. 17, CPC); fim da possibilidade jurídica do pedido como condição autônoma; teoria da asserção</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#EAF3DE;color:#3B6D11">Alto</div><p style="font-size:13px;color:#555">Elementos da ação (partes, causa de pedir, pedido) aplicados à litispendência/coisa julgada/conexão; classificação trinária (declaratória, constitutiva, condenatória)</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#FAEEDA;color:#633806">Médio</div><p style="font-size:13px;color:#555">Legitimidade ordinária × extraordinária; teoria da substanciação × individuação; pedido imediato × mediato; ações dúplices</p></div>
+        <div class="aula-nivel-bar"><div class="aula-nivel-label" style="background:#f1f1f1;color:#666">Eventual</div><p style="font-size:13px;color:#555">Classificação quinária (executiva lato sensu e mandamental); teorias históricas sobre a natureza da ação (imanentista, concretista, abstrata)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="ac-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"O CPC/2015 manteve as três condições da ação clássicas: legitimidade, interesse de agir e possibilidade jurídica do pedido."</strong><br>✅ ERRADO. A possibilidade jurídica do pedido deixou de ser condição autônoma — hoje é analisada como questão de <strong>mérito</strong>.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A análise das condições da ação deve ser feita com base na comprovação efetiva dos fatos narrados pelo autor na petição inicial."</strong><br>✅ ERRADO. Pela teoria da asserção, a análise é feita <strong>em abstrato</strong>, à luz das alegações — a comprovação efetiva é questão de mérito, apurada na instrução.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A legitimidade ordinária é a exceção no ordenamento processual brasileiro, prevalecendo a legitimidade extraordinária."</strong><br>✅ ERRADO — é o contrário. A legitimidade <strong>ordinária</strong> é a regra; a <strong>extraordinária</strong> só é admitida quando expressamente autorizada por lei (art. 18, CPC).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O interesse de agir se resume à utilidade da tutela jurisdicional pretendida, sendo irrelevante a necessidade do provimento."</strong><br>✅ ERRADO. O interesse de agir é examinado pelo <strong>binômio necessidade + utilidade</strong> — ambos os elementos são relevantes.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O Brasil adota a teoria da individuação para identificação da causa de pedir, bastando a indicação da relação jurídica, sem necessidade de descrever os fatos."</strong><br>✅ ERRADO. O Brasil adota a <strong>teoria da substanciação</strong> — exige a narração dos fatos e fundamentos jurídicos (art. 319, III, CPC), não bastando indicar apenas a relação jurídica em abstrato.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"Duas ações são idênticas quando têm as mesmas partes, a mesma causa de pedir e o mesmo pedido."</strong><br>CORRETO — art. 337, §2º, CPC, base para litispendência e coisa julgada.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 CPC/2015 — o que sobrou das condições da ação</h4><p><strong>Só LEGITIMIDADE e INTERESSE DE AGIR</strong> — possibilidade jurídica do pedido virou mérito</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Teoria da asserção — regra de ouro</h4><p>Analisa-se <strong>o que o autor DISSE</strong>, não o que ele <strong>provou</strong> — falha na alegação = carência; falha na prova = improcedência</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Elementos da ação</h4><p><strong>PA-CA-PE:</strong> Partes · Causa de pedir · Pedido — usados para identificar litispendência, coisa julgada e conexão</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Classificação trinária</h4><p><strong>Declaratória</strong> (certifica) · <strong>Constitutiva</strong> (cria/altera/extingue) · <strong>Condenatória</strong> (impõe prestação)</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="ac-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Nos termos do art. 17 do CPC/2015, para postular em juízo é necessário ter:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Legitimidade, interesse de agir e possibilidade jurídica do pedido, cumulativamente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Interesse e legitimidade, não mais figurando a possibilidade jurídica do pedido como condição autônoma da ação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Apenas legitimidade, sendo o interesse de agir matéria de mérito.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Apenas capacidade postulatória, exercida por meio de advogado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Possibilidade jurídica do pedido e capacidade civil plena.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 17, CPC/2015: exige apenas interesse e legitimidade. A possibilidade jurídica do pedido deixou de figurar como condição autônoma — hoje é tratada como questão de mérito.</div>
+      <span class="aula-fonte-tag">Fundamento: CPC/2015, art. 17.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a teoria da asserção, adotada pela jurisprudência do Superior Tribunal de Justiça para aferição das condições da ação, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A legitimidade e o interesse de agir devem ser analisados com base na comprovação efetiva dos fatos alegados pelo autor, produzida na fase de instrução.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A legitimidade e o interesse de agir devem ser analisados em abstrato, à luz das alegações feitas pelo autor na petição inicial, sendo a comprovação de tais alegações matéria afeta ao mérito.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> As condições da ação somente podem ser analisadas após a citação do réu e apresentação de contestação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A teoria da asserção aplica-se exclusivamente às ações de rito sumário.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A teoria da asserção determina que o juiz sempre extinga o processo sem resolução de mérito quando houver dúvida sobre a legitimidade das partes.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Pela teoria da asserção, consolidada no STJ, a análise das condições da ação (legitimidade e interesse de agir) é feita em abstrato, com base nas alegações da petição inicial (in status assertionis) — a verificação da veracidade dessas alegações é questão de mérito, resolvida na instrução.</div>
+      <span class="aula-fonte-tag">Fundamento: jurisprudência consolidada do STJ — teoria da asserção.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> João propõe ação de cobrança contra Maria, narrando na petição inicial fatos que evidenciam, desde logo, que o débito discutido é de responsabilidade exclusiva de terceiro estranho à lide, e não de Maria. Nesse caso, o juiz deve:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Julgar improcedente o pedido, resolvendo o mérito da causa.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Extinguir o processo sem resolução de mérito, por ilegitimidade passiva, uma vez que, mesmo em tese, Maria não seria a titular da relação jurídica discutida segundo a própria narrativa do autor.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Determinar a produção de provas para verificar se Maria é, de fato, devedora do débito.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Substituir de ofício o polo passivo pelo terceiro efetivamente devedor, sem extinção do processo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Suspender o processo até que João retifique a petição inicial, sob pena de indeferimento.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Aplicação da teoria da asserção: se, pela própria narrativa do autor, o réu não seria, mesmo em tese, o titular da relação jurídica discutida, trata-se de carência de ação por ilegitimidade passiva — extinção sem resolução de mérito (art. 485, VI, CPC), sem necessidade de instrução.</div>
+      <span class="aula-fonte-tag">Fundamento: CPC/2015, art. 485, VI; teoria da asserção.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os elementos identificadores da ação, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> São dois: partes e pedido, sendo irrelevante a causa de pedir para fins de identificação da demanda.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> São três: partes, causa de pedir e pedido, sendo utilizados para verificar a ocorrência de litispendência, coisa julgada e conexão entre demandas.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A causa de pedir remota corresponde ao fundamento jurídico invocado, enquanto a causa de pedir próxima corresponde aos fatos narrados.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O pedido imediato corresponde ao bem da vida perseguido, e o pedido mediato, ao tipo de provimento jurisdicional requerido.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A conexão entre duas ações exige identidade simultânea de partes, causa de pedir e pedido.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Os três elementos da ação — partes, causa de pedir e pedido (art. 337, §§1º-4º, CPC) — servem para identificar litispendência e coisa julgada (identidade total) e conexão (identidade de apenas pedido ou causa de pedir, art. 55, CPC). As alternativas C e D invertem os conceitos de remota/próxima e imediato/mediato.</div>
+      <span class="aula-fonte-tag">Fundamento: CPC/2015, arts. 55 e 337, §§1º a 4º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Quanto à classificação das ações segundo a natureza do provimento jurisdicional pretendido, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A ação declaratória tem por objetivo impor ao réu o cumprimento de uma prestação, gerando título executivo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> A ação condenatória visa apenas certificar a existência ou inexistência de relação jurídica, sem qualquer efeito prático adicional.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> A ação constitutiva tem por objetivo criar, modificar ou extinguir uma relação jurídica, como ocorre na ação de divórcio.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> As ações declaratória, constitutiva e condenatória produzem, invariavelmente, os mesmos efeitos práticos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A ação de cobrança é classificada como ação declaratória, por não impor obrigação de pagamento.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>A ação constitutiva busca criar, modificar ou extinguir relação jurídica — exemplo clássico é a ação de divórcio. A declaratória apenas certifica a existência/inexistência de relação jurídica; a condenatória impõe cumprimento de prestação (a ação de cobrança é exemplo de ação condenatória, não declaratória).</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina processual — classificação trinária das ações.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a legitimidade para agir em juízo, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A legitimidade extraordinária é a regra geral do ordenamento processual, dispensando previsão legal expressa.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Na legitimidade ordinária, a pessoa defende em nome próprio direito próprio; na legitimidade extraordinária, defende em nome próprio direito alheio, hipótese que somente é admitida quando expressamente autorizada em lei.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A legitimidade extraordinária pressupõe que o substituído jamais poderá intervir no processo como assistente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A legitimidade ordinária pressupõe sempre a defesa de direito alheio em nome próprio.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Não existe distinção, no CPC/2015, entre legitimidade ordinária e extraordinária.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Legitimidade ordinária (regra): defesa em nome próprio de direito próprio. Legitimidade extraordinária (exceção): defesa em nome próprio de direito alheio, só admitida com previsão legal expressa (art. 18, CPC). O substituído pode intervir como assistente litisconsorcial (art. 18, § único).</div>
+      <span class="aula-fonte-tag">Fundamento: CPC/2015, art. 18 e parágrafo único.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
