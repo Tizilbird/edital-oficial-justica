@@ -12579,6 +12579,622 @@ AULAS['dp_7'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Arguição de Descumprimento de Preceito Fundamental (ADPF)
+// Chave: dc_14 (Direito Constitucional, tópico 14)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dc_14'] = {
+  title: 'Arguição de Descumprimento de Preceito Fundamental (ADPF)',
+  sub: 'Direito Constitucional · CF/88, art. 102, §1º · Lei 9.882/99 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CF/88, art. 102, §1º (EC 3/1993) · Lei 9.882/99</div>
+  <h1 class="aula-h1">Arguição de Descumprimento de Preceito Fundamental (ADPF)</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="pf-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="pf-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito e Base Legal</button>
+    <button class="aula-tab-btn" data-sec="1">O que é "Preceito Fundamental"?</button>
+    <button class="aula-tab-btn" data-sec="2">Duas Espécies de ADPF</button>
+    <button class="aula-tab-btn" data-sec="3">Objeto — o Diferencial da ADPF</button>
+    <button class="aula-tab-btn" data-sec="4">Subsidiariedade</button>
+    <button class="aula-tab-btn" data-sec="5">Legitimados e Efeitos</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — CONCEITO E BASE LEGAL ══ -->
+  <div class="aula-secao ativo" id="pf-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🛡️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 102, §1º · Lei 9.882/99</span><h3>O que é a ADPF?</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 102, §1º, CF/88 (incluído pela EC 3/1993):</strong> "A arguição de descumprimento de preceito fundamental, decorrente desta Constituição, será apreciada pelo Supremo Tribunal Federal, na forma da lei."</p></div>
+      <p>É o <strong>terceiro grande instrumento</strong> do controle concentrado (ao lado de ADI e ADC), criado justamente para <strong>preencher lacunas</strong> deixadas pelos outros dois — alcançando situações que a ADI e a ADC, por seus requisitos mais restritos de objeto, não conseguem tutelar.</p>
+      <div class="aula-destaque-box"><p><strong>Regulamentação — Lei 9.882/99:</strong> disciplina o processo e julgamento da ADPF perante o STF, sendo declarada constitucional pelo próprio STF (ADI 2.231/DF) — a Corte entendeu que o legislador infraconstitucional, ao instituir essa modalidade, buscou justamente viabilizar a provocação do STF para tutela de preceitos fundamentais em hipóteses não cobertas pela ADI e ADC.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — O QUE É "PRECEITO FUNDAMENTAL"? ══ -->
+  <div class="aula-secao" id="pf-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🔑</div>
+        <div><span class="aula-tag aula-tag-lei">Doutrina + jurisprudência do STF</span><h3>Um conceito não definido expressamente pela lei</h3></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Nem a CF/88 nem a Lei 9.882/99 definem o que é "preceito fundamental"</strong> — coube à doutrina e à jurisprudência do STF, caso a caso, ir construindo esse conceito. É um dos pontos mais abertos (e por isso mais explorados em prova discursiva) de todo o controle de constitucionalidade.</p></div>
+      <div class="aula-destaque-box"><p><strong>O que a doutrina majoritária reconhece como "preceito fundamental":</strong></p></div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Princípios fundamentais</h4><p>Arts. 1º a 4º, CF/88 (fundamentos, objetivos e princípios das relações internacionais).</p></div>
+        <div class="aula-mini-card"><h4>Cláusulas pétreas</h4><p>Art. 60, §4º, CF/88 (forma federativa, voto direto/secreto/universal/periódico, separação dos Poderes, direitos e garantias individuais).</p></div>
+        <div class="aula-mini-card"><h4>Direitos e garantias fundamentais</h4><p>Título II da CF/88 (individuais, coletivos, sociais, de nacionalidade, políticos).</p></div>
+        <div class="aula-mini-card"><h4>Princípios constitucionais sensíveis</h4><p>Art. 34, VII, CF/88 (hipóteses que autorizam intervenção federal por violação a princípios constitucionais).</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "todo dispositivo da Constituição Federal constitui preceito fundamental para fins de cabimento da ADPF" — <strong>ERRADO</strong>. Nem toda norma constitucional é "preceito fundamental" — é um <strong>subconjunto qualificado</strong> de normas de especial importância estrutural para o sistema constitucional, cabendo ao STF, no caso concreto, reconhecer (ou não) essa qualidade.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — DUAS ESPÉCIES DE ADPF ══ -->
+  <div class="aula-secao" id="pf-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🔀</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.882/99, art. 1º</span><h3>ADPF Autônoma × ADPF Incidental</h3></div>
+      </div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>ADPF Autônoma (art. 1º, caput)</h4><p>Ajuizada para <strong>evitar ou reparar lesão</strong> a preceito fundamental, resultante de ato do Poder Público — funciona de forma direta e independente, como um controle abstrato "geral" para situações não alcançáveis pela ADI/ADC.</p></div>
+        <div class="aula-mini-card"><h4>ADPF Incidental (art. 1º, § único, I)</h4><p>Cabível "quando for relevante o fundamento da controvérsia constitucional sobre lei ou ato normativo <strong>federal, estadual ou municipal</strong>, incluídos os <strong>anteriores à Constituição</strong>." Nasce a partir de uma controvérsia judicial concreta relevante, mas tramita como processo objetivo, à semelhança da ADI.</p></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>É exatamente na ADPF incidental que mora o grande diferencial de objeto da ADPF</strong> em relação à ADI: ela alcança normas <strong>municipais</strong> e normas <strong>pré-constitucionais</strong> — as duas categorias que a ADI, perante o STF, jamais poderia abarcar (tratado com mais detalhe na próxima aba).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — OBJETO — O DIFERENCIAL DA ADPF ══ -->
+  <div class="aula-secao" id="pf-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🎯</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.882/99, art. 1º</span><h3>O que a ADPF alcança e a ADI não alcança</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Objeto</th><th>Cabe ADI (STF)?</th><th>Cabe ADPF?</th></tr></thead>
+        <tbody>
+          <tr><td>Lei/ato normativo federal ou estadual, pós-CF/88</td><td><span class="aula-badge aula-badge-sim">SIM</span></td><td><span class="aula-badge aula-badge-sim">SIM</span></td></tr>
+          <tr><td>Lei/ato normativo <strong>municipal</strong></td><td><span class="aula-badge aula-badge-nao">NÃO</span></td><td><span class="aula-badge aula-badge-sim">SIM</span></td></tr>
+          <tr><td>Lei/ato normativo <strong>anterior à CF/88</strong> (direito pré-constitucional)</td><td><span class="aula-badge aula-badge-nao">NÃO</span></td><td><span class="aula-badge aula-badge-sim">SIM</span></td></tr>
+          <tr><td><strong>Decisões judiciais</strong> (atos jurisdicionais do Poder Público)</td><td><span class="aula-badge aula-badge-nao">NÃO</span></td><td><span class="aula-badge aula-badge-sim">SIM</span> — a jurisprudência já admitiu</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-destaque-box"><p><strong>Precedente recente — ADPF cabível contra ato jurisdicional (STF, ADPF 485):</strong> o STF conheceu de ADPF ajuizada pelo Governador de Estado contra decisões judiciais que determinaram bloqueio, penhora e sequestro de verbas públicas — reconhecendo que decisões judiciais se enquadram na definição de <strong>"ato do poder público"</strong> prevista no art. 1º, caput, da Lei 9.882/99, sujeitando-se, assim, ao controle concentrado via ADPF.</p></div>
+      <div class="aula-atencao-box"><p><strong>Limite reconhecido pelo STF (jurisprudência de 2025-2026):</strong> a ADPF <strong>não pode</strong> ser utilizada como via ordinária de impugnação de decisões administrativas ou judiciais concretas voltadas à tutela de <strong>direitos individuais homogêneos</strong> — sob pena de desvirtuar sua natureza de processo objetivo. O STF já negou conhecimento de ADPF que, sob aparência de controle abstrato, buscava, na realidade, rediscutir interesses concretos e subjetivos de um grupo específico.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — SUBSIDIARIEDADE ══ -->
+  <div class="aula-secao" id="pf-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">🧩</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.882/99, art. 4º, §1º</span><h3>Princípio da Subsidiariedade — requisito de admissibilidade</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 4º, §1º, Lei 9.882/99:</strong> "Não será admitida arguição de descumprimento de preceito fundamental quando <strong>houver qualquer outro meio eficaz</strong> de sanar a lesividade."</p></div>
+      <p>A ADPF é instrumento de <strong>caráter residual</strong> — só cabe quando <strong>não existir</strong> outro meio processual apto a sanar a lesão de forma igualmente eficaz.</p>
+      <div class="aula-destaque-box"><p><strong>Como o STF interpreta essa "eficácia" — jurisprudência consolidada e recente (fev/2026):</strong> o requisito da subsidiariedade é satisfeito (ou seja, a ADPF é <strong>cabível</strong>) quando <strong>inexiste, no caso, outro meio processual eficaz para sanar a lesão de forma ampla, geral e imediata</strong>. Não basta existir <em>qualquer</em> outro remédio processual em tese — é preciso que ele seja <strong>igualmente amplo, geral e imediato</strong> quanto à ADPF.</p></div>
+      <div class="aula-atencao-box"><p><strong>Instrumentos que a ADPF não substitui, segundo a jurisprudência do STF:</strong> habeas corpus, habeas data, mandado de segurança individual e coletivo, mandado de injunção, ação popular, ADI estadual, entre outras vias processuais especificamente vocacionadas a cada situação — a ADPF não é "coringa" que dispensa a análise sobre qual instrumento processual é o mais adequado ao caso.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — LEGITIMADOS E EFEITOS ══ -->
+  <div class="aula-secao" id="pf-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">👥</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.882/99, art. 2º, I</span><h3>Legitimados — mesmos da ADI</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 2º, I, Lei 9.882/99:</strong> podem propor ADPF os <strong>legitimados do art. 103, I a IX, CF/88</strong> — o mesmo rol de legitimados da ADI (Presidente, Mesas da Câmara/Senado, PGR, Conselho Federal da OAB, partidos políticos com representação no Congresso, Mesa de Assembleia/Câmara Legislativa do DF, Governador de Estado/DF, confederação sindical/entidade de classe nacional).</p></div>
+      <div class="aula-atencao-box"><p><strong>Distinção com a legitimidade "universal" da ADI/ADC:</strong> parte da doutrina e da própria lei fala em <strong>legitimados universais</strong> para ADPF, remetendo ao mesmo critério do rol do art. 103, sem repetir aqui a exigência de pertinência temática — mas, na prática, aplicam-se os mesmos parâmetros jurisprudenciais já consolidados para ADI quanto à distinção universal/especial.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Liminar em ADPF — art. 5º, Lei 9.882/99</h3>
+      <div class="aula-destaque-box"><p>O relator pode conceder <strong>liminar</strong>, ad referendum do Tribunal Pleno, na hipótese de extrema urgência, perigo de lesão grave ou em período de recesso. A liminar pode consistir na <strong>suspensão do andamento de processos</strong> ou dos efeitos de decisões judiciais, ou de qualquer outra medida relacionada com a matéria objeto da arguição.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Efeitos da decisão de mérito — art. 10, §3º, Lei 9.882/99</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 10, §3º:</strong> "A decisão terá <strong>eficácia contra todos e efeito vinculante</strong> relativamente aos demais órgãos do Poder Público." Os mesmos efeitos erga omnes e vinculante já conhecidos da ADI/ADC.</p></div>
+      <div class="aula-atencao-box"><p><strong>Modulação de efeitos (art. 11, Lei 9.882/99):</strong> o STF, ao declarar a inconstitucionalidade de lei ou ato normativo no processo de ADPF, e tendo em vista razões de segurança jurídica ou de excepcional interesse social, pode, por maioria de <strong>2/3</strong> de seus membros, restringir os efeitos daquela declaração ou decidir que ela só tenha eficácia a partir do trânsito em julgado ou de outro momento a ser fixado — regra em tudo simétrica ao art. 27, Lei 9.868/99, para a ADI.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="pf-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"A subsidiariedade constitui pressuposto de admissibilidade da ação direta de inconstitucionalidade, sem o qual a ação deve ser rejeitada de plano."</strong><br>✅ ERRADO (pegadinha invertida). A subsidiariedade é requisito de admissibilidade da <strong>ADPF</strong> (art. 4º, §1º, Lei 9.882/99) — não da ADI, que não exige esse pressuposto.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Cabe ADI perante o STF contra lei municipal anterior à Constituição Federal de 1988."</strong><br>✅ ERRADO. Nem lei municipal, nem lei pré-constitucional cabem em ADI perante o STF — mas ambas podem ser objeto de <strong>ADPF</strong>.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A ADPF nunca pode ter por objeto decisões judiciais, por se tratar de ato jurisdicional e não normativo."</strong><br>✅ ERRADO. O STF já admitiu ADPF contra decisões judiciais (ADPF 485), por se enquadrarem no conceito de "ato do poder público" do art. 1º, caput, Lei 9.882/99.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A ADPF pode ser utilizada como via ordinária para tutela de direitos individuais homogêneos de determinado grupo."</strong><br>✅ ERRADO. O STF já negou conhecimento de ADPF quando a real pretensão era tutelar interesses concretos e subjetivos de um grupo específico — desvirtuando a natureza objetiva do instrumento.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Todo dispositivo da Constituição Federal constitui preceito fundamental para fins de cabimento da ADPF."</strong><br>✅ ERRADO. "Preceito fundamental" é subconjunto qualificado de normas — não abrange automaticamente todo o texto constitucional.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"O requisito da subsidiariedade é satisfeito quando inexiste, no caso, outro meio processual eficaz para sanar a lesão a preceito fundamental de forma ampla, geral e imediata."</strong><br>CORRETO — jurisprudência consolidada do STF (2025-2026).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 ADPF alcança o que a ADI não alcança</h4><p><strong>M-P:</strong> lei <strong>M</strong>unicipal + lei <strong>P</strong>ré-constitucional (e também decisões judiciais, conforme jurisprudência)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Duas espécies</h4><p><strong>Autônoma</strong> = evitar/reparar lesão a preceito fundamental (direto)<br><strong>Incidental</strong> = controvérsia relevante sobre lei/ato normativo (via incidental)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Subsidiariedade é só da ADPF</h4><p>ADI <strong>não exige</strong> subsidiariedade; ADPF <strong>exige</strong> (art. 4º, §1º, Lei 9.882/99)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Efeitos — igual à ADI</h4><p><strong>Erga omnes + Vinculante</strong> (art. 10, §3º) + modulação por <strong>2/3</strong> (art. 11)</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="pf-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o objeto da Arguição de Descumprimento de Preceito Fundamental, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A ADPF, tal como a ADI perante o STF, não pode ter por objeto lei ou ato normativo municipal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A ADPF pode ter por objeto lei ou ato normativo municipal, bem como lei ou ato normativo anterior à Constituição Federal de 1988, hipóteses não alcançadas pela ADI perante o STF.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A ADPF é cabível exclusivamente contra leis e atos normativos federais, sendo vedada contra atos estaduais ou municipais.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A ADPF jamais pode ter por objeto decisões judiciais, por se tratar de atos jurisdicionais e não normativos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A ADPF não pode ter por objeto lei ou ato normativo anterior à Constituição Federal de 1988, aplicando-se a essas normas apenas o controle de recepção.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 1º, parágrafo único, I, Lei 9.882/99: a ADPF alcança leis/atos normativos municipais e pré-constitucionais — exatamente as duas hipóteses que a ADI perante o STF não alcança. O STF também já admitiu ADPF contra decisões judiciais (ADPF 485), quando enquadradas como "ato do poder público".</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.882/99, art. 1º, parágrafo único, I; STF, ADPF 485.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o princípio da subsidiariedade na ADPF, nos termos do art. 4º, §1º, da Lei nº 9.882/1999, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Trata-se de requisito também exigido para a admissibilidade da ADI perante o STF.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> A ADPF é admitida sempre que exista, em tese, qualquer outro meio processual, ainda que menos eficaz do que a própria ADPF para sanar a lesão.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Não será admitida ADPF quando houver qualquer outro meio processual eficaz para sanar a lesão a preceito fundamental de forma ampla, geral e imediata.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A subsidiariedade impede que a ADPF seja utilizada em qualquer hipótese em que caiba mandado de segurança individual, ainda que este não seja igualmente amplo, geral e imediato.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A subsidiariedade é requisito dispensável quando o autor da ação for o Presidente da República.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 4º, §1º, Lei 9.882/99, e jurisprudência consolidada do STF (2025-2026): a ADPF só é inadmitida quando houver outro meio processual igualmente eficaz para sanar a lesão de forma ampla, geral e imediata — não basta existir qualquer outro remédio processual em tese, menos abrangente.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.882/99, art. 4º, §1º; STF, jurisprudência consolidada.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a legitimidade ativa para propositura de ADPF, nos termos do art. 2º, I, da Lei nº 9.882/1999, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Somente o Presidente da República e o Procurador-Geral da República possuem legitimidade para propor ADPF.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Podem propor ADPF os mesmos legitimados previstos no art. 103, I a IX, da Constituição Federal, aplicável à ação direta de inconstitucionalidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Qualquer cidadão pode propor ADPF, independentemente de vínculo institucional com a matéria.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A legitimidade para ADPF é distinta e mais restrita do que a legitimidade para ADI, excluindo os partidos políticos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Somente entidades de classe de âmbito nacional possuem legitimidade para propor ADPF.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 2º, I, Lei 9.882/99: remete ao mesmo rol de legitimados do art. 103, I a IX, CF/88, aplicável à ADI — não há restrição adicional específica para a ADPF quanto à legitimidade ativa.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.882/99, art. 2º, I; CF/88, art. 103.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Determinado Governador de Estado ajuizou ADPF contra decisões da Justiça do Trabalho que determinaram o bloqueio, a penhora e o sequestro de verbas públicas estaduais. Considerando o entendimento do STF sobre o cabimento da ADPF contra atos jurisdicionais, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A ADPF é incabível, pois decisões judiciais nunca se enquadram no conceito de "ato do poder público" previsto no art. 1º da Lei nº 9.882/1999.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Decisões judiciais podem se enquadrar na definição de "ato do poder público" do art. 1º, caput, da Lei nº 9.882/1999, sujeitando-se ao controle concentrado via ADPF, desde que satisfeito o requisito da subsidiariedade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A ADPF somente pode ser utilizada contra atos normativos abstratos, jamais contra decisões judiciais concretas.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O Governador de Estado não possui legitimidade para propor ADPF, sendo essa via reservada exclusivamente a legitimados federais.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A ADPF contra decisão judicial dispensa, excepcionalmente, a análise do requisito da subsidiariedade.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>STF, ADPF 485: decisões judiciais se enquadram na definição de "ato do poder público" do art. 1º, caput, Lei 9.882/99, sujeitando-se ao controle via ADPF — desde que satisfeito o requisito da subsidiariedade (inexistência de outro meio eficaz para sanar a lesão de forma ampla, geral e imediata). O Governador de Estado é legitimado (especial, com pertinência temática) para propor ADPF.</div>
+      <span class="aula-fonte-tag">Fundamento: STF, ADPF 485; Lei 9.882/99, arts. 1º, caput, e 4º, §1º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os efeitos da decisão de mérito proferida em ADPF, nos termos do art. 10, §3º, da Lei nº 9.882/1999, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Produz efeitos exclusivamente entre as partes que figuraram no processo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Tem eficácia contra todos e efeito vinculante relativamente aos demais órgãos do Poder Público, admitida a modulação de efeitos por maioria de dois terços dos membros do STF, por razões de segurança jurídica ou excepcional interesse social.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Não admite, em nenhuma hipótese, modulação temporal de seus efeitos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Depende de resolução do Senado Federal para produzir eficácia erga omnes.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Vincula também o Poder Legislativo em sua função de legislar sobre matéria idêntica.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 10, §3º, Lei 9.882/99: eficácia erga omnes e efeito vinculante quanto aos demais órgãos do Poder Público. Art. 11: admite modulação de efeitos por maioria de 2/3 do STF, à semelhança do art. 27, Lei 9.868/99, para a ADI.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.882/99, arts. 10, §3º, e 11.</span>
+    </div>
+  </div>
+</div>`
+};
+// ═══════════════════════════════════════════════════════
+// AULA: Direitos e Deveres Individuais e Coletivos
+// Chave: dc_17 (Direito Constitucional, tópico 17)
+// Base: CF/88, art. 5º · Doutrina — teoria geral dos direitos fundamentais
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dc_17'] = {
+  title: 'Direitos e Deveres Individuais e Coletivos',
+  sub: 'Direito Constitucional · CF/88, art. 5º · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CF/88, art. 5º e §§1º a 4º · Teoria geral dos direitos fundamentais</div>
+  <h1 class="aula-h1">Direitos e Deveres Individuais e Coletivos</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="dd-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="dd-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Teoria Geral</button>
+    <button class="aula-tab-btn" data-sec="1">Titularidade e Eficácia</button>
+    <button class="aula-tab-btn" data-sec="2">Igualdade e Legalidade</button>
+    <button class="aula-tab-btn" data-sec="3">Liberdades e Privacidade</button>
+    <button class="aula-tab-btn" data-sec="4">Devido Processo e Garantias</button>
+    <button class="aula-tab-btn" data-sec="5">Colisão e Ponderação</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — TEORIA GERAL ══ -->
+  <div class="aula-secao ativo" id="dd-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🛡️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 5º, caput</span><h3>O caput do art. 5º — o pórtico dos direitos fundamentais</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, caput, CF/88:</strong> "Todos são iguais perante a lei, sem distinção de qualquer natureza, garantindo-se aos brasileiros e aos estrangeiros residentes no País a inviolabilidade do direito à vida, à liberdade, à igualdade, à segurança e à propriedade."</p></div>
+      <p>É o dispositivo de abertura do <strong>Título II</strong> da CF/88 (Dos Direitos e Garantias Fundamentais), que se subdivide em cinco capítulos: direitos individuais e coletivos (Cap. I), direitos sociais (Cap. II), nacionalidade (Cap. III), direitos políticos (Cap. IV) e partidos políticos (Cap. V).</p>
+      <div class="aula-atencao-box"><p><strong>Pegadinha clássica sobre o caput — leitura literal × leitura correta:</strong> o texto menciona "brasileiros e estrangeiros residentes no País" — mas o STF interpreta essa expressão de forma <strong>ampliativa</strong>: os direitos fundamentais do art. 5º também alcançam <strong>estrangeiros não residentes</strong> (turistas, em trânsito) e até <strong>pessoas jurídicas</strong>, no que for compatível com sua natureza — a redação literal não deve ser lida restritivamente.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Direitos e garantias — a distinção clássica de Rui Barbosa</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Direitos</h4><p>São <strong>disposições declaratórias</strong> — imprimem existência legal aos bens jurídicos protegidos (ex.: "é livre a manifestação do pensamento").</p></div>
+        <div class="aula-mini-card"><h4>Garantias</h4><p>São <strong>disposições assecuratórias</strong> — instrumentos que limitam o poder estatal em defesa dos direitos, ou que viabilizam sua reivindicação em juízo (ex.: o habeas corpus, o mandado de segurança).</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Nem sempre a CF/88 separa didaticamente os dois</strong> — muitos incisos do art. 5º misturam declaração de direito e garantia instrumental no mesmo dispositivo. A distinção é mais teórica/doutrinária do que uma separação rígida no texto constitucional.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Dimensões (gerações) dos direitos fundamentais</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Dimensão</th><th>Foco</th><th>Exemplo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1ª dimensão</strong></td><td>Liberdades públicas — direitos civis e políticos, de <strong>abstenção</strong> do Estado (status negativus)</td><td>Liberdade de expressão, direito à vida, direito de voto</td></tr>
+          <tr><td><strong>2ª dimensão</strong></td><td>Direitos sociais, econômicos e culturais — exigem <strong>prestação positiva</strong> do Estado (status positivus)</td><td>Saúde, educação, trabalho</td></tr>
+          <tr><td><strong>3ª dimensão</strong></td><td>Direitos de <strong>solidariedade e fraternidade</strong> — titularidade difusa, transindividual</td><td>Meio ambiente, paz, desenvolvimento</td></tr>
+          <tr><td><strong>4ª e 5ª dimensões</strong></td><td>Objeto de debate doutrinário — democracia, pluralismo, bioética, direitos ligados à tecnologia/informação (4ª); alguns autores incluem "direito à paz" como 5ª de forma autônoma (Bonavides)</td><td>Manipulação genética, direito à informação, engenharia genética</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Terminologia mais precisa — "dimensões" em vez de "gerações":</strong> a doutrina contemporânea prefere o termo "dimensões", pois as gerações anteriores não são substituídas pelas novas — elas se <strong>acumulam e se complementam</strong>, não havendo sucessão cronológica excludente.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Características dos direitos fundamentais</h3>
+      <div class="aula-macete-box"><h4>Macete: HI-I-I-I-R-U</h4><p style="margin-top:6px">Historicidade · Inalienabilidade · Irrenunciabilidade · Imprescritibilidade · Relatividade · Universalidade</p></div>
+      <table class="aula-tabela-comp" style="margin-top:10px">
+        <thead><tr><th>Característica</th><th>Significado</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Historicidade</strong></td><td>Nascem, se transformam e se ampliam ao longo da evolução histórica e social</td></tr>
+          <tr><td><strong>Inalienabilidade</strong></td><td>Não podem ser transferidos a terceiros, a título gratuito ou oneroso</td></tr>
+          <tr><td><strong>Irrenunciabilidade</strong></td><td>O titular pode deixar de exercê-los, mas não pode renunciar a eles de forma definitiva</td></tr>
+          <tr><td><strong>Imprescritibilidade</strong></td><td>Não se perdem pelo decurso do tempo (não se sujeitam a prazos)</td></tr>
+          <tr><td><strong>Relatividade (limitabilidade)</strong></td><td><strong>Nenhum</strong> direito fundamental é absoluto — todos podem sofrer limitações em face de outros direitos ou do interesse coletivo</td></tr>
+          <tr><td><strong>Universalidade</strong></td><td>Destinam-se a todos os seres humanos, independentemente de nacionalidade, raça, gênero etc.</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha mais recorrente de toda a matéria:</strong> "o direito à vida é absoluto, não admitindo qualquer exceção" — <strong>ERRADO</strong>. Nenhum direito fundamental é absoluto — mesmo o direito à vida cede, por exemplo, diante da legítima defesa ou da pena de morte em caso de guerra declarada (art. 5º, XLVII, "a", CF/88).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — TITULARIDADE E EFICÁCIA ══ -->
+  <div class="aula-secao" id="dd-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">👤</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 5º, §§1º-2º</span><h3>Quem é titular dos direitos fundamentais?</h3></div>
+      </div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Pessoas naturais</h4><p>Brasileiros e estrangeiros, residentes ou não, gozam da titularidade — interpretação extensiva consolidada pelo STF.</p></div>
+        <div class="aula-mini-card"><h4>Pessoas jurídicas</h4><p>Também são titulares de direitos fundamentais <strong>compatíveis com sua natureza</strong> — ex.: direito de propriedade, honra objetiva (direito à imagem/reputação institucional), inviolabilidade de domicílio (sede/estabelecimento), direito ao devido processo legal.</p></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Rol aberto — art. 5º, §2º, CF/88</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, §2º:</strong> "Os direitos e garantias expressos nesta Constituição não excluem outros decorrentes do regime e dos princípios por ela adotados, ou dos <strong>tratados internacionais</strong> em que a República Federativa do Brasil seja parte."</p></div>
+      <div class="aula-atencao-box"><p><strong>Rol materialmente aberto:</strong> a lista do art. 5º não é taxativa — direitos fundamentais podem existir <strong>fora</strong> do texto expresso, decorrendo do sistema constitucional como um todo (direitos fundamentais implícitos) ou de tratados internacionais de direitos humanos incorporados ao ordenamento.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Tratados internacionais de direitos humanos — status normativo (art. 5º, §3º)</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, §3º (EC 45/2004):</strong> "Os tratados e convenções internacionais sobre direitos humanos que forem aprovados, em cada Casa do Congresso Nacional, em <strong>dois turnos</strong>, por <strong>três quintos</strong> dos votos dos respectivos membros, serão equivalentes às emendas constitucionais."</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Tipo de tratado</th><th>Status normativo</th></tr></thead>
+        <tbody>
+          <tr><td>Tratado de DH aprovado pelo rito do §3º (3/5, dois turnos, cada Casa)</td><td><strong>Emenda constitucional</strong> — ex.: Convenção de Nova York sobre Pessoas com Deficiência</td></tr>
+          <tr><td>Tratado de DH aprovado pelo rito comum (maioria simples)</td><td><strong>Supralegal</strong> — abaixo da CF, acima da lei ordinária (posição consolidada do STF)</td></tr>
+          <tr><td>Tratado internacional comum (não de direitos humanos)</td><td><strong>Status de lei ordinária</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Precedente-chave — RE 466.343/SP:</strong> o STF fixou a tese da <strong>supralegalidade</strong> dos tratados de direitos humanos não submetidos ao rito qualificado, com repercussão direta na prisão civil do depositário infiel — hoje inadmitida no Brasil (Súmula Vinculante 25), por incompatibilidade com o Pacto de San José da Costa Rica.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Aplicabilidade imediata — art. 5º, §1º</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, §1º:</strong> "As normas definidoras dos direitos e garantias fundamentais têm aplicação imediata."</p></div>
+      <p>Já estudado com profundidade na aula de Vigência e Eficácia — em resumo: essa aplicação imediata <strong>não transforma todo direito fundamental em norma de eficácia plena</strong>; alguns continuam sendo de eficácia contida (ex.: art. 5º, XIII) ou limitada (ex.: art. 7º, XI), mas todos são <strong>diretamente invocáveis</strong>, independentemente de regulamentação.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Eficácia horizontal (Drittwirkung)</h3>
+      <div class="aula-destaque-box"><p>Os direitos fundamentais vinculam não apenas o <strong>Estado</strong> (eficácia vertical), mas também as <strong>relações entre particulares</strong> (eficácia horizontal) — o STF adota a teoria da <strong>eficácia direta/imediata</strong>, segundo a qual os direitos fundamentais incidem diretamente sobre as relações privadas, sem necessidade de mediação legislativa (RE 201.819 — caso da União Brasileira de Compositores).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — IGUALDADE E LEGALIDADE ══ -->
+  <div class="aula-secao" id="dd-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 5º, caput e I</span><h3>Princípio da isonomia — igualdade formal e material</h3></div>
+      </div>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Igualdade formal</h4><p>Todos são iguais <strong>perante a lei</strong> — tratamento jurídico idêntico, sem privilégios ou discriminações arbitrárias.</p></div>
+        <div class="aula-mini-card"><h4>Igualdade material (substancial)</h4><p>Tratamento <strong>diferenciado</strong> para compensar desigualdades reais — máxima de Aristóteles: "tratar igualmente os iguais e desigualmente os desiguais, na medida de suas desigualdades" — fundamenta políticas de ação afirmativa (cotas raciais, sociais).</p></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, I:</strong> "homens e mulheres são iguais em direitos e obrigações, nos termos desta Constituição" — cláusula específica de igualdade de gênero, com aplicabilidade <strong>plena e imediata</strong> (norma de eficácia plena).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Princípio da legalidade — art. 5º, II</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 5º, II:</strong> "Ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude de lei."</p></div>
+      <p>É a base constitucional do <strong>Estado de Direito</strong> — distingue-se do princípio da legalidade administrativa (art. 37, caput), que é mais restritivo: o particular pode fazer tudo que a lei não proíbe; o administrador só pode fazer o que a lei expressamente autoriza.</p>
+    </div>
+
+    <div class="aula-card">
+      <h3>Direito de propriedade e função social — art. 5º, XXII a XXVI</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Inciso</th><th>Conteúdo</th></tr></thead>
+        <tbody>
+          <tr><td>XXII</td><td>É garantido o direito de propriedade</td></tr>
+          <tr><td>XXIII</td><td>A propriedade atenderá a sua <strong>função social</strong></td></tr>
+          <tr><td>XXIV</td><td>Desapropriação por necessidade/utilidade pública ou interesse social, mediante justa e prévia indenização em dinheiro (salvo exceções constitucionais)</td></tr>
+          <tr><td>XXV</td><td>Requisição administrativa em caso de iminente perigo público, assegurada indenização ulterior se houver dano</td></tr>
+          <tr><td>XXVI</td><td>A pequena propriedade rural, trabalhada pela família, é impenhorável para pagamento de débitos decorrentes de sua atividade produtiva</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — LIBERDADES E PRIVACIDADE ══ -->
+  <div class="aula-secao" id="dd-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🗣️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 5º, IV, IX, VI</span><h3>Liberdade de expressão, manifestação e crença</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Inciso</th><th>Direito</th></tr></thead>
+        <tbody>
+          <tr><td>IV</td><td>Livre manifestação do pensamento, <strong>vedado o anonimato</strong></td></tr>
+          <tr><td>V</td><td>Direito de resposta, proporcional ao agravo, além de indenização por dano material, moral ou à imagem</td></tr>
+          <tr><td>VI</td><td>Liberdade de consciência e de crença; livre exercício de cultos religiosos, protegidos os locais de culto</td></tr>
+          <tr><td>VIII</td><td>Ninguém será privado de direitos por motivo de crença religiosa ou convicção filosófica/política, salvo se as invocar para eximir-se de obrigação legal a todos imposta e recusar-se a cumprir prestação alternativa fixada em lei</td></tr>
+          <tr><td>IX</td><td>É livre a expressão da atividade intelectual, artística, científica e de comunicação, <strong>independentemente de censura ou licença</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha frequente:</strong> "a liberdade de manifestação do pensamento admite anonimato quando houver interesse público relevante" — <strong>ERRADO</strong>. A vedação ao anonimato é <strong>absoluta</strong> no texto constitucional — sua razão é permitir a responsabilização por eventual abuso.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Privacidade, intimidade e sigilos — art. 5º, X, XI, XII</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Inciso</th><th>Conteúdo</th></tr></thead>
+        <tbody>
+          <tr><td>X</td><td>São invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas, assegurado direito a indenização pelo dano material ou moral decorrente de sua violação</td></tr>
+          <tr><td>XI</td><td>A casa é asilo inviolável — ninguém pode nela penetrar sem consentimento do morador, <strong>salvo</strong>: em caso de flagrante delito, desastre, prestar socorro, ou, durante o dia, por determinação judicial</td></tr>
+          <tr><td>XII</td><td>É inviolável o sigilo da correspondência e das comunicações telegráficas, de dados e das comunicações telefônicas, salvo, no último caso, por ordem judicial, para investigação criminal ou instrução processual penal</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Exceções ao inciso XI ("asilo inviolável") — regras da noite × dia:</strong> flagrante delito, desastre e prestação de socorro autorizam entrada a <strong>qualquer hora</strong>, sem necessidade de ordem judicial. A entrada por <strong>determinação judicial</strong>, fora dessas hipóteses excepcionais, só é permitida <strong>durante o dia</strong> — regra debatida na Lei de Abuso de Autoridade (art. 22) e recentemente objeto de orientação do STJ sobre o horário exato de "dia" para fins de cumprimento de mandados.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira sobre o inciso XII:</strong> a exceção prevista literalmente no texto ("salvo, no último caso...") refere-se <strong>apenas às comunicações telefônicas</strong> — o sigilo de correspondência, de comunicações telegráficas e de dados não tem essa exceção explícita no texto, mas o STF admite mitigação em hipóteses excepcionais mediante decisão judicial fundamentada e proporcional.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Liberdade de locomoção e reunião — art. 5º, XV e XVI</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Liberdade de locomoção (XV)</h4><p>Livre circulação em tempo de paz — qualquer pessoa pode, nos termos da lei, entrar, permanecer ou sair do território nacional, com seus bens. Fundamento do <strong>habeas corpus</strong>.</p></div>
+        <div class="aula-mini-card"><h4>Liberdade de reunião (XVI)</h4><p>Reunião pacífica, sem armas, em locais abertos ao público, <strong>independentemente de autorização</strong> — apenas exige <strong>prévio aviso</strong> à autoridade competente, para que não frustre outra reunião anteriormente convocada para o mesmo local.</p></div>
+      </div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "a liberdade de reunião depende de autorização prévia do Poder Público" — <strong>ERRADO</strong>. Exige apenas <strong>prévio aviso</strong>, não autorização.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — DEVIDO PROCESSO E GARANTIAS ══ -->
+  <div class="aula-secao" id="dd-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 5º, LIV, LV, LVII</span><h3>Devido processo legal e presunção de inocência</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Inciso</th><th>Conteúdo</th></tr></thead>
+        <tbody>
+          <tr><td>LIV</td><td>Ninguém será privado da liberdade ou de seus bens sem o devido processo legal</td></tr>
+          <tr><td>LV</td><td>Aos litigantes, em processo judicial ou administrativo, e aos acusados em geral, são assegurados o contraditório e a ampla defesa, com os meios e recursos a ela inerentes</td></tr>
+          <tr><td>LVI</td><td>São inadmissíveis, no processo, as provas obtidas por meios ilícitos</td></tr>
+          <tr><td>LVII</td><td>Ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Garantias relativas à prisão — art. 5º, LXI a LXVIII</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Inciso</th><th>Conteúdo</th></tr></thead>
+        <tbody>
+          <tr><td>LXI</td><td>Ninguém será preso senão em flagrante delito ou por ordem escrita e fundamentada de autoridade judiciária competente, salvo transgressão militar ou crime propriamente militar</td></tr>
+          <tr><td>LXII</td><td>A prisão de qualquer pessoa será comunicada imediatamente ao juiz e à família ou pessoa indicada</td></tr>
+          <tr><td>LXIII</td><td>O preso será informado de seus direitos, entre os quais o de permanecer calado</td></tr>
+          <tr><td>LXV</td><td>A prisão ilegal será imediatamente relaxada pela autoridade judiciária</td></tr>
+          <tr><td>LXVI</td><td>Ninguém será levado à prisão ou nela mantido, quando a lei admitir liberdade provisória, com ou sem fiança</td></tr>
+          <tr><td>LXVIII</td><td>Conceder-se-á habeas corpus sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua liberdade de locomoção, por ilegalidade ou abuso de poder</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Garantia de acesso à justiça — art. 5º, XXXV, LXXIV e LXXVIII</h3>
+      <div class="aula-destaque-box"><p><strong>XXXV — Inafastabilidade da jurisdição:</strong> "A lei não excluirá da apreciação do Poder Judiciário lesão ou ameaça a direito."<br><strong>LXXIV — Assistência jurídica gratuita:</strong> o Estado prestará assistência jurídica integral e gratuita aos que comprovarem insuficiência de recursos.<br><strong>LXXVIII — Razoável duração do processo (EC 45/2004):</strong> assegurados, no âmbito judicial e administrativo, a razoável duração do processo e os meios que garantam a celeridade de sua tramitação.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Deveres individuais e coletivos — não é só uma lista de direitos</h3>
+      <div class="aula-destaque-box"><p>O próprio nome do capítulo ("Direitos e Deveres") sinaliza que o texto constitucional também impõe <strong>deveres</strong> ao indivíduo, ainda que de forma menos sistematizada que os direitos. Exemplos: o dever de <strong>votar</strong> (obrigatoriedade do voto para maiores de 18 e menores de 70, salvo exceções — decorrência do art. 14, §1º); o dever de prestar <strong>serviço militar</strong> (art. 143); o dever de submeter-se a <strong>prestação alternativa</strong> quando invocar escusa de consciência (art. 5º, VIII).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — COLISÃO E PONDERAÇÃO ══ -->
+  <div class="aula-secao" id="dd-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">🎭</div>
+        <div><span class="aula-tag aula-tag-dica">Doutrina — Robert Alexy, Konrad Hesse</span><h3>Colisão de direitos fundamentais</h3></div>
+      </div>
+      <p>Como nenhum direito fundamental é absoluto (característica da relatividade), é comum que dois ou mais direitos fundamentais entrem em <strong>conflito concreto</strong> — o clássico exemplo é a colisão entre <strong>liberdade de imprensa</strong> e <strong>direito à privacidade/honra</strong>.</p>
+      <div class="aula-destaque-box"><p><strong>Técnica de solução — ponderação (Alexy):</strong> diante de uma colisão, não se aplica a lógica do "tudo ou nada" (própria das regras) — os princípios constitucionais são <strong>otimizados na maior medida possível</strong>, dadas as possibilidades fáticas e jurídicas do caso concreto, sem que um exclua definitivamente o outro do ordenamento.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Princípio da concordância prática (harmonização)</h3>
+      <div class="aula-destaque-box"><p>Já estudado na aula de Interpretação Constitucional (Konrad Hesse): diante do conflito entre bens constitucionais, o intérprete deve <strong>harmonizá-los</strong>, preservando ao máximo cada um, sem sacrificar integralmente nenhum — é a técnica que orienta, na prática, a ponderação de direitos fundamentais colidentes.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Proporcionalidade — os três subprincípios</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Adequação:</strong> a medida restritiva de um direito fundamental é apta a alcançar a finalidade pretendida?</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Necessidade:</strong> não existe meio menos gravoso, igualmente eficaz, para atingir a mesma finalidade?</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Proporcionalidade em sentido estrito:</strong> o benefício obtido com a restrição supera o custo (o sacrifício) imposto ao direito fundamental restringido?</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="dd-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"Os direitos fundamentais previstos no art. 5º são exclusivos dos brasileiros, natos ou naturalizados."</strong><br>✅ ERRADO. Aplicam-se também a estrangeiros residentes e, por interpretação ampliativa do STF, a estrangeiros não residentes e pessoas jurídicas, no que couber.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O rol de direitos fundamentais previsto no art. 5º da CF/88 é taxativo, não admitindo direitos implícitos ou decorrentes de tratados internacionais."</strong><br>✅ ERRADO. Art. 5º, §2º: é rol <strong>materialmente aberto</strong>.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Todo tratado internacional sobre direitos humanos, uma vez ratificado pelo Brasil, adquire automaticamente status de emenda constitucional."</strong><br>✅ ERRADO. Só adquire status de emenda se aprovado pelo <strong>rito qualificado</strong> do art. 5º, §3º (3/5, dois turnos, cada Casa) — caso contrário, tem status <strong>supralegal</strong>.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A liberdade de reunião depende de autorização prévia da autoridade competente."</strong><br>✅ ERRADO. Exige apenas <strong>prévio aviso</strong>, não autorização (art. 5º, XVI).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A entrada em domicílio alheio por determinação judicial pode ocorrer a qualquer hora do dia ou da noite."</strong><br>✅ ERRADO. Fora das hipóteses de flagrante, desastre e socorro, a entrada por ordem judicial só é permitida <strong>durante o dia</strong> (art. 5º, XI).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O direito à vida é absoluto, não comportando qualquer exceção no ordenamento constitucional brasileiro."</strong><br>✅ ERRADO. A CF/88 admite exceção expressa: pena de morte em caso de guerra declarada (art. 5º, XLVII, "a").</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"Os direitos fundamentais vinculam também as relações entre particulares, segundo a teoria da eficácia horizontal direta adotada pelo STF."</strong><br>CORRETO — RE 201.819.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Características dos direitos fundamentais</h4><p><strong>HI-I-I-I-R-U:</strong> Historicidade · Inalienabilidade · Irrenunciabilidade · Imprescritibilidade · Relatividade · Universalidade</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Tratados de DH — status normativo</h4><p><strong>Rito qualificado (3/5, 2 turnos)</strong> → emenda constitucional<br><strong>Rito comum</strong> → supralegal</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Domicílio — quando pode entrar</h4><p><strong>Flagrante/desastre/socorro</strong> → qualquer hora<br><strong>Ordem judicial</strong> → só de DIA</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Reunião × manifestação</h4><p><strong>Reunião</strong> → prévio AVISO (não autorização)<br><strong>Manifestação do pensamento</strong> → vedado ANONIMATO (sempre)</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="dd-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o rol de direitos e garantias fundamentais previsto no art. 5º da CF/88, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> É taxativo, não admitindo a existência de direitos fundamentais implícitos ou decorrentes de tratados internacionais.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> É materialmente aberto, pois os direitos e garantias expressos na Constituição não excluem outros decorrentes do regime e dos princípios por ela adotados, ou de tratados internacionais dos quais o Brasil seja parte.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Aplica-se exclusivamente a brasileiros natos, excluindo naturalizados e estrangeiros.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Não se aplica a pessoas jurídicas em nenhuma hipótese.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Exclui expressamente os direitos sociais, que estariam disciplinados em capítulo constitucional totalmente autônomo e sem relação com o art. 5º.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 5º, §2º, CF/88: rol materialmente aberto — os direitos expressos não excluem outros decorrentes do regime, dos princípios constitucionais ou de tratados internacionais de que o Brasil seja parte.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 5º, §2º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o status normativo dos tratados internacionais sobre direitos humanos, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Todo tratado de direitos humanos ratificado pelo Brasil equivale automaticamente a emenda constitucional.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> O tratado de direitos humanos aprovado, em cada Casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros, é equivalente a emenda constitucional; caso contrário, tem status supralegal, segundo entendimento do STF.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Tratados de direitos humanos sempre têm status de lei ordinária, independentemente do rito de aprovação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A aprovação por maioria simples confere ao tratado status de emenda constitucional.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O status supralegal dos tratados de direitos humanos foi rejeitado pelo STF no julgamento do RE 466.343/SP.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 5º, §3º, CF/88 (EC 45/2004) + STF, RE 466.343/SP: tratado aprovado pelo rito qualificado (3/5, dois turnos, cada Casa) equivale a emenda constitucional; caso aprovado por rito comum, tem status supralegal.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 5º, §3º; STF, RE 466.343/SP.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a inviolabilidade domiciliar prevista no art. 5º, XI, da CF/88, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A entrada em domicílio por determinação judicial pode ocorrer a qualquer hora, inclusive durante a noite.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Em caso de flagrante delito, desastre ou para prestar socorro, é possível o ingresso em domicílio a qualquer hora, sem necessidade de ordem judicial; por determinação judicial, fora dessas hipóteses, o ingresso só é permitido durante o dia.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A inviolabilidade domiciliar é absoluta, não admitindo qualquer exceção.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Apenas o flagrante delito autoriza o ingresso em domicílio alheio sem consentimento do morador.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O conceito de "casa" para fins constitucionais não abrange escritórios ou estabelecimentos profissionais.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 5º, XI, CF/88: flagrante delito, desastre e prestação de socorro autorizam entrada a qualquer hora, sem ordem judicial; a entrada por determinação judicial, fora dessas hipóteses, só é permitida durante o dia.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 5º, XI.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a liberdade de reunião, prevista no art. 5º, XVI, da CF/88, é correto afirmar que ela pode ser exercida:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Mediante autorização prévia da autoridade competente, sob pena de ilicitude da reunião.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Pacificamente, sem armas, em locais abertos ao público, independentemente de autorização, desde que não frustrem outra reunião anteriormente convocada para o mesmo local, exigindo-se apenas prévio aviso à autoridade competente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Somente em locais fechados, jamais em vias públicas.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Independentemente de qualquer comunicação prévia às autoridades, ainda que frustre outra reunião já convocada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Com uso de armas, desde que para fins de autodefesa dos manifestantes.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 5º, XVI, CF/88: reunião pacífica, sem armas, em locais abertos ao público, independentemente de autorização — exigindo-se apenas prévio aviso à autoridade competente, para que não frustre outra reunião anteriormente convocada para o mesmo local.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 5º, XVI.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a eficácia dos direitos fundamentais nas relações entre particulares, segundo entendimento do Supremo Tribunal Federal, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Os direitos fundamentais vinculam exclusivamente o Estado, não produzindo qualquer efeito nas relações privadas.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> A incidência de direitos fundamentais nas relações privadas depende sempre de mediação legislativa prévia (eficácia indireta).</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> O STF adota a teoria da eficácia direta (imediata) dos direitos fundamentais nas relações privadas, aplicando-os diretamente sem necessidade de mediação legislativa, conforme precedente firmado no RE 201.819.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Pessoas jurídicas de direito privado estão imunes à incidência de direitos fundamentais em suas relações internas.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A eficácia horizontal dos direitos fundamentais é expressamente vedada pela Constituição Federal de 1988.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>O STF, no RE 201.819 (caso União Brasileira de Compositores), consolidou a adoção da teoria da eficácia direta/imediata dos direitos fundamentais nas relações privadas — incidem diretamente, sem necessidade de mediação por lei específica.</div>
+      <span class="aula-fonte-tag">Fundamento: STF, RE 201.819 — eficácia horizontal direta.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre as características dos direitos fundamentais, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> São absolutos, não comportando qualquer limitação, ainda que em face de outros direitos fundamentais.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> São alienáveis, podendo ser transferidos a terceiros mediante contrato oneroso.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Prescrevem no prazo geral de dez anos, contados de sua violação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">d)</span> São dotados de relatividade, não sendo nenhum deles absoluto, podendo sofrer limitações em face de outros direitos ou do interesse coletivo, sempre com base em critérios de proporcionalidade.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Não se aplicam a estrangeiros em trânsito pelo território nacional, segundo interpretação literal do art. 5º, caput.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: D.</strong><br>A relatividade é característica essencial dos direitos fundamentais — nenhum é absoluto, todos podem sofrer limitações proporcionais diante de colisão com outros direitos ou o interesse coletivo. Também são inalienáveis e imprescritíveis, e a interpretação do STF sobre titularidade é ampliativa (alcança inclusive estrangeiros não residentes).</div>
+      <span class="aula-fonte-tag">Fundamento: doutrina — características dos direitos fundamentais; princípio da proporcionalidade.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
