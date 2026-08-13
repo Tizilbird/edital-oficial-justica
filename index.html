@@ -11965,6 +11965,620 @@ AULAS['dp_6'] = {
   </div>
 </div>`
 };
+// ═══════════════════════════════════════════════════════
+// AULA: Ação Direta de Inconstitucionalidade (ADI)
+// Chave: dc_12 (Direito Constitucional, tópico 12)
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dc_12'] = {
+  title: 'Ação Direta de Inconstitucionalidade (ADI)',
+  sub: 'Direito Constitucional · CF/88, arts. 102, I, "a", e 103 · Lei 9.868/99 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CF/88, arts. 102, I, "a", 103 e 103, §3º · Lei 9.868/99</div>
+  <h1 class="aula-h1">Ação Direta de Inconstitucionalidade (ADI)</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="ad-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="ad-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Conceito e Base Legal</button>
+    <button class="aula-tab-btn" data-sec="1">Legitimados Ativos</button>
+    <button class="aula-tab-btn" data-sec="2">Objeto do Controle</button>
+    <button class="aula-tab-btn" data-sec="3">Legitimidade Passiva e AGU</button>
+    <button class="aula-tab-btn" data-sec="4">Procedimento e Cautelar</button>
+    <button class="aula-tab-btn" data-sec="5">Efeitos da Decisão</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — CONCEITO E BASE LEGAL ══ -->
+  <div class="aula-secao ativo" id="ad-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📜</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 102, I, "a" · Lei 9.868/99</span><h3>O que é a ADI?</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 102, I, "a", CF/88:</strong> compete ao STF processar e julgar, originariamente, "a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual."</p></div>
+      <p>É o principal instrumento do <strong>controle concentrado (abstrato)</strong> de constitucionalidade — via de ação, processo objetivo, cujo pedido principal é a própria declaração de (in)constitucionalidade da norma impugnada, em tese, sem vinculação a caso concreto.</p>
+      <div class="aula-destaque-box"><p><strong>Caráter dúplice (ambivalente) da ADI:</strong> se julgada <strong>procedente</strong>, declara-se a inconstitucionalidade da norma. Se julgada <strong>improcedente</strong>, reconhece-se e declara-se, simultaneamente, a <strong>constitucionalidade</strong> da norma — a ADI funciona, na prática, também como instrumento apto a confirmar a validade da lei impugnada.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — LEGITIMADOS ATIVOS ══ -->
+  <div class="aula-secao" id="ad-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">👥</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 103</span><h3>Legitimados Universais × Legitimados Especiais</h3></div>
+      </div>
+      <p>A jurisprudência do STF divide o rol do art. 103, CF/88, em duas categorias, conforme a necessidade (ou não) de demonstrar <strong>pertinência temática</strong> — vínculo de interesse entre o objeto da ação e a finalidade institucional do legitimado.</p>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Categoria</th><th>Legitimados</th><th>Pertinência temática?</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="5"><strong>Universais</strong></td><td>Presidente da República</td><td rowspan="5"><span class="aula-badge aula-badge-nao">DISPENSADA</span></td></tr>
+          <tr><td>Mesa do Senado Federal</td></tr>
+          <tr><td>Mesa da Câmara dos Deputados</td></tr>
+          <tr><td>Procurador-Geral da República</td></tr>
+          <tr><td>Conselho Federal da OAB / Partido político com representação no Congresso Nacional</td></tr>
+          <tr><td rowspan="3"><strong>Especiais</strong></td><td>Mesa de Assembleia Legislativa ou da Câmara Legislativa do DF</td><td rowspan="3"><span class="aula-badge aula-badge-sim">EXIGIDA</span></td></tr>
+          <tr><td>Governador de Estado ou do Distrito Federal</td></tr>
+          <tr><td>Confederação sindical ou entidade de classe de âmbito nacional</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Mesa do Congresso Nacional NÃO tem legitimidade:</strong> a CF/88 confere legitimidade às Mesas da <strong>Câmara</strong> e do <strong>Senado</strong>, separadamente — mas a "Mesa do Congresso Nacional" (art. 57, §5º, CF/88), que só se reúne para sessões conjuntas específicas, <strong>não</strong> tem legitimidade para propor ADI. É uma pegadinha clássica.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Casos especiais de pertinência temática — jurisprudência do STF</h3>
+      <div class="aula-destaque-box"><p><strong>Partidos políticos são dispensados de pertinência temática, mesmo listados ao lado de legitimados "especiais" em alguns esquemas didáticos:</strong> o STF fixou que os partidos políticos com representação no Congresso Nacional podem impugnar, em controle abstrato, atos normativos federais, estaduais ou distritais <strong>independentemente do conteúdo material</strong> — não incide sobre eles a exigência de pertinência temática (ADI 1.407 MC, Rel. Min. Celso de Mello).</p></div>
+      <div class="aula-atencao-box"><p><strong>Representação processual dos partidos:</strong> para ajuizar ADI, o partido político deve estar representado por seu <strong>diretório nacional</strong> — ainda que o ato impugnado tenha amplitude normativa limitada a determinado Estado ou Município (ADI 1.528 QO, STF).</p></div>
+      <div class="aula-destaque-box"><p><strong>Momento de aferição da representatividade no Congresso:</strong> a legitimidade do partido político se afere no momento do <strong>ajuizamento</strong> da ação — a perda superveniente de representação parlamentar, após a propositura, não prejudica o regular prosseguimento do processo já instaurado.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Legitimidade para ADI perante os Tribunais de Justiça (controle estadual concentrado)</h3>
+      <div class="aula-atencao-box"><p><strong>Simetria obrigatória — cobrado por Cespe/Cebraspe recentemente:</strong> ao estabelecerem os legitimados para propositura de ADI perante o respectivo Tribunal de Justiça (controle de lei estadual/municipal em face da <strong>Constituição Estadual</strong>), os Estados-membros devem, obrigatoriamente, incluir o <strong>chefe do Ministério Público estadual</strong> entre os legitimados ativos — decorrência do princípio da simetria com o modelo federal (em que o PGR é legitimado universal para a ADI perante o STF).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — OBJETO DO CONTROLE ══ -->
+  <div class="aula-secao" id="ad-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🎯</div>
+        <div><span class="aula-tag aula-tag-lei">STF, ADI 594-DF e jurisprudência consolidada</span><h3>O que PODE ser objeto de ADI</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>STF, ADI 594-DF:</strong> só podem ser objeto de controle perante o STF, via ADI, <strong>leis e atos normativos federais ou estaduais</strong> — nunca leis ou atos <strong>municipais</strong> (esses se controlam via ADPF perante o STF, ou via ADI perante o TJ, em face da Constituição Estadual).</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Situação</th><th>Cabe ADI?</th></tr></thead>
+        <tbody>
+          <tr><td>Lei ou ato normativo federal ou estadual, pós-CF/88, dotado de generalidade e abstração</td><td><span class="aula-badge aula-badge-sim">SIM</span></td></tr>
+          <tr><td>Lei ou ato normativo municipal ou distrital de natureza municipal</td><td><span class="aula-badge aula-badge-nao">NÃO</span> (cabe ADPF)</td></tr>
+          <tr><td>Lei ou ato normativo anterior à CF/88 ("pré-constitucional")</td><td><span class="aula-badge aula-badge-nao">NÃO</span> (é questão de recepção/revogação, não de inconstitucionalidade — cabe ADPF)</td></tr>
+          <tr><td>Norma constitucional originária</td><td><span class="aula-badge aula-badge-nao">NÃO</span> (não existe "inconstitucionalidade" de norma constitucional originária)</td></tr>
+          <tr><td>Projeto de lei (norma ainda não promulgada)</td><td><span class="aula-badge aula-badge-nao">NÃO</span> (falta o próprio objeto: lei ainda inexistente)</td></tr>
+          <tr><td>Ato de efeitos concretos, sem generalidade e abstração</td><td><span class="aula-badge aula-badge-nao">NÃO</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Perda de objeto — medida provisória</h3>
+      <div class="aula-atencao-box"><p><strong>Se a medida provisória impugnada for convertida em lei, ou perder sua eficácia</strong> (por decurso de prazo sem conversão), a ADI que a impugnava fica <strong>prejudicada por perda de objeto</strong> — salvo, conforme jurisprudência mais recente, se houver interesse residual na análise dos efeitos já produzidos pela norma, hipótese em que o STF pode analisar o mérito mesmo diante da perda de vigência.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — LEGITIMIDADE PASSIVA E AGU ══ -->
+  <div class="aula-secao" id="ad-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🛡️</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 103, §3º</span><h3>O papel do Advogado-Geral da União</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 103, §3º, CF/88:</strong> "Quando o Supremo Tribunal Federal apreciar a inconstitucionalidade, em tese, de norma legal ou ato normativo, citará, previamente, o Advogado-Geral da União, que defenderá o ato ou texto impugnado."</p></div>
+      <p>O AGU atua como <strong>curador da presunção de constitucionalidade</strong> da norma impugnada — sua função é defender o ato questionado, independentemente de sua origem (federal, estadual ou distrital), no interesse da preservação da ordem jurídica objetiva.</p>
+      <div class="aula-atencao-box"><p><strong>Exceção reconhecida pelo STF — dispensa da defesa obrigatória:</strong> o STF entende que o AGU pode deixar de defender o ato impugnado (ou até se manifestar pela inconstitucionalidade) quando a tese jurídica que sustentaria a defesa já tiver sido <strong>anteriormente rejeitada</strong> pelo próprio STF em outros julgamentos — evitando que o AGU seja obrigado a sustentar posição já superada pela jurisprudência da Corte.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — PROCEDIMENTO E CAUTELAR ══ -->
+  <div class="aula-secao" id="ad-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">⚙️</div>
+        <div><span class="aula-tag aula-tag-lei">Lei 9.868/99</span><h3>Características do processo objetivo</h3></div>
+      </div>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Indisponibilidade:</strong> não se admite <strong>desistência</strong> da ADI já proposta — uma vez ajuizada, o interesse público na resolução da controvérsia constitucional prevalece sobre a vontade do autor.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Inadmissão de intervenção de terceiros:</strong> não se admite a intervenção de terceiros no processo objetivo da ADI (por não haver partes em sentido processual clássico) — mas se admite a manifestação do <strong>amicus curiae</strong>, por decisão do relator, considerada a relevância da matéria e a representatividade do postulante.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Petição inicial (ADI 2.187-QO, STF):</strong> deve conter a indicação clara e precisa do dispositivo impugnado e dos fundamentos jurídicos do pedido, sob pena de inépcia.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Medida Cautelar em ADI</h3>
+      <div class="aula-destaque-box"><p>A concessão de medida cautelar em ADI, salvo hipótese de excepcional urgência, exige quórum de <strong>maioria absoluta</strong> dos membros do STF, ouvidos previamente os órgãos ou autoridades das quais emanou a norma impugnada.</p></div>
+      <div class="aula-atencao-box"><p><strong>Efeito repristinatório da cautelar (art. 11, §2º, Lei 9.868/99):</strong> "A concessão da medida cautelar torna aplicável a legislação anterior acaso existente, salvo expressa manifestação em sentido contrário." Ou seja, suspender liminarmente a eficácia da lei nova faz, em regra, a lei antiga (que havia sido revogada) voltar a vigorar — salvo se o STF expressamente afastar esse efeito repristinatório na própria decisão cautelar.</p></div>
+      <div class="aula-destaque-box"><p><strong>Regra geral de efeitos da cautelar:</strong> em regra, produz efeitos <strong>ex nunc</strong> (a partir da concessão) — mas o STF, excepcionalmente, pode atribuir-lhe eficácia <strong>retroativa</strong>, quando entender necessário para preservar a ordem jurídica.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — EFEITOS DA DECISÃO ══ -->
+  <div class="aula-secao" id="ad-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🔨</div>
+        <div><span class="aula-tag aula-tag-lei">CF/88, art. 102, §2º · Lei 9.868/99, art. 27</span><h3>Efeitos da decisão definitiva de mérito</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 102, §2º, CF/88:</strong> as decisões definitivas de mérito, proferidas pelo STF, nas ações diretas de inconstitucionalidade e nas ações declaratórias de constitucionalidade produzirão eficácia contra todos e <strong>efeito vinculante</strong>, relativamente aos demais órgãos do Poder Judiciário e à Administração Pública direta e indireta, nas esferas federal, estadual e municipal.</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Característica</th><th>Regra</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Erga omnes</strong></td><td>Oponível a todos — efeito automático da decisão de mérito, sem necessidade de qualquer resolução do Senado (diferente do controle difuso tradicional)</td></tr>
+          <tr><td><strong>Vinculante</strong></td><td>Vincula os demais órgãos do Judiciário e a Administração Pública (federal, estadual, municipal) — mas <strong>não vincula</strong> o próprio STF (que pode rever seu entendimento) nem o <strong>Poder Legislativo</strong> em sua função de legislar (para evitar a "fossilização" do direito)</td></tr>
+          <tr><td><strong>Ex tunc (regra)</strong></td><td>Retroativo — decorre da teoria da nulidade (a lei inconstitucional é nula desde a origem)</td></tr>
+          <tr><td><strong>Modulação de efeitos</strong></td><td>Por maioria de <strong>2/3</strong> dos membros do STF, pode-se restringir os efeitos da declaração ou atribuir-lhe eficácia a partir do trânsito em julgado ou de outro momento fixado, por razões de segurança jurídica ou excepcional interesse social (art. 27, Lei 9.868/99)</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Efeito repristinatório da decisão de mérito (também presente, não só na cautelar):</strong> declarada a inconstitucionalidade da lei que revogou norma anterior, torna-se novamente aplicável a legislação anteriormente revogada — decorrência lógica da teoria da nulidade (a lei inconstitucional nunca existiu validamente, logo nunca revogou nada).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="ad-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"A Mesa do Congresso Nacional tem legitimidade para propor ADI perante o STF."</strong><br>✅ ERRADO. A legitimidade é das Mesas da <strong>Câmara</strong> e do <strong>Senado</strong>, separadamente — a Mesa do Congresso Nacional (art. 57, §5º, CF) não tem legitimidade para ADI.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Cabe ADI perante o STF contra lei ou ato normativo municipal que viole diretamente a Constituição Federal."</strong><br>✅ ERRADO. Leis/atos municipais não podem ser objeto de ADI perante o STF (ADI 594-DF) — o instrumento cabível, nesse caso, é a <strong>ADPF</strong>.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O autor da ADI pode desistir da ação a qualquer tempo, antes do julgamento final, sem necessidade de anuência dos demais legitimados."</strong><br>✅ ERRADO. Não se admite <strong>desistência</strong> em ADI — princípio da indisponibilidade, decorrente da natureza objetiva do processo.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"Todos os legitimados do art. 103, CF/88, devem demonstrar pertinência temática para propor ADI, sem exceção."</strong><br>✅ ERRADO. Os legitimados <strong>universais</strong> (Presidente, Mesas da Câmara/Senado, PGR, OAB, partidos com representação no Congresso) estão dispensados dessa exigência.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A decisão de mérito em ADI vincula, além dos demais órgãos do Judiciário e da Administração Pública, também o próprio STF e o Poder Legislativo em sua função legiferante."</strong><br>✅ ERRADO. O efeito vinculante <strong>não alcança</strong> o próprio STF (que pode rever seu entendimento) nem o Poder Legislativo, para evitar a "fossilização" do direito.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"Ao estabelecerem os legitimados para ADI perante o respectivo Tribunal de Justiça, os Estados-membros devem, obrigatoriamente, incluir o chefe do Ministério Público estadual entre os legitimados ativos."</strong><br>CORRETO — princípio da simetria; cobrado pelo Cespe em 2025.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Legitimados universais (sem pertinência temática)</h4><p><strong>P-M-M-P-O-P:</strong> Presidente · Mesa Câmara · Mesa Senado · PGR · OAB (Conselho Federal) · Partido político com representação no Congresso</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Legitimados especiais (com pertinência temática)</h4><p><strong>M-G-C:</strong> Mesa de Assembleia Legislativa/Câmara Legislativa DF · Governador de Estado/DF · Confederação sindical/entidade de classe nacional</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Objeto da ADI perante o STF</h4><p>Só lei/ato normativo <strong>federal ou estadual</strong>, pós-CF/88 — nunca municipal, nunca pré-constitucional, nunca norma constitucional originária</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Efeitos da decisão de mérito</h4><p><strong>Erga omnes + Vinculante + Ex tunc</strong> (regra) — modulável por 2/3 do STF</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="ad-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os legitimados para a propositura de ação direta de inconstitucionalidade perante o STF, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O Governador de Estado é legitimado universal, dispensado de demonstrar pertinência temática.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> A Mesa do Congresso Nacional é legitimada universal para a propositura da ação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> O Conselho Federal da Ordem dos Advogados do Brasil é legitimado universal, dispensado de demonstrar pertinência temática entre o objeto da ação e suas finalidades institucionais.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> As confederações sindicais e entidades de classe de âmbito nacional são legitimadas universais.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Os partidos políticos, mesmo com representação no Congresso Nacional, devem sempre demonstrar pertinência temática.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>O Conselho Federal da OAB é legitimado universal. O Governador de Estado e as confederações sindicais/entidades de classe são legitimados especiais (exigem pertinência temática). A Mesa do Congresso Nacional não tem legitimidade. Partidos políticos com representação no Congresso são dispensados de pertinência temática, segundo o STF.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 103; STF, ADI 1.407 MC.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o objeto da ação direta de inconstitucionalidade perante o Supremo Tribunal Federal, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Pode ter por objeto lei ou ato normativo municipal que viole diretamente a Constituição Federal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Pode ter por objeto norma constitucional originária, quando incompatível com cláusula pétrea.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Somente pode ter por objeto lei ou ato normativo federal ou estadual, editado após a promulgação da Constituição Federal de 1988, dotado de generalidade e abstração.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Pode ter por objeto projeto de lei ainda em tramitação no Congresso Nacional, para fins de controle preventivo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Pode ter por objeto lei anterior à Constituição Federal de 1988, incompatível com seu texto.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>ADI 594-DF, STF: só cabe ADI contra lei ou ato normativo federal ou estadual. Leis municipais (cabe ADPF), normas constitucionais originárias, projetos de lei e leis pré-constitucionais (também cabe ADPF, por ser questão de recepção) não podem ser objeto de ADI.</div>
+      <span class="aula-fonte-tag">Fundamento: STF, ADI 594-DF; jurisprudência consolidada sobre objeto da ADI.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o papel do Advogado-Geral da União no processo da ADI, nos termos do art. 103, §3º, da CF/88, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O AGU atua como autor da ação, propondo-a em nome da União sempre que houver interesse federal envolvido.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> O AGU deve ser citado previamente para defender o ato ou texto impugnado, atuando como curador da presunção de constitucionalidade da norma, ressalvada a possibilidade de dispensa dessa defesa quando a tese já tiver sido rejeitada pelo próprio STF em outros julgamentos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A citação do AGU é sempre dispensável, cabendo essa defesa exclusivamente ao órgão que editou a norma impugnada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O AGU somente atua em ADIs que tenham por objeto normas federais, sendo vedada sua atuação em normas estaduais.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O AGU exerce, na ADI, a função de fiscal da lei, com atribuições idênticas às do Ministério Público.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 103, §3º, CF/88: o AGU é citado previamente para defender o ato ou texto impugnado — curador da presunção de constitucionalidade. O STF admite dispensa dessa defesa quando a tese já tiver sido rejeitada em jurisprudência consolidada da própria Corte.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 103, §3º; jurisprudência do STF.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Concedida medida cautelar em ADI, suspendendo a eficácia de lei que revogara norma anterior, é correto afirmar, nos termos do art. 11, §2º, da Lei nº 9.868/1999:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A legislação anteriormente revogada permanece inaplicável até o julgamento final de mérito, em qualquer hipótese.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A concessão da cautelar torna aplicável a legislação anterior acaso existente, salvo expressa manifestação do STF em sentido contrário.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A concessão da cautelar jamais produz efeito repristinatório, sendo essa consequência exclusiva da decisão de mérito.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A legislação anterior só volta a viger mediante nova manifestação expressa do Congresso Nacional.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O efeito repristinatório depende de requerimento expresso do autor da ação, não podendo ser reconhecido de ofício.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 11, §2º, Lei 9.868/99: a concessão da medida cautelar torna aplicável a legislação anterior acaso existente, salvo expressa manifestação em sentido contrário do STF — é o efeito repristinatório, que também pode se manifestar na cautelar, e não apenas na decisão de mérito.</div>
+      <span class="aula-fonte-tag">Fundamento: Lei 9.868/99, art. 11, §2º.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os efeitos da decisão definitiva de mérito em ADI, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Produz efeitos exclusivamente entre as partes do processo, não alcançando terceiros.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> Vincula o próprio STF e o Poder Legislativo em sua função de legislar, impedindo a edição de nova lei com conteúdo semelhante.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> Produz eficácia contra todos (erga omnes) e efeito vinculante em relação aos demais órgãos do Poder Judiciário e à Administração Pública direta e indireta, em regra com eficácia retroativa (ex tunc), admitida a modulação de efeitos por maioria de dois terços dos membros do STF.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Produz sempre efeitos ex nunc, sendo vedada qualquer modulação de efeitos pelo STF.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Depende de resolução do Senado Federal para produzir efeitos erga omnes, da mesma forma que ocorre no controle difuso.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Art. 102, §2º, CF/88 + art. 27, Lei 9.868/99: efeitos erga omnes e vinculantes (Judiciário e Administração Pública, não o próprio STF nem o Legislativo em sua função legiferante), em regra ex tunc, admitida modulação por 2/3 dos membros do STF. Não depende de resolução do Senado — diferente do controle difuso tradicional.</div>
+      <span class="aula-fonte-tag">Fundamento: CF/88, art. 102, §2º; Lei 9.868/99, art. 27.</span>
+    </div>
+  </div>
+</div>`
+};
+// ═══════════════════════════════════════════════════════
+// AULA: Espécies e Cominação de Penas
+// Chave: dp_7 (Direito Penal, tópico 7)
+// Base: CF/88, art. 5º · CP, arts. 32 a 76 · Lei 9.099/95
+// Cole este bloco dentro do objeto AULAS no painel_estudos_integrado.html
+// ═══════════════════════════════════════════════════════
+
+AULAS['dp_7'] = {
+  title: 'Espécies e Cominação de Penas',
+  sub: 'Direito Penal · CF/88, art. 5º, XLVI · CP, arts. 32 a 76 · Banca FCC · Foco Tribunais',
+  html: `
+<div class="aula-container">
+  <div class="aula-titulo-aula">CF/88, art. 5º, XLVI · Código Penal, arts. 32 a 76</div>
+  <h1 class="aula-h1">Espécies e Cominação de Penas</h1>
+  <p class="aula-subtitulo">Clique nas seções para navegar</p>
+
+  <div class="aula-progress-bar" id="pn-prog">
+    <div class="aula-prog-seg ativo"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+    <div class="aula-prog-seg"></div><div class="aula-prog-seg"></div>
+  </div>
+
+  <div class="aula-nav-tabs" id="pn-tabs">
+    <button class="aula-tab-btn ativo" data-sec="0">Espécies de Pena (art. 32)</button>
+    <button class="aula-tab-btn" data-sec="1">Penas Privativas de Liberdade</button>
+    <button class="aula-tab-btn" data-sec="2">Regimes de Cumprimento</button>
+    <button class="aula-tab-btn" data-sec="3">Penas Restritivas de Direitos</button>
+    <button class="aula-tab-btn" data-sec="4">Pena de Multa</button>
+    <button class="aula-tab-btn" data-sec="5">Cominação e Aplicação da Pena</button>
+    <button class="aula-tab-btn" data-sec="6">Pegadinhas FCC</button>
+    <button class="aula-tab-btn" data-sec="7">Questões</button>
+  </div>
+
+  <!-- ══ SEC 0 — ESPÉCIES DE PENA ══ -->
+  <div class="aula-secao ativo" id="pn-sec0">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">⚖️</div>
+        <div><span class="aula-tag aula-tag-lei">CP, art. 32</span><h3>As três espécies de pena no Código Penal</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 32, CP:</strong> "As penas são: I - privativas de liberdade; II - restritivas de direitos; III - de multa."</p></div>
+      <p>Diferente das <strong>medidas de segurança</strong> (aplicáveis a inimputáveis, com finalidade curativa/preventiva) e das <strong>medidas socioeducativas</strong> (aplicáveis a adolescentes, no âmbito do ECA), as <strong>penas</strong> são sanções penais aplicáveis a agentes imputáveis, com finalidade retributiva e preventiva (geral e especial).</p>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "as espécies de pena previstas no CP incluem a prisão simples e a pena de morte" — <strong>ERRADO</strong>. A prisão simples é modalidade da <strong>Lei de Contravenções Penais</strong>, não do CP. A pena de morte é vedada pela CF/88, salvo em caso de guerra declarada (art. 5º, XLVII, "a").</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Penas vedadas pela CF/88 — art. 5º, XLVII</h3>
+      <div class="aula-destaque-box"><p>Não haverá penas: <strong>a)</strong> de morte, <strong>salvo em caso de guerra declarada</strong> (art. 84, XIX); <strong>b)</strong> de caráter perpétuo; <strong>c)</strong> de trabalhos forçados; <strong>d)</strong> de banimento; <strong>e)</strong> cruéis.</p></div>
+      <div class="aula-atencao-box"><p><strong>Macete:</strong> <strong>M-P-T-B-C</strong> — Morte (salvo guerra) · Perpétua · Trabalhos forçados · Banimento · Cruéis. Já foi cobrado em profundidade na aula de Princípios Aplicáveis ao Direito Penal — aqui o foco é a relação direta com a <strong>individualização da pena</strong> (art. 5º, XLVI, CF/88).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Individualização da pena — art. 5º, XLVI, CF/88</h3>
+      <div class="aula-destaque-box"><p>"A lei regulará a individualização da pena e adotará, entre outras, as seguintes: a) privação ou restrição da liberdade; b) perda de bens; c) multa; d) prestação social alternativa; e) suspensão ou interdição de direitos."</p></div>
+      <p>É o fundamento constitucional que autoriza o legislador a criar as diversas espécies de sanção penal do art. 32, CP — a individualização ocorre em três fases já estudadas: <strong>legislativa, judicial e executória</strong>.</p>
+    </div>
+  </div>
+
+  <!-- ══ SEC 1 — PENAS PRIVATIVAS DE LIBERDADE ══ -->
+  <div class="aula-secao" id="pn-sec1">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E6F1FB;color:#0C447C">🔒</div>
+        <div><span class="aula-tag aula-tag-lei">CP, art. 33, caput</span><h3>Reclusão × Detenção — as duas modalidades</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 33, caput, CP:</strong> "A pena de reclusão deve ser cumprida em regime fechado, semiaberto ou aberto. A de detenção, em regime semiaberto, ou aberto, salvo necessidade de transferência a regime fechado."</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Critério</th><th>Reclusão</th><th>Detenção</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Regime inicial</strong></td><td>Fechado, semiaberto ou aberto</td><td>Semiaberto ou aberto (nunca inicia em fechado)</td></tr>
+          <tr><td><strong>Regime fechado</strong></td><td>Pode ser regime inicial</td><td>Só por regressão (transferência), nunca inicial</td></tr>
+          <tr><td><strong>Gravidade típica</strong></td><td>Crimes mais graves, em regra</td><td>Crimes de menor gravidade, em regra</td></tr>
+          <tr><td><strong>Efeitos acessórios</strong></td><td>Pode gerar interdição de pátrio poder/tutela/curatela quando o crime é cometido contra filho, tutelado ou curatelado (art. 92, II)</td><td>Só gera esse efeito acessório se o crime for doloso e sujeito à pena de reclusão — regra específica do art. 92, II</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "a pena de detenção pode ser cumprida inicialmente em regime fechado" — <strong>ERRADO</strong>. A detenção jamais se inicia em regime fechado; só pode chegar a esse regime por <strong>regressão</strong> durante a execução (ex.: prática de falta grave).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Distinção prática entre reclusão e detenção — outros efeitos</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Ordem de cumprimento em concurso de crimes:</strong> quando o condenado tiver de cumprir, simultaneamente, penas de reclusão e detenção, executa-se primeiro a <strong>reclusão</strong> (art. 69, § único, CP).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Sursis (suspensão condicional da pena):</strong> em regra, exige pena privativa de liberdade não superior a <strong>2 anos</strong>, independentemente de ser reclusão ou detenção — mas há regras diferenciadas para réus maiores de 70 anos ou por razões de saúde (art. 77, §2º, CP), com prazo de até 4 anos.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Medida de segurança:</strong> se o fato previsto como crime é punido com reclusão, a internação é obrigatória (medida de segurança detentiva); se punido com detenção, o juiz pode optar por tratamento ambulatorial (art. 97, CP).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Limite máximo de cumprimento — art. 75, CP</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 75, caput, CP:</strong> "O tempo de cumprimento das penas privativas de liberdade não pode ser <strong>superior a 40 (quarenta) anos</strong>." (Redação dada pelo Pacote Anticrime — Lei 13.964/2019, que <strong>ampliou</strong> o antigo limite de 30 anos.)</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha muito atual:</strong> o limite de 40 anos é <strong>relativamente recente</strong> — antes do Pacote Anticrime (2019), o limite era de 30 anos. Questões desatualizadas podem trazer "30 anos" como assertiva correta; hoje isso está <strong>ERRADO</strong>. Se as penas ultrapassarem esse limite, elas devem ser <strong>unificadas</strong> para atender ao teto de 40 anos (art. 75, §1º).</p></div>
+      <div class="aula-destaque-box"><p><strong>Art. 75, §2º:</strong> sobrevindo condenação por fato posterior ao início do cumprimento da pena, faz-se nova unificação, desprezando-se, para esse fim, o período de pena já cumprido.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 2 — REGIMES DE CUMPRIMENTO ══ -->
+  <div class="aula-secao" id="pn-sec2">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">🏛️</div>
+        <div><span class="aula-tag aula-tag-lei">CP, art. 33, §§2º e 3º</span><h3>Fechado, Semiaberto e Aberto — características</h3></div>
+      </div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Regime</th><th>Local de cumprimento</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Fechado</strong></td><td>Estabelecimento de segurança máxima ou média (penitenciária)</td></tr>
+          <tr><td><strong>Semiaberto</strong></td><td>Colônia agrícola, industrial ou estabelecimento similar</td></tr>
+          <tr><td><strong>Aberto</strong></td><td>Casa de albergado ou estabelecimento adequado — baseado na autodisciplina e senso de responsabilidade do condenado</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Critérios de fixação do regime inicial — art. 33, §2º</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 33, §2º, CP:</strong> "As penas privativas de liberdade deverão ser executadas em forma progressiva, segundo o mérito do condenado, observados os seguintes critérios e ressalvadas as hipóteses de transferência a regime mais rigoroso."</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Alínea</th><th>Situação</th><th>Regime inicial</th></tr></thead>
+        <tbody>
+          <tr><td><strong>a</strong></td><td>Condenado a pena superior a <strong>8 anos</strong></td><td>Sempre <strong>fechado</strong></td></tr>
+          <tr><td><strong>b</strong></td><td>Não reincidente, condenado a pena <strong>superior a 4 até 8 anos</strong></td><td>Pode iniciar em <strong>semiaberto</strong></td></tr>
+          <tr><td><strong>c</strong></td><td>Não reincidente, condenado a pena <strong>igual ou inferior a 4 anos</strong></td><td>Pode iniciar em <strong>aberto</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Reincidente:</strong> a lei não fixa regra automática expressa nas alíneas para o reincidente com pena até 4 anos, mas a jurisprudência do STJ e STF firmou entendimento de que o regime <strong>não pode ser automaticamente o fechado</strong> apenas em razão da reincidência — deve-se analisar as circunstâncias judiciais do art. 59, CP (<strong>Súmula 269, STJ</strong>: é admissível a adoção do regime prisional semiaberto aos reincidentes condenados a pena igual ou inferior a 4 anos, se favoráveis as circunstâncias judiciais).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Súmulas essenciais sobre regime</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Súmula</th><th>Conteúdo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Súmula 718, STF</strong></td><td>A opinião do julgador sobre a gravidade em abstrato do crime não constitui motivação idônea para a imposição de regime mais severo do que o permitido segundo a pena aplicada.</td></tr>
+          <tr><td><strong>Súmula 719, STF</strong></td><td>A imposição do regime de cumprimento mais severo do que a pena aplicada permitir exige motivação idônea.</td></tr>
+          <tr><td><strong>Súmula 440, STJ</strong></td><td>Fixada a pena-base no mínimo legal, é vedado o estabelecimento de regime prisional mais gravoso do que o cabível em razão da sanção imposta, com base apenas na gravidade abstrata do delito.</td></tr>
+          <tr><td><strong>Súmula 269, STJ</strong></td><td>É admissível a adoção do regime prisional semiaberto aos reincidentes condenados a pena igual ou inferior a 4 anos, se favoráveis as circunstâncias judiciais.</td></tr>
+        </tbody>
+      </table>
+      <div class="aula-atencao-box"><p><strong>Fio condutor das quatro súmulas:</strong> a fixação de regime mais gravoso do que o permitido pela pena aplicada <strong>sempre exige fundamentação concreta e idônea</strong> — jamais pode se basear apenas na gravidade abstrata do tipo penal.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Progressão de regime — Lei de Execução Penal (visão panorâmica)</h3>
+      <div class="aula-destaque-box"><p>A progressão de regime (fechado → semiaberto → aberto) depende do cumprimento de fração da pena (variável conforme a natureza do crime — comum, hediondo, com ou sem violência, reincidente ou primário) somado ao <strong>bom comportamento carcerário</strong> — regras detalhadas na Lei 7.210/1984 (LEP), com alterações relevantes do Pacote Anticrime, tema de aula específica sobre execução penal.</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 3 — PENAS RESTRITIVAS DE DIREITOS ══ -->
+  <div class="aula-secao" id="pn-sec3">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EAF3DE;color:#27500A">🔄</div>
+        <div><span class="aula-tag aula-tag-lei">CP, art. 43</span><h3>As espécies de penas restritivas de direitos</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 43, CP:</strong> São penas restritivas de direitos: <strong>I</strong> — prestação pecuniária; <strong>II</strong> — perda de bens e valores; <strong>III</strong> — (vetado); <strong>IV</strong> — prestação de serviço à comunidade ou a entidades públicas; <strong>V</strong> — interdição temporária de direitos; <strong>VI</strong> — limitação de fim de semana.</p></div>
+      <div class="aula-macete-box"><h4>Macete: PE-PE-PS-ID-LI</h4><p style="margin-top:6px">Prestação Pecuniária · Perda de bens · Prestação de Serviço · Interdição · Limitação de fim de semana</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Natureza jurídica — penas substitutivas, não autônomas</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 44, caput, CP:</strong> as penas restritivas de direitos são <strong>autônomas e substituem</strong> as privativas de liberdade — o juiz primeiro fixa a pena privativa de liberdade e, verificados os requisitos legais, <strong>substitui</strong> por uma ou mais restritivas de direitos.</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "as penas restritivas de direitos são aplicadas de forma cumulativa com a pena privativa de liberdade" — <strong>ERRADO</strong>. Elas <strong>substituem</strong> a pena privativa de liberdade — não se cumulam com ela (salvo a hipótese de substituição por multa + restritiva, que é distinta).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Requisitos para substituição — art. 44, I a III, CP</h3>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>Requisito objetivo (quantidade de pena):</strong> aplicada pena privativa de liberdade <strong>não superior a 4 anos</strong>, desde que o crime <strong>não tenha sido cometido com violência ou grave ameaça à pessoa</strong>; <strong>ou</strong>, qualquer que seja a pena aplicada, se o crime for <strong>culposo</strong>.</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>Requisito objetivo (não reincidência específica):</strong> o réu não pode ser reincidente em <strong>crime doloso</strong> — a reincidência em crime culposo, ou reincidência genérica em crimes de naturezas distintas, não impede a substituição, a critério do juiz (art. 44, §3º).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>Requisito subjetivo:</strong> a culpabilidade, os antecedentes, a conduta social e a personalidade do condenado, bem como os motivos e as circunstâncias, indicarem que a substituição seja <strong>suficiente</strong> para reprovação e prevenção do crime.</p></div>
+      <div class="aula-atencao-box"><p><strong>Regra de conversão (art. 44, §2º):</strong> se a pena aplicada for igual ou inferior a <strong>1 ano</strong>, a substituição pode ser feita por <strong>multa</strong> ou por <strong>1 pena restritiva de direitos</strong>; se superior a 1 ano, a substituição pode ser por <strong>1 pena restritiva de direitos e multa</strong>, ou por <strong>2 penas restritivas de direitos</strong>.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Conversão da restritiva em privativa de liberdade</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 44, §4º, CP:</strong> a pena restritiva de direitos converte-se em privativa de liberdade quando ocorrer o <strong>descumprimento injustificado</strong> da restrição imposta — deduzido o tempo cumprido, respeitado o saldo mínimo de <strong>30 dias</strong> de detenção ou reclusão.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Espécies em detalhe</h3>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Espécie</th><th>Característica</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Prestação pecuniária</strong></td><td>Pagamento em dinheiro à vítima, seus dependentes ou entidade pública/privada com destinação social, entre <strong>1 e 360 salários mínimos</strong> (art. 45, §1º) — deduzido do valor de eventual indenização civil.</td></tr>
+          <tr><td><strong>Perda de bens e valores</strong></td><td>Tem como teto o montante do <strong>prejuízo causado</strong> ou do <strong>proveito obtido</strong> pelo agente ou por terceiro, em consequência da prática do crime (art. 45, §3º) — o que for maior.</td></tr>
+          <tr><td><strong>Prestação de serviços à comunidade</strong></td><td>Só cabível para penas superiores a <strong>6 meses</strong> de privação de liberdade — atribuição de tarefas gratuitas ao condenado em entidades assistenciais, hospitais, escolas etc.</td></tr>
+          <tr><td><strong>Interdição temporária de direitos</strong></td><td>Inclui proibição de exercício de cargo/função/atividade pública, de profissão que dependa de habilitação, suspensão de autorização/habilitação para dirigir veículo, proibição de frequentar determinados lugares e proibição de inscrever-se em concurso/avaliação/exame públicos.</td></tr>
+          <tr><td><strong>Limitação de fim de semana</strong></td><td>Obrigação de permanecer, aos sábados e domingos, por 5 horas diárias, em casa de albergado ou estabelecimento adequado, podendo ser ministrados cursos e palestras.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ══ SEC 4 — PENA DE MULTA ══ -->
+  <div class="aula-secao" id="pn-sec4">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#E1F5EE;color:#0F6E56">💰</div>
+        <div><span class="aula-tag aula-tag-lei">CP, arts. 49 a 52</span><h3>Sistema de dias-multa</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 49, caput, CP:</strong> a pena de multa consiste no pagamento ao <strong>fundo penitenciário</strong> da quantia fixada na sentença e calculada em <strong>dias-multa</strong>. O mínimo é de <strong>10</strong> e o máximo de <strong>360 dias-multa</strong>.</p></div>
+      <div class="aula-destaque-box"><p><strong>Art. 49, §1º:</strong> o valor do dia-multa será fixado pelo juiz não podendo ser inferior a <strong>1/30 do maior salário mínimo mensal</strong> vigente ao tempo do fato, nem superior a <strong>5 vezes</strong> esse salário.</p></div>
+      <div class="aula-atencao-box"><p><strong>Duas fases de cálculo — muito cobrado:</strong><br>
+      <strong>1ª fase:</strong> fixação do número de dias-multa (10 a 360), conforme as circunstâncias judiciais do art. 59, CP.<br>
+      <strong>2ª fase:</strong> fixação do valor de cada dia-multa (1/30 a 5 salários mínimos), conforme a <strong>situação econômica do réu</strong> — podendo o juiz, se considerar insuficiente, ainda que aplicada no máximo, <strong>aumentar até o triplo</strong> (art. 60, §1º).</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Multa como dívida de valor — Lei 9.268/1996 e execução</h3>
+      <div class="aula-destaque-box"><p><strong>Art. 51, CP (redação da Lei 9.268/1996):</strong> "Transitada em julgado a sentença condenatória, a multa será executada perante o juiz da execução penal e será considerada <strong>dívida de valor</strong>, aplicáveis as normas relativas à dívida ativa da Fazenda Pública, inclusive no que concerne às causas interruptivas e suspensivas da prescrição."</p></div>
+      <div class="aula-atencao-box"><p><strong>Marco histórico da mudança:</strong> antes da Lei 9.268/1996, o não pagamento da multa podia ser <strong>convertido em detenção</strong>. Após essa lei, a multa não paga <strong>nunca mais se converte em prisão</strong> — passa a ser cobrada como dívida de valor (execução fiscal), podendo até ser objeto de parcelamento e prescrição própria.</p></div>
+      <div class="aula-destaque-box"><p><strong>Entendimento do STF (ADI 3.150) e do STJ:</strong> a legitimidade para a execução da pena de multa é do <strong>Ministério Público</strong>, perante a Vara de Execução Penal — e, apenas subsidiariamente, se o MP não agir no prazo de 90 dias, cabe à Procuradoria da Fazenda Pública fazê-lo (posição consolidada após o Pacote Anticrime).</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 5 — COMINAÇÃO E APLICAÇÃO DA PENA ══ -->
+  <div class="aula-secao" id="pn-sec5">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#EEEDFE;color:#534AB7">📐</div>
+        <div><span class="aula-tag aula-tag-lei">CP, art. 68</span><h3>Sistema trifásico de aplicação da pena — Nelson Hungria</h3></div>
+      </div>
+      <div class="aula-destaque-box"><p><strong>Art. 68, caput, CP:</strong> "A pena-base será fixada atendendo-se ao critério do art. 59 deste Código; em seguida serão consideradas as circunstâncias atenuantes e agravantes; por último, as causas de diminuição e de aumento."</p></div>
+      <p>O Brasil adota o <strong>sistema trifásico</strong> (Nelson Hungria) para o cálculo da pena — cada fase tem <strong>limites próprios</strong> que não podem ser ultrapassados pela fase seguinte, garantindo previsibilidade e controle da individualização.</p>
+      <div class="aula-num-item"><div class="aula-num-circle">1</div><p><strong>1ª fase — Pena-base (art. 59):</strong> o juiz analisa as circunstâncias judiciais (culpabilidade, antecedentes, conduta social, personalidade, motivos, circunstâncias, consequências do crime e comportamento da vítima) e fixa a pena dentro dos limites <strong>abstratos</strong> previstos no tipo penal (mínimo e máximo legais).</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">2</div><p><strong>2ª fase — Agravantes e atenuantes (arts. 61-66):</strong> aplicam-se as circunstâncias legais genéricas, que <strong>não podem</strong> reduzir a pena abaixo do mínimo legal, nem aumentá-la acima do máximo — é a <strong>Súmula 231, STJ</strong>: "a incidência da circunstância atenuante não pode conduzir à redução da pena abaixo do mínimo legal."</p></div>
+      <div class="aula-num-item"><div class="aula-num-circle">3</div><p><strong>3ª fase — Causas de aumento e diminuição:</strong> aqui, diferente da 2ª fase, <strong>é permitido</strong> ultrapassar os limites mínimo e máximo abstratos, pois as causas de aumento/diminuição costumam ser expressas em <strong>frações</strong> (ex.: tentativa: diminuição de 1/3 a 2/3; art. 14, § único, CP).</p></div>
+      <div class="aula-atencao-box"><p><strong>Pegadinha certeira:</strong> "a pena-base pode ser fixada abaixo do mínimo legal, quando presentes muitas circunstâncias judiciais favoráveis" — <strong>ERRADO</strong>. Nem a 1ª nem a 2ª fase permitem extrapolar os limites abstratos do tipo — só a 3ª fase (causas de aumento/diminuição) admite isso.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Cominação da pena — o que é e onde ocorre</h3>
+      <div class="aula-destaque-box"><p><strong>Cominação</strong> é o momento em que o <strong>legislador</strong>, ao criar o tipo penal, fixa os limites <strong>abstratos</strong> (mínimo e máximo) da pena aplicável àquele crime — é a fase <strong>legislativa</strong> da individualização da pena (a primeira das três fases estudadas na aula de Princípios Aplicáveis ao Direito Penal). Diferencia-se da <strong>aplicação</strong>, que é o momento em que o <strong>juiz</strong>, no caso concreto, fixa a pena definitiva dentro (ou, na 3ª fase, eventualmente fora) desses limites legais.</p></div>
+      <table class="aula-tabela-comp">
+        <thead><tr><th>Momento</th><th>Quem atua</th><th>O que ocorre</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cominação</strong></td><td>Legislador</td><td>Fixa, na lei, os limites mínimo e máximo da pena para o tipo penal (individualização legislativa)</td></tr>
+          <tr><td><strong>Aplicação</strong></td><td>Juiz</td><td>Fixa a pena concreta, dentro dos limites cominados, pelo sistema trifásico (individualização judicial)</td></tr>
+          <tr><td><strong>Execução</strong></td><td>Juízo da execução</td><td>Adapta a pena já fixada durante seu cumprimento (progressão, remição, livramento condicional — individualização executória)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="aula-card">
+      <h3>Formas de cominação da pena</h3>
+      <div class="aula-grid2">
+        <div class="aula-mini-card"><h4>Cominação simples</h4><p>O tipo prevê uma única espécie de pena (ex.: só privativa de liberdade).</p></div>
+        <div class="aula-mini-card"><h4>Cominação cumulativa</h4><p>O tipo prevê duas ou mais penas aplicadas conjuntamente (ex.: "reclusão... e multa").</p></div>
+        <div class="aula-mini-card"><h4>Cominação alternativa</h4><p>O tipo prevê duas penas, mas o juiz escolhe entre elas (ex.: "detenção... ou multa").</p></div>
+        <div class="aula-mini-card"><h4>Cominação paralela</h4><p>O tipo prevê penas de espécies próximas, aplicáveis conforme circunstâncias específicas do caso.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 6 — PEGADINHAS FCC ══ -->
+  <div class="aula-secao" id="pn-sec6">
+    <div class="aula-card">
+      <div class="aula-card-header">
+        <div class="aula-icone-sigla" style="background:#FAECE7;color:#712B13">⚠️</div>
+        <div><span class="aula-tag aula-tag-fcc">Banca FCC</span><h3>Pegadinhas mais cobradas</h3></div>
+      </div>
+    </div>
+
+    <div class="aula-card">
+      <div class="aula-atencao-box"><p>❌ <strong>"A pena de detenção pode ser cumprida inicialmente em regime fechado."</strong><br>✅ ERRADO. A detenção nunca se inicia em regime fechado — só chega a esse regime por regressão.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O tempo de cumprimento das penas privativas de liberdade não pode ser superior a 30 anos."</strong><br>✅ ERRADO. Desde o Pacote Anticrime (Lei 13.964/2019), o limite é de <strong>40 anos</strong> (art. 75, CP).</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"As penas restritivas de direitos são aplicadas cumulativamente com a pena privativa de liberdade fixada na sentença."</strong><br>✅ ERRADO. As restritivas de direitos <strong>substituem</strong> a pena privativa de liberdade — não se somam a ela.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A incidência de circunstância atenuante pode reduzir a pena abaixo do mínimo legal previsto para o tipo penal."</strong><br>✅ ERRADO. Súmula 231, STJ: a atenuante <strong>não pode</strong> reduzir a pena abaixo do mínimo legal.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"O não pagamento da multa penal converte-se automaticamente em pena privativa de liberdade."</strong><br>✅ ERRADO. Desde a Lei 9.268/1996, a multa é <strong>dívida de valor</strong>, executada como dívida ativa — nunca mais se converte em prisão.</p></div>
+      <div class="aula-atencao-box" style="margin-top:8px"><p>❌ <strong>"A gravidade abstrata do crime, por si só, é fundamento idôneo para a fixação de regime prisional mais gravoso do que o cabível pela pena aplicada."</strong><br>✅ ERRADO. Súmulas 718 e 719, STF, e Súmula 440, STJ: exige-se motivação <strong>concreta</strong>, não apenas a gravidade abstrata do tipo.</p></div>
+      <div class="aula-verde-box" style="margin-top:8px"><p>✅ <strong>"É admissível a adoção do regime prisional semiaberto aos reincidentes condenados a pena igual ou inferior a 4 anos, se favoráveis as circunstâncias judiciais."</strong><br>CORRETO — Súmula 269, STJ.</p></div>
+    </div>
+
+    <div class="aula-card">
+      <h3>Macetes de memorização</h3>
+      <div class="aula-macete-box"><h4>🧠 Regimes — critério dos 8/4</h4><p><strong>&gt; 8 anos → fechado</strong> · <strong>4 a 8 (não reincidente) → semiaberto</strong> · <strong>≤ 4 (não reincidente) → aberto</strong></p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Espécies do art. 32</h4><p><strong>Privativas de liberdade · Restritivas de direitos · Multa</strong> — nunca "prisão simples" (é contravenção)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Sistema trifásico — limites</h4><p><strong>1ª e 2ª fase</strong>: nunca extrapola mín./máx. legal<br><strong>3ª fase</strong>: PODE extrapolar (frações de aumento/diminuição)</p></div>
+      <div class="aula-macete-box" style="margin-top:8px"><h4>🧠 Multa — dias-multa</h4><p><strong>10 a 360 dias-multa</strong> × valor de <strong>1/30 a 5 salários mínimos</strong> por dia</p></div>
+    </div>
+  </div>
+
+  <!-- ══ SEC 7 — QUESTÕES ══ -->
+  <div class="aula-secao" id="pn-sec7">
+    <div class="aula-card"><div class="aula-card-header"><div class="aula-icone-sigla" style="background:#FAEEDA;color:#633806">📝</div><div><span class="aula-tag aula-tag-fcc">Questões FCC</span><h3>Questões no estilo FCC — foco Tribunais</h3></div></div><p style="font-size:13px;color:#888">Clique na opção correta e depois em "Ver gabarito".</p></div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os regimes de cumprimento de pena, nos termos do art. 33 do Código Penal, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A pena de detenção pode ser cumprida, desde o início, em regime fechado, a critério do juiz.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> A pena de detenção deve ser cumprida em regime semiaberto ou aberto, admitindo-se o regime fechado apenas por necessidade de transferência.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> A pena de reclusão jamais pode ser cumprida em regime aberto, ainda que a pena aplicada seja inferior a 4 anos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Não há distinção prática entre as penas de reclusão e detenção quanto ao regime inicial de cumprimento.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A pena de reclusão só pode ser cumprida em regime fechado, independentemente da quantidade de pena aplicada.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 33, caput, CP: a detenção é cumprida em regime semiaberto ou aberto — o regime fechado só ocorre por necessidade de transferência (regressão), nunca como regime inicial.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, art. 33, caput.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o limite máximo de cumprimento das penas privativas de liberdade, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> É de 30 anos, conforme redação original do Código Penal, ainda vigente.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> É de 40 anos, conforme alteração promovida pela Lei nº 13.964/2019 (Pacote Anticrime).</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> É de 50 anos, independentemente da data da condenação.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Não há limite máximo, podendo a pena ser cumprida integralmente, ainda que superior a 40 anos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> É de 40 anos apenas para crimes hediondos, mantendo-se 30 anos para os demais crimes.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 75, caput, CP, com redação dada pela Lei 13.964/2019 (Pacote Anticrime): o limite máximo de cumprimento das penas privativas de liberdade é de 40 anos, ampliado do antigo limite de 30 anos.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, art. 75, caput (Lei 13.964/2019).</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre os requisitos para a substituição da pena privativa de liberdade por restritiva de direitos, nos termos do art. 44 do Código Penal, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Aplica-se apenas a crimes culposos, sendo vedada em qualquer hipótese de crime doloso.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Exige, para crimes dolosos, pena não superior a 4 anos e ausência de violência ou grave ameaça à pessoa, além de não ser o réu reincidente em crime doloso, sendo cabível, qualquer que seja a pena aplicada, se o crime for culposo.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> Pode ser aplicada cumulativamente com a pena privativa de liberdade, sem substituí-la.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> É vedada a qualquer reincidente, ainda que a reincidência seja em crime de natureza diversa.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> Não exige análise de circunstâncias subjetivas do condenado, bastando o requisito objetivo da pena aplicada.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 44, I a III, CP: exige pena não superior a 4 anos e ausência de violência/grave ameaça (para dolosos), sendo cabível independentemente da pena em crimes culposos; exige não reincidência em crime doloso (reincidência em crime de natureza diversa não impede, a critério do juiz); e exige também requisito subjetivo (suficiência da substituição para reprovação/prevenção). As restritivas substituem, não se cumulam com a privativa de liberdade.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, art. 44, I a III.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre a pena de multa, nos termos do Código Penal, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> O não pagamento da multa converte-se automaticamente em pena privativa de liberdade, após o trânsito em julgado.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Transitada em julgado a sentença condenatória, a multa é considerada dívida de valor, aplicáveis as normas relativas à dívida ativa da Fazenda Pública.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> É calculada exclusivamente em valores fixos, sem relação com o sistema de dias-multa.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> O mínimo de dias-multa é de 30 e o máximo de 720.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> É sempre aplicada cumulativamente com a pena privativa de liberdade, jamais podendo ser substitutiva.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>Art. 51, CP (Lei 9.268/1996): transitada em julgado, a multa é dívida de valor, executada conforme normas da dívida ativa da Fazenda Pública — nunca convertida em prisão. O sistema é de dias-multa (10 a 360), não valores fixos.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, art. 51 (Lei 9.268/1996); art. 49.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Sobre o sistema trifásico de aplicação da pena, previsto no art. 68 do Código Penal, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> Na segunda fase, a incidência de circunstância atenuante pode reduzir a pena abaixo do mínimo legal previsto para o tipo penal.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">b)</span> Na primeira e na segunda fase, a pena não pode ultrapassar os limites mínimo e máximo abstratamente previstos no tipo penal, o que é excepcionado apenas na terceira fase, com a incidência de causas de aumento e diminuição.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">c)</span> As causas de aumento e diminuição de pena são aplicadas antes das circunstâncias agravantes e atenuantes.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> A pena-base é fixada exclusivamente com base nas causas de aumento e diminuição de pena.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> O sistema trifásico não admite qualquer limite legal, cabendo ao juiz decidir livremente em todas as fases.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: B.</strong><br>No sistema trifásico (Nelson Hungria), as duas primeiras fases (pena-base e agravantes/atenuantes) respeitam os limites abstratos do tipo penal (Súmula 231, STJ) — só a terceira fase (causas de aumento/diminuição) pode extrapolar esses limites, dado que costuma ser expressa em frações.</div>
+      <span class="aula-fonte-tag">Fundamento: CP, art. 68; Súmula 231, STJ.</span>
+    </div>
+
+    <div class="aula-questao-card">
+      <p class="aula-questao-enunciado"><strong>(FCC — estilo)</strong> Segundo o entendimento consolidado do Supremo Tribunal Federal e do Superior Tribunal de Justiça sobre a fixação do regime prisional, é correto afirmar:</p>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">a)</span> A gravidade abstrata do delito constitui, por si só, motivação idônea para a imposição de regime mais severo do que o permitido pela pena aplicada.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">b)</span> É vedada, em qualquer hipótese, a fixação de regime semiaberto para réu reincidente, ainda que condenado a pena inferior a 4 anos.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'correta')"><span class="letra">c)</span> É admissível a adoção do regime semiaberto aos reincidentes condenados a pena igual ou inferior a 4 anos, se favoráveis as circunstâncias judiciais, exigindo-se, para regime mais gravoso, motivação idônea e concreta.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">d)</span> Fixada a pena-base no mínimo legal, é possível o estabelecimento de regime mais gravoso com base apenas na gravidade abstrata do delito.</div>
+      <div class="aula-opcao" onclick="aulaMarcar(this,'errada')"><span class="letra">e)</span> A opinião pessoal do julgador sobre a gravidade do crime, ainda que em abstrato, constitui fundamento suficiente para regime mais severo.</div>
+      <button class="aula-btn-gabarito" onclick="aulaRevelarGab(this)">Ver gabarito</button>
+      <div class="aula-gabarito-reveal"><strong>Gabarito: C.</strong><br>Combinação das Súmulas 269, STJ (regime semiaberto para reincidentes com pena até 4 anos, se favoráveis as circunstâncias), 718 e 719, STF, e 440, STJ (regime mais gravoso exige motivação concreta, não bastando a gravidade abstrata do delito).</div>
+      <span class="aula-fonte-tag">Fundamento: Súmulas 269, STJ; 718 e 719, STF; 440, STJ.</span>
+    </div>
+  </div>
+</div>`
+};
   
 // ═══════════════════════════════════════════════════════
 // DADOS DO EDITAL
